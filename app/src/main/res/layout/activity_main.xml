@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_home"
-    android:fillViewport="true"
     tools:context=".MainActivity">
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_home"
+        android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,11 +33,15 @@
 
             <!-- Profile Section -->
             <LinearLayout
+                android:id="@+id/profile_section"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
 
                 <FrameLayout
                     android:layout_width="56dp"
@@ -129,20 +139,20 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_green"
+                    android:background="@drawable/bg_alphabet"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/alphabet" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Alphabet"
                         android:textColor="@color/white"
@@ -156,20 +166,20 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_orange"
+                    android:background="@drawable/bg_number"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_numbers" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Numbers"
                         android:textColor="@color/white"
@@ -195,15 +205,15 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_games" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Games"
                         android:textColor="@color/white"
@@ -217,20 +227,20 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_pink"
+                    android:background="@drawable/bg_color"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_colors" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Colors"
                         android:textColor="@color/white"
@@ -256,15 +266,15 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_shapes" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Shapes"
                         android:textColor="@color/white"
@@ -283,15 +293,15 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_animals" />
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_text_label"
                         android:fontFamily="sans-serif-black"
                         android:text="Animals"
                         android:textColor="@color/white"
@@ -358,3 +368,12 @@
     </LinearLayout>
 
 </ScrollView>
+
+    <!-- Navigation Drawer -->
+    <include
+        layout="@layout/nav_drawer_content"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
