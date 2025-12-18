@@ -200,7 +200,7 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_purple"
+                    android:background="@drawable/bg_game"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -261,7 +261,7 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_cyan"
+                    android:background="@drawable/bg_shape"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -288,7 +288,7 @@
                     android:layout_height="180dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_card_green"
+                    android:background="@drawable/bg_animal"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
