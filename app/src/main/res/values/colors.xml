@@ -2,4 +2,35 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- 4Kids App Colors - Lingokids Inspired -->
+    <color name="deep_blue">#1A237E</color>
+    <color name="deep_blue_dark">#0D1259</color>
+    <color name="deep_blue_light">#3949AB</color>
+    
+    <!-- Card Colors -->
+    <color name="card_green">#4CAF50</color>
+    <color name="card_green_dark">#388E3C</color>
+    <color name="card_orange">#FF9800</color>
+    <color name="card_orange_dark">#F57C00</color>
+    <color name="card_purple">#9C27B0</color>
+    <color name="card_purple_dark">#7B1FA2</color>
+    <color name="card_pink">#E91E63</color>
+    <color name="card_pink_dark">#C2185B</color>
+    <color name="card_cyan">#00BCD4</color>
+    <color name="card_cyan_dark">#0097A7</color>
+    
+    <!-- Floating Shapes -->
+    <color name="shape_yellow">#FFEB3B</color>
+    <color name="shape_pink">#F48FB1</color>
+    <color name="shape_cyan">#80DEEA</color>
+    <color name="shape_green">#A5D6A7</color>
+    
+    <!-- Text Colors -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_dark">#212121</color>
+    
+    <!-- Progress/Badge Colors -->
+    <color name="badge_gold">#FFD700</color>
+    <color name="badge_silver">#C0C0C0</color>
 </resources>

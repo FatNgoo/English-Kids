@@ -2,8 +2,17 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.English" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/deep_blue</item>
+        <item name="colorPrimaryDark">@color/deep_blue_dark</item>
+        <item name="colorAccent">@color/shape_yellow</item>
+        <item name="android:statusBarColor">@color/deep_blue_dark</item>
+        <item name="android:navigationBarColor">@color/deep_blue_dark</item>
     </style>
 
     <style name="Theme.English" parent="Base.Theme.English" />
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.English.Splash" parent="Theme.English">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
 </resources>

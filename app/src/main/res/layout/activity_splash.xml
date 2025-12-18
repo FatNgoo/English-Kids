@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".SplashActivity">
+
+    <!-- Floating Shapes Background -->
+    <!-- Top Left Circle -->
+    <ImageView
+        android:id="@+id/shape1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:alpha="0.4"
+        android:src="@drawable/shape_circle" />
+
+    <!-- Top Right Star -->
+    <ImageView
+        android:id="@+id/shape2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="100dp"
+        android:alpha="0.5"
+        android:src="@drawable/shape_star" />
+
+    <!-- Middle Left Triangle -->
+    <ImageView
+        android:id="@+id/shape3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:alpha="0.3"
+        android:src="@drawable/shape_triangle" />
+
+    <!-- Middle Right Square -->
+    <ImageView
+        android:id="@+id/shape4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="320dp"
+        android:alpha="0.4"
+        android:src="@drawable/shape_square" />
+
+    <!-- Bottom Left Star -->
+    <ImageView
+        android:id="@+id/shape5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="500dp"
+        android:alpha="0.4"
+        android:src="@drawable/shape_star" />
+
+    <!-- Bottom Right Circle -->
+    <ImageView
+        android:id="@+id/shape6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="580dp"
+        android:alpha="0.35"
+        android:src="@drawable/shape_circle" />
+
+    <!-- Bottom Center Triangle -->
+    <ImageView
+        android:id="@+id/shape7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="650dp"
+        android:alpha="0.3"
+        android:src="@drawable/shape_triangle" />
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Monster Character -->
+        <ImageView
+            android:id="@+id/monster_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo" />
+
+        <!-- Logo Text "4Kids" -->
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logotext" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0.9"
+            android:fontFamily="sans-serif-medium"
+            android:text="Learn &amp; Play!"
+            android:textColor="@color/shape_yellow"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <!-- Loading indicator at bottom -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateTint="@color/shape_yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

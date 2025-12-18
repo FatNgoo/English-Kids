@@ -2,6 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.English" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/deep_blue</item>
+        <item name="colorPrimaryDark">@color/deep_blue_dark</item>
+        <item name="colorAccent">@color/shape_yellow</item>
+        <item name="android:statusBarColor">@color/deep_blue_dark</item>
+        <item name="android:navigationBarColor">@color/deep_blue_dark</item>
     </style>
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    
+    <!-- Paint Palette -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,10 C60,10 75,25 75,45 C75,60 65,75 45,75 C35,75 28,70 28,62 C28,55 35,50 42,50 C48,50 52,52 52,48 C52,42 45,35 35,35 C20,35 10,48 10,60 C10,62 10,64 11,65 C6,60 5,52 5,45 C5,25 20,10 40,10 Z"/>
+    
+    <!-- Color dots -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M25,25 C25,21 28,18 32,18 C36,18 39,21 39,25 C39,29 36,32 32,32 C28,32 25,29 25,25 Z"/>
+    
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,20 C45,16 48,13 52,13 C56,13 59,16 59,20 C59,24 56,27 52,27 C48,27 45,24 45,20 Z"/>
+    
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M58,32 C58,28 61,25 65,25 C69,25 72,28 72,32 C72,36 69,39 65,39 C61,39 58,36 58,32 Z"/>
+    
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M60,48 C60,44 63,41 67,41 C71,41 74,44 74,48 C74,52 71,55 67,55 C63,55 60,52 60,48 Z"/>
+</vector>
