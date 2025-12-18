@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.edu.english"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.edu.english"

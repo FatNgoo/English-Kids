@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Monster Body - Cute rounded shape -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M100,180 C45,180 30,140 30,100 C30,50 60,25 100,25 C140,25 170,50 170,100 C170,140 155,180 100,180 Z"/>
+    
+    <!-- Body Shadow -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M100,180 C45,180 30,140 30,100 C30,95 31,90 32,85 C35,130 55,170 100,170 C145,170 165,130 168,85 C169,90 170,95 170,100 C170,140 155,180 100,180 Z"/>
+    
+    <!-- Left Eye White -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,85 C70,70 80,60 90,60 C100,60 110,70 110,85 C110,100 100,110 90,110 C80,110 70,100 70,85 Z"/>
+    
+    <!-- Right Eye White -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,85 C120,70 130,60 140,60 C150,60 160,70 160,85 C160,100 150,110 140,110 C130,110 120,100 120,85 Z"/>
+    
+    <!-- Left Pupil -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M85,85 C85,77 89,72 95,72 C101,72 105,77 105,85 C105,93 101,98 95,98 C89,98 85,93 85,85 Z"/>
+    
+    <!-- Right Pupil -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M135,85 C135,77 139,72 145,72 C151,72 155,77 155,85 C155,93 151,98 145,98 C139,98 135,93 135,85 Z"/>
+    
+    <!-- Left Eye Shine -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,78 C90,75 92,73 95,73 C98,73 100,75 100,78 C100,81 98,83 95,83 C92,83 90,81 90,78 Z"/>
+    
+    <!-- Right Eye Shine -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M140,78 C140,75 142,73 145,73 C148,73 150,75 150,78 C150,81 148,83 145,83 C142,83 140,81 140,78 Z"/>
+    
+    <!-- Happy Mouth -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M75,130 Q100,160 125,130 Q100,150 75,130 Z"/>
+    
+    <!-- Tongue -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M90,140 Q100,155 110,140 Q100,148 90,140 Z"/>
+    
+    <!-- Left Arm Waving -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M25,90 C10,70 5,50 15,35 C25,20 40,25 45,40 C50,55 40,75 35,90 C32,95 28,95 25,90 Z"/>
+    
+    <!-- Left Arm Shadow -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M25,90 C28,85 30,80 32,75 C35,80 33,88 30,92 C28,92 26,91 25,90 Z"/>
+    
+    <!-- Right Arm -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M170,100 C180,95 190,100 195,110 C200,120 195,135 185,140 C175,145 165,135 165,120 C165,110 167,102 170,100 Z"/>
+    
+    <!-- Right Arm Shadow -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M170,115 C172,120 170,130 165,135 C163,125 165,118 170,115 Z"/>
+    
+    <!-- Left Antenna -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M70,30 C65,15 60,5 70,0 C80,5 75,15 72,25 L70,30 Z"/>
+    
+    <!-- Left Antenna Ball -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M70,5 C65,5 62,8 62,13 C62,18 65,21 70,21 C75,21 78,18 78,13 C78,8 75,5 70,5 Z"/>
+    
+    <!-- Right Antenna -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M130,30 C135,15 140,5 130,0 C120,5 125,15 128,25 L130,30 Z"/>
+    
+    <!-- Right Antenna Ball -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M130,5 C125,5 122,8 122,13 C122,18 125,21 130,21 C135,21 138,18 138,13 C138,8 135,5 130,5 Z"/>
+    
+    <!-- Belly Spot -->
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M100,145 C85,145 75,135 75,125 C75,115 85,105 100,105 C115,105 125,115 125,125 C125,135 115,145 100,145 Z"/>
+    
+    <!-- Cheek Blush Left -->
+    <path
+        android:fillColor="#F48FB1"
+        android:fillAlpha="0.5"
+        android:pathData="M55,105 C55,100 60,96 68,96 C76,96 81,100 81,105 C81,110 76,114 68,114 C60,114 55,110 55,105 Z"/>
+    
+    <!-- Cheek Blush Right -->
+    <path
+        android:fillColor="#F48FB1"
+        android:fillAlpha="0.5"
+        android:pathData="M145,105 C145,100 150,96 158,96 C166,96 171,100 171,105 C171,110 166,114 158,114 C150,114 145,110 145,105 Z"/>
+</vector>

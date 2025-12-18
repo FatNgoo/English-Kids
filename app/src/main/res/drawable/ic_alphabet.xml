@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    
+    <!-- Letter A Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M10,70 L30,15 L50,70 L42,70 L37,55 L23,55 L18,70 Z M26,45 L34,45 L30,30 Z"/>
+    
+    <!-- Letter B -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,15 L55,70 L70,70 C78,70 82,63 82,55 C82,48 78,44 73,43 C77,41 80,37 80,31 C80,22 75,15 67,15 Z M63,25 L67,25 C70,25 72,27 72,31 C72,35 70,38 67,38 L63,38 Z M63,47 L69,47 C73,47 75,50 75,55 C75,60 73,62 69,62 L63,62 Z"/>
+    
+    <!-- Letter C small -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M5,50 C5,42 10,35 20,35 C25,35 28,37 30,40 L25,45 C24,43 22,42 20,42 C15,42 12,46 12,50 C12,54 15,58 20,58 C22,58 24,57 25,55 L30,60 C28,63 25,65 20,65 C10,65 5,58 5,50 Z"/>
+</vector>
