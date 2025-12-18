@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:fillViewport="true"
+    tools:context=".GamesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <!-- Top Bar with Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Games"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <!-- Badge Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_badge_star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="125"
+                    android:textColor="@color/badge_gold"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Welcome Message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingHorizontal="20dp"
+            android:text="Choose a game to play!"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="20dp"
+            android:text="Have fun while learning!"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Game Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <!-- Master Chef Card -->
+            <LinearLayout
+                android:id="@+id/card_master_chef"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/master_chef"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text_label"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Master Chef"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <!-- Detective Card -->
+            <LinearLayout
+                android:id="@+id/card_detective"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/dectective"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text_label"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Detective"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <!-- Pet Hospital Card -->
+            <LinearLayout
+                android:id="@+id/card_pet_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/hospital"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text_label"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pet Hospital"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Fun Fact Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_button_play"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_monster_wave" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Fun Fact!"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:fontFamily="sans-serif"
+                    android:text="Playing games helps you learn faster!"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_circle"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="✨"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

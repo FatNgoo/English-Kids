@@ -28,6 +28,12 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
+        
+        <!-- Games Activity - Games Selection -->
+        <activity
+            android:name=".GamesActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

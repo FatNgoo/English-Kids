@@ -1,10 +1,10 @@
 package com.edu.english;
 
 import android.animation.ObjectAnimator;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -13,20 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 
-public class MainActivity extends AppCompatActivity {
-
-    private DrawerLayout drawerLayout;
+public class GamesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        
-        // Initialize DrawerLayout
-        drawerLayout = findViewById(R.id.drawer_layout);
+        setContentView(R.layout.activity_games);
         
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -34,61 +28,42 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Setup profile click to open drawer
-        LinearLayout profileSection = findViewById(R.id.profile_section);
-        profileSection.setOnClickListener(v -> {
-            if (drawerLayout != null) {
-                drawerLayout.openDrawer(android.view.Gravity.START);
-            }
-        });
+        // Setup back button
+        ImageButton backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(v -> finish());
 
-        // Setup card click listeners
-        setupCardClickListeners();
+        // Setup game card click listeners
+        setupGameCardClickListeners();
         
         // Start card animations
         animateCards();
     }
 
-    private void setupCardClickListeners() {
-        LinearLayout cardAlphabet = findViewById(R.id.card_alphabet);
-        LinearLayout cardNumbers = findViewById(R.id.card_numbers);
-        LinearLayout cardGames = findViewById(R.id.card_games);
-        LinearLayout cardColors = findViewById(R.id.card_colors);
-        LinearLayout cardShapes = findViewById(R.id.card_shapes);
-        LinearLayout cardAnimals = findViewById(R.id.card_animals);
+    private void setupGameCardClickListeners() {
+        LinearLayout cardMasterChef = findViewById(R.id.card_master_chef);
+        LinearLayout cardDetective = findViewById(R.id.card_detective);
+        LinearLayout cardPetHospital = findViewById(R.id.card_pet_hospital);
 
-        View.OnClickListener cardClickListener = v -> {
+        View.OnClickListener gameClickListener = v -> {
             // Scale animation on click
             animateCardPress(v);
             
-            String cardName = "";
+            String gameName = "";
             int id = v.getId();
-            if (id == R.id.card_alphabet) {
-                cardName = "Alphabet";
-            } else if (id == R.id.card_numbers) {
-                cardName = "Numbers";
-            } else if (id == R.id.card_games) {
-                // Navigate to GamesActivity
-                Intent intent = new Intent(MainActivity.this, GamesActivity.class);
-                startActivity(intent);
-                return;
-            } else if (id == R.id.card_colors) {
-                cardName = "Colors";
-            } else if (id == R.id.card_shapes) {
-                cardName = "Shapes";
-            } else if (id == R.id.card_animals) {
-                cardName = "Animals";
+            if (id == R.id.card_master_chef) {
+                gameName = "Master Chef";
+            } else if (id == R.id.card_detective) {
+                gameName = "Detective";
+            } else if (id == R.id.card_pet_hospital) {
+                gameName = "Pet Hospital";
             }
             
-            Toast.makeText(this, "Let's learn " + cardName + "! 🎉", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
         };
 
-        cardAlphabet.setOnClickListener(cardClickListener);
-        cardNumbers.setOnClickListener(cardClickListener);
-        cardGames.setOnClickListener(cardClickListener);
-        cardColors.setOnClickListener(cardClickListener);
-        cardShapes.setOnClickListener(cardClickListener);
-        cardAnimals.setOnClickListener(cardClickListener);
+        cardMasterChef.setOnClickListener(gameClickListener);
+        cardDetective.setOnClickListener(gameClickListener);
+        cardPetHospital.setOnClickListener(gameClickListener);
     }
 
     private void animateCardPress(View view) {
@@ -112,8 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void animateCards() {
         int[] cardIds = {
-            R.id.card_alphabet, R.id.card_numbers, R.id.card_games,
-            R.id.card_colors, R.id.card_shapes, R.id.card_animals
+            R.id.card_master_chef, 
+            R.id.card_detective, 
+            R.id.card_pet_hospital
         };
 
         for (int i = 0; i < cardIds.length; i++) {
@@ -127,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 
                 alphaAnim.setDuration(400);
                 translateAnim.setDuration(400);
-                alphaAnim.setStartDelay(i * 100);
-                translateAnim.setStartDelay(i * 100);
+                alphaAnim.setStartDelay(i * 150);
+                translateAnim.setStartDelay(i * 150);
                 alphaAnim.setInterpolator(new AccelerateDecelerateInterpolator());
                 translateAnim.setInterpolator(new AccelerateDecelerateInterpolator());
                 
