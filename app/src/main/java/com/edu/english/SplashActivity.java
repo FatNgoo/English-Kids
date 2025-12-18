@@ -57,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
         monsterScaleY.setInterpolator(new BounceInterpolator());
 
         // Logo animation
-        TextView logo = findViewById(R.id.logo_text);
+        ImageView logo = findViewById(R.id.logo_image);
         ObjectAnimator logoAlpha = ObjectAnimator.ofFloat(logo, "alpha", 0f, 1f);
         ObjectAnimator logoTranslate = ObjectAnimator.ofFloat(logo, "translationY", 50f, 0f);
         logoAlpha.setDuration(600);
