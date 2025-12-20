@@ -15,6 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -64,7 +66,10 @@ public class MainActivity extends AppCompatActivity {
             String cardName = "";
             int id = v.getId();
             if (id == R.id.card_alphabet) {
-                cardName = "Alphabet";
+                // Navigate to Alphabet Adventure (MascotSelectActivity)
+                Intent intent = new Intent(MainActivity.this, MascotSelectActivity.class);
+                startActivity(intent);
+                return;
             } else if (id == R.id.card_numbers) {
                 cardName = "Numbers";
             } else if (id == R.id.card_games) {

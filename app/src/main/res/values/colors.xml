@@ -33,4 +33,15 @@
     <!-- Progress/Badge Colors -->
     <color name="badge_gold">#FFD700</color>
     <color name="badge_silver">#C0C0C0</color>
+    
+    <!-- Alphabet Adventure Colors -->
+    <color name="game_bg_start">#667eea</color>
+    <color name="game_bg_end">#764ba2</color>
+    <color name="lane_highlight">#40FFEB3B</color>
+    <color name="token_correct">#4CAF50</color>
+    <color name="token_wrong">#F44336</color>
+    <color name="token_default">#FF9800</color>
+    <color name="overlay_dark">#CC000000</color>
+    <color name="success_green">#00E676</color>
+    <color name="error_red">#FF5252</color>
 </resources>

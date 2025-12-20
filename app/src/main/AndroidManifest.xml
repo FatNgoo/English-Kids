@@ -34,6 +34,20 @@
             android:name=".GamesActivity"
             android:exported="false">
         </activity>
+        
+        <!-- Alphabet Adventure - Mascot Selection -->
+        <activity
+            android:name=".alphabet_adventure.screens.MascotSelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Alphabet Adventure - Game Screen -->
+        <activity
+            android:name=".alphabet_adventure.screens.AlphabetGameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
