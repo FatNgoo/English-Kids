@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Watermelon slice -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M50,15 L90,85 L10,85 Z"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M50,20 L85,80 L15,80 Z"/>
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M50,25 L80,75 L20,75 Z"/>
+    <!-- Seeds -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M45,45 A3,4 0 1,1 45.01,45"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M55,50 A3,4 0 1,1 55.01,50"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M40,58 A3,4 0 1,1 40.01,58"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M60,60 A3,4 0 1,1 60.01,60"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M50,65 A3,4 0 1,1 50.01,65"/>
+</vector>

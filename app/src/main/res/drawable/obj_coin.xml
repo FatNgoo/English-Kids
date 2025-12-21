@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Coin -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M50,50m-38,0a38,38 0,1 1,76 0a38,38 0,1 1,-76 0"/>
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M50,50m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"/>
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M50,50m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    <!-- Dollar sign -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M48,30h4v40h-4z"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M40,40 Q40,35 50,35 Q60,35 60,42 Q60,48 50,50 Q40,52 40,58 Q40,65 50,65 Q60,65 60,60"
+        android:strokeWidth="4"
+        android:strokeColor="#FF8F00"/>
+</vector>

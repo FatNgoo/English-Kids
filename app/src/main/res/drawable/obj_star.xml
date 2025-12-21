@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Star -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,5 L61,35 L95,35 L68,55 L79,90 L50,70 L21,90 L32,55 L5,35 L39,35 Z"/>
+    <!-- Inner shine -->
+    <path
+        android:fillColor="#FFF176"
+        android:pathData="M50,15 L57,32 L75,32 L62,45 L68,65 L50,52 L32,65 L38,45 L25,32 L43,32 Z"/>
+    <!-- Sparkles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,20 L52,28 L50,30 L48,28 Z"/>
+</vector>

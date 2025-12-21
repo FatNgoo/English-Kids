@@ -107,261 +107,61 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Welcome Section -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-black"
-            android:paddingHorizontal="20dp"
-            android:text="What do you want to learn?"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-        <!-- Subject Cards Grid -->
+        <!-- Lessons Category Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
             android:paddingHorizontal="16dp">
 
-            <!-- Row 1: Alphabet & Numbers -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Alphabet Card -->
-                <LinearLayout
-                    android:id="@+id/card_alphabet"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_alphabet"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Alphabet"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <!-- Numbers Card -->
-                <LinearLayout
-                    android:id="@+id/card_numbers"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_number"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Numbers"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Row 2: Games & Colors -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Games Card -->
-                <LinearLayout
-                    android:id="@+id/card_games"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_game"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Games"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <!-- Colors Card -->
-                <LinearLayout
-                    android:id="@+id/card_colors"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_color"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Colors"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Row 3: Shapes & Animals -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Shapes Card -->
-                <LinearLayout
-                    android:id="@+id/card_shapes"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_shape"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Shapes"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <!-- Animals Card -->
-                <LinearLayout
-                    android:id="@+id/card_animals"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_animal"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="90dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_text_label"
-                        android:fontFamily="sans-serif-black"
-                        android:text="Animals"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <!-- Daily Challenge Banner -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/bg_button_play"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_monster_wave" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Daily Challenge!"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.9"
-                    android:fontFamily="sans-serif"
-                    android:text="Complete today's fun quiz"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
+            <!-- Lessons Category Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_circle"
+                android:text="📚 Lessons"
+                android:textColor="@color/white"
+                android:textSize="26sp"
                 android:fontFamily="sans-serif-black"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:text="PLAY"
-                android:textColor="@color/text_dark"
-                android:textSize="14sp" />
+                android:layout_marginBottom="8dp"
+                android:paddingStart="4dp" />
+
+            <!-- Lessons RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lessons_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+        <!-- Games Category Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="80dp">
+
+            <!-- Games Category Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎮 Games"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="4dp" />
+
+            <!-- Games RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/games_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="950dp"
+                android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
 

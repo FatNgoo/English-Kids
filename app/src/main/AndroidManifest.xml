@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     
     <!-- AR feature - optional so app works on non-AR devices -->
+    <!-- AR feature - optional because we have 2D fallback -->
     <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
@@ -47,6 +48,15 @@
             android:exported="false">
         </activity>
         
+        <!-- Color Alchemy Lab Activity -->
+        <activity
+            android:name=".coloralchemy.ColorAlchemyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
         <!-- Animals AR Selection Activity -->
         <activity
             android:name=".AnimalArSelectActivity"
@@ -61,6 +71,35 @@
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="AR Viewer">
+        </activity>
+        
+        <!-- Shapes Learning Activity -->
+        <activity
+            android:name=".shapes.ShapesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Shapes">
+        </activity>
+        
+        <!-- Alphabet Adventure - Mascot Selection -->
+        <activity
+            android:name=".alphabet_adventure.screens.MascotSelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Alphabet Adventure - Game Screen -->
+        <activity
+            android:name=".alphabet_adventure.screens.AlphabetGameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Alphabet Pop Lab Activity -->
+        <activity
+            android:name=".alphabet_pop_lab.AlphabetPopLabActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

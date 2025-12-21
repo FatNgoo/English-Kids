@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">4Kids</string>
+    
+    <!-- Color Alchemy Lab -->
+    <string name="alchemy_title">Color Alchemy Lab</string>
+    <string name="alchemy_hint_drag">Drag a color tube to the beaker!</string>
+    <string name="alchemy_hint_add_more">Add another color to mix!</string>
+    <string name="alchemy_hint_shake">Shake me!</string>
+    <string name="alchemy_adjust_shade">Adjust Shade</string>
+    <string name="alchemy_new_mix">New Mix</string>
+    <string name="alchemy_collection">Color Collection</string>
+    <string name="alchemy_leave_title">Leave Alchemy Lab?</string>
+    <string name="alchemy_leave_message">Your current mix will be lost. Continue?</string>
+    <string name="alchemy_leave_yes">Leave</string>
+    <string name="alchemy_leave_no">Stay</string>
+    
+    <!-- Color Names -->
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_green">Green</string>
+    <string name="color_light_prefix">Light</string>
+    <string name="color_dark_prefix">Dark</string>
+    
+    <!-- Mix Sentences -->
+    <string name="mix_red_blue">Red and Blue make Purple!</string>
+    <string name="mix_red_yellow">Red and Yellow make Orange!</string>
+    <string name="mix_blue_yellow">Blue and Yellow make Green!</string>
 </resources>

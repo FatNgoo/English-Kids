@@ -1,0 +1,467 @@
+Khi click vào nút Colors trên màn hình chính thì sẽ vào game:
+
+COLOR ALCHEMY LAB
+(Ultra Smooth Animation – Physics Feeling – Duolingo / Lingokids Style)
+
+🎯 ROLE (BẮT BUỘC)
+Act as a Senior Android Engineer + 2D Game Developer + Motion Designer.
+You must build a COMPLETE, PLAYABLE ANDROID FEATURE using JAVA, not Kotlin, not Unity.
+Your output must be real Android code, runnable immediately after build.
+
+🎮 FEATURE OVERVIEW
+Feature name: Color Alchemy Lab
+Purpose:
+Teach kids secondary colors and color shades (light/dark)
+
+
+Through physical interaction, motion, and sound
+
+
+Target users:
+Kids 4–7 years old
+
+
+Visual quality:
+Premium
+
+
+Playful
+
+
+Educational
+
+
+Similar polish level to Duolingo / Lingokids
+
+
+
+📱 ORIENTATION & PLATFORM
+Android Native
+
+
+Language: Java
+
+
+Orientation: Portrait
+
+
+Must support:
+
+
+Touch gestures
+
+
+Accelerometer (shake & tilt)
+
+
+Smooth animation at ~60 FPS
+
+
+
+🧱 CORE TECHNOLOGY (STRICT – DO NOT IGNORE)
+You MUST use:
+🎬 Animation & Rendering
+SurfaceView + Canvas
+
+
+Custom Game Loop with deltaTime
+
+
+Manual animation interpolation (NO XML animation for gameplay)
+
+
+Easing functions:
+
+
+EaseInOut
+
+
+Overshoot / Bounce
+
+
+🎨 UI Layer
+Regular Android Views OR Compose (optional)
+
+
+Canvas-drawn game world
+
+
+UI overlays animated manually
+
+
+🎧 Audio
+SoundPool for SFX
+
+
+MediaPlayer for voice & music
+
+
+🚫 DO NOT use:
+Unity
+
+
+LibGDX
+
+
+MotionLayout
+
+
+XML Tween animation for game objects
+
+
+
+🧪 STAGE 1 – THE ALCHEMY (COLOR MIXING)
+🎨 UI SCENE
+A magic laboratory table
+
+
+Three glass test tubes:
+
+
+Red
+
+
+Blue
+
+
+Yellow
+
+
+One empty glass beaker at center
+
+
+Style:
+Soft pastel colors
+
+
+Rounded shapes
+
+
+Subtle shadows
+
+
+Clean white background panels
+
+
+Friendly cartoon look (Duolingo/Lingokids style)
+
+
+
+👉 INTERACTION – DRAG & POUR
+Kids can drag ANY TWO test tubes
+
+
+When a tube is dragged over the beaker:
+
+
+Tube tilts smoothly
+
+
+Liquid pours with animated flow
+
+
+Liquid level decreases inside tube
+
+
+Sound:
+
+
+Glass clink
+
+
+“Glug glug” liquid sound
+
+
+
+📳 INTERACTION – SHAKE TO MIX
+After pouring two colors:
+Beaker displays text:
+
+
+ “Shake me!”
+
+
+
+Use Accelerometer
+
+
+Detect gentle shake motion
+
+
+Liquid inside beaker:
+
+
+Sloshes left/right
+
+
+Always stays horizontal relative to gravity
+
+
+Animation:
+
+
+Physics-like liquid motion
+
+
+Smooth damping
+
+
+
+✨ RESULT – COLOR CREATION
+When shaking is successful:
+Bubble / sparkle explosion effect
+
+
+Liquid color morphs smoothly
+
+
+Example:
+
+
+Red + Blue → Purple
+
+
+Display:
+
+
+3D-style text: PURPLE
+
+
+Bounce-in animation
+
+
+Audio:
+
+
+Native pronunciation
+
+
+Sentence:
+
+
+ “Red and Blue make Purple!”
+
+
+
+
+🎚️ STAGE 2 – THE LIGHTNESS WAND (SHADES & TINTS)
+🎛️ MAGIC SLIDER
+Appears under the beaker:
+Left icon: ☀️ Sun (White)
+
+
+Right icon: 🌙 Moon (Black)
+
+
+Slider handle glows slightly
+
+
+
+👉 INTERACTION – SLIDE TO CHANGE SHADE
+Sliding toward ☀️:
+
+
+Color becomes lighter (add white)
+
+
+Voice:
+
+
+ “Light Purple”
+
+
+
+Sliding toward 🌙:
+
+
+Color becomes darker (add black)
+
+
+Voice:
+
+
+ “Dark Purple”
+
+
+
+Color change must be:
+
+
+Continuous
+
+
+Smooth
+
+
+Real-time
+
+
+
+🧠 LEARNING LOGIC
+Kids learn:
+Colors are not fixed
+
+
+Colors have light / dark variations
+
+
+New vocabulary:
+
+
+Light
+
+
+Dark
+
+
+
+🌊 PHYSICS & SENSOR EFFECTS (IMPORTANT)
+Liquid inside tubes & beaker:
+
+
+Always reacts to device tilt
+
+
+Uses accelerometer gravity vector
+
+
+Movement must feel:
+
+
+Soft
+
+
+Natural
+
+
+Never jerky
+
+
+
+🏆 COLLECTION SYSTEM
+Each new color or shade unlocked:
+
+
+Saved into Color Collection Board
+
+
+Board shows:
+
+
+Color swatches
+
+
+Names (Purple, Light Purple, Dark Purple)
+
+
+Progress persistence:
+
+
+SharedPreferences or local storage
+
+
+
+🎵 SOUND & ASMR DETAILS
+Glass tap sounds when dragging tubes
+
+
+Liquid pouring sounds
+
+
+Magical “Ting!” on success
+
+
+Calm, playful background ambience
+
+
+
+🎨 VISUAL STYLE (STRICT)
+Modern flat illustration
+
+
+Soft gradients
+
+
+Rounded shapes
+
+
+Clean white UI cards
+
+
+Friendly characters/icons
+
+
+Duolingo / Lingokids level polish
+
+
+
+🧱 CODE STRUCTURE (REQUIRED)
+Organize code into:
+GameLoop
+
+
+Renderer
+
+
+Beaker
+
+
+TestTube
+
+
+LiquidSimulation
+
+
+ColorMixer
+
+
+ShadeController
+
+
+SensorManagerHandler
+
+
+SoundManager
+
+
+CollectionManager
+
+
+Code must be:
+Clean
+
+
+Commented
+
+
+Extendable
+
+
+
+✅ FINAL OUTPUT REQUIREMENTS
+Your output MUST include:
+Full Java Android code
+
+
+SurfaceView with game loop
+
+
+Accelerometer handling
+
+
+Liquid animation logic
+
+
+Color mixing logic
+
+
+Smooth easing-based animation
+
+
+Runnable Activity
+
+
+🚫 NO pseudo code
+ 🚫 NO placeholders
+ 🚫 NO missing logic
+

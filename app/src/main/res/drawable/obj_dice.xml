@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Dice -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M20,20h60v60h-60z"/>
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M20,20h60l-10,10h-40l-10,-10z"/>
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M80,20v60l-10,-10v-40l10,-10z"/>
+    <!-- Dots -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M35,35 A5,5 0 1,1 35.01,35"/>
+    <path
+        android:fillColor="#424242"
+        android:pathData="M50,50 A5,5 0 1,1 50.01,50"/>
+    <path
+        android:fillColor="#424242"
+        android:pathData="M65,65 A5,5 0 1,1 65.01,65"/>
+</vector>

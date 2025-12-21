@@ -13,6 +13,7 @@ sceneform = "1.21.0"
 arcore = "1.44.0"
 recyclerview = "1.3.2"
 lifecycle = "2.8.7"
+gridlayout = "1.0.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -28,6 +29,7 @@ sceneform = { group = "com.gorisse.thomas.sceneform", name = "sceneform", versio
 arcore = { group = "com.google.ar", name = "core", version.ref = "arcore" }
 recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "lifecycle" }
+gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "gridlayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

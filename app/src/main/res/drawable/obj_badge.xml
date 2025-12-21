@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Badge background circle -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M50,10 A40,40 0 1,0 50.01,10"/>
+    <!-- Star badge shape -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,15 L58,38 L82,38 L63,52 L70,78 L50,62 L30,78 L37,52 L18,38 L42,38 Z"/>
+    <!-- Inner star -->
+    <path
+        android:fillColor="#FFF176"
+        android:pathData="M50,25 L55,40 L70,40 L58,50 L63,65 L50,55 L37,65 L42,50 L30,40 L45,40 Z"/>
+    <!-- Ribbon bottom left -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M25,75 L15,95 L30,85 L35,95 L40,80 Z"/>
+    <!-- Ribbon bottom right -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M75,75 L85,95 L70,85 L65,95 L60,80 Z"/>
+</vector>
