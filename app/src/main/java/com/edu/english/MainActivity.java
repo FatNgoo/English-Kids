@@ -26,6 +26,8 @@ import java.util.List;
 
 import com.edu.english.shapes.ShapesActivity;
 
+import com.edu.english.coloralchemy.ColorAlchemyActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -117,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Let's learn Numbers! 🎉", Toast.LENGTH_SHORT).show();
                 break;
             case "colors":
-                Toast.makeText(this, "Let's learn Colors! 🎉", Toast.LENGTH_SHORT).show();
+                Intent colorsIntent = new Intent(MainActivity.this, ColorAlchemyActivity.class);
+                startActivity(colorsIntent);
                 break;
             case "shapes":
                 Intent shapesIntent = new Intent(MainActivity.this, ShapesActivity.class);
