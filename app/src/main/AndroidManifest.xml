@@ -69,6 +69,8 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:label="Shapes">
+        </activity>
+        
         <!-- Alphabet Adventure - Mascot Selection -->
         <activity
             android:name=".alphabet_adventure.screens.MascotSelectActivity"
