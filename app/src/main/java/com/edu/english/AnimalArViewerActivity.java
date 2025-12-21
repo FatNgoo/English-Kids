@@ -1,11 +1,15 @@
 package com.edu.english;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -14,35 +18,45 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.edu.english.data.AnimalArRepository;
 import com.edu.english.model.AnimalArItem;
+import com.edu.english.util.ArCoreHelper;
+import com.google.ar.core.Anchor;
+import com.google.ar.core.HitResult;
+import com.google.ar.core.Plane;
+import com.google.ar.sceneform.AnchorNode;
+import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.ux.ArFragment;
+import com.google.ar.sceneform.ux.TransformableNode;
 
 import java.util.Locale;
 
 /**
- * Activity for viewing animals with sound and TTS pronunciation
+ * Activity for viewing animals in AR or 2D fallback mode
  * Features:
- * - Animal image display with name (EN + VI)
+ * - AR model placement on detected planes (when supported)
+ * - Camera view with 3D models
  * - Animal sound playback
  * - TTS pronunciation every 5 seconds
  * - Lifecycle-aware resource management
- * 
- * Note: AR mode is disabled in this version for stability.
- * This uses 2D display mode with full audio/TTS features.
+ * - Fallback to 2D mode for devices without AR
  */
 public class AnimalArViewerActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
 
     private static final String TAG = "AnimalArViewer";
+    private static final int CAMERA_PERMISSION_REQUEST = 100;
     private static final long TTS_INTERVAL_MS = 5000; // 5 seconds
 
     // Views
     private FrameLayout arContainer;
-    private FrameLayout arSceneViewContainer;
     private LinearLayout fallback2dContainer;
     private ImageView imgAnimal2d;
     private TextView txtAnimalName;
@@ -58,6 +72,9 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
 
     // Data
     private AnimalArItem currentAnimal;
+    private boolean isArMode = false;
+    private boolean isArInitialized = false;
+    private boolean modelPlaced = false;
 
     // Audio & TTS
     private MediaPlayer mediaPlayer;
@@ -67,6 +84,10 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
     private Handler ttsHandler;
     private Runnable ttsRunnable;
     private boolean isActivityResumed = false;
+
+    // AR components
+    private ArFragment arFragment;
+    private ModelRenderable animalRenderable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,8 +126,8 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
         // Initialize handler for TTS loop
         ttsHandler = new Handler(Looper.getMainLooper());
 
-        // Setup 2D display mode (AR disabled for stability)
-        setup2dMode();
+        // Check AR support and setup appropriate mode
+        setupMode();
 
         // Setup button listeners
         setupButtons();
@@ -117,7 +138,6 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
 
     private void initViews() {
         arContainer = findViewById(R.id.ar_container);
-        arSceneViewContainer = findViewById(R.id.ar_scene_view_container);
         fallback2dContainer = findViewById(R.id.fallback_2d_container);
         imgAnimal2d = findViewById(R.id.img_animal_2d);
         txtAnimalName = findViewById(R.id.txt_animal_name);
@@ -156,10 +176,122 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
         }
     }
 
-    private void setup2dMode() {
-        // Hide AR container, show 2D mode
-        if (arSceneViewContainer != null) {
-            arSceneViewContainer.setVisibility(View.GONE);
+    private void setupMode() {
+        // Check camera permission first
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) 
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, 
+                    new String[]{Manifest.permission.CAMERA}, 
+                    CAMERA_PERMISSION_REQUEST);
+            return;
+        }
+        
+        // Check AR support
+        try {
+            isArMode = ArCoreHelper.isArSupported(this) && ArCoreHelper.hasCameraFeature(this);
+        } catch (Exception e) {
+            Log.e(TAG, "Error checking AR support", e);
+            isArMode = false;
+        }
+
+        if (isArMode) {
+            setupArMode();
+        } else {
+            setup2dFallbackMode();
+        }
+    }
+
+    private void setupArMode() {
+        try {
+            // Show AR fragment, hide 2D fallback
+            findViewById(R.id.ar_fragment).setVisibility(View.VISIBLE);
+            fallback2dContainer.setVisibility(View.GONE);
+            txtArInstruction.setVisibility(View.VISIBLE);
+            txtArInstruction.setText("👆 Chạm vào mặt phẳng để đặt " + currentAnimal.getNameEn());
+
+            // Get ArFragment from layout
+            arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.ar_fragment);
+            
+            // Setup after fragment is ready
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                if (arFragment != null && arFragment.getArSceneView() != null) {
+                    setupArInteraction();
+                    loadAnimalModel();
+                }
+            }, 500);
+            
+            isArInitialized = true;
+            
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to setup AR, falling back to 2D", e);
+            isArMode = false;
+            isArInitialized = false;
+            setup2dFallbackMode();
+        }
+    }
+    
+    private void setupArInteraction() {
+        if (arFragment == null) return;
+        
+        arFragment.setOnTapArPlaneListener((HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
+            if (animalRenderable == null) {
+                Toast.makeText(this, "Model đang tải...", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            
+            // Create anchor
+            Anchor anchor = hitResult.createAnchor();
+            AnchorNode anchorNode = new AnchorNode(anchor);
+            anchorNode.setParent(arFragment.getArSceneView().getScene());
+            
+            // Create transformable node for the model
+            TransformableNode modelNode = new TransformableNode(arFragment.getTransformationSystem());
+            modelNode.setParent(anchorNode);
+            modelNode.setRenderable(animalRenderable);
+            modelNode.select();
+            
+            // Hide instruction and play sound
+            txtArInstruction.setVisibility(View.GONE);
+            modelPlaced = true;
+            playAnimalSound();
+            
+            String emoji = getAnimalEmoji(currentAnimal.getId());
+            Toast.makeText(this, emoji + " " + currentAnimal.getNameEn() + "!", Toast.LENGTH_SHORT).show();
+        });
+    }
+    
+    private void loadAnimalModel() {
+        // For now, we'll show a placeholder message
+        // Real 3D models (.glb files) should be placed in assets/models/
+        String modelPath = "models/" + currentAnimal.getId() + ".glb";
+        
+        try {
+            ModelRenderable.builder()
+                .setSource(this, Uri.parse(modelPath))
+                .setIsFilamentGltf(true)
+                .build()
+                .thenAccept(renderable -> {
+                    animalRenderable = renderable;
+                    Log.d(TAG, "Model loaded successfully: " + modelPath);
+                })
+                .exceptionally(throwable -> {
+                    Log.w(TAG, "Could not load model: " + modelPath + ". Using fallback.");
+                    // Model not found - show message but keep AR camera active
+                    runOnUiThread(() -> {
+                        txtArInstruction.setText("📷 Camera AR active\n(Model 3D: " + currentAnimal.getNameEn() + ")");
+                    });
+                    return null;
+                });
+        } catch (Exception e) {
+            Log.e(TAG, "Error loading model", e);
+        }
+    }
+
+    private void setup2dFallbackMode() {
+        // Show 2D fallback, hide AR fragment
+        View arFragmentView = findViewById(R.id.ar_fragment);
+        if (arFragmentView != null) {
+            arFragmentView.setVisibility(View.GONE);
         }
         fallback2dContainer.setVisibility(View.VISIBLE);
         txtArInstruction.setVisibility(View.GONE);
@@ -214,22 +346,6 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
                 .start();
     }
 
-    // ==================== AUDIO PLAYBACK ====================
-
-    private void playAnimalSound() {
-        // Release previous MediaPlayer if exists
-        releaseMediaPlayer();
-
-        // Always use TTS for pronunciation (sound files not included yet)
-        if (isTtsReady) {
-            textToSpeech.speak(currentAnimal.getNameEn(), TextToSpeech.QUEUE_FLUSH, null, "animal_sound");
-        }
-
-        // Show a toast with animal emoji
-        String emoji = getAnimalEmoji(currentAnimal.getId());
-        Toast.makeText(this, emoji + " " + currentAnimal.getNameEn() + "!", Toast.LENGTH_SHORT).show();
-    }
-
     private String getAnimalEmoji(String animalId) {
         switch (animalId) {
             case "cat": return "🐱";
@@ -240,6 +356,22 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
             case "bird": return "🐦";
             default: return "🐾";
         }
+    }
+
+    // ==================== AUDIO PLAYBACK ====================
+
+    private void playAnimalSound() {
+        // Release previous MediaPlayer if exists
+        releaseMediaPlayer();
+
+        // Use TTS for pronunciation
+        if (isTtsReady) {
+            textToSpeech.speak(currentAnimal.getNameEn(), TextToSpeech.QUEUE_FLUSH, null, "animal_sound");
+        }
+
+        // Show a toast with animal emoji
+        String emoji = getAnimalEmoji(currentAnimal.getId());
+        Toast.makeText(this, emoji + " " + currentAnimal.getNameEn() + "!", Toast.LENGTH_SHORT).show();
     }
 
     private void releaseMediaPlayer() {
@@ -320,6 +452,27 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
         } else {
             txtTtsIcon.setText("🔇");
             txtTtsLabel.setText("Bật phát âm");
+        }
+    }
+
+    // ==================== PERMISSIONS ====================
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, 
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == CAMERA_PERMISSION_REQUEST) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, check AR and setup mode
+                setupMode();
+            } else {
+                // Permission denied, fallback to 2D
+                Toast.makeText(this, "Cần quyền camera cho AR. Sử dụng chế độ 2D.", 
+                        Toast.LENGTH_LONG).show();
+                isArMode = false;
+                setup2dFallbackMode();
+            }
         }
     }
 

@@ -63,9 +63,10 @@
 
         </LinearLayout>
 
-        <!-- AR Scene View placeholder - will be added programmatically if AR is supported -->
-        <FrameLayout
-            android:id="@+id/ar_scene_view_container"
+        <!-- AR Fragment Container -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ar_fragment"
+            android:name="com.google.ar.sceneform.ux.ArFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone" />

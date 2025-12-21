@@ -41,6 +41,9 @@ dependencies {
     // RecyclerView for animal grid
     implementation(libs.recyclerview)
     
+    // AR/Sceneform for 3D models
+    implementation(libs.sceneform)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
