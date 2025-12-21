@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Dog image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Dog face -->
+    <path
+        android:fillColor="#D7CCC8"
+        android:pathData="M50,65m-28,0a28,22 0,1 1,56 0a28,22 0,1 1,-56 0"/>
+    
+    <!-- Left ear (floppy) -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M20,40 Q15,60 25,75 L35,50 Z"/>
+    
+    <!-- Right ear (floppy) -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M80,40 Q85,60 75,75 L65,50 Z"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M38,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M62,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M50,65m-6,0a6,5 0,1 1,12 0a6,5 0,1 1,-12 0"/>
+    
+    <!-- Tongue -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M50,72 Q45,80 50,85 Q55,80 50,72"/>
+</vector>

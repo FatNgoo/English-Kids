@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Monkey image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background circle (fur) -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Left ear outer -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M12,50m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0"/>
+    
+    <!-- Left ear inner -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M12,50m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    
+    <!-- Right ear outer -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M88,50m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0"/>
+    
+    <!-- Right ear inner -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M88,50m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M50,60m-28,0a28,25 0,1 1,56 0a28,25 0,1 1,-56 0"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M38,52m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M62,52m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M50,65m-4,0a4,3 0,1 1,8 0a4,3 0,1 1,-8 0"/>
+    
+    <!-- Smile -->
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:pathData="M40,75 Q50,82 60,75"/>
+</vector>

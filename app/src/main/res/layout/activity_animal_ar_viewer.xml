@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AnimalArViewerActivity">
+
+    <!-- AR Scene View Container -->
+    <FrameLayout
+        android:id="@+id/ar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Fallback 2D View (shown when AR not supported) -->
+        <LinearLayout
+            android:id="@+id/fallback_2d_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_home"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_animal_2d"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Animal image" />
+
+            <TextView
+                android:id="@+id/txt_animal_name_2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:text="Cat" />
+
+            <TextView
+                android:id="@+id/txt_animal_name_vi_2d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:alpha="0.8"
+                android:textSize="24sp"
+                android:text="Mèo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="📱 AR not available on this device"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha="0.6" />
+
+        </LinearLayout>
+
+        <!-- AR Fragment Container -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ar_fragment"
+            android:name="com.google.ar.sceneform.ux.ArFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- Top Overlay - Animal Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/txt_animal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text_label"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:text="Cat"
+            android:elevation="8dp" />
+
+        <TextView
+            android:id="@+id/txt_animal_name_vi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_text_label"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Mèo"
+            android:elevation="8dp" />
+
+    </LinearLayout>
+
+    <!-- Instruction overlay (for AR mode) -->
+    <TextView
+        android:id="@+id/txt_ar_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_text_label"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:text="👆 Chạm vào mặt phẳng để đặt con vật"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="8dp"
+        android:visibility="gone" />
+
+    <!-- Bottom Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center">
+
+        <!-- Control Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Replay Sound Button -->
+            <LinearLayout
+                android:id="@+id/btn_replay_sound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_ar_button"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔊"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nghe lại tiếng"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Toggle TTS Button -->
+            <LinearLayout
+                android:id="@+id/btn_toggle_tts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_ar_button"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/txt_tts_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🗣️"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/txt_tts_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bật phát âm"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Exit Button - Large and easy to tap for kids -->
+        <LinearLayout
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_play"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← "
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thoát"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

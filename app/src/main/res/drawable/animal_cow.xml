@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Cow image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FAFAFA"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Cow spots -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M30,35m-10,0a10,8 0,1 1,20 0a10,8 0,1 1,-20 0"/>
+    <path
+        android:fillColor="#424242"
+        android:pathData="M70,40m-8,0a8,10 0,1 1,16 0a8,10 0,1 1,-16 0"/>
+    
+    <!-- Left ear -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M15,45 L25,35 L30,50 Z"/>
+    
+    <!-- Right ear -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M85,45 L75,35 L70,50 Z"/>
+    
+    <!-- Left horn -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,25 Q25,15 35,20 L35,30 Z"/>
+    
+    <!-- Right horn -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M70,25 Q75,15 65,20 L65,30 Z"/>
+    
+    <!-- Snout -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M50,75m-18,0a18,12 0,1 1,36 0a18,12 0,1 1,-36 0"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M38,50m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M62,50m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    
+    <!-- Nostrils -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M43,75m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M57,75m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+</vector>

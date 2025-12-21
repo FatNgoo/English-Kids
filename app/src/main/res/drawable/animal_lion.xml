@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Lion image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Mane -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M50,55m-30,0a30,28 0,1 1,60 0a30,28 0,1 1,-60 0"/>
+    
+    <!-- Left ear -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M25,30m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    
+    <!-- Right ear -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M75,30m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M38,50m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M62,50m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M50,60 L45,68 L55,68 Z"/>
+    
+    <!-- Mouth -->
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:pathData="M50,68 L50,75"/>
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:pathData="M40,78 Q50,85 60,78"/>
+</vector>
