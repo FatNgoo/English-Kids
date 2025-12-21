@@ -19,12 +19,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.edu.english.adapter.AnimalArAdapter;
 import com.edu.english.data.AnimalArRepository;
 import com.edu.english.model.AnimalArItem;
-import com.edu.english.util.ArCoreHelper;
 
 import java.util.List;
 
 /**
- * Activity for selecting an animal to view in AR
+ * Activity for selecting an animal to view
  * Displays a 2-column grid of 6 animals
  */
 public class AnimalArSelectActivity extends AppCompatActivity implements AnimalArAdapter.OnAnimalClickListener {
@@ -33,7 +32,6 @@ public class AnimalArSelectActivity extends AppCompatActivity implements AnimalA
     
     private RecyclerView recyclerAnimals;
     private TextView txtArStatus;
-    private boolean isArSupported = false;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +48,6 @@ public class AnimalArSelectActivity extends AppCompatActivity implements AnimalA
         // Initialize views
         initViews();
         
-        // Check AR support
-        checkArSupport();
-        
         // Setup RecyclerView
         setupRecyclerView();
         
@@ -64,22 +59,12 @@ public class AnimalArSelectActivity extends AppCompatActivity implements AnimalA
         recyclerAnimals = findViewById(R.id.recycler_animals);
         txtArStatus = findViewById(R.id.txt_ar_status);
         
+        // Show 2D mode status
+        txtArStatus.setText("🎨 Interactive Mode");
+        
         // Back button
         ImageButton backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> finish());
-    }
-    
-    private void checkArSupport() {
-        // Check if AR is supported on this device
-        isArSupported = ArCoreHelper.isArSupported(this);
-        
-        if (isArSupported) {
-            txtArStatus.setText("AR Ready ✓");
-            txtArStatus.setBackgroundResource(R.drawable.bg_card_green);
-        } else {
-            txtArStatus.setText("2D Mode");
-            txtArStatus.setBackgroundResource(R.drawable.bg_card_orange);
-        }
     }
     
     private void setupRecyclerView() {
