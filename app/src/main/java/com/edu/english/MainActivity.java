@@ -24,6 +24,8 @@ import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.edu.english.shapes.ShapesActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -118,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Let's learn Colors! 🎉", Toast.LENGTH_SHORT).show();
                 break;
             case "shapes":
-                Toast.makeText(this, "Let's learn Shapes! 🎉", Toast.LENGTH_SHORT).show();
+                Intent shapesIntent = new Intent(MainActivity.this, ShapesActivity.class);
+                startActivity(shapesIntent);
                 break;
             case "animals":
                 Toast.makeText(this, "Let's learn Animals! 🎉", Toast.LENGTH_SHORT).show();

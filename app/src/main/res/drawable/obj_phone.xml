@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Phone -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M25,8 Q25,5 30,5 L70,5 Q75,5 75,8 L75,92 Q75,95 70,95 L30,95 Q25,95 25,92 Z"/>
+    <path
+        android:fillColor="#263238"
+        android:pathData="M28,15h44v70h-44z"/>
+    <!-- Screen -->
+    <path
+        android:fillColor="#4FC3F7"
+        android:pathData="M30,17h40v66h-40z"/>
+    <!-- Camera notch -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M45,8h10v4h-10z"/>
+    <!-- Home button -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M50,89 A4,4 0 1,1 50.01,89"/>
+</vector>

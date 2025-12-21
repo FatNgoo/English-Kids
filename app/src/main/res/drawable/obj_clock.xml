@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Clock -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M50,50m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+    <path
+        android:fillColor="#607D8B"
+        android:pathData="M50,50m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,50m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"/>
+    <!-- Hour marks -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M48,22h4v8h-4z"/>
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M48,70h4v8h-4z"/>
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M70,48h8v4h-8z"/>
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M22,48h8v4h-8z"/>
+    <!-- Hands -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M49,50h2v-25h-2z"/>
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M49,50h2v-18h-2z"
+        android:rotation="90"
+        android:pivotX="50"
+        android:pivotY="50"/>
+    <!-- Center -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M50,50m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+</vector>

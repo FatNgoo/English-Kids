@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Door -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M20,10h60v85h-60z"/>
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M25,15h50v75h-50z"/>
+    <!-- Panels -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M30,20h16v25h-16z"/>
+    <path
+        android:fillColor="#795548"
+        android:pathData="M54,20h16v25h-16z"/>
+    <path
+        android:fillColor="#795548"
+        android:pathData="M30,52h16v30h-16z"/>
+    <path
+        android:fillColor="#795548"
+        android:pathData="M54,52h16v30h-16z"/>
+    <!-- Door knob -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M68,55 A5,5 0 1,1 68.01,55"/>
+</vector>
