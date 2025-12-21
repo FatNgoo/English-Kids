@@ -1,0 +1,302 @@
+Tạo thêm một item alphabet trong danh mục lesson:
+
+ALPHABET POP LAB
+
+(Ultra Smooth Animation – Physics Feedback – Duolingo / Lingokids Style)
+
+🎯 ROLE (BẮT BUỘC)
+
+Act as a Senior Android Game Engineer + Motion Designer + UX Designer for Kids Apps.
+
+You must implement a COMPLETE, PLAYABLE ANDROID FEATURE using JAVA.
+
+Your output must be real Android code, runnable immediately after build.
+
+🎮 FEATURE OVERVIEW
+
+Feature name: Alphabet Pop Lab
+
+Learning goals:
+
+Learn alphabet letters (A–Z)
+
+Connect Letter → Sound → Image
+
+Encourage exploration through physical feedback (Pop!)
+
+Target users:
+
+Kids 3–6 years old
+
+Visual quality:
+
+Premium
+
+Playful
+
+Smooth
+
+Comparable to Duolingo / Lingokids
+
+📱 PLATFORM & ORIENTATION
+
+Android Native
+
+Language: Java
+
+Orientation: Portrait
+
+Must support:
+
+Touch input
+
+Smooth real-time animation (60 FPS)
+
+Sound effects + voice
+
+🧱 CORE TECHNOLOGY (STRICT – DO NOT IGNORE)
+
+You MUST use:
+
+🎬 Rendering & Animation
+
+SurfaceView + Canvas
+
+Custom Game Loop with deltaTime
+
+Manual animation interpolation
+
+Easing functions:
+
+EaseInOut
+
+Overshoot / Bounce
+
+Particle system for pop effect
+
+🚫 DO NOT use:
+
+Unity
+
+LibGDX
+
+XML Tween Animation for gameplay
+
+MotionLayout for core animation
+
+🧠 INTERACTION FLOW (4-STEP – MUST FOLLOW EXACTLY)
+🟢 STEP 1 – FLOATING BUBBLES (IDLE STATE)
+🎈 SCENE DESCRIPTION
+
+Screen filled with floating round bubbles
+
+Each bubble contains:
+
+A single alphabet letter (A, B, C…)
+
+Bubbles:
+
+Drift slowly
+
+Bounce softly when touching each other
+
+Never overlap harshly
+
+Motion must feel:
+
+Light
+
+Soft
+
+Calm
+
+🎨 VISUAL STYLE
+
+Transparent bubbles
+
+Soft gradient highlights
+
+Rounded, friendly typography
+
+🔴 STEP 2 – POP EFFECT (ON TAP)
+👉 USER ACTION
+
+Kid taps a bubble
+
+💥 RESPONSE (IMMEDIATE)
+
+Bubble pops:
+
+Circular particle burst
+
+Soft “Pop!” sound
+
+Letter:
+
+Zooms to center of screen
+
+Slight bounce (overshoot)
+
+Voice:
+
+Loud, clear pronunciation:
+
+“A!”
+
+🔵 STEP 3 – TRANSITION (FOCUS SHIFT)
+🎬 TRANSITION LOGIC
+
+The large letter:
+
+Slowly shrinks
+
+Moves smoothly to top-center OR corner
+
+Background dims slightly
+
+Motion must use:
+
+Smooth easing
+
+No snapping
+
+This transition prepares space for learning content
+
+🟣 STEP 4 – FLASHCARD CAROUSEL
+🃏 FLASHCARDS UI
+
+6 cards appear from bottom
+
+Horizontal swipe (carousel)
+
+Each card contains:
+
+Big colorful image (e.g. Apple, Ant, Alligator)
+
+Clean white rounded card
+
+Cards:
+
+Snap to center
+
+Scale slightly when focused
+
+👉 INTERACTION
+
+Tap card:
+
+Card lifts slightly
+
+App pronounces:
+
+“Apple”
+“Ant”
+“Alligator”
+
+🎨 VISUAL & MOTION STYLE (STRICT)
+
+Modern flat illustration
+
+Soft pastel palette
+
+Rounded shapes everywhere
+
+Subtle shadows
+
+No sharp edges
+
+Animation must feel:
+
+Calm
+
+Friendly
+
+Polished
+
+Inspired by:
+
+Duolingo Kids
+
+Lingokids
+
+🔊 AUDIO DESIGN
+
+Bubble pop sound
+
+Letter pronunciation (native voice)
+
+Word pronunciation for flashcards
+
+Soft background ambience
+
+Use:
+
+SoundPool for SFX
+
+MediaPlayer for voice
+
+🧱 PHYSICS & MOTION DETAILS
+
+Bubbles move using:
+
+Velocity vectors
+
+Soft collision resolution
+
+No real physics engine required
+
+All motion updated using deltaTime
+
+🧩 CODE STRUCTURE (REQUIRED)
+
+Organize code into:
+
+GameLoop
+
+Bubble
+
+BubbleManager
+
+ParticleSystem
+
+LetterAnimator
+
+FlashcardCarousel
+
+AudioManager
+
+Renderer
+
+Code must be:
+
+Clean
+
+Commented
+
+Modular
+
+Easy to extend (A–Z)
+
+✅ FINAL OUTPUT REQUIREMENTS
+
+The output MUST include:
+
+Full Java Android code
+
+SurfaceView with game loop
+
+Bubble floating logic
+
+Pop particle animation
+
+Smooth letter transition
+
+Flashcard carousel logic
+
+Audio pronunciation logic
+
+Runnable Activity
+
+🚫 NO pseudo-code
+🚫 NO placeholders
+🚫 NO missing logic
