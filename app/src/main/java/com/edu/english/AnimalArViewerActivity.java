@@ -247,6 +247,14 @@ public class AnimalArViewerActivity extends AppCompatActivity implements TextToS
             // Create transformable node for the model
             TransformableNode modelNode = new TransformableNode(arFragment.getTransformationSystem());
             modelNode.setParent(anchorNode);
+            
+            // Disable automatic scaling to maintain our custom scale
+            modelNode.getScaleController().setEnabled(false);
+            
+            // Set very small scale (0.14 = roughly 1/7 of original)
+            float scale = 0.14f;
+            modelNode.setLocalScale(new com.google.ar.sceneform.math.Vector3(scale, scale, scale));
+            
             modelNode.setRenderable(animalRenderable);
             modelNode.select();
             
