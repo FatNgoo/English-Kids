@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Christmas tree star decoration -->
+    <!-- Star main body -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M50,5 L58,30 L85,30 L64,48 L72,75 L50,58 L28,75 L36,48 L15,30 L42,30 Z"/>
+    <!-- Glitter effect -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,12 L55,28 L72,28 L60,42 L66,62 L50,50 L34,62 L40,42 L28,28 L45,28 Z"/>
+    <!-- Sparkle highlights -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,18 L52,25 L50,27 L48,25 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,35 A2,2 0 1,1 38.01,35"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,35 A2,2 0 1,1 62.01,35"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,55 A2,2 0 1,1 50.01,55"/>
+    <!-- Hanging loop -->
+    <path
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="2"
+        android:pathData="M50,5 Q55,0 50,-3 Q45,0 50,5"
+        android:fillColor="#00000000"/>
+</vector>

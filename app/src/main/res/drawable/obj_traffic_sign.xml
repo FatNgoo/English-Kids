@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Traffic Sign -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M50,10 L90,75 L10,75 Z"/>
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,18 L82,70 L18,70 Z"/>
+    <path
+        android:fillColor="#212121"
+        android:pathData="M50,28 L72,62 L28,62 Z"/>
+    <!-- Exclamation mark -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M48,35h4v15h-4z"/>
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,55 A3,3 0 1,1 50.01,55"/>
+    <!-- Post -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M47,75h6v20h-6z"/>
+</vector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Soap bar -->
+    <path
+        android:fillColor="#81D4FA"
+        android:pathData="M50,15 C20,15 8,30 8,50 C8,70 20,85 50,85 C80,85 92,70 92,50 C92,30 80,15 50,15 Z"/>
+    <!-- Soap highlight -->
+    <path
+        android:fillColor="#B3E5FC"
+        android:pathData="M50,20 C30,20 18,32 18,48 Q35,40 55,45 Q70,35 50,20 Z"/>
+    <!-- Bubbles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M25,30 A5,5 0 1,1 25.01,30"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M75,35 A4,4 0 1,1 75.01,35"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M65,65 A6,6 0 1,1 65.01,65"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M30,70 A4,4 0 1,1 30.01,70"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.6"
+        android:pathData="M80,55 A3,3 0 1,1 80.01,55"/>
+</vector>

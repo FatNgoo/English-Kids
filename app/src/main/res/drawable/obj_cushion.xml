@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Cushion -->
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M15,25 Q10,25 10,30 L10,70 Q10,80 20,80 L80,80 Q90,80 90,70 L90,30 Q90,20 80,20 L20,20 Q15,20 15,25"/>
+    <path
+        android:fillColor="#AB47BC"
+        android:pathData="M20,28 Q18,28 18,32 L18,65 Q18,72 25,72 L75,72 Q82,72 82,65 L82,32 Q82,25 75,25 L25,25 Q20,25 20,28"/>
+    <!-- Tufts -->
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M30,35 A3,3 0 1,1 30.01,35"/>
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M50,35 A3,3 0 1,1 50.01,35"/>
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M70,35 A3,3 0 1,1 70.01,35"/>
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M30,55 A3,3 0 1,1 30.01,55"/>
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M50,55 A3,3 0 1,1 50.01,55"/>
+    <path
+        android:fillColor="#7B1FA2"
+        android:pathData="M70,55 A3,3 0 1,1 70.01,55"/>
+</vector>

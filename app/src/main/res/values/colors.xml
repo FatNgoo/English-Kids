@@ -47,4 +47,14 @@
     <color name="alchemy_table">#D7CCC8</color>
     <color name="alchemy_table_dark">#8D6E63</color>
     <color name="alchemy_text">#2C3E50</color>
+    <!-- Alphabet Adventure Colors -->
+    <color name="game_bg_start">#667eea</color>
+    <color name="game_bg_end">#764ba2</color>
+    <color name="lane_highlight">#40FFEB3B</color>
+    <color name="token_correct">#4CAF50</color>
+    <color name="token_wrong">#F44336</color>
+    <color name="token_default">#FF9800</color>
+    <color name="overlay_dark">#CC000000</color>
+    <color name="success_green">#00E676</color>
+    <color name="error_red">#FF5252</color>
 </resources>

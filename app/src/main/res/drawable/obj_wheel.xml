@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Wheel -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M50,50m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0"/>
+    <path
+        android:fillColor="#616161"
+        android:pathData="M50,50m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0"/>
+    <!-- Spokes -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M48,15h4v70h-4z"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M15,48h70v4h-70z"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M25,25 L75,75"
+        android:strokeWidth="4"
+        android:strokeColor="#9E9E9E"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M75,25 L25,75"
+        android:strokeWidth="4"
+        android:strokeColor="#9E9E9E"/>
+    <!-- Hub -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M50,50m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+    <path
+        android:fillColor="#757575"
+        android:pathData="M50,50m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+</vector>
