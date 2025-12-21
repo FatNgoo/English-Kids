@@ -37,6 +37,12 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.drawerlayout)
+    
+    // RecyclerView for animal grid
+    implementation(libs.recyclerview)
+    
+    // AR/Sceneform for 3D models
+    implementation(libs.sceneform)
     implementation(libs.gridlayout)
     
     // Lottie for beautiful animations

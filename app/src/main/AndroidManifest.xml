@@ -5,6 +5,7 @@
     <!-- Camera permission for AR -->
     <uses-permission android:name="android.permission.CAMERA" />
     
+    <!-- AR feature - optional so app works on non-AR devices -->
     <!-- AR feature - optional because we have 2D fallback -->
     <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />

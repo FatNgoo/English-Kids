@@ -127,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(shapesIntent);
                 break;
             case "animals":
-                Toast.makeText(this, "Let's learn Animals! 🎉", Toast.LENGTH_SHORT).show();
+                Intent animalsIntent = new Intent(MainActivity.this, AnimalArSelectActivity.class);
+                startActivity(animalsIntent);
                 break;
         }
     }
