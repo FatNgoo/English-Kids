@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
+import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         
         // Create lessons data with colors
         List<LessonItem> lessons = new ArrayList<>();
+        lessons.add(new LessonItem("Alphabet", 0xFF6C63FF, "alphabet"));
         lessons.add(new LessonItem("Numbers", 0xFFFF6584, "numbers"));
         lessons.add(new LessonItem("Colors", 0xFF4CAF50, "colors"));
         lessons.add(new LessonItem("Shapes", 0xFFFF9800, "shapes"));
@@ -105,6 +107,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void handleLessonClick(LessonItem lesson) {
         switch (lesson.getLessonType()) {
+            case "alphabet":
+                Intent alphabetIntent = new Intent(MainActivity.this, AlphabetPopLabActivity.class);
+                startActivity(alphabetIntent);
+                break;
             case "numbers":
                 Toast.makeText(this, "Let's learn Numbers! 🎉", Toast.LENGTH_SHORT).show();
                 break;
