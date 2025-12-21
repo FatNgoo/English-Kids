@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
 import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
+import com.edu.english.numbers.NumbersLessonActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,7 +117,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(alphabetIntent);
                 break;
             case "numbers":
-                Toast.makeText(this, "Let's learn Numbers! 🎉", Toast.LENGTH_SHORT).show();
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersLessonActivity.class);
+                startActivity(numbersIntent);
                 break;
             case "colors":
                 Intent colorsIntent = new Intent(MainActivity.this, ColorAlchemyActivity.class);

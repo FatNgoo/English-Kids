@@ -5,10 +5,14 @@
     <!-- Camera permission for AR -->
     <uses-permission android:name="android.permission.CAMERA" />
     
+    <!-- Microphone permission for Speech Recognition -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
     <!-- AR feature - optional so app works on non-AR devices -->
     <!-- AR feature - optional because we have 2D fallback -->
     <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -100,6 +104,14 @@
             android:name=".alphabet_pop_lab.AlphabetPopLabActivity"
             android:exported="false"
             android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Numbers Lesson Activity -->
+        <activity
+            android:name=".numbers.NumbersLessonActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
         </activity>
     </application>
 
