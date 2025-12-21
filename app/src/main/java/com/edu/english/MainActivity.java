@@ -15,6 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.edu.english.coloralchemy.ColorAlchemyActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -73,7 +75,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return;
             } else if (id == R.id.card_colors) {
-                cardName = "Colors";
+                // Navigate to Color Alchemy Lab
+                Intent intent = new Intent(MainActivity.this, ColorAlchemyActivity.class);
+                startActivity(intent);
+                return;
             } else if (id == R.id.card_shapes) {
                 cardName = "Shapes";
             } else if (id == R.id.card_animals) {
