@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Egg -->
+    <path
+        android:fillColor="#FFF8E1"
+        android:pathData="M50,10 C25,10 15,35 15,55 C15,80 30,95 50,95 C70,95 85,80 85,55 C85,35 75,10 50,10 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,20 C35,20 28,35 28,50 C28,55 30,60 35,60 C45,60 55,45 50,25 C48,22 47,20 45,20 Z"
+        android:fillAlpha="0.5"/>
+    <!-- Shadow on egg -->
+    <path
+        android:fillColor="#FFE0B2"
+        android:pathData="M50,85 C65,85 75,75 75,60 C75,55 74,50 72,46 C70,55 62,65 50,70 C38,75 30,72 28,65 C30,78 38,85 50,85 Z"/>
+</vector>

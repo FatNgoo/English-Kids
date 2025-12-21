@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Table top -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M5,35h90v8h-90z"/>
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M8,38h84v3h-84z"/>
+    <!-- Table legs -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M12,43h8v45h-8z"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M80,43h8v45h-8z"/>
+    <!-- Items on table -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M40,20h20v15h-20z"/>
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M45,10h10v10h-10z"/>
+</vector>

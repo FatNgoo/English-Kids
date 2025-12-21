@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Cheese wedge -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M15,80 L50,15 L85,80 Z"/>
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M20,75 L50,22 L80,75 Z"/>
+    <!-- Holes -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M40,55 A6,6 0 1,1 40.01,55"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M60,60 A5,5 0 1,1 60.01,60"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M50,45 A4,4 0 1,1 50.01,45"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M35,68 A4,4 0 1,1 35.01,68"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M65,70 A3,3 0 1,1 65.01,70"/>
+</vector>

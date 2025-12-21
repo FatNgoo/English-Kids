@@ -15,6 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.edu.english.shapes.ShapesActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -75,7 +77,10 @@ public class MainActivity extends AppCompatActivity {
             } else if (id == R.id.card_colors) {
                 cardName = "Colors";
             } else if (id == R.id.card_shapes) {
-                cardName = "Shapes";
+                // Navigate to ShapesActivity
+                Intent intent = new Intent(MainActivity.this, ShapesActivity.class);
+                startActivity(intent);
+                return;
             } else if (id == R.id.card_animals) {
                 cardName = "Animals";
             }
