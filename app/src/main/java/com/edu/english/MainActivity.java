@@ -64,49 +64,6 @@ public class MainActivity extends AppCompatActivity {
         setupGamesRecyclerView();
     }
 
-    private void setupCardClickListeners() {
-        LinearLayout cardAlphabet = findViewById(R.id.card_alphabet);
-        LinearLayout cardNumbers = findViewById(R.id.card_numbers);
-        LinearLayout cardGames = findViewById(R.id.card_games);
-        LinearLayout cardColors = findViewById(R.id.card_colors);
-        LinearLayout cardShapes = findViewById(R.id.card_shapes);
-        LinearLayout cardAnimals = findViewById(R.id.card_animals);
-
-        View.OnClickListener cardClickListener = v -> {
-            // Scale animation on click
-            animateCardPress(v);
-            
-            String cardName = "";
-            int id = v.getId();
-            if (id == R.id.card_alphabet) {
-                cardName = "Alphabet";
-            } else if (id == R.id.card_numbers) {
-                cardName = "Numbers";
-            } else if (id == R.id.card_games) {
-                // Navigate to GamesActivity
-                Intent intent = new Intent(MainActivity.this, GamesActivity.class);
-                startActivity(intent);
-                return;
-            } else if (id == R.id.card_colors) {
-                cardName = "Colors";
-            } else if (id == R.id.card_shapes) {
-                cardName = "Shapes";
-            } else if (id == R.id.card_animals) {
-                // Navigate to Animals AR Selection Activity
-                Intent intent = new Intent(MainActivity.this, AnimalArSelectActivity.class);
-                startActivity(intent);
-                return;
-            }
-            
-            Toast.makeText(this, "Let's learn " + cardName + "! 🎉", Toast.LENGTH_SHORT).show();
-        };
-
-        cardAlphabet.setOnClickListener(cardClickListener);
-        cardNumbers.setOnClickListener(cardClickListener);
-        cardGames.setOnClickListener(cardClickListener);
-        cardColors.setOnClickListener(cardClickListener);
-        cardShapes.setOnClickListener(cardClickListener);
-        cardAnimals.setOnClickListener(cardClickListener);
     private void setupLessonsRecyclerView() {
         lessonsRecycler = findViewById(R.id.lessons_recycler);
         
@@ -170,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(shapesIntent);
                 break;
             case "animals":
-                Toast.makeText(this, "Let's learn Animals! 🎉", Toast.LENGTH_SHORT).show();
+                Intent animalsIntent = new Intent(MainActivity.this, AnimalArSelectActivity.class);
+                startActivity(animalsIntent);
                 break;
         }
     }
