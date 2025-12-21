@@ -8,6 +8,9 @@
     <!-- Microphone permission for Speech Recognition -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     
+    <!-- Internet permission for Google Speech Recognition -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <!-- AR feature - optional so app works on non-AR devices -->
     <!-- AR feature - optional because we have 2D fallback -->
     <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
