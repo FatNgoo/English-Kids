@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.drawerlayout)
+    implementation(libs.gridlayout)
     
     // Lottie for beautiful animations
     implementation("com.airbnb.android:lottie:6.3.0")

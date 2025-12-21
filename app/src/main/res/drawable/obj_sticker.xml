@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Sticker background -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M50,5 L61,35 L95,35 L68,55 L79,90 L50,70 L21,90 L32,55 L5,35 L39,35 Z"/>
+    <!-- White border -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,12 L58,35 L85,35 L65,52 L73,80 L50,65 L27,80 L35,52 L15,35 L42,35 Z"/>
+    <!-- Inner pink -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M50,18 L56,35 L78,35 L62,50 L68,72 L50,60 L32,72 L38,50 L22,35 L44,35 Z"/>
+    <!-- Cute face -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M40,42 A3,3 0 1,1 40.01,42"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M60,42 A3,3 0 1,1 60.01,42"/>
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M50,52 Q55,57 50,55 Q45,57 50,52"/>
+</vector>

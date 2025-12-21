@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- House Roof -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M50,10 L95,55 L5,55 Z"/>
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M50,15 L88,52 L12,52 Z"/>
+    <!-- Roof lines -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M50,15 L50,52"
+        android:strokeWidth="3"
+        android:strokeColor="#B71C1C"/>
+    <!-- House base hint -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M15,55h70v35h-70z"/>
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M40,65h20v25h-20z"/>
+</vector>

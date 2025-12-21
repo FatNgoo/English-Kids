@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Rugby Ball -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M50,10 C15,20 5,45 5,50 C5,55 15,80 50,90 C85,80 95,55 95,50 C95,45 85,20 50,10 Z"/>
+    <!-- Lighter brown -->
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M50,15 C25,23 15,42 15,50 C15,58 25,77 50,85 Q45,50 50,15 Z"/>
+    <!-- White stripes -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M30,25 L30,75"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M70,25 L70,75"
+        android:fillColor="#00000000"/>
+    <!-- Laces -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M40,50 L60,50"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M45,45 L45,55"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M50,43 L50,57"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M55,45 L55,55"
+        android:fillColor="#00000000"/>
+</vector>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_pink">
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Title with progress -->
+        <TextView
+            android:id="@+id/shape_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQUARE (1/6)"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#66000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Flashcard Container - centered -->
+        <FrameLayout
+            android:id="@+id/flashcardContainer"
+            android:layout_width="280dp"
+            android:layout_height="380dp"
+            android:layout_gravity="center">
+
+            <!-- Glow effect behind card -->
+            <View
+                android:id="@+id/glowView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card_glow_red"
+                android:visibility="invisible"/>
+
+            <!-- Main Flashcard -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- Object Image -->
+                    <ImageView
+                        android:id="@+id/objectImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="fitCenter"
+                        android:padding="24dp"/>
+
+                    <!-- Object Name -->
+                    <TextView
+                        android:id="@+id/objectName"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:background="#F5F5F5"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <!-- Progress dots -->
+        <LinearLayout
+            android:id="@+id/progressDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Instruction text -->
+        <TextView
+            android:id="@+id/instructionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen and learn!"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:alpha="0.8"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

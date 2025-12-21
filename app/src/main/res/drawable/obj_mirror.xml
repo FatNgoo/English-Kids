@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Mirror frame -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M50,5 C20,5 5,25 5,50 C5,75 20,95 50,95 C80,95 95,75 95,50 C95,25 80,5 50,5 Z"/>
+    <!-- Mirror inner frame -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M50,10 C25,10 12,27 12,50 C12,73 25,90 50,90 C75,90 88,73 88,50 C88,27 75,10 50,10 Z"/>
+    <!-- Mirror surface -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M50,15 C28,15 17,30 17,50 C17,70 28,85 50,85 C72,85 83,70 83,50 C83,30 72,15 50,15 Z"/>
+    <!-- Reflection -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.6"
+        android:pathData="M35,25 Q25,35 30,50 Q35,40 45,30 Z"/>
+</vector>
