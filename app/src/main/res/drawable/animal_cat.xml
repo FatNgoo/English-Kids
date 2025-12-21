@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Cat image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Cat face -->
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M50,65m-25,0a25,20 0,1 1,50 0a25,20 0,1 1,-50 0"/>
+    
+    <!-- Left ear -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M25,35 L35,55 L15,50 Z"/>
+    
+    <!-- Right ear -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M75,35 L65,55 L85,50 Z"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M40,55m-4,0a4,5 0,1 1,8 0a4,5 0,1 1,-8 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M60,55m-4,0a4,5 0,1 1,8 0a4,5 0,1 1,-8 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M50,62 L47,67 L53,67 Z"/>
+    
+    <!-- Whiskers (simplified) -->
+    <path
+        android:strokeColor="#795548"
+        android:strokeWidth="1"
+        android:pathData="M35,65 L20,62 M35,68 L20,70"/>
+    
+    <path
+        android:strokeColor="#795548"
+        android:strokeWidth="1"
+        android:pathData="M65,65 L80,62 M65,68 L80,70"/>
+</vector>

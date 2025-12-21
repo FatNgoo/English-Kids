@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Elephant image - Replace with actual PNG -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    
+    <!-- Left ear -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M10,50 Q5,30 20,25 Q30,35 25,55 Q15,60 10,50"/>
+    
+    <!-- Right ear -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M90,50 Q95,30 80,25 Q70,35 75,55 Q85,60 90,50"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M50,55m-30,0a30,28 0,1 1,60 0a30,28 0,1 1,-60 0"/>
+    
+    <!-- Trunk -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M50,70 Q45,80 48,95 Q52,95 55,80 Q55,75 50,70"/>
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M38,48m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M62,48m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    
+    <!-- Tusks -->
+    <path
+        android:fillColor="#FAFAFA"
+        android:pathData="M35,65 Q30,75 33,80"/>
+    <path
+        android:fillColor="#FAFAFA"
+        android:pathData="M65,65 Q70,75 67,80"/>
+</vector>

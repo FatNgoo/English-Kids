@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_card_cyan"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="4dp">
+
+    <!-- Animal Thumbnail -->
+    <ImageView
+        android:id="@+id/img_animal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Animal image" />
+
+    <!-- English Name -->
+    <TextView
+        android:id="@+id/txt_name_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Cat"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <!-- Vietnamese Name -->
+    <TextView
+        android:id="@+id/txt_name_vi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:alpha="0.8"
+        android:fontFamily="sans-serif"
+        android:text="Mèo"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!-- AR indicator icon -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="👆 Tap to view in AR"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:alpha="0.7" />
+
+</LinearLayout>

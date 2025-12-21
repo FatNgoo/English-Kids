@@ -77,7 +77,10 @@ public class MainActivity extends AppCompatActivity {
             } else if (id == R.id.card_shapes) {
                 cardName = "Shapes";
             } else if (id == R.id.card_animals) {
-                cardName = "Animals";
+                // Navigate to Animals AR Selection Activity
+                Intent intent = new Intent(MainActivity.this, AnimalArSelectActivity.class);
+                startActivity(intent);
+                return;
             }
             
             Toast.makeText(this, "Let's learn " + cardName + "! 🎉", Toast.LENGTH_SHORT).show();

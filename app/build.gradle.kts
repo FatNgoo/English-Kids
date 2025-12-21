@@ -37,6 +37,13 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.drawerlayout)
+    
+    // AR and SceneView dependencies
+    implementation(libs.sceneview)
+    implementation(libs.arcore)
+    implementation(libs.recyclerview)
+    implementation(libs.lifecycle.runtime)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
