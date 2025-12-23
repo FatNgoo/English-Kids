@@ -17,20 +17,20 @@ public class BubbleManager {
     private int screenWidth, screenHeight;
     private Random random;
     
-    // Bubble colors (pastel palette - kid friendly)
+    // Bubble colors (bright neon palette for dark background)
     private static final int[] BUBBLE_COLORS = {
-        0xFFFF6B6B,  // Coral Red
-        0xFF4ECDC4,  // Teal
-        0xFFFFE66D,  // Yellow
-        0xFF95E1D3,  // Mint
-        0xFFF38181,  // Pink
-        0xFFAA96DA,  // Purple
-        0xFF6C5CE7,  // Indigo
-        0xFFFD79A8,  // Rose
-        0xFF00B894,  // Green
-        0xFF74B9FF,  // Sky Blue
-        0xFFFFAB76,  // Orange
-        0xFFA29BFE,  // Lavender
+        0xFFFF6B8A,  // Bright Pink
+        0xFF00E5FF,  // Cyan
+        0xFFFFEB3B,  // Bright Yellow
+        0xFF69F0AE,  // Mint Green
+        0xFFFF80AB,  // Light Pink
+        0xFFB388FF,  // Light Purple
+        0xFF7C4DFF,  // Deep Purple
+        0xFFFF4081,  // Rose
+        0xFF1DE9B6,  // Teal
+        0xFF40C4FF,  // Light Blue
+        0xFFFFAB40,  // Orange
+        0xFFE040FB,  // Magenta
     };
     
     // Letters to display

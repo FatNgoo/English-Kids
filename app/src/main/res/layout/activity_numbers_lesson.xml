@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_numbers_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingTop="40dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_circle_button"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                app:tint="@color/white" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Count &amp; Say!"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:shadowColor="#40000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4" />
+
+            <!-- Progress -->
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_progress_pill"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="1 / 16"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Scene Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardScene"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp">
+
+            <!-- Scene Canvas View -->
+            <com.edu.english.numbers.views.SceneCanvasView
+                android:id="@+id/sceneView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Question & Answer Area -->
+        <LinearLayout
+            android:id="@+id/containerBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- Question Text -->
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_feedback_card"
+                android:padding="16dp"
+                android:gravity="center"
+                android:text="How many apples are on the table?"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- COUNT STATE: Number Keypad -->
+            <LinearLayout
+                android:id="@+id/containerCountState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!-- Row 1: Numbers 1-5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/btnNum1"
+                        style="@style/NumberButton"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/btnNum2"
+                        style="@style/NumberButton"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/btnNum3"
+                        style="@style/NumberButton"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/btnNum4"
+                        style="@style/NumberButton"
+                        android:text="4" />
+
+                    <TextView
+                        android:id="@+id/btnNum5"
+                        style="@style/NumberButton"
+                        android:text="5" />
+
+                </LinearLayout>
+
+                <!-- Row 2: Numbers 6-10 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btnNum6"
+                        style="@style/NumberButton"
+                        android:text="6" />
+
+                    <TextView
+                        android:id="@+id/btnNum7"
+                        style="@style/NumberButton"
+                        android:text="7" />
+
+                    <TextView
+                        android:id="@+id/btnNum8"
+                        style="@style/NumberButton"
+                        android:text="8" />
+
+                    <TextView
+                        android:id="@+id/btnNum9"
+                        style="@style/NumberButton"
+                        android:text="9" />
+
+                    <TextView
+                        android:id="@+id/btnNum10"
+                        style="@style/NumberButton"
+                        android:text="10" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- SPEAK STATE: Pronunciation -->
+            <LinearLayout
+                android:id="@+id/containerSpeakState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <!-- Instruction -->
+                <TextView
+                    android:id="@+id/tvSpeakInstruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Now say this number:"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Word to say -->
+                <TextView
+                    android:id="@+id/tvWordToSay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_feedback_card"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="12dp"
+                    android:text="FIVE"
+                    android:textColor="#6C63FF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <!-- Mic and Listen buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Listen Button -->
+                    <LinearLayout
+                        android:id="@+id/btnListen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="24dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_listen_button"
+                            android:padding="14dp"
+                            android:src="@drawable/ic_volume" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Listen"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <!-- Mic Button -->
+                    <LinearLayout
+                        android:id="@+id/btnMic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/ivMic"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/bg_mic_button"
+                            android:padding="18dp"
+                            android:src="@drawable/ic_mic" />
+
+                        <TextView
+                            android:id="@+id/tvMicLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Tap to speak"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Fallback button when speech not available -->
+                <Button
+                    android:id="@+id/btnSkipSpeech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="I said it! Continue →"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:backgroundTint="#4CAF50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Feedback Overlay -->
+    <FrameLayout
+        android:id="@+id/overlayFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/tvFeedbackEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉"
+                android:textSize="64sp" />
+
+            <TextView
+                android:id="@+id/tvFeedbackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Great job!"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

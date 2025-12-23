@@ -57,12 +57,12 @@ public class GameRenderer {
     }
     
     private void initPaints() {
-        // Background
+        // Background - Dark blue gradient like home page
         backgroundPaint = new Paint();
         bgGradientColors = new int[]{
-            Color.parseColor("#E8F5E9"), // Light mint green
-            Color.parseColor("#F3E5F5"), // Light lavender
-            Color.parseColor("#E3F2FD")  // Light sky blue
+            Color.parseColor("#0D1259"), // Deep blue dark
+            Color.parseColor("#1A237E"), // Deep blue
+            Color.parseColor("#283593")  // Lighter deep blue
         };
         
         // Table
@@ -82,7 +82,7 @@ public class GameRenderer {
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         textPaint.setTextAlign(Paint.Align.CENTER);
         textPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        textPaint.setColor(Color.parseColor("#2C3E50"));
+        textPaint.setColor(Color.WHITE);
         
         // Result text (large bounce-in)
         resultTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -94,7 +94,7 @@ public class GameRenderer {
         hintTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         hintTextPaint.setTextAlign(Paint.Align.CENTER);
         hintTextPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.NORMAL));
-        hintTextPaint.setColor(Color.parseColor("#7F8C8D"));
+        hintTextPaint.setColor(Color.parseColor("#B0BEC5"));
         
         // Slider track
         sliderTrackPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -144,13 +144,13 @@ public class GameRenderer {
         );
         backgroundPaint.setShader(bgGradient);
         
-        // Table top gradient
+        // Table top gradient - Modern dark theme
         LinearGradient tableGradient = new LinearGradient(
             0, height * 0.6f,
             0, height,
             new int[]{
-                Color.parseColor("#D7CCC8"),
-                Color.parseColor("#BCAAA4")
+                Color.parseColor("#37474F"),
+                Color.parseColor("#263238")
             },
             null,
             Shader.TileMode.CLAMP
@@ -187,10 +187,10 @@ public class GameRenderer {
         Paint particlePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         
         int[] colors = {
-            Color.parseColor("#F8BBD9"), // Pink
-            Color.parseColor("#BBDEFB"), // Blue
-            Color.parseColor("#C8E6C9"), // Green
-            Color.parseColor("#FFF9C4")  // Yellow
+            Color.parseColor("#7C4DFF"), // Purple
+            Color.parseColor("#448AFF"), // Blue
+            Color.parseColor("#00E5FF"), // Cyan
+            Color.parseColor("#FFAB40")  // Orange
         };
         
         for (int i = 0; i < 15; i++) {
@@ -225,16 +225,16 @@ public class GameRenderer {
         RectF tableRect = new RectF(0, tableTop, screenWidth, screenHeight + 30);
         canvas.drawRoundRect(tableRect, 30, 30, tableTopPaint);
         
-        // Table front edge (3D effect)
+        // Table front edge (3D effect) - Dark theme
         Paint edgePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        edgePaint.setColor(Color.parseColor("#A1887F"));
+        edgePaint.setColor(Color.parseColor("#1C313A"));
         
         RectF edgeRect = new RectF(0, screenHeight - 40, screenWidth, screenHeight + 30);
         canvas.drawRect(edgeRect, edgePaint);
         
-        // Table top highlight
+        // Table top highlight - Subtle glow
         Paint highlightPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        highlightPaint.setColor(Color.argb(40, 255, 255, 255));
+        highlightPaint.setColor(Color.argb(25, 255, 255, 255));
         
         RectF highlightRect = new RectF(30, tableTop + 5, screenWidth - 30, tableTop + 15);
         canvas.drawRoundRect(highlightRect, 5, 5, highlightPaint);
@@ -244,14 +244,14 @@ public class GameRenderer {
      * Draw title
      */
     public void drawTitle(Canvas canvas) {
-        textPaint.setTextSize(42);
-        textPaint.setColor(Color.parseColor("#2C3E50"));
+        textPaint.setTextSize(48);
+        textPaint.setColor(Color.WHITE);
         
-        float titleY = 60;
+        float titleY = 70;
         
-        // Title shadow
-        textPaint.setShadowLayer(4, 2, 2, Color.argb(40, 0, 0, 0));
-        canvas.drawText("🧪 Color Alchemy Lab 🧪", screenWidth / 2f, titleY, textPaint);
+        // Title shadow for better visibility
+        textPaint.setShadowLayer(6, 2, 2, Color.argb(100, 0, 0, 0));
+        canvas.drawText("🧪 Color Lab 🧪", screenWidth / 2f, titleY, textPaint);
         textPaint.setShadowLayer(0, 0, 0, Color.TRANSPARENT);
     }
     
@@ -269,14 +269,21 @@ public class GameRenderer {
         
         int alphaInt = (int) (alpha * 255);
         
-        // Draw label
-        hintTextPaint.setTextSize(24);
+        // Draw label - bigger text
+        hintTextPaint.setTextSize(32);
         hintTextPaint.setAlpha(alphaInt);
-        canvas.drawText("Adjust Shade", x, y - 50, hintTextPaint);
+        canvas.drawText("☀️ Adjust Shade 🌙", x, y - 70, hintTextPaint);
         
-        // Draw track background
-        float trackLeft = x - width / 2 + 30;
-        float trackRight = x + width / 2 - 30;
+        // Draw track background with shadow
+        float trackLeft = x - width / 2 + 50;
+        float trackRight = x + width / 2 - 50;
+        
+        // Track shadow
+        Paint shadowPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        shadowPaint.setColor(Color.BLACK);
+        shadowPaint.setAlpha((int)(alpha * 40));
+        RectF shadowRect = new RectF(trackLeft + 3, y - trackHeight / 2 + 3, trackRight + 3, y + trackHeight / 2 + 3);
+        canvas.drawRoundRect(shadowRect, trackHeight / 2, trackHeight / 2, shadowPaint);
         
         // Gradient track from light to dark
         int lightColor = ColorMixer.applyShade(baseColor, 0.7f);
@@ -295,36 +302,58 @@ public class GameRenderer {
         RectF trackRect = new RectF(trackLeft, y - trackHeight / 2, trackRight, y + trackHeight / 2);
         canvas.drawRoundRect(trackRect, trackHeight / 2, trackHeight / 2, sliderTrackPaint);
         
-        // Draw sun icon (left - light)
+        // Track border for visibility
+        Paint borderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        borderPaint.setStyle(Paint.Style.STROKE);
+        borderPaint.setStrokeWidth(3);
+        borderPaint.setColor(Color.WHITE);
+        borderPaint.setAlpha((int)(alpha * 150));
+        canvas.drawRoundRect(trackRect, trackHeight / 2, trackHeight / 2, borderPaint);
+        
+        // Draw sun icon (left - light) - bigger
         sunPaint.setAlpha(alphaInt);
-        drawSunIcon(canvas, trackLeft - 25, y, 18);
+        drawSunIcon(canvas, trackLeft - 35, y, 24);
         
-        // Draw moon icon (right - dark)
+        // Draw moon icon (right - dark) - bigger
         moonPaint.setAlpha(alphaInt);
-        drawMoonIcon(canvas, trackRight + 25, y, 18);
+        drawMoonIcon(canvas, trackRight + 35, y, 24);
         
-        // Draw handle
+        // Draw handle - MUCH bigger
         float handleX = controller.getHandleX();
         float handleY = controller.getHandleY();
         float handleScale = controller.getHandleScale();
-        float handleRadius = 20 * handleScale;
+        float handleRadius = 32 * handleScale; // Bigger handle
         
-        // Handle glow
+        // Handle outer glow
         Paint glowPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         glowPaint.setColor(baseColor);
-        glowPaint.setAlpha((int) (alpha * 100));
-        canvas.drawCircle(handleX, handleY, handleRadius + 8, glowPaint);
+        glowPaint.setAlpha((int) (alpha * 80));
+        canvas.drawCircle(handleX, handleY, handleRadius + 15, glowPaint);
         
-        // Handle
+        // Handle shadow
+        Paint handleShadow = new Paint(Paint.ANTI_ALIAS_FLAG);
+        handleShadow.setColor(Color.BLACK);
+        handleShadow.setAlpha((int)(alpha * 60));
+        canvas.drawCircle(handleX + 2, handleY + 3, handleRadius, handleShadow);
+        
+        // Handle white background
         sliderHandlePaint.setAlpha(alphaInt);
         canvas.drawCircle(handleX, handleY, handleRadius, sliderHandlePaint);
         
-        // Handle inner color indicator
+        // Handle border
+        Paint handleBorder = new Paint(Paint.ANTI_ALIAS_FLAG);
+        handleBorder.setStyle(Paint.Style.STROKE);
+        handleBorder.setStrokeWidth(4);
+        handleBorder.setColor(baseColor);
+        handleBorder.setAlpha(alphaInt);
+        canvas.drawCircle(handleX, handleY, handleRadius, handleBorder);
+        
+        // Handle inner color indicator - bigger
         Paint innerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         int currentColor = ColorMixer.applyShade(baseColor, controller.getValue());
         innerPaint.setColor(currentColor);
         innerPaint.setAlpha(alphaInt);
-        canvas.drawCircle(handleX, handleY, handleRadius - 6, innerPaint);
+        canvas.drawCircle(handleX, handleY, handleRadius - 10, innerPaint);
     }
     
     /**
@@ -360,9 +389,9 @@ public class GameRenderer {
         // Main circle
         canvas.drawCircle(cx, cy, size * 0.7f, moonPaint);
         
-        // Cut out circle to create crescent
+        // Cut out circle to create crescent - Match dark background
         Paint cutPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        cutPaint.setColor(Color.parseColor("#E8F5E9")); // Match background
+        cutPaint.setColor(Color.parseColor("#1A237E")); // Match dark background
         cutPaint.setAlpha(moonPaint.getAlpha());
         canvas.drawCircle(cx + size * 0.35f, cy - size * 0.2f, size * 0.55f, cutPaint);
     }
@@ -419,37 +448,63 @@ public class GameRenderer {
      * Draw instruction hint
      */
     public void drawHint(Canvas canvas, String hint, float y) {
-        hintTextPaint.setTextSize(28);
-        hintTextPaint.setAlpha(180);
+        hintTextPaint.setTextSize(32);
+        hintTextPaint.setAlpha(200);
         canvas.drawText(hint, screenWidth / 2f, y, hintTextPaint);
     }
     
     /**
-     * Draw reset button
+     * Draw reset button - BIG and styled like ColorsActivity
      */
     public void drawResetButton(Canvas canvas, float x, float y, float width, float height, boolean isPressed) {
-        float scale = isPressed ? 0.95f : 1.0f;
+        float scale = isPressed ? 0.92f : 1.0f;
         
         canvas.save();
         canvas.translate(x, y);
         canvas.scale(scale, scale);
         canvas.translate(-x, -y);
         
+        // Outer glow effect
+        Paint glowPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        glowPaint.setColor(Color.parseColor("#E040FB"));
+        glowPaint.setAlpha(isPressed ? 40 : 60);
+        RectF glowRect = new RectF(x - width / 2 - 8, y - height / 2 - 8, x + width / 2 + 8, y + height / 2 + 8);
+        canvas.drawRoundRect(glowRect, height / 2 + 8, height / 2 + 8, glowPaint);
+        
         // Button shadow
         Paint shadowPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        shadowPaint.setColor(Color.argb(40, 0, 0, 0));
-        RectF shadowRect = new RectF(x - width / 2 + 3, y - height / 2 + 3, 
-                                     x + width / 2 + 3, y + height / 2 + 3);
+        shadowPaint.setColor(Color.BLACK);
+        shadowPaint.setAlpha(50);
+        RectF shadowRect = new RectF(x - width / 2 + 4, y - height / 2 + 6, x + width / 2 + 4, y + height / 2 + 6);
         canvas.drawRoundRect(shadowRect, height / 2, height / 2, shadowPaint);
         
-        // Button
-        buttonPaint.setColor(isPressed ? Color.parseColor("#2980B9") : Color.parseColor("#3498DB"));
-        RectF buttonRect = new RectF(x - width / 2, y - height / 2, x + width / 2, y + height / 2);
-        canvas.drawRoundRect(buttonRect, height / 2, height / 2, buttonPaint);
+        // Gradient background - vibrant purple/pink
+        Paint gradientPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        LinearGradient gradient = new LinearGradient(
+            x - width / 2, y - height / 2,
+            x + width / 2, y + height / 2,
+            isPressed ? Color.parseColor("#7B1FA2") : Color.parseColor("#AB47BC"),
+            isPressed ? Color.parseColor("#6A1B9A") : Color.parseColor("#8E24AA"),
+            Shader.TileMode.CLAMP
+        );
+        gradientPaint.setShader(gradient);
         
-        // Text
-        buttonTextPaint.setTextSize(20);
-        canvas.drawText("🔄 New Mix", x, y + 7, buttonTextPaint);
+        RectF buttonRect = new RectF(x - width / 2, y - height / 2, x + width / 2, y + height / 2);
+        canvas.drawRoundRect(buttonRect, height / 2, height / 2, gradientPaint);
+        
+        // Button border highlight
+        Paint borderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        borderPaint.setStyle(Paint.Style.STROKE);
+        borderPaint.setStrokeWidth(3);
+        borderPaint.setColor(Color.WHITE);
+        borderPaint.setAlpha(100);
+        canvas.drawRoundRect(buttonRect, height / 2, height / 2, borderPaint);
+        
+        // Text with shadow - BIGGER
+        buttonTextPaint.setTextSize(28);
+        buttonTextPaint.setShadowLayer(4, 2, 2, Color.argb(100, 0, 0, 0));
+        canvas.drawText("🔄  NEW MIX", x, y + 10, buttonTextPaint);
+        buttonTextPaint.setShadowLayer(0, 0, 0, Color.TRANSPARENT);
         
         canvas.restore();
     }
@@ -487,25 +542,27 @@ public class GameRenderer {
     }
     
     /**
-     * Draw back button
+     * Draw back button - styled like the Colors activity
      */
     public void drawBackButton(Canvas canvas, float x, float y, float size) {
+        // Semi-transparent dark background circle (matching ColorsActivity style)
         Paint bgPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        bgPaint.setColor(Color.WHITE);
-        bgPaint.setShadowLayer(6, 0, 2, Color.argb(30, 0, 0, 0));
+        bgPaint.setColor(Color.parseColor("#44FFFFFF")); // Semi-transparent white
+        bgPaint.setShadowLayer(8, 0, 3, Color.argb(50, 0, 0, 0));
         canvas.drawCircle(x, y, size, bgPaint);
         
-        // Arrow icon
+        // White arrow icon for visibility on dark background
         Paint arrowPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        arrowPaint.setColor(Color.parseColor("#2C3E50"));
-        arrowPaint.setStrokeWidth(4);
+        arrowPaint.setColor(Color.WHITE);
+        arrowPaint.setStrokeWidth(5);
         arrowPaint.setStrokeCap(Paint.Cap.ROUND);
+        arrowPaint.setStrokeJoin(Paint.Join.ROUND);
         arrowPaint.setStyle(Paint.Style.STROKE);
         
         Path arrowPath = new Path();
-        arrowPath.moveTo(x + 8, y - 12);
+        arrowPath.moveTo(x + 10, y - 14);
         arrowPath.lineTo(x - 8, y);
-        arrowPath.lineTo(x + 8, y + 12);
+        arrowPath.lineTo(x + 10, y + 14);
         canvas.drawPath(arrowPath, arrowPaint);
     }
     

@@ -114,6 +114,13 @@ public class CollectionManager {
     }
     
     /**
+     * Reload collection from storage (call when returning from lab)
+     */
+    public void reload() {
+        loadCollection();
+    }
+    
+    /**
      * Save collection to SharedPreferences
      */
     private void saveCollection() {

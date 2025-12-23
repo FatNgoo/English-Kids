@@ -40,8 +40,8 @@ public class ShadeController {
         this.x = x;
         this.y = y;
         this.width = width;
-        this.height = 80;
-        this.trackHeight = 16;
+        this.height = 120;  // Bigger height
+        this.trackHeight = 28; // Much bigger track
         
         this.value = 0;
         this.targetValue = 0;
@@ -104,7 +104,7 @@ public class ShadeController {
         // Check if touch is on handle
         float handleX = getHandleX();
         float handleY = y;
-        float handleRadius = 25;
+        float handleRadius = 35; // Bigger handle radius
         
         float dx = touchX - handleX;
         float dy = touchY - handleY;

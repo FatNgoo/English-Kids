@@ -293,7 +293,7 @@ public class ImageDisplay {
         wordPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         wordPaint.setTextAlign(Paint.Align.CENTER);
         wordPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        wordPaint.setColor(0xFF333333);
+        wordPaint.setColor(0xFFFFFFFF);  // White for dark theme
     }
     
     /**
@@ -373,10 +373,10 @@ public class ImageDisplay {
         // Draw background with gradient
         RectF displayRect = new RectF(scaledX, scaledY, scaledX + scaledWidth, scaledY + scaledHeight);
         
-        // Create gradient background
+        // Create gradient background (dark theme)
         LinearGradient bgGradient = new LinearGradient(
             scaledX, scaledY, scaledX, scaledY + scaledHeight,
-            new int[] {0xFFFFFFF0, 0xFFFFF8DC},
+            new int[] {0xE6303F9F, 0xE61A237E},  // Dark indigo gradient
             null,
             Shader.TileMode.CLAMP
         );
