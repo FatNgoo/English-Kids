@@ -85,13 +85,13 @@ public class AlphabetGameView extends SurfaceView implements SurfaceHolder.Callb
     }
     
     private void initBackground() {
-        // Create gradient background (pastel sky)
+        // Create dark blue gradient background (matching home page)
         backgroundGradient = new LinearGradient(
             0, 0, 0, screenHeight,
             new int[] {
-                0xFF87CEEB,  // Sky blue top
-                0xFFB0E0E6,  // Powder blue
-                0xFFE0FFFF   // Light cyan bottom
+                0xFF0D1259,  // Deep navy top
+                0xFF1A237E,  // Indigo middle
+                0xFF283593   // Lighter indigo bottom
             },
             new float[] {0f, 0.5f, 1f},
             Shader.TileMode.CLAMP

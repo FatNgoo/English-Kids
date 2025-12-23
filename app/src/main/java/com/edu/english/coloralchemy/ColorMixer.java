@@ -277,10 +277,11 @@ public class ColorMixer {
             return new MixResult(resultColor, colorName, sentence, color1, color2, true);
         }
         
-        // If no valid recipe, blend colors
+        // If no valid recipe, blend colors and find nearest named color
         int blendedColor = blendColors(color1, color2, 0.5f);
-        return new MixResult(blendedColor, "Mixed Color", "You created a new color!", 
-                           color1, color2, false);
+        String nearestName = findNearestColorName(blendedColor);
+        return new MixResult(blendedColor, nearestName, nearestName + " created!", 
+                           color1, color2, true);
     }
     
     /**
@@ -300,10 +301,11 @@ public class ColorMixer {
             return new MixResult(resultColor, colorName, sentence, color1, color2, color3, true);
         }
         
-        // If no valid recipe, blend all three colors
+        // If no valid recipe, blend all three colors and find nearest named color
         int blendedColor = blendThreeColors(color1, color2, color3);
-        return new MixResult(blendedColor, "Mixed Color", "You created a unique color!", 
-                           color1, color2, color3, false);
+        String nearestName = findNearestColorName(blendedColor);
+        return new MixResult(blendedColor, nearestName, nearestName + " created!", 
+                           color1, color2, color3, true);
     }
     
     /**
@@ -352,13 +354,48 @@ public class ColorMixer {
     }
     
     /**
+     * Find nearest named color for a given color
+     * This ensures we always return a color name, never "Mixed Color"
+     */
+    public static String findNearestColorName(int color) {
+        int r = Color.red(color);
+        int g = Color.green(color);
+        int b = Color.blue(color);
+        
+        String nearestName = "Brown"; // Default fallback
+        double nearestDistance = Double.MAX_VALUE;
+        
+        for (Map.Entry<Integer, String> entry : colorNames.entrySet()) {
+            int namedColor = entry.getKey();
+            int nr = Color.red(namedColor);
+            int ng = Color.green(namedColor);
+            int nb = Color.blue(namedColor);
+            
+            // Calculate color distance (Euclidean in RGB space)
+            double distance = Math.sqrt(
+                Math.pow(r - nr, 2) + 
+                Math.pow(g - ng, 2) + 
+                Math.pow(b - nb, 2)
+            );
+            
+            if (distance < nearestDistance) {
+                nearestDistance = distance;
+                nearestName = entry.getValue();
+            }
+        }
+        
+        return nearestName;
+    }
+    
+    /**
      * Get color name
      */
     public static String getColorName(int color) {
         if (colorNames.containsKey(color)) {
             return colorNames.get(color);
         }
-        return "Color";
+        // Try to find nearest named color
+        return findNearestColorName(color);
     }
     
     /**
