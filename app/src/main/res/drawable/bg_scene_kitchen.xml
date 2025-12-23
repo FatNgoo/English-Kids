@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kitchen scene background - clean professional kitchen look -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base - light kitchen wall -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FAFAFA"
+                android:centerColor="#F5F5F5"
+                android:endColor="#EEEEEE" />
+        </shape>
+    </item>
+    
+    <!-- Subtle warm light ambiance -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="400dp"
+                android:centerX="50%"
+                android:centerY="20%"
+                android:startColor="#15FFF8E1"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+    
+</layer-list>

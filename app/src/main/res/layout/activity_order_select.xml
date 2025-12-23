@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:background="@drawable/bg_restaurant_interior">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- Top Bar - Restaurant Header -->
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="@drawable/bg_hud_top"
+            android:elevation="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_button_back"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:tint="#FF6B00" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🍽️ Restaurant"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#5D4037"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!-- Restaurant Scene Area -->
+        <FrameLayout
+            android:id="@+id/restaurant_scene"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <!-- Restaurant Counter/Bar Background -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="140dp"
+                android:background="#8D6E63" />
+
+            <!-- Chef Standing (Left Side) -->
+            <FrameLayout
+                android:id="@+id/chef_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_gravity="start|bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="120dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <ImageView
+                    android:id="@+id/img_chef_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_chef_bunny_full" />
+
+                <!-- Chef Speech Bubble -->
+                <LinearLayout
+                    android:id="@+id/chef_speech_bubble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="-60dp"
+                    android:background="@drawable/bg_chef_bubble"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:minWidth="120dp"
+                    android:maxWidth="180dp">
+
+                    <TextView
+                        android:id="@+id/text_chef_speech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome!"
+                        android:textSize="12sp"
+                        android:textColor="#333333" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Customer Standing (Right Side) -->
+            <FrameLayout
+                android:id="@+id/customer_container"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="120dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <ImageView
+                    android:id="@+id/customer_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_customer_rabbit_full" />
+
+                <!-- Customer Speech Bubble -->
+                <LinearLayout
+                    android:id="@+id/customer_speech_bubble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginStart="-80dp"
+                    android:background="@drawable/bg_customer_bubble"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:minWidth="140dp"
+                    android:maxWidth="200dp">
+
+                    <TextView
+                        android:id="@+id/text_customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#5D4037" />
+
+                    <TextView
+                        android:id="@+id/text_customer_speech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hi! Can I have...?"
+                        android:textSize="11sp"
+                        android:textColor="#555555"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Order Table (Center) -->
+            <LinearLayout
+                android:id="@+id/order_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_dining_table"
+                android:padding="12dp">
+
+                <!-- Order Card Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📋"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_recipe_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="Order: Carrot Soup"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#5D4037" />
+                </LinearLayout>
+
+                <!-- Order Preview -->
+                <com.edu.english.masterchef.views.OrderCardView
+                    android:id="@+id/order_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Chef Selection Row (Bottom Dock) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F5F0E8"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="👨‍🍳 Select Chef"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:id="@+id/chef_select_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingHorizontal="8dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="8dp">
+
+            <Button
+                android:id="@+id/btn_new_order"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="🔄 New Customer"
+                android:textSize="14sp"
+                android:textColor="#5D4037"
+                android:background="@drawable/bg_button_secondary"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_start_cooking"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1.5"
+                android:text="🍳 Start Cooking!"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Hidden views for compatibility with existing code -->
+    <FrameLayout
+        android:id="@+id/customer_avatar_container"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/order_card"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        app:cardCornerRadius="0dp" />
+
+    <com.edu.english.masterchef.views.ChefBubbleView
+        android:id="@+id/chef_bubble_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+
+</FrameLayout>

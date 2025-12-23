@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Elephant customer - full standing body (gray elephant with purple dress) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+
+    <!-- Shadow -->
+    <path
+        android:fillColor="#20000000"
+        android:pathData="M30,170 Q60,180 90,170 Q95,172 90,175 Q60,185 30,175 Q25,172 30,170 Z" />
+
+    <!-- Dress -->
+    <path
+        android:fillColor="#9C27B0"
+        android:pathData="M35,85 Q32,120 30,158 L90,158 Q88,120 85,85 Q85,65 60,65 Q35,65 35,85 Z" />
+
+    <!-- Dress bow -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M55,85 L50,92 L55,98 L60,95 L65,98 L70,92 L65,85 L60,88 Z" />
+
+    <!-- Head -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M60,65 m-28,0 a28,26 0,1 1,56 0 a28,26 0,1 1,-56 0" />
+
+    <!-- Left ear -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M32,40 Q15,45 12,70 Q15,90 32,85 Q28,65 32,40 Z" />
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M28,50 Q20,55 18,70 Q20,82 28,80 Q26,65 28,50 Z" />
+
+    <!-- Right ear -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M88,40 Q105,45 108,70 Q105,90 88,85 Q92,65 88,40 Z" />
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M92,50 Q100,55 102,70 Q100,82 92,80 Q94,65 92,50 Z" />
+
+    <!-- Trunk -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M52,68 Q58,72 68,68 L66,95 Q60,98 54,95 Z" />
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M55,75 Q60,77 65,75 M55,82 Q60,84 65,82 M55,89 Q60,91 65,89" />
+
+    <!-- Left eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M45,52 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,50 m-2,0 a2,2 0,1 1,4 0 a2,2 0,1 1,-4 0" />
+
+    <!-- Right eye -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M75,52 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73,50 m-2,0 a2,2 0,1 1,4 0 a2,2 0,1 1,-4 0" />
+
+    <!-- Eyebrows -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:pathData="M40,45 Q45,42 50,45 M70,45 Q75,42 80,45" />
+
+    <!-- Left arm -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,90 L22,110 L28,118 L42,100 Z" />
+
+    <!-- Right arm -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M85,90 L98,110 L92,118 L78,100 Z" />
+
+    <!-- Left leg -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M40,158 L38,172 L52,172 L50,158 Z" />
+
+    <!-- Right leg -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M70,158 L68,172 L82,172 L80,158 Z" />
+
+    <!-- Tail -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:strokeColor="#757575"
+        android:strokeWidth="4"
+        android:pathData="M90,145 Q105,140 102,155" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M100,155 L105,160 L108,155 L105,150 Z" />
+
+</vector>

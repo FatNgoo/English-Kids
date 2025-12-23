@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Fryer Basket -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M8,16 L40,16 L38,40 L10,40 Z"/>
+    <!-- Mesh pattern -->
+    <path
+        android:fillColor="#A0A0A0"
+        android:strokeWidth="1"
+        android:strokeColor="#808080"
+        android:pathData="M10,20 L38,20 M10,26 L38,26 M10,32 L38,32"/>
+    <path
+        android:fillColor="#A0A0A0"
+        android:strokeWidth="1"
+        android:strokeColor="#808080"
+        android:pathData="M16,16 L14,40 M24,16 L24,40 M32,16 L34,40"/>
+    <!-- Handle -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M20,8 L28,8 L28,16 L20,16 Z"/>
+    <path
+        android:fillColor="#2F4F4F"
+        android:pathData="M22,4 L26,4 L28,8 L20,8 Z"/>
+</vector>

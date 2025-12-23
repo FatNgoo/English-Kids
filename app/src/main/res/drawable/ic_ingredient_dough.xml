@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Dough -->
+    <path
+        android:fillColor="#F5DEB3"
+        android:pathData="M24,8 Q8,8 8,24 Q8,40 24,40 Q40,40 40,24 Q40,8 24,8"/>
+    <path
+        android:fillColor="#DEB887"
+        android:pathData="M24,12 Q12,12 12,24 Q12,36 24,36 Q36,36 36,24 Q36,12 24,12"/>
+    <!-- Flour dusting -->
+    <path
+        android:fillColor="#FFFAF0"
+        android:pathData="M16,16 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#FFFAF0"
+        android:pathData="M28,20 m-1,0 a1,1 0 1,1 2,0 a1,1 0 1,1 -2,0"/>
+    <path
+        android:fillColor="#FFFAF0"
+        android:pathData="M20,30 m-1,0 a1,1 0 1,1 2,0 a1,1 0 1,1 -2,0"/>
+</vector>

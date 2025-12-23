@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cutting board zone background - wooden texture -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Shadow -->
+    <item android:top="3dp" android:left="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#40000000" />
+        </shape>
+    </item>
+    
+    <!-- Board base -->
+    <item android:bottom="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="#C9A66B"
+                android:centerColor="#D4B07A"
+                android:endColor="#C9A66B" />
+            <stroke
+                android:width="2dp"
+                android:color="#8B7355" />
+        </shape>
+    </item>
+    
+</layer-list>

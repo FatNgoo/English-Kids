@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Shrimp body -->
+    <path
+        android:pathData="M10,24 C12,18 18,16 24,18 C30,20 36,24 40,30 C38,34 32,36 26,34 C20,32 14,30 10,24"
+        android:fillColor="#FF8A65"/>
+    <!-- Segments -->
+    <path
+        android:pathData="M16,22 L18,28"
+        android:strokeColor="#E64A19"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M22,22 L24,30"
+        android:strokeColor="#E64A19"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M28,24 L30,32"
+        android:strokeColor="#E64A19"
+        android:strokeWidth="1"/>
+    <!-- Tail -->
+    <path
+        android:pathData="M38,30 L44,28 L46,32 L44,36 L40,34"
+        android:fillColor="#FFAB91"/>
+    <!-- Head -->
+    <path
+        android:pathData="M10,24 L6,20 L4,24 L6,28 L10,26"
+        android:fillColor="#FF7043"/>
+</vector>

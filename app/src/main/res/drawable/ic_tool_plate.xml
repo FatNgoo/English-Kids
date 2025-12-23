@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Plate -->
+    <path
+        android:pathData="M24,12 C10,12 4,18 4,24 C4,36 12,44 24,44 C36,44 44,36 44,24 C44,18 38,12 24,12"
+        android:fillColor="#ECEFF1"/>
+    <!-- Plate inner circle -->
+    <path
+        android:pathData="M24,16 C14,16 10,20 10,26 C10,34 16,40 24,40 C32,40 38,34 38,26 C38,20 34,16 24,16"
+        android:fillColor="#FAFAFA"/>
+    <!-- Plate rim -->
+    <path
+        android:pathData="M24,12 C10,12 4,18 4,24 C4,36 12,44 24,44 C36,44 44,36 44,24 C44,18 38,12 24,12"
+        android:strokeColor="#B0BEC5"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    <!-- Decorative ring -->
+    <path
+        android:pathData="M24,18 C16,18 12,22 12,28 C12,34 16,38 24,38 C32,38 36,34 36,28 C36,22 32,18 24,18"
+        android:strokeColor="#CFD8DC"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"/>
+</vector>

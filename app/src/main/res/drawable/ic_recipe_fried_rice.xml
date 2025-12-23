@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Fried Rice Icon -->
+    
+    <!-- Plate -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,44 Q4,44 4,38 Q4,32 24,32 Q44,32 44,38 Q44,44 24,44"/>
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M24,42 Q8,42 8,38 Q8,34 24,34 Q40,34 40,38 Q40,42 24,42"/>
+    
+    <!-- Rice pile -->
+    <path
+        android:fillColor="#FFF9C4"
+        android:pathData="M24,36 Q10,36 8,28 Q6,18 16,14 Q20,12 24,12 Q28,12 32,14 Q42,18 40,28 Q38,36 24,36"/>
+    
+    <!-- Rice grains -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,24 Q17,22 19,22 Q21,22 21,24 Q21,26 19,26 Q17,26 18,24"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,20 Q23,18 25,18 Q27,18 27,20 Q27,22 25,22 Q23,22 24,20"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,24 Q29,22 31,22 Q33,22 33,24 Q33,26 31,26 Q29,26 30,24"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,28 Q21,26 23,26 Q25,26 25,28 Q25,30 23,30 Q21,30 22,28"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,28 Q27,26 29,26 Q31,26 31,28 Q31,30 29,30 Q27,30 28,28"/>
+    
+    <!-- Carrot pieces -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M16,20 L14,18 L16,16 L18,18 Z"/>
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M28,16 L26,14 L28,12 L30,14 Z"/>
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M34,22 L32,20 L34,18 L36,20 Z"/>
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M20,30 L18,28 L20,26 L22,28 Z"/>
+    
+    <!-- Green onion -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M14,26 Q12,24 14,24 Q16,24 16,26 Q16,28 14,28 Z"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M32,30 Q30,28 32,28 Q34,28 34,30 Q34,32 32,32 Z"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M36,26 Q34,24 36,24 Q38,24 38,26 Q38,28 36,28 Z"/>
+    
+    <!-- Egg pieces -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M20,18 Q18,16 20,15 Q23,15 23,18 Q23,20 20,20 Z"/>
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M32,18 Q30,16 32,15 Q35,15 35,18 Q35,20 32,20 Z"/>
+    
+    <!-- Steam lines -->
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1"
+        android:pathData="M18,10 Q16,6 18,4"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1"
+        android:pathData="M24,8 Q22,4 24,2"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1"
+        android:pathData="M30,10 Q28,6 30,4"
+        android:fillColor="#00000000"/>
+    
+</vector>

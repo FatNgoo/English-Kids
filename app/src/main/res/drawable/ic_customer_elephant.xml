@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Customer Elephant - Cute gray elephant -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M30,30m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Elephant ears -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M6,28 Q2,18 8,10 Q16,4 22,12 Q26,20 22,30 Q16,36 10,32 Q4,30 6,28"/>
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M10,26 Q8,20 12,14 Q16,10 18,16 Q20,22 18,28 Q14,32 12,28 Q8,28 10,26"/>
+    
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M54,28 Q58,18 52,10 Q44,4 38,12 Q34,20 38,30 Q44,36 50,32 Q56,30 54,28"/>
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M50,26 Q52,20 48,14 Q44,10 42,16 Q40,22 42,28 Q46,32 48,28 Q52,28 50,26"/>
+    
+    <!-- Elephant face -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M30,52 Q14,52 12,36 Q10,24 20,22 Q25,20 30,20 Q35,20 40,22 Q50,24 48,36 Q46,52 30,52"/>
+    
+    <!-- Trunk -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M30,38 Q28,38 27,42 Q26,48 28,54 Q30,58 32,54 Q34,48 33,42 Q32,38 30,38"/>
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M29,42 Q28,46 29,52 Q30,54 31,52 Q32,46 31,42 Z"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21,29m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,29m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M16,36m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M44,36m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+    
+</vector>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+    
+    <!-- Customer Rabbit Full Body - Standing cute rabbit customer -->
+    
+    <!-- Shadow on floor -->
+    <path
+        android:fillColor="#20000000"
+        android:pathData="M60,175 m-35,0 a35,8 0,1 1,70 0 a35,8 0,1 1,-70 0"/>
+    
+    <!-- Body (dress/clothes) -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M60,140 Q35,140 32,115 L32,100 Q35,85 60,85 Q85,85 88,100 L88,115 Q85,140 60,140"/>
+    
+    <!-- Arms -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,95 Q22,100 20,115 Q18,120 25,122 Q30,120 35,110 L35,95"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M88,95 Q98,100 100,115 Q102,120 95,122 Q90,120 85,110 L85,95"/>
+    
+    <!-- Legs -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,140 L45,165 Q45,170 50,170 Q55,170 55,165 L55,140"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M65,140 L65,165 Q65,170 70,170 Q75,170 75,165 L75,140"/>
+    
+    <!-- Feet -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M42,168 Q40,175 50,175 Q60,175 58,168 L55,168 L55,170 L45,170 L45,168 Z"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M62,168 Q60,175 70,175 Q80,175 78,168 L75,168 L75,170 L65,170 L65,168 Z"/>
+    
+    <!-- Ears -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,20 Q28,35 38,50 L45,45 Q40,32 42,15 Q40,5 35,20"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M38,25 Q34,38 42,48 L44,44 Q42,35 42,25 Q40,15 38,25"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M85,20 Q92,35 82,50 L75,45 Q80,32 78,15 Q80,5 85,20"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M82,25 Q86,38 78,48 L76,44 Q78,35 78,25 Q80,15 82,25"/>
+    
+    <!-- Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,85 Q30,85 28,60 Q26,40 42,35 Q50,32 60,32 Q70,32 78,35 Q94,40 92,60 Q90,85 60,85"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M45,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,53m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M75,55m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73,53m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FFAAAA"
+        android:pathData="M60,68m-4,0a4,3 0,1 1,8 0a4,3 0,1 1,-8 0"/>
+    
+    <!-- Mouth -->
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="2"
+        android:pathData="M60,72 L60,78 M55,78 Q60,83 65,78"
+        android:fillColor="#00000000"/>
+    
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M32,62m-6,0a6,4 0,1 1,12 0a6,4 0,1 1,-12 0"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M88,62m-6,0a6,4 0,1 1,12 0a6,4 0,1 1,-12 0"/>
+    
+    <!-- Bow/decoration on dress -->
+    <path
+        android:fillColor="#FF80AB"
+        android:pathData="M60,90 L50,95 L60,100 L70,95 Z"/>
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M60,95m-5,0a5,3 0,1 1,10 0a5,3 0,1 1,-10 0"/>
+    
+</vector>

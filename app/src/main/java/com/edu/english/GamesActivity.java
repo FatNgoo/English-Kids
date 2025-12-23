@@ -1,6 +1,7 @@
 package com.edu.english;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -13,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.edu.english.masterchef.RecipeSelectActivity;
 
 public class GamesActivity extends AppCompatActivity {
 
@@ -51,7 +54,9 @@ public class GamesActivity extends AppCompatActivity {
             String gameName = "";
             int id = v.getId();
             if (id == R.id.card_master_chef) {
-                gameName = "Master Chef";
+                // Launch Master Chef game
+                startActivity(new Intent(this, RecipeSelectActivity.class));
+                return;
             } else if (id == R.id.card_detective) {
                 gameName = "Detective";
             } else if (id == R.id.card_pet_hospital) {

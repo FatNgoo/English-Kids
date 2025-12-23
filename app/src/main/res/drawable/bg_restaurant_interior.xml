@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Restaurant interior background - warm dining atmosphere -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base wall color - warm cream -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFF8E1"
+                android:centerColor="#FFECB3"
+                android:endColor="#FFE082" />
+        </shape>
+    </item>
+    
+    <!-- Upper wall section (darker) -->
+    <item android:bottom="400dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#D7CCC8"
+                android:centerColor="#EFEBE9"
+                android:endColor="#FFF8E1" />
+        </shape>
+    </item>
+    
+    <!-- Floor section -->
+    <item android:top="500dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#A1887F"
+                android:centerColor="#8D6E63"
+                android:endColor="#6D4C41" />
+        </shape>
+    </item>
+    
+    <!-- Warm ambient light from top -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="350dp"
+                android:centerX="50%"
+                android:centerY="10%"
+                android:startColor="#25FFE082"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+    
+    <!-- Decorative border -->
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#D7CCC8" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    
+</layer-list>

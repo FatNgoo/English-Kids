@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Table shadow -->
+    <item android:top="4dp" android:left="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#30000000" />
+        </shape>
+    </item>
+    
+    <!-- Table top (wood texture) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="#8B5A2B"
+                android:centerColor="#A0693B"
+                android:endColor="#8B5A2B" />
+            <stroke
+                android:width="3dp"
+                android:color="#6B4423" />
+        </shape>
+    </item>
+    
+    <!-- Tablecloth effect (white with subtle pattern) -->
+    <item android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#FFFBF5" />
+            <stroke
+                android:width="1dp"
+                android:color="#EEEEEE" />
+        </shape>
+    </item>
+    
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Salt Shaker -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M16,16 L32,16 L30,44 L18,44 Z"/>
+    <!-- Cap -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M14,8 L34,8 L32,16 L16,16 Z"/>
+    <!-- Holes -->
+    <path
+        android:fillColor="#808080"
+        android:pathData="M24,11 m-1,0 a1,1 0 1,1 2,0 a1,1 0 1,1 -2,0"/>
+    <!-- S label -->
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M20,26 Q20,22 24,22 Q28,22 28,26 Q28,30 24,30 Q20,30 20,34 Q20,38 24,38 Q28,38 28,34"/>
+</vector>

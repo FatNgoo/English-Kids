@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Mallet head -->
+    <path
+        android:pathData="M10,10 L30,10 L30,24 L10,24 Z"
+        android:fillColor="#78909C"/>
+    <!-- Mallet head texture -->
+    <path
+        android:pathData="M12,12 L28,12 L28,22 L12,22 Z"
+        android:strokeColor="#607D8B"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"/>
+    <!-- Handle -->
+    <path
+        android:pathData="M18,24 L22,24 L24,44 L16,44 Z"
+        android:fillColor="#8D6E63"/>
+    <!-- Handle grip -->
+    <path
+        android:pathData="M17,30 L23,30"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M17,36 L23,36"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="1"/>
+</vector>

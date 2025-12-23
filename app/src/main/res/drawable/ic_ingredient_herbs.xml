@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Herbs bunch -->
+    <!-- Stem -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M22,44 L26,44 L24,28 Z"/>
+    <!-- Leaves -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M24,8 Q16,12 16,20 Q16,28 24,28 Q32,28 32,20 Q32,12 24,8"/>
+    <path
+        android:fillColor="#3CB371"
+        android:pathData="M18,12 Q12,16 14,24 Q16,28 22,26"/>
+    <path
+        android:fillColor="#3CB371"
+        android:pathData="M30,12 Q36,16 34,24 Q32,28 26,26"/>
+    <path
+        android:fillColor="#2E8B57"
+        android:pathData="M24,10 Q20,14 22,22 Q24,26 24,26 Q24,26 26,22 Q28,14 24,10"/>
+</vector>

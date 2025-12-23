@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Carrot body -->
+    <path
+        android:pathData="M24,8 L30,38 L24,42 L18,38 Z"
+        android:fillColor="#FF6B35"/>
+    <!-- Carrot top -->
+    <path
+        android:pathData="M20,8 L24,2 L28,8 L24,6 Z"
+        android:fillColor="#4CAF50"/>
+    <path
+        android:pathData="M18,10 L22,4 L26,10"
+        android:fillColor="#66BB6A"/>
+    <!-- Details -->
+    <path
+        android:pathData="M22,15 L26,15"
+        android:strokeColor="#E65100"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M21,22 L27,22"
+        android:strokeColor="#E65100"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M20,29 L28,29"
+        android:strokeColor="#E65100"
+        android:strokeWidth="1"/>
+</vector>

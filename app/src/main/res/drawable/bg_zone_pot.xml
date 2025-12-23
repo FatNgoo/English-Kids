@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pot zone - stainless steel pot look -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Pot shadow -->
+    <item android:top="4dp" android:left="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#35000000" />
+        </shape>
+    </item>
+    
+    <!-- Pot body -->
+    <item android:bottom="2dp" android:right="2dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="85dp"
+                android:centerX="35%"
+                android:centerY="30%"
+                android:startColor="#B0BEC5"
+                android:endColor="#78909C" />
+            <stroke
+                android:width="3dp"
+                android:color="#546E7A" />
+        </shape>
+    </item>
+    
+</layer-list>

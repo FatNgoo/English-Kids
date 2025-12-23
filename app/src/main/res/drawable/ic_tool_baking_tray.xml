@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Baking Tray -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M4,32 L44,32 L42,40 L6,40 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M6,28 L42,28 L44,32 L4,32 Z"/>
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M8,30 L40,30 L40,38 L8,38 Z"/>
+</vector>

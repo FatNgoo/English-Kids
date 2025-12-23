@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_scene_kitchen"
+    tools:context=".masterchef.MasterChefActivity">
+
+    <!-- Main Kitchen Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top HUD - Prettier Design (elevated above content) -->
+        <LinearLayout
+            android:id="@+id/hud_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_hud_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:elevation="12dp">
+
+            <!-- Back Button - Circle Style with proper click handling -->
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_back"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back to Dining Room"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="8dp"
+                app:tint="#FF6B00" />
+
+            <!-- Recipe Name with Icon -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍳 Now Cooking"
+                    android:textColor="#FF8A65"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+                    
+                <TextView
+                    android:id="@+id/text_recipe_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Carrot Soup"
+                    android:textColor="#5D4037"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- Step Indicator Badge -->
+            <TextView
+                android:id="@+id/text_step_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_step_badge"
+                android:text="Step 1/8"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:elevation="2dp" />
+
+            <!-- Hint Button - Circle Style -->
+            <ImageButton
+                android:id="@+id/btn_hint"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_button_circle_orange"
+                android:src="@drawable/ic_speaker"
+                android:contentDescription="Hint"
+                android:padding="10dp"
+                android:elevation="2dp"
+                app:tint="#FF9800" />
+
+        </LinearLayout>
+
+        <!-- Chef Bubble Area -->
+        <LinearLayout
+            android:id="@+id/chef_bubble_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_chef_bubble"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Chef Avatar -->
+            <ImageView
+                android:id="@+id/img_chef"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_chef" />
+
+            <!-- Chef Text -->
+            <TextView
+                android:id="@+id/text_chef_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Let's start cooking!"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <!-- Replay TTS Button -->
+            <ImageButton
+                android:id="@+id/btn_replay_tts"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_button_speaker"
+                android:src="@drawable/ic_volume_on"
+                android:contentDescription="Replay"
+                android:padding="6dp"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Kitchen View (Custom View - main game area) -->
+        <com.edu.english.masterchef.views.KitchenView
+            android:id="@+id/kitchen_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="200dp"
+            android:background="@drawable/bg_kitchen" />
+
+        <!-- Bottom Dock with Ingredient Tray -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_dock_bottom"
+            android:paddingTop="8dp">
+            
+            <!-- Dock Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="🧺 Ingredients &amp; Tools"
+                android:textColor="#5D4037"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            
+            <!-- Scrollable Ingredient Tray -->
+            <HorizontalScrollView
+                android:id="@+id/ingredient_tray_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:fadingEdge="horizontal"
+                android:requiresFadingEdge="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ingredient_tray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:minHeight="100dp" />
+
+            </HorizontalScrollView>
+            
+            <!-- Hint text for dragging -->
+            <TextView
+                android:id="@+id/text_drag_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="👆 Touch &amp; drag items to kitchen zones"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+                
+        </LinearLayout>
+
+        <!-- Action Progress Bar (shown during actions) -->
+        <FrameLayout
+            android:id="@+id/action_progress_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_action"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:progressDrawable="@drawable/bg_progress_action"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/text_action_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tap to cut!"
+                android:textColor="#5D4037"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Speaking Practice Overlay -->
+    <FrameLayout
+        android:id="@+id/speaking_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_chef_bubble"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎤 Say it!"
+                android:textColor="#E91E63"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_speaking_phrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="cut the carrot"
+                android:textColor="#333333"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_speaking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tap the microphone and speak!"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <!-- Mic Button -->
+            <ImageButton
+                android:id="@+id/btn_mic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_mic_button"
+                android:src="@drawable/ic_mic"
+                android:padding="20dp"
+                android:contentDescription="Speak"
+                app:tint="@android:color/white" />
+
+            <!-- Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_hear_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#2196F3"
+                    android:text="Hear Again"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_skip_speaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9E9E9E"
+                    android:text="Skip"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Success Message Overlay (brief animation) -->
+    <TextView
+        android:id="@+id/text_success_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_success_message"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="Great job! ⭐"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Recipe Complete Overlay -->
+    <FrameLayout
+        android:id="@+id/recipe_complete_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_chef_bubble"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 Recipe Complete! 🎉"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_final_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Score: 100 ⭐"
+                android:textColor="#FF9800"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_speaking_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Speaking: 5/6 correct"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_play_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Play Again"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_choose_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2196F3"
+                    android:text="New Recipe"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_exit_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#9E9E9E"
+                    android:text="Exit"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Gesture Hint Overlay (shows animated gesture tutorial) -->
+    <com.edu.english.masterchef.views.GestureHintOverlay
+        android:id="@+id/gesture_hint_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

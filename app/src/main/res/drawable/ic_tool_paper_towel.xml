@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Paper Towel Roll -->
+    <path
+        android:fillColor="#FFFAF0"
+        android:pathData="M12,8 L36,8 L36,40 L12,40 Z"/>
+    <!-- Center hole -->
+    <path
+        android:fillColor="#DEB887"
+        android:pathData="M24,24 m-4,0 a4,16 0 1,1 8,0 a4,16 0 1,1 -8,0"/>
+    <!-- Perforations -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeWidth="1"
+        android:strokeColor="#D3D3D3"
+        android:pathData="M12,16 L36,16 M12,24 L36,24 M12,32 L36,32"/>
+    <!-- Shadow/depth -->
+    <path
+        android:fillColor="#F5F5DC"
+        android:pathData="M34,8 L36,8 L36,40 L34,40 Z"/>
+</vector>

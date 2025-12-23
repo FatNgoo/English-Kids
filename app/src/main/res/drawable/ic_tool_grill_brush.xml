@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Grill Brush -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M22,4 L26,4 L26,24 L22,24 Z"/>
+    <!-- Brush head -->
+    <path
+        android:fillColor="#2F4F4F"
+        android:pathData="M18,24 L30,24 L32,32 L16,32 Z"/>
+    <!-- Bristles -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M18,32 L20,32 L20,44 L18,44 Z"/>
+    <path
+        android:fillColor="#696969"
+        android:pathData="M22,32 L24,32 L24,44 L22,44 Z"/>
+    <path
+        android:fillColor="#696969"
+        android:pathData="M26,32 L28,32 L28,44 L26,44 Z"/>
+    <path
+        android:fillColor="#696969"
+        android:pathData="M30,32 L32,32 L32,44 L30,44 Z"/>
+</vector>

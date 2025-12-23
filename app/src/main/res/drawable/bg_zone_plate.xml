@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Serving plate zone - clean white ceramic -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Plate shadow -->
+    <item android:top="4dp" android:left="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#25000000" />
+        </shape>
+    </item>
+    
+    <!-- Plate outer ring -->
+    <item android:bottom="2dp" android:right="2dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100dp"
+                android:centerX="50%"
+                android:centerY="40%"
+                android:startColor="#FFFFFF"
+                android:endColor="#F5F5F5" />
+            <stroke
+                android:width="2dp"
+                android:color="#E0E0E0" />
+        </shape>
+    </item>
+    
+</layer-list>

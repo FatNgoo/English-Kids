@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Default Customer - Generic cute character -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M30,30m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFE0B2"
+        android:pathData="M30,50 Q14,50 12,35 Q10,22 20,20 Q25,18 30,18 Q35,18 40,20 Q50,22 48,35 Q46,50 30,50"/>
+    
+    <!-- Hair -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M30,8 Q15,10 12,22 L15,24 Q18,16 30,14 Q42,16 45,24 L48,22 Q45,10 30,8"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,32m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21,31m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,32m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,31m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    
+    <!-- Smile -->
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="2"
+        android:pathData="M25,40 Q30,45 35,40"
+        android:fillColor="#00000000"/>
+    
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M16,38m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M44,38m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0"/>
+    
+</vector>

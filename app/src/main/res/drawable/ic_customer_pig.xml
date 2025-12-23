@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Customer Pig - Cute pink pig -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FCE4EC"
+        android:pathData="M30,30m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Pig ears -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M12,18 Q8,10 14,6 Q22,4 24,14 Q24,22 18,24 Q12,24 12,18"/>
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M48,18 Q52,10 46,6 Q38,4 36,14 Q36,22 42,24 Q48,24 48,18"/>
+    
+    <!-- Pig face -->
+    <path
+        android:fillColor="#F8BBD9"
+        android:pathData="M30,52 Q12,52 10,35 Q8,22 18,20 Q24,18 30,18 Q36,18 42,20 Q52,22 50,35 Q48,52 30,52"/>
+    
+    <!-- Snout -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M30,48 Q22,48 20,42 Q18,36 26,36 Q28,34 30,34 Q32,34 34,36 Q42,36 40,42 Q38,48 30,48"/>
+    
+    <!-- Nostrils -->
+    <path
+        android:fillColor="#D81B60"
+        android:pathData="M26,42m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#D81B60"
+        android:pathData="M34,42m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21,29m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,29m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M14,36m-4,0a4,2.5 0,1 1,8 0a4,2.5 0,1 1,-8 0"/>
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M46,36m-4,0a4,2.5 0,1 1,8 0a4,2.5 0,1 1,-8 0"/>
+    
+</vector>

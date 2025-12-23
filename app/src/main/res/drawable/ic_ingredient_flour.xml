@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Flour bag -->
+    <path
+        android:fillColor="#F5F5DC"
+        android:pathData="M12,12 L36,12 L36,44 L12,44 Z"/>
+    <path
+        android:fillColor="#FFFAF0"
+        android:pathData="M14,14 L34,14 L34,42 L14,42 Z"/>
+    <!-- Flour label -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M16,20 L32,20 L32,36 L16,36 Z"/>
+    <path
+        android:fillColor="#F5DEB3"
+        android:pathData="M18,22 L30,22 L30,34 L18,34 Z"/>
+    <!-- Bag top -->
+    <path
+        android:fillColor="#DEB887"
+        android:pathData="M16,4 L32,4 Q36,8 36,12 L12,12 Q12,8 16,4 Z"/>
+</vector>

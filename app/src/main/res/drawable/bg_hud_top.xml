@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top HUD bar - game-like header with shadow -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Shadow at bottom -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#00000000"
+                android:endColor="#30000000" />
+        </shape>
+    </item>
+    
+    <!-- Main gradient background -->
+    <item android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFFFFF"
+                android:centerColor="#FFFCF5"
+                android:endColor="#FFF5E8" />
+        </shape>
+    </item>
+    
+    <!-- Orange accent strip at bottom -->
+    <item android:top="52dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="#FF9800"
+                android:centerColor="#FFB74D"
+                android:endColor="#FF9800" />
+            <size android:height="4dp" />
+        </shape>
+    </item>
+    
+</layer-list>

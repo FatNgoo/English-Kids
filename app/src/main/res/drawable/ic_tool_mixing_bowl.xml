@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Mixing Bowl -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M8,16 Q4,16 4,24 L4,32 Q4,44 24,44 Q44,44 44,32 L44,24 Q44,16 40,16 Z"/>
+    <path
+        android:fillColor="#ADD8E6"
+        android:pathData="M10,18 Q8,18 8,24 L8,30 Q8,40 24,40 Q40,40 40,30 L40,24 Q40,18 38,18 Z"/>
+    <!-- Rim -->
+    <path
+        android:fillColor="#4682B4"
+        android:pathData="M8,14 L40,14 L42,18 L6,18 Z"/>
+</vector>

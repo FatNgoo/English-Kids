@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Customer speech bubble - warm friendly style -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Shadow -->
+    <item android:top="2dp" android:left="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#20000000" />
+        </shape>
+    </item>
+    
+    <!-- Main bubble -->
+    <item android:bottom="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFFBF5"
+                android:endColor="#FFF3E0" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFB74D" />
+        </shape>
+    </item>
+    
+</layer-list>

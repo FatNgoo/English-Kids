@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Onion body -->
+    <path
+        android:pathData="M24,10 C16,10 10,20 10,30 C10,38 16,44 24,44 C32,44 38,38 38,30 C38,20 32,10 24,10"
+        android:fillColor="#E1BEE7"/>
+    <!-- Onion layers -->
+    <path
+        android:pathData="M24,14 C18,14 14,22 14,30 C14,36 18,40 24,40"
+        android:strokeColor="#CE93D8"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M24,14 C30,14 34,22 34,30 C34,36 30,40 24,40"
+        android:strokeColor="#CE93D8"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+    <!-- Top -->
+    <path
+        android:pathData="M22,10 L24,4 L26,10"
+        android:fillColor="#8BC34A"/>
+</vector>

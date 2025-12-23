@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Restaurant warm ambiance - simplified without percentage values -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Main wall gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFF5E6"
+                android:centerColor="#FFE8CC"
+                android:endColor="#D4A574" />
+        </shape>
+    </item>
+    
+    <!-- Subtle warm light effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="400dp"
+                android:centerX="85%"
+                android:centerY="10%"
+                android:startColor="#20FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+    
+</layer-list>

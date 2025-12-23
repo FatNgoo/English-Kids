@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Garlic bulb -->
+    <path
+        android:pathData="M24,16 C16,16 12,24 12,32 C12,40 16,44 24,44 C32,44 36,40 36,32 C36,24 32,16 24,16"
+        android:fillColor="#F5F5F5"/>
+    <!-- Clove lines -->
+    <path
+        android:pathData="M24,16 L24,44"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M18,20 L18,40"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M30,20 L30,40"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="1"/>
+    <!-- Top -->
+    <path
+        android:pathData="M22,16 L24,8 L26,16"
+        android:fillColor="#8D6E63"/>
+</vector>

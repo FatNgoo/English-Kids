@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kitchen work area background - KitchenView draws decorations on top -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base countertop color -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#E8E0D8"
+                android:centerColor="#DDD5CD"
+                android:endColor="#D8D0C8" />
+        </shape>
+    </item>
+    
+    <!-- Subtle inner shadow for depth -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#20000000"
+                android:centerColor="#00000000"
+                android:endColor="#10000000" />
+        </shape>
+    </item>
+    
+    <!-- Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#A0887A" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    
+</layer-list>

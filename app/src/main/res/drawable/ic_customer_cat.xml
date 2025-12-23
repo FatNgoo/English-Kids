@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Customer Cat - Cute orange cat -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M30,30m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Cat ears -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M12,22 L6,6 L22,16 Z"/>
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M14,20 L10,10 L20,16 Z"/>
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M48,22 L54,6 L38,16 Z"/>
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M46,20 L50,10 L40,16 Z"/>
+    
+    <!-- Cat face -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M30,52 Q12,52 10,35 Q8,22 18,20 Q24,18 30,18 Q36,18 42,20 Q52,22 50,35 Q48,52 30,52"/>
+    
+    <!-- Face center -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M30,50 Q20,50 18,42 Q16,36 26,34 Q28,32 30,32 Q32,32 34,34 Q44,36 42,42 Q40,50 30,50"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,32m-3,0a3,4 0,1 1,6 0a3,4 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M22,32m-2.5,0a2.5,3.5 0,1 1,5 0a2.5,3.5 0,1 1,-5 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,33m-1,0a1,1.5 0,1 1,2 0a1,1.5 0,1 1,-2 0"/>
+    
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,32m-3,0a3,4 0,1 1,6 0a3,4 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M38,32m-2.5,0a2.5,3.5 0,1 1,5 0a2.5,3.5 0,1 1,-5 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,33m-1,0a1,1.5 0,1 1,2 0a1,1.5 0,1 1,-2 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M30,42 L27,39 L33,39 Z"/>
+    
+    <!-- Mouth -->
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="1.5"
+        android:pathData="M30,42 L30,46 M26,46 Q30,49 34,46"
+        android:fillColor="#00000000"/>
+    
+    <!-- Whiskers -->
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="0.8"
+        android:pathData="M10,38 L20,40 M8,42 L20,43 M10,46 L20,45"
+        android:fillColor="#00000000"/>
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="0.8"
+        android:pathData="M50,38 L40,40 M52,42 L40,43 M50,46 L40,45"
+        android:fillColor="#00000000"/>
+    
+</vector>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pig customer - full standing body (pink pig with blue overalls) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+
+    <!-- Shadow -->
+    <path
+        android:fillColor="#20000000"
+        android:pathData="M30,170 Q60,180 90,170 Q95,172 90,175 Q60,185 30,175 Q25,172 30,170 Z" />
+
+    <!-- Body/Overalls -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M35,85 L35,148 Q35,158 48,158 L72,158 Q85,158 85,148 L85,85 Q85,68 60,68 Q35,68 35,85 Z" />
+
+    <!-- Overalls straps -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M45,68 L50,92 L42,94 L38,75 Z M75,68 L70,92 L78,94 L82,75 Z" />
+
+    <!-- Overalls pocket -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M50,120 L70,120 L70,140 L50,140 Z" />
+
+    <!-- Head -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M60,72 m-28,0 a28,26 0,1 1,56 0 a28,26 0,1 1,-56 0" />
+
+    <!-- Left ear -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M35,45 Q28,38 25,48 Q25,55 32,58 Q38,55 35,45 Z" />
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M32,48 Q28,46 28,52 Q30,55 32,52 Z" />
+
+    <!-- Right ear -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M85,45 Q92,38 95,48 Q95,55 88,58 Q82,55 85,45 Z" />
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M88,48 Q92,46 92,52 Q90,55 88,52 Z" />
+
+    <!-- Snout -->
+    <path
+        android:fillColor="#F8BBD9"
+        android:pathData="M45,68 Q60,62 75,68 Q80,78 75,88 Q60,95 45,88 Q40,78 45,68 Z" />
+
+    <!-- Nostrils -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M52,75 m-4,0 a4,3 0,1 1,8 0 a4,3 0,1 1,-8 0" />
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M68,75 m-4,0 a4,3 0,1 1,8 0 a4,3 0,1 1,-8 0" />
+
+    <!-- Left eye -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M45,55 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,53 m-2,0 a2,2 0,1 1,4 0 a2,2 0,1 1,-4 0" />
+
+    <!-- Right eye -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M75,55 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73,53 m-2,0 a2,2 0,1 1,4 0 a2,2 0,1 1,-4 0" />
+
+    <!-- Smile -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#E91E63"
+        android:strokeWidth="2"
+        android:pathData="M50,85 Q60,92 70,85" />
+
+    <!-- Left arm -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M35,92 L22,112 L28,120 L42,105 Z" />
+
+    <!-- Right arm -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M85,92 L98,112 L92,120 L78,105 Z" />
+
+    <!-- Left leg -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M45,158 L42,172 L55,172 L52,158 Z" />
+
+    <!-- Right leg -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M68,158 L65,172 L78,172 L75,158 Z" />
+
+    <!-- Curly tail -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M85,145 Q95,140 92,150 Q88,158 95,155 Q100,150 95,145" />
+
+</vector>

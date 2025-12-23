@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Tongs -->
+    <path
+        android:fillColor="#808080"
+        android:pathData="M20,4 L22,4 L24,20 L20,20 Z"/>
+    <path
+        android:fillColor="#808080"
+        android:pathData="M26,4 L28,4 L28,20 L24,20 Z"/>
+    <!-- Pivot -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M22,20 L26,20 L26,24 L22,24 Z"/>
+    <!-- Arms -->
+    <path
+        android:fillColor="#A0A0A0"
+        android:pathData="M18,24 L24,24 L20,44 L14,44 Z"/>
+    <path
+        android:fillColor="#A0A0A0"
+        android:pathData="M24,24 L30,24 L34,44 L28,44 Z"/>
+    <!-- Tips -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M14,42 L20,42 L18,48 L12,48 Z"/>
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M28,42 L34,42 L36,48 L30,48 Z"/>
+</vector>

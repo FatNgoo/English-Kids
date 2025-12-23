@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Water bottle -->
+    <path
+        android:pathData="M16,16 L16,40 C16,42 18,44 24,44 C30,44 32,42 32,40 L32,16 Z"
+        android:fillColor="#81D4FA"/>
+    <!-- Bottle neck -->
+    <path
+        android:pathData="M20,16 L20,10 L28,10 L28,16 Z"
+        android:fillColor="#B3E5FC"/>
+    <!-- Cap -->
+    <path
+        android:pathData="M18,10 L18,6 L30,6 L30,10 Z"
+        android:fillColor="#2196F3"/>
+    <!-- Water level -->
+    <path
+        android:pathData="M17,22 L17,38 C17,40 20,42 24,42 C28,42 31,40 31,38 L31,22 Z"
+        android:fillColor="#4FC3F7"/>
+    <!-- Highlight -->
+    <path
+        android:pathData="M19,24 L19,36"
+        android:strokeColor="#E1F5FE"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+</vector>

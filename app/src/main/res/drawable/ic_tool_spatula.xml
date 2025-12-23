@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Spatula head -->
+    <path
+        android:pathData="M14,36 L10,44 L38,44 L34,36 Z"
+        android:fillColor="#90A4AE"/>
+    <!-- Spatula slots -->
+    <path
+        android:pathData="M18,38 L18,42"
+        android:strokeColor="#607D8B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M24,38 L24,42"
+        android:strokeColor="#607D8B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M30,38 L30,42"
+        android:strokeColor="#607D8B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <!-- Handle -->
+    <path
+        android:pathData="M22,36 L20,8 L28,8 L26,36 Z"
+        android:fillColor="#5D4037"/>
+    <!-- Handle grip -->
+    <path
+        android:pathData="M21,14 L27,14"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M21,22 L27,22"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+</vector>

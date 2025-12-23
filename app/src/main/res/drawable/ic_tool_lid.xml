@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Pot Lid -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M6,28 Q6,24 24,24 Q42,24 42,28 L42,32 Q42,36 24,36 Q6,36 6,32 Z"/>
+    <path
+        android:fillColor="#A0A0A0"
+        android:pathData="M8,28 Q8,26 24,26 Q40,26 40,28 L40,30 Q40,32 24,32 Q8,32 8,30 Z"/>
+    <!-- Handle -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M20,16 L28,16 L28,24 L20,24 Z"/>
+    <path
+        android:fillColor="#2F4F4F"
+        android:pathData="M22,12 L26,12 L28,16 L20,16 Z"/>
+</vector>

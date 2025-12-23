@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
 import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
+import com.edu.english.masterchef.OrderSelectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -137,6 +138,10 @@ public class MainActivity extends AppCompatActivity {
         if (game.getGameType().equals("word_race")) {
             Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
             startActivity(wordRaceIntent);
+        } else if (game.getGameType().equals("master_chef")) {
+            // Go directly to Dining Room (OrderSelectActivity) for game-like flow
+            Intent masterChefIntent = new Intent(MainActivity.this, OrderSelectActivity.class);
+            startActivity(masterChefIntent);
         } else {
             String message = "Let's play " + game.getTitle() + "! 🎮";
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();

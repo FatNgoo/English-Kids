@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Penguin customer - full standing body (penguin with bowtie) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+
+    <!-- Shadow -->
+    <path
+        android:fillColor="#20000000"
+        android:pathData="M35,168 Q60,178 85,168 Q90,170 85,173 Q60,183 35,173 Q30,170 35,168 Z" />
+
+    <!-- Body - black outer -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M35,65 Q30,100 32,155 L88,155 Q90,100 85,65 Q85,45 60,45 Q35,45 35,65 Z" />
+
+    <!-- Belly - white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,70 Q60,60 78,70 Q82,100 78,150 L42,150 Q38,100 42,70 Z" />
+
+    <!-- Head -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M60,50 m-25,0 a25,22 0,1 1,50 0 a25,22 0,1 1,-50 0" />
+
+    <!-- White face patch -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,45 Q60,38 75,45 Q78,52 75,58 Q60,65 45,58 Q42,52 45,45 Z" />
+
+    <!-- Left eye -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M48,48 m-5,0 a5,4 0,1 1,10 0 a5,4 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,46 m-2,0 a2,1.5 0,1 1,4 0 a2,1.5 0,1 1,-4 0" />
+
+    <!-- Right eye -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M72,48 m-5,0 a5,4 0,1 1,10 0 a5,4 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,46 m-2,0 a2,1.5 0,1 1,4 0 a2,1.5 0,1 1,-4 0" />
+
+    <!-- Beak -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M55,52 L60,62 L65,52 Z" />
+
+    <!-- Bowtie -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M50,68 L45,75 L50,80 L60,77 L70,80 L75,75 L70,68 L60,72 Z" />
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M57,72 Q60,70 63,72 Q65,75 63,78 Q60,80 57,78 Q55,75 57,72 Z" />
+
+    <!-- Left wing/flipper -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M32,80 Q20,95 25,120 Q28,130 35,125 L38,90 Z" />
+
+    <!-- Right wing/flipper -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M88,80 Q100,95 95,120 Q92,130 85,125 L82,90 Z" />
+
+    <!-- Left foot -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M40,155 L35,170 L55,170 L50,155 Z" />
+
+    <!-- Right foot -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M70,155 L65,170 L85,170 L80,155 Z" />
+
+    <!-- Cheek blush left -->
+    <path
+        android:fillColor="#20E91E63"
+        android:pathData="M42,55 m-5,0 a5,3 0,1 1,10 0 a5,3 0,1 1,-10 0" />
+
+    <!-- Cheek blush right -->
+    <path
+        android:fillColor="#20E91E63"
+        android:pathData="M78,55 m-5,0 a5,3 0,1 1,10 0 a5,3 0,1 1,-10 0" />
+
+</vector>

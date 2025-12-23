@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Potato body -->
+    <path
+        android:pathData="M24,12 C14,12 8,20 8,28 C8,38 14,42 24,42 C34,42 40,36 40,28 C40,18 34,12 24,12"
+        android:fillColor="#D4A574"/>
+    <!-- Spots -->
+    <path
+        android:pathData="M16,24 A2,2 0 1,1 16.01,24"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M28,20 A1.5,1.5 0 1,1 28.01,20"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M32,30 A2,2 0 1,1 32.01,30"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M20,34 A1.5,1.5 0 1,1 20.01,34"
+        android:fillColor="#8D6E63"/>
+</vector>

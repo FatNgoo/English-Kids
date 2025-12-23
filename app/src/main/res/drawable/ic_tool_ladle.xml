@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Ladle bowl -->
+    <path
+        android:pathData="M24,32 C16,32 12,36 12,42 C12,46 16,48 24,48 C32,48 36,46 36,42 C36,36 32,32 24,32"
+        android:fillColor="#90A4AE"/>
+    <!-- Ladle bowl inner -->
+    <path
+        android:pathData="M24,34 C18,34 16,36 16,40 C16,44 18,46 24,46 C30,46 32,44 32,40 C32,36 30,34 24,34"
+        android:fillColor="#78909C"/>
+    <!-- Handle -->
+    <path
+        android:pathData="M22,32 L20,4 L28,4 L26,32 Z"
+        android:fillColor="#8D6E63"/>
+    <!-- Handle grip -->
+    <path
+        android:pathData="M21,10 L27,10"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M21,16 L27,16"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="1"/>
+</vector>

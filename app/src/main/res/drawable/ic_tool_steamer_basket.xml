@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Steamer Basket -->
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M8,20 L40,20 L38,36 L10,36 Z"/>
+    <path
+        android:fillColor="#A0A0A0"
+        android:pathData="M12,22 L36,22 L35,34 L13,34 Z"/>
+    <!-- Steam holes -->
+    <path
+        android:fillColor="#808080"
+        android:pathData="M16,26 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#808080"
+        android:pathData="M24,26 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#808080"
+        android:pathData="M32,26 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#808080"
+        android:pathData="M20,30 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+    <path
+        android:fillColor="#808080"
+        android:pathData="M28,30 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0"/>
+</vector>

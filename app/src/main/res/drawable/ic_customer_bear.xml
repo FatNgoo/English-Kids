@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    
+    <!-- Customer Bear - Cute brown bear -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#EFEBE9"
+        android:pathData="M30,30m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Bear ears -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M12,18m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    <path
+        android:fillColor="#BCAAA4"
+        android:pathData="M12,18m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M48,18m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    <path
+        android:fillColor="#BCAAA4"
+        android:pathData="M48,18m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    
+    <!-- Bear face -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M30,52 Q10,52 8,32 Q6,16 18,14 Q24,12 30,12 Q36,12 42,14 Q54,16 52,32 Q50,52 30,52"/>
+    
+    <!-- Muzzle -->
+    <path
+        android:fillColor="#BCAAA4"
+        android:pathData="M30,48 Q20,48 18,40 Q16,34 24,32 Q27,30 30,30 Q33,30 36,32 Q44,34 42,40 Q40,48 30,48"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M22,28m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21,27m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M38,28m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,27m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M30,38m-4,0a4,3 0,1 1,8 0a4,3 0,1 1,-8 0"/>
+    
+    <!-- Mouth -->
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="1.5"
+        android:pathData="M26,44 Q30,47 34,44"
+        android:fillColor="#00000000"/>
+    
+</vector>
