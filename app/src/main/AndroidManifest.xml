@@ -55,6 +55,14 @@
             android:exported="false">
         </activity>
         
+        <!-- Colors Main Activity -->
+        <activity
+            android:name=".coloralchemy.ColorsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Colors">
+        </activity>
+        
         <!-- Color Alchemy Lab Activity -->
         <activity
             android:name=".coloralchemy.ColorAlchemyActivity"

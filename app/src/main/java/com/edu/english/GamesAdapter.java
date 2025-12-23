@@ -58,7 +58,25 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GameViewHold
 
         public void bind(GameItem game) {
             titleText.setText(game.getTitle());
-            container.setBackgroundColor(game.getBackgroundColor());
+            
+            // Use background images for each game
+            switch (game.getTitle()) {
+                case "Word Race":
+                    container.setBackgroundResource(R.drawable.bg_wordrace);
+                    break;
+                case "Master Chef":
+                    container.setBackgroundResource(R.drawable.bg_masterchef);
+                    break;
+                case "Detective":
+                    container.setBackgroundResource(R.drawable.bg_detective);
+                    break;
+                case "Magic Melody":
+                    container.setBackgroundResource(R.drawable.bg_magicmelody);
+                    break;
+                default:
+                    container.setBackgroundColor(game.getBackgroundColor());
+                    break;
+            }
 
             // Set click listener with animation
             itemView.setOnClickListener(v -> {

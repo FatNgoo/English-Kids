@@ -91,14 +91,14 @@ public class FlashcardCarousel {
         LETTER_WORDS.put('Z', new String[]{"Zebra", "Zoo", "Zero", "Zipper", "Zucchini", "Zigzag"});
     }
     
-    // Card colors (pastel)
+    // Card colors (darker semi-transparent for dark theme)
     private static final int[] CARD_COLORS = {
-        0xFFFFE5E5,  // Light pink
-        0xFFE5F5FF,  // Light blue
-        0xFFE5FFE5,  // Light green
-        0xFFFFF5E5,  // Light orange
-        0xFFF5E5FF,  // Light purple
-        0xFFFFFFE5   // Light yellow
+        0xE6303F9F,  // Indigo
+        0xE61565C0,  // Purple
+        0xE60288D1,  // Light Blue
+        0xE600897B,  // Teal
+        0xE6558B2F,  // Light Green
+        0xE6E65100   // Orange
     };
     
     public interface OnCardClickListener {
@@ -136,7 +136,7 @@ public class FlashcardCarousel {
         wordPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         wordPaint.setTextAlign(Paint.Align.CENTER);
         wordPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        wordPaint.setColor(0xFF333333);
+        wordPaint.setColor(0xFFFFFFFF);  // White for dark theme
     }
     
     /**

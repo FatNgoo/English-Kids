@@ -109,17 +109,17 @@ public class GameSurfaceView extends SurfaceView implements
         int[] tubeColors = ColorMixer.getAllTubeColors();
         int totalTubes = tubeColors.length;
         
-        // Calculate tube size - larger and responsive to screen
-        float tubeWidth = Math.min(width / 5.5f, 90); // Larger tubes
-        float tubeHeight = tubeWidth * 2.4f; // Maintain aspect ratio
+        // Calculate tube size - BIGGER and more prominent
+        float tubeWidth = Math.min(width / 5f, 110); // Much larger tubes
+        float tubeHeight = tubeWidth * 2.5f; // Maintain aspect ratio
         
         // Layout: 2 rows of tubes at the top
         int tubesPerRow = (totalTubes + 1) / 2; // 5 tubes per row for 9 tubes
-        float tubeSpacing = (width - tubeWidth) / (tubesPerRow + 0.5f);
+        float tubeSpacing = (width - tubeWidth) / (tubesPerRow + 0.3f);
         
-        // Position rows
-        float row1Y = height * 0.18f; // First row of tubes
-        float row2Y = row1Y + tubeHeight * 0.6f; // Second row, slightly lower
+        // Position rows - Give more space
+        float row1Y = height * 0.16f; // First row of tubes
+        float row2Y = row1Y + tubeHeight * 0.55f; // Second row, slightly lower
         
         testTubes = new TestTube[totalTubes];
         
@@ -148,36 +148,32 @@ public class GameSurfaceView extends SurfaceView implements
             testTubes[i].setOriginalPosition(tubeX, tubeY);
         }
         
-        // Beaker (center, larger and positioned lower)
-        float beakerWidth = Math.min(width * 0.45f, 180); // Larger beaker
-        float beakerHeight = beakerWidth * 1.35f;
+        // Beaker (center, MUCH LARGER for better visibility)
+        float beakerWidth = Math.min(width * 0.5f, 220); // Much larger beaker
+        float beakerHeight = beakerWidth * 1.4f;
         beaker = new Beaker(
             centerX,
-            height * 0.62f,
+            height * 0.60f,
             beakerWidth, beakerHeight
         );
         
-        // Shade controller (below beaker)
+        // Shade controller (below beaker) - wider and positioned lower
         shadeController = new ShadeController(
             centerX,
-            height * 0.88f,
-            width * 0.75f
+            height * 0.84f,
+            width * 0.85f
         );
         shadeController.setListener(this);
         
-        // UI button positions
+        // UI button positions - MUCH BIGGER buttons
         resetButtonX = centerX;
-        resetButtonY = height - 70;
-        resetButtonWidth = 180;
-        resetButtonHeight = 55;
+        resetButtonY = height - 55;
+        resetButtonWidth = 260;  // Much wider
+        resetButtonHeight = 70;  // Taller
         
-        collectionButtonX = width - 55;
-        collectionButtonY = 55;
-        collectionButtonSize = 35;
-        
-        backButtonX = 55;
-        backButtonY = 55;
-        backButtonSize = 30;
+        backButtonX = 60;
+        backButtonY = 60;
+        backButtonSize = 40;
         
         isInitialized = true;
     }
@@ -310,11 +306,7 @@ public class GameSurfaceView extends SurfaceView implements
                 resetButtonWidth, resetButtonHeight, resetButtonPressed);
         }
         
-        // Draw UI buttons
-        renderer.drawCollectionButton(canvas, collectionButtonX, collectionButtonY, 
-            collectionButtonSize, collectionManager.getCollectedCount(), 
-            collectionManager.getNewColorCount() > 0);
-        
+        // Draw back button only (Collection is now in ColorsActivity)
         renderer.drawBackButton(canvas, backButtonX, backButtonY, backButtonSize);
     }
     
@@ -347,14 +339,6 @@ public class GameSurfaceView extends SurfaceView implements
         if (isPointInCircle(touchX, touchY, backButtonX, backButtonY, backButtonSize + 10)) {
             if (gameEventListener != null) {
                 gameEventListener.onBackPressed();
-            }
-            return true;
-        }
-        
-        // Check collection button
-        if (isPointInCircle(touchX, touchY, collectionButtonX, collectionButtonY, collectionButtonSize + 10)) {
-            if (gameEventListener != null) {
-                gameEventListener.onCollectionPressed();
             }
             return true;
         }

@@ -57,7 +57,28 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.LessonVi
 
         public void bind(LessonItem lesson) {
             titleText.setText(lesson.getTitle());
-            container.setBackgroundColor(lesson.getBackgroundColor());
+            
+            // Use background images for each lesson
+            switch (lesson.getTitle()) {
+                case "Alphabet":
+                    container.setBackgroundResource(R.drawable.bg_alphabet);
+                    break;
+                case "Numbers":
+                    container.setBackgroundResource(R.drawable.bg_number);
+                    break;
+                case "Colors":
+                    container.setBackgroundResource(R.drawable.bg_color);
+                    break;
+                case "Shapes":
+                    container.setBackgroundResource(R.drawable.bg_shape);
+                    break;
+                case "Animals":
+                    container.setBackgroundResource(R.drawable.bg_animal);
+                    break;
+                default:
+                    container.setBackgroundColor(lesson.getBackgroundColor());
+                    break;
+            }
 
             // Set click listener with animation
             itemView.setOnClickListener(v -> {

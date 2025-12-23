@@ -27,7 +27,7 @@ import java.util.List;
 
 import com.edu.english.shapes.ShapesActivity;
 
-import com.edu.english.coloralchemy.ColorAlchemyActivity;
+import com.edu.english.coloralchemy.ColorsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         games.add(new GameItem("Word Race", 0xFF6C63FF, "word_race"));
         games.add(new GameItem("Master Chef", 0xFFE91E63, "master_chef"));
         games.add(new GameItem("Detective", 0xFF9C27B0, "detective"));
-        games.add(new GameItem("Pet Hospital", 0xFF00BCD4, "pet_hospital"));
+        games.add(new GameItem("Magic Melody", 0xFF00BCD4, "magic_melody"));
         
         // Create adapter with click listener
         gamesAdapter = new GamesAdapter(games, game -> {
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
                 break;
             case "colors":
-                Intent colorsIntent = new Intent(MainActivity.this, ColorAlchemyActivity.class);
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
                 break;
             case "shapes":
