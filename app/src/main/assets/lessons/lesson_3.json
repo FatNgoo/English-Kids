@@ -1,0 +1,96 @@
+{
+  "id": 3,
+  "lessonId": "fantasy_level_1",
+  "title": "Colors",
+  "titleVietnamese": "Màu Sắc",
+  "theme": "FANTASY",
+  "mainCharacter": "rainbow_fairy",
+  "bpm": 110,
+  "trackLengthSeconds": 60,
+  "ageConfigs": {
+    "TODDLER": {
+      "bpm": 60,
+      "perfectWindow": 220,
+      "goodWindow": 380,
+      "glitchNoteInterval": 15
+    },
+    "EXPLORER": {
+      "bpm": 90,
+      "perfectWindow": 160,
+      "goodWindow": 280,
+      "glitchNoteInterval": 10
+    },
+    "MASTER": {
+      "bpm": 130,
+      "perfectWindow": 120,
+      "goodWindow": 220,
+      "glitchNoteInterval": 6
+    }
+  },
+  "vocabItems": [
+    {
+      "word": "red",
+      "translation": "Màu đỏ",
+      "lane": 0,
+      "imagePath": "vocab/red.png"
+    },
+    {
+      "word": "blue",
+      "translation": "Màu xanh dương",
+      "lane": 1,
+      "imagePath": "vocab/blue.png"
+    },
+    {
+      "word": "green",
+      "translation": "Màu xanh lá",
+      "lane": 2,
+      "imagePath": "vocab/green.png"
+    },
+    {
+      "word": "yellow",
+      "translation": "Màu vàng",
+      "lane": 3,
+      "imagePath": "vocab/yellow.png"
+    },
+    {
+      "word": "purple",
+      "translation": "Màu tím",
+      "lane": 4,
+      "imagePath": "vocab/purple.png"
+    },
+    {
+      "word": "orange",
+      "translation": "Màu cam",
+      "lane": 5,
+      "imagePath": "vocab/orange_color.png"
+    },
+    {
+      "word": "pink",
+      "translation": "Màu hồng",
+      "lane": 6,
+      "imagePath": "vocab/pink.png"
+    }
+  ],
+  "noteEvents": [
+    { "timeMs": 2000, "lane": 0, "vocabKey": "red" },
+    { "timeMs": 2800, "lane": 1, "vocabKey": "blue" },
+    { "timeMs": 3600, "lane": 2, "vocabKey": "green" },
+    { "timeMs": 4400, "lane": 3, "vocabKey": "yellow" },
+    { "timeMs": 5200, "lane": 4, "vocabKey": "purple" },
+    { "timeMs": 6000, "lane": 5, "vocabKey": "orange" },
+    { "timeMs": 6800, "lane": 6, "vocabKey": "pink" },
+    { "timeMs": 8500, "lane": 0, "vocabKey": "red" },
+    { "timeMs": 9200, "lane": 3, "vocabKey": "yellow" },
+    { "timeMs": 10000, "lane": 1, "vocabKey": "blue" },
+    { "timeMs": 10800, "lane": 4, "vocabKey": "purple" },
+    { "timeMs": 12000, "lane": 2, "vocabKey": "green" },
+    { "timeMs": 13000, "lane": 6, "vocabKey": "pink" },
+    { "timeMs": 14500, "lane": 5, "vocabKey": "orange" },
+    { "timeMs": 16000, "lane": 0, "vocabKey": "red" },
+    { "timeMs": 17000, "lane": 1, "vocabKey": "blue" },
+    { "timeMs": 18000, "lane": 2, "vocabKey": "green" },
+    { "timeMs": 19500, "lane": 3, "vocabKey": "yellow" },
+    { "timeMs": 21000, "lane": 4, "vocabKey": "purple" },
+    { "timeMs": 22500, "lane": 5, "vocabKey": "orange" }
+  ]
+}

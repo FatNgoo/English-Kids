@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <!-- Musical path line to next level -->
+    <View
+        android:id="@+id/pathLine"
+        android:layout_width="6dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/bg_path_line_magic"
+        android:visibility="visible" />
+
+    <!-- Level Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/cardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_level_card_unlocked">
+
+            <!-- Level Number with Music Note Circle -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/viewLevelCircle"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bg_level_number_circle" />
+
+                <TextView
+                    android:id="@+id/txtLevelNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:shadowColor="#40FFFFFF"
+                    android:shadowRadius="2"
+                    android:shadowDx="0"
+                    android:shadowDy="1" />
+
+                <!-- Lock Icon Overlay -->
+                <ImageView
+                    android:id="@+id/imgLock"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@android:drawable/ic_lock_idle_lock"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_level_card_locked"
+                    android:contentDescription="Locked" />
+            </FrameLayout>
+
+            <!-- Level Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLevelTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎵 Level Title"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#4A148C" />
+
+                <TextView
+                    android:id="@+id/txtLevelTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chủ đề: Thiên nhiên"
+                    android:textSize="12sp"
+                    android:textColor="#7B1FA2"
+                    android:layout_marginTop="2dp" />
+
+                <!-- Stars Display -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+                    
+                    <TextView
+                        android:id="@+id/txtStars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⭐⭐⭐"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Play Button -->
+            <FrameLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp">
+                
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_music_note_button"
+                    android:src="@android:drawable/ic_media_play"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"
+                    android:contentDescription="Play" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

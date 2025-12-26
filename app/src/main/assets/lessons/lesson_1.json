@@ -1,0 +1,96 @@
+{
+  "id": 1,
+  "lessonId": "forest_level_1",
+  "title": "Fruits",
+  "titleVietnamese": "Trái Cây",
+  "theme": "NATURE",
+  "mainCharacter": "fairy_nature",
+  "bpm": 100,
+  "trackLengthSeconds": 60,
+  "ageConfigs": {
+    "TODDLER": {
+      "bpm": 60,
+      "perfectWindow": 220,
+      "goodWindow": 380,
+      "glitchNoteInterval": 15
+    },
+    "EXPLORER": {
+      "bpm": 90,
+      "perfectWindow": 160,
+      "goodWindow": 280,
+      "glitchNoteInterval": 10
+    },
+    "MASTER": {
+      "bpm": 120,
+      "perfectWindow": 120,
+      "goodWindow": 220,
+      "glitchNoteInterval": 6
+    }
+  },
+  "vocabItems": [
+    {
+      "word": "apple",
+      "translation": "Quả táo",
+      "lane": 0,
+      "imagePath": "vocab/apple.png"
+    },
+    {
+      "word": "banana",
+      "translation": "Quả chuối",
+      "lane": 1,
+      "imagePath": "vocab/banana.png"
+    },
+    {
+      "word": "orange",
+      "translation": "Quả cam",
+      "lane": 2,
+      "imagePath": "vocab/orange.png"
+    },
+    {
+      "word": "grape",
+      "translation": "Quả nho",
+      "lane": 3,
+      "imagePath": "vocab/grape.png"
+    },
+    {
+      "word": "lemon",
+      "translation": "Quả chanh",
+      "lane": 4,
+      "imagePath": "vocab/lemon.png"
+    },
+    {
+      "word": "mango",
+      "translation": "Quả xoài",
+      "lane": 5,
+      "imagePath": "vocab/mango.png"
+    },
+    {
+      "word": "cherry",
+      "translation": "Quả anh đào",
+      "lane": 6,
+      "imagePath": "vocab/cherry.png"
+    }
+  ],
+  "noteEvents": [
+    { "timeMs": 2000, "lane": 0, "vocabKey": "apple" },
+    { "timeMs": 3000, "lane": 1, "vocabKey": "banana" },
+    { "timeMs": 4000, "lane": 2, "vocabKey": "orange" },
+    { "timeMs": 5000, "lane": 3, "vocabKey": "grape" },
+    { "timeMs": 6000, "lane": 4, "vocabKey": "lemon" },
+    { "timeMs": 7000, "lane": 5, "vocabKey": "mango" },
+    { "timeMs": 8000, "lane": 6, "vocabKey": "cherry" },
+    { "timeMs": 10000, "lane": 0, "vocabKey": "apple" },
+    { "timeMs": 11000, "lane": 2, "vocabKey": "orange" },
+    { "timeMs": 12000, "lane": 4, "vocabKey": "lemon" },
+    { "timeMs": 13000, "lane": 6, "vocabKey": "cherry" },
+    { "timeMs": 15000, "lane": 1, "vocabKey": "banana" },
+    { "timeMs": 16000, "lane": 3, "vocabKey": "grape" },
+    { "timeMs": 17000, "lane": 5, "vocabKey": "mango" },
+    { "timeMs": 19000, "lane": 0, "vocabKey": "apple" },
+    { "timeMs": 20000, "lane": 1, "vocabKey": "banana" },
+    { "timeMs": 21000, "lane": 2, "vocabKey": "orange" },
+    { "timeMs": 22000, "lane": 3, "vocabKey": "grape" },
+    { "timeMs": 24000, "lane": 4, "vocabKey": "lemon" },
+    { "timeMs": 25000, "lane": 5, "vocabKey": "mango" }
+  ]
+}

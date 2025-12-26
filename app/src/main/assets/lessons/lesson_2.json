@@ -1,0 +1,96 @@
+{
+  "id": 2,
+  "lessonId": "forest_level_2",
+  "title": "Animals",
+  "titleVietnamese": "Động Vật",
+  "theme": "NATURE",
+  "mainCharacter": "forest_guardian",
+  "bpm": 100,
+  "trackLengthSeconds": 60,
+  "ageConfigs": {
+    "TODDLER": {
+      "bpm": 60,
+      "perfectWindow": 220,
+      "goodWindow": 380,
+      "glitchNoteInterval": 15
+    },
+    "EXPLORER": {
+      "bpm": 90,
+      "perfectWindow": 160,
+      "goodWindow": 280,
+      "glitchNoteInterval": 10
+    },
+    "MASTER": {
+      "bpm": 120,
+      "perfectWindow": 120,
+      "goodWindow": 220,
+      "glitchNoteInterval": 6
+    }
+  },
+  "vocabItems": [
+    {
+      "word": "cat",
+      "translation": "Con mèo",
+      "lane": 0,
+      "imagePath": "vocab/cat.png"
+    },
+    {
+      "word": "dog",
+      "translation": "Con chó",
+      "lane": 1,
+      "imagePath": "vocab/dog.png"
+    },
+    {
+      "word": "bird",
+      "translation": "Con chim",
+      "lane": 2,
+      "imagePath": "vocab/bird.png"
+    },
+    {
+      "word": "fish",
+      "translation": "Con cá",
+      "lane": 3,
+      "imagePath": "vocab/fish.png"
+    },
+    {
+      "word": "lion",
+      "translation": "Con sư tử",
+      "lane": 4,
+      "imagePath": "vocab/lion.png"
+    },
+    {
+      "word": "tiger",
+      "translation": "Con hổ",
+      "lane": 5,
+      "imagePath": "vocab/tiger.png"
+    },
+    {
+      "word": "elephant",
+      "translation": "Con voi",
+      "lane": 6,
+      "imagePath": "vocab/elephant.png"
+    }
+  ],
+  "noteEvents": [
+    { "timeMs": 2000, "lane": 0, "vocabKey": "cat" },
+    { "timeMs": 3000, "lane": 1, "vocabKey": "dog" },
+    { "timeMs": 4000, "lane": 2, "vocabKey": "bird" },
+    { "timeMs": 5500, "lane": 3, "vocabKey": "fish" },
+    { "timeMs": 6500, "lane": 4, "vocabKey": "lion" },
+    { "timeMs": 7500, "lane": 5, "vocabKey": "tiger" },
+    { "timeMs": 8500, "lane": 6, "vocabKey": "elephant" },
+    { "timeMs": 10000, "lane": 0, "vocabKey": "cat" },
+    { "timeMs": 11000, "lane": 2, "vocabKey": "bird" },
+    { "timeMs": 12000, "lane": 4, "vocabKey": "lion" },
+    { "timeMs": 13500, "lane": 1, "vocabKey": "dog" },
+    { "timeMs": 14500, "lane": 3, "vocabKey": "fish" },
+    { "timeMs": 16000, "lane": 5, "vocabKey": "tiger" },
+    { "timeMs": 17500, "lane": 6, "vocabKey": "elephant" },
+    { "timeMs": 19000, "lane": 0, "vocabKey": "cat" },
+    { "timeMs": 20000, "lane": 1, "vocabKey": "dog" },
+    { "timeMs": 21500, "lane": 2, "vocabKey": "bird" },
+    { "timeMs": 23000, "lane": 3, "vocabKey": "fish" },
+    { "timeMs": 24500, "lane": 4, "vocabKey": "lion" },
+    { "timeMs": 26000, "lane": 5, "vocabKey": "tiger" }
+  ]
+}

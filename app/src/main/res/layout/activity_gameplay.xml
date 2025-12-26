@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E">
+
+    <!-- Background Image (for color saturation filter) -->
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@android:color/holo_blue_dark"
+        android:contentDescription="Background" />
+
+    <!-- Environment Background (evolves based on progress) -->
+    <ImageView
+        android:id="@+id/imgEnvironment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Environment" />
+
+    <!-- Character (center left) -->
+    <ImageView
+        android:id="@+id/imgCharacter"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="32dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:contentDescription="Character" />
+
+    <!-- Tree (evolves with progress) -->
+    <ImageView
+        android:id="@+id/imgTree"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="200dp"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:contentDescription="Tree" />
+
+    <!-- Rhythm Track View -->
+    <com.edu.english.magicmelody.ui.components.RhythmTrackView
+        android:id="@+id/rhythmTrackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button_circle"
+            android:src="@android:drawable/ic_media_pause"
+            android:contentDescription="Pause" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressGame"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bg_progress_gradient" />
+
+            <!-- Score and Combo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Điểm: 0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtCombo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Combo: 0"
+                    android:textColor="#FFD700"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Hit Feedback (center) -->
+    <TextView
+        android:id="@+id/txtHitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="PERFECT!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:visibility="gone"
+        android:elevation="10dp" />
+
+    <!-- Vocab Display (above piano) -->
+    <TextView
+        android:id="@+id/txtVocab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/bg_card_glow"
+        android:padding="12dp"
+        android:text="APPLE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <!-- Piano Key Bar -->
+    <com.edu.english.magicmelody.ui.components.PianoKeyBarView
+        android:id="@+id/pianoKeyBar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom"
+        android:padding="8dp" />
+
+    <!-- Countdown Overlay -->
+    <FrameLayout
+        android:id="@+id/countdownOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3"
+            android:textSize="120sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </FrameLayout>
+
+    <!-- Result Panel -->
+    <LinearLayout
+        android:id="@+id/resultPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:background="@drawable/bg_card_glow"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtResultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 Hoàn thành!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/layoutResultStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/imgResultStar1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:contentDescription="Star 1" />
+
+            <ImageView
+                android:id="@+id/imgResultStar2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:contentDescription="Star 2" />
+
+            <ImageView
+                android:id="@+id/imgResultStar3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:contentDescription="Star 3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtResultScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Điểm: 1000"
+            android:textSize="22sp"
+            android:textColor="#FFD700" />
+
+        <TextView
+            android:id="@+id/txtResultAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Chính xác: 95%"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtResultMaxCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Combo cao nhất: 50"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtResultStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="⭐⭐⭐"
+            android:textSize="24sp"
+            android:textColor="#FFD700" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_retry"
+                android:text="Thử lại"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="24dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_button_continue"
+                android:text="Tiếp tục"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Spirit Orb (for collection animation) -->
+    <ImageView
+        android:id="@+id/imgSpiritOrb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:visibility="gone"
+        android:contentDescription="Spirit Orb" />
+
+    <!-- Notebook Button (collect spirit orbs) -->
+    <ImageButton
+        android:id="@+id/btnNotebook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_button_circle"
+        android:src="@android:drawable/ic_menu_agenda"
+        android:contentDescription="Notebook" />
+
+    <!-- Lottie Particles (celebration effects) -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieParticles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        android:visibility="gone" />
+
+    <!-- Flash Effect (bloom trigger) -->
+    <View
+        android:id="@+id/viewFlash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFFFF"
+        android:alpha="0"
+        android:visibility="gone" />
+
+    <!-- Loading View -->
+    <FrameLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="Đang tải..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</FrameLayout>

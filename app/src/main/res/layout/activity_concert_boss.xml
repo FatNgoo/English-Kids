@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Star Frame Overlay -->
+    <com.edu.english.magicmelody.ui.components.CameraOverlayView
+        android:id="@+id/cameraOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#66000000">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button_circle"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="🎤 Concert Boss Battle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm: 0"
+            android:textSize="16sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Game Container -->
+    <LinearLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <!-- Boss Image -->
+        <ImageView
+            android:id="@+id/imgBoss"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@android:drawable/ic_dialog_alert"
+            android:contentDescription="Boss" />
+
+        <!-- Boss HP Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boss HP"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBossHp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:max="100"
+                android:progress="100"
+                android:progressTint="#FF4444"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Current Vocab -->
+        <TextView
+            android:id="@+id/txtVocab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_card_glow"
+            android:text="APPLE"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <!-- Speak Button -->
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_speaker"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="Speak" />
+
+        <!-- Mic Level -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎤 Hét lớn để tấn công!"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/progressMicLevel"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="250dp"
+                android:layout_height="16dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#4CAF50"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_button_start"
+        android:text="Bắt đầu chiến đấu!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp" />
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#66000000">
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_retry"
+            android:text="⏺ Ghi hình"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/txtRecordingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="🔴 Đang ghi..."
+            android:textColor="#FF4444"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

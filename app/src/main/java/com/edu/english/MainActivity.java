@@ -136,12 +136,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleGameClick(GameItem game) {
-        if (game.getGameType().equals("word_race")) {
-            Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
-            startActivity(wordRaceIntent);
-        } else {
-            String message = "Let's play " + game.getTitle() + "! 🎮";
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        switch (game.getGameType()) {
+            case "word_race":
+                Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
+                startActivity(wordRaceIntent);
+                break;
+            case "magic_melody":
+                Intent magicMelodyIntent = new Intent(MainActivity.this, 
+                    com.edu.english.magicmelody.ui.adventure.AdventureActivity.class);
+                startActivity(magicMelodyIntent);
+                break;
+            default:
+                String message = "Let's play " + game.getTitle() + "! 🎮";
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 }

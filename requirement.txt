@@ -1,467 +1,273 @@
-Khi click vào nút Colors trên màn hình chính thì sẽ vào game:
-
-COLOR ALCHEMY LAB
-(Ultra Smooth Animation – Physics Feeling – Duolingo / Lingokids Style)
-
-🎯 ROLE (BẮT BUỘC)
-Act as a Senior Android Engineer + 2D Game Developer + Motion Designer.
-You must build a COMPLETE, PLAYABLE ANDROID FEATURE using JAVA, not Kotlin, not Unity.
-Your output must be real Android code, runnable immediately after build.
-
-🎮 FEATURE OVERVIEW
-Feature name: Color Alchemy Lab
-Purpose:
-Teach kids secondary colors and color shades (light/dark)
-
-
-Through physical interaction, motion, and sound
-
-
-Target users:
-Kids 4–7 years old
-
-
-Visual quality:
-Premium
-
-
-Playful
-
-
-Educational
-
-
-Similar polish level to Duolingo / Lingokids
-
-
-
-📱 ORIENTATION & PLATFORM
-Android Native
-
-
-Language: Java
-
-
-Orientation: Portrait
-
-
-Must support:
-
-
-Touch gestures
-
-
-Accelerometer (shake & tilt)
-
-
-Smooth animation at ~60 FPS
-
-
-
-🧱 CORE TECHNOLOGY (STRICT – DO NOT IGNORE)
-You MUST use:
-🎬 Animation & Rendering
-SurfaceView + Canvas
-
-
-Custom Game Loop with deltaTime
-
-
-Manual animation interpolation (NO XML animation for gameplay)
-
-
-Easing functions:
-
-
-EaseInOut
-
-
-Overshoot / Bounce
-
-
-🎨 UI Layer
-Regular Android Views OR Compose (optional)
-
-
-Canvas-drawn game world
-
-
-UI overlays animated manually
-
-
-🎧 Audio
-SoundPool for SFX
-
-
-MediaPlayer for voice & music
-
-
-🚫 DO NOT use:
-Unity
-
-
-LibGDX
-
-
-MotionLayout
-
-
-XML Tween animation for game objects
-
-
-
-🧪 STAGE 1 – THE ALCHEMY (COLOR MIXING)
-🎨 UI SCENE
-A magic laboratory table
-
-
-Three glass test tubes:
-
-
-Red
-
-
-Blue
-
-
-Yellow
-
-
-One empty glass beaker at center
-
-
-Style:
-Soft pastel colors
-
-
-Rounded shapes
-
-
-Subtle shadows
-
-
-Clean white background panels
-
-
-Friendly cartoon look (Duolingo/Lingokids style)
-
-
-
-👉 INTERACTION – DRAG & POUR
-Kids can drag ANY TWO test tubes
-
-
-When a tube is dragged over the beaker:
-
-
-Tube tilts smoothly
-
-
-Liquid pours with animated flow
-
-
-Liquid level decreases inside tube
-
-
-Sound:
-
-
-Glass clink
-
-
-“Glug glug” liquid sound
-
-
-
-📳 INTERACTION – SHAKE TO MIX
-After pouring two colors:
-Beaker displays text:
-
-
- “Shake me!”
-
-
-
-Use Accelerometer
-
-
-Detect gentle shake motion
-
-
-Liquid inside beaker:
-
-
-Sloshes left/right
-
-
-Always stays horizontal relative to gravity
-
-
-Animation:
-
-
-Physics-like liquid motion
-
-
-Smooth damping
-
-
-
-✨ RESULT – COLOR CREATION
-When shaking is successful:
-Bubble / sparkle explosion effect
-
-
-Liquid color morphs smoothly
-
-
-Example:
-
-
-Red + Blue → Purple
-
-
-Display:
-
-
-3D-style text: PURPLE
-
-
-Bounce-in animation
-
-
-Audio:
-
-
-Native pronunciation
-
-
-Sentence:
-
-
- “Red and Blue make Purple!”
-
-
-
-
-🎚️ STAGE 2 – THE LIGHTNESS WAND (SHADES & TINTS)
-🎛️ MAGIC SLIDER
-Appears under the beaker:
-Left icon: ☀️ Sun (White)
-
-
-Right icon: 🌙 Moon (Black)
-
-
-Slider handle glows slightly
-
-
-
-👉 INTERACTION – SLIDE TO CHANGE SHADE
-Sliding toward ☀️:
-
-
-Color becomes lighter (add white)
-
-
-Voice:
-
-
- “Light Purple”
-
-
-
-Sliding toward 🌙:
-
-
-Color becomes darker (add black)
-
-
-Voice:
-
-
- “Dark Purple”
-
-
-
-Color change must be:
-
-
-Continuous
-
-
-Smooth
-
-
-Real-time
-
-
-
-🧠 LEARNING LOGIC
-Kids learn:
-Colors are not fixed
-
-
-Colors have light / dark variations
-
-
-New vocabulary:
-
-
-Light
-
-
-Dark
-
-
-
-🌊 PHYSICS & SENSOR EFFECTS (IMPORTANT)
-Liquid inside tubes & beaker:
-
-
-Always reacts to device tilt
-
-
-Uses accelerometer gravity vector
-
-
-Movement must feel:
-
-
-Soft
-
-
-Natural
-
-
-Never jerky
-
-
-
-🏆 COLLECTION SYSTEM
-Each new color or shade unlocked:
-
-
-Saved into Color Collection Board
-
-
-Board shows:
-
-
-Color swatches
-
-
-Names (Purple, Light Purple, Dark Purple)
-
-
-Progress persistence:
-
-
-SharedPreferences or local storage
-
-
-
-🎵 SOUND & ASMR DETAILS
-Glass tap sounds when dragging tubes
-
-
-Liquid pouring sounds
-
-
-Magical “Ting!” on success
-
-
-Calm, playful background ambience
-
-
-
-🎨 VISUAL STYLE (STRICT)
-Modern flat illustration
-
-
-Soft gradients
-
-
-Rounded shapes
-
-
-Clean white UI cards
-
-
-Friendly characters/icons
-
-
-Duolingo / Lingokids level polish
-
-
-
-🧱 CODE STRUCTURE (REQUIRED)
-Organize code into:
-GameLoop
-
-
-Renderer
-
-
-Beaker
-
-
-TestTube
-
-
-LiquidSimulation
-
-
-ColorMixer
-
-
-ShadeController
-
-
-SensorManagerHandler
-
-
-SoundManager
-
-
-CollectionManager
-
-
-Code must be:
-Clean
-
-
-Commented
-
-
-Extendable
-
-
-
-✅ FINAL OUTPUT REQUIREMENTS
-Your output MUST include:
-Full Java Android code
-
-
-SurfaceView with game loop
-
-
-Accelerometer handling
-
-
-Liquid animation logic
-
-
-Color mixing logic
-
-
-Smooth easing-based animation
-
-
-Runnable Activity
-
-
-🚫 NO pseudo code
- 🚫 NO placeholders
- 🚫 NO missing logic
-
+Khi click vào game Magic Melody trong phần game trên màn hình chính thì sẽ vào game:
+
+MAGIC MELODY (Android Java Native / MVVM / SceneView)
+
+Bạn đang là Lead Android Game Engineer + Technical Architect.
+Nhiệm vụ: IMPLEMENT một game Android Native chạy được và chơi được ngay theo GDD “MAGIC MELODY: THE LEGEND OF SOUND KINGDOM”.
+Đây KHÔNG phải prototype. KHÔNG pseudo-code. KHÔNG TODO. Mọi thứ phải compile + run + playable.
+
+========================================================
+0) LUẬT CỨNG (NON-NEGOTIABLE)
+========================================================
+- Ngôn ngữ: Java (TUYỆT ĐỐI không Kotlin).
+- Min SDK: 26 (Android 8.0). Target SDK: hợp lý mới nhất.
+- Kiến trúc: MVVM chuẩn + Repository + Room.
+- UI: ViewBinding (bật trong Gradle). Không dùng findViewById tràn lan.
+- Game Loop: chạy mượt (60fps nếu được), tránh allocations trong loop.
+- Nếu thiếu assets (3D model, audio samples, lottie): BẮT BUỘC có fallback vẫn chạy được.
+- Output: BẮT BUỘC FILE-BY-FILE, ghi rõ đường dẫn, full code đầy đủ.
+- Không được hỏi tôi trước. Tự đặt giả định hợp lý và code ngay.
+
+========================================================
+1) MỤC TIÊU HOÀN THÀNH (DEFINITION OF DONE)
+========================================================
+App build Gradle OK và chạy trên máy thật/emulator:
+✅ Vào AdventureActivity thấy World Map (node locked/unlocked)
+✅ Tap node unlocked vào GameplayActivity: nốt rơi, bấm piano được, có chấm điểm + progress
+✅ Environment Evolution realtime: xám -> màu, cây lớn dần, 100% nở rộ/bloom + nhân vật vui
+✅ Win flow: spirit orb bay vào notebook icon, lưu collection Room, unlock level tiếp
+✅ NotebookActivity: grid collection, tap item đọc vocab (TTS) + replay melody
+✅ ConcertBossActivity: CameraX front preview + RMS mic giảm HP boss + record fallback lưu mp4
+
+========================================================
+2) CONCEPT & CORE LOOP
+========================================================
+Title: MAGIC MELODY: THE LEGEND OF SOUND KINGDOM
+Core Loop (bắt buộc):
+Rhythm Gameplay → Environmental Evolution → Revive Character → Collect vào Magic Notebook → Unlock next level
+
+Độ tuổi:
+- TODDLER 3–5: 60 BPM, nốt to, timing window rộng, vocab danh từ
+- EXPLORER 6–8: 90 BPM, vừa
+- MASTER 9+: 120 BPM, khó hơn, câu đơn giản
+Theme: NATURE (default) / FANTASY / SCIFI
+LessonManager load JSON theo age+theme.
+
+========================================================
+3) CẤU TRÚC PROJECT (BẮT BUỘC)
+========================================================
+package: com.magicmelody
+
+app/src/main/java/com/magicmelody/
+├── ui
+│   ├── adventure
+│   ├── gameplay
+│   ├── concert
+│   └── notebook
+├── core
+│   ├── audio
+│   ├── game
+│   └── video
+├── data
+│   ├── local
+│   ├── model
+│   └── repo
+└── utils
+
+========================================================
+4) TECH STACK (PHẢI DÙNG)
+========================================================
+- 3D: SceneView (io.github.sceneview:arsceneview hoặc sceneview non-AR)
+- Animation key: SpringAnimation (androidx.dynamicanimation)
+- UI effects: Lottie (com.airbnb.android:lottie)
+- Music: SoundPool (low latency) + fallback ToneEngine (AudioTrack sine wave)
+- Backing track: Media3 ExoPlayer (androidx.media3:media3-exoplayer)
+- DB: Room
+- JSON: Gson
+- Camera: CameraX
+- Recording: MediaProjection + MediaMuxer (fallback mic-only nếu không internal audio capture)
+
+========================================================
+5) DATA MODEL + PERSONALIZATION
+========================================================
+UserProfile (lưu bằng SharedPreferences hoặc Room – chọn 1 và implement sạch):
+- ageGroup: TODDLER / EXPLORER / MASTER
+- theme: NATURE / FANTASY / SCIFI
+
+Lesson JSON đặt ở: app/src/main/assets/lessons/
+Mỗi lesson gồm:
+- lesson_id
+- base_song (có thể optional)
+- config per age group: bpm, notes_visible, timing windows
+- themes: main_char (tên model), vocab list
+- note_chart: danh sách note events (timeMs hoặc beatIndex, lane, vocabKey)
+
+Glitch Note (ôn tập thông minh):
+- Lưu sai theo vocab vào Room (MistakeEntity)
+- Trong Gameplay: cứ mỗi N nốt thì inject 1 GlitchNote từ top mistakes (N tuỳ age group)
+
+========================================================
+6) ROOM DATABASE (BẮT BUỘC)
+========================================================
+Entities tối thiểu:
+- CollectionEntity(
+    id (auto),
+    lessonId,
+    theme,
+    characterName,
+    vocab,
+    collectedAt
+  )
+- ProgressEntity(
+    lessonId (PK),
+    stars,
+    bestScore,
+    unlocked (boolean)
+  )
+- MistakeEntity(
+    vocab (PK),
+    wrongCount,
+    lastWrongAt
+  )
+
+DAOs:
+- CollectionDao: insert, getAll, getByTheme
+- ProgressDao: get, upsert, unlockNext, getAllOrdered
+- MistakeDao: incrementWrong(vocab), topMistakes(limit)
+
+Database:
+- MagicMelodyDatabase
+
+Repos:
+- CollectionRepository, ProgressRepository, MistakeRepository
+(Thực thi bằng Executor/ThreadPool cho Java, trả LiveData)
+
+========================================================
+7) MÀN HÌNH BẮT BUỘC (ACTIVITIES + MVVM)
+========================================================
+A) AdventureActivity (World Map)
+- RecyclerView cuộn dọc, layout ziczac (có thể bằng item với margin alternate trái/phải).
+- Node locked/unlocked dựa trên ProgressEntity.
+- Tap unlocked -> GameplayActivity (extras: lessonId).
+- Nếu lần đầu: seed progress: forest_level_1 unlocked=true; còn lại locked.
+
+B) GameplayActivity (PLAYABLE — QUAN TRỌNG NHẤT)
+Bắt buộc có:
+1) Rhythm Engine:
+- RhythmTrackView: custom View vẽ nốt rơi theo lane (Canvas).
+- Note objects dùng ObjectPool (tái sử dụng) để tránh GC.
+- GameLoop dùng Choreographer hoặc Handler fixed-step (16ms). Không tạo object trong draw/update.
+- Timing windows theo ageGroup: PERFECT/GOOD/MISS (ví dụ Toddler: ±220ms/±380ms; Explorer: ±160/±280ms; Master: ±120/±220ms).
+- Input: bấm key -> match note gần nhất cùng lane trong window; chấm điểm, cập nhật progress.
+- Soft feedback khi sai: rung nhẹ key + âm “oops”, không phạt nặng.
+
+2) Piano Key Bar:
+- 7 phím (C D E F G A B), custom view mỗi phím có SpringAnimation “nảy”.
+- SoundPool phát sample nếu có; fallback ToneEngine (AudioTrack sine wave) nếu không.
+
+3) Environmental Evolution realtime:
+Viết function bắt buộc:
+updateEnvironment(float progress01)
+Trong đó:
+- Grayscale -> color: ColorMatrixColorFilter saturation (hoặc overlay alpha).
+- Tree scale từ 0.5 → 1.0 (SceneView node scale hoặc fallback View scale).
+- progress>=1.0: trigger bloom/particle (Lottie hoặc Konfetti), character dance animation (SceneView animation nếu có, fallback rotate/scale), chỉ trigger 1 lần.
+
+4) Win Flow + Collection:
+- Khi progress đạt 1:
+  - tạo Spirit Orb bay vào icon Notebook (animation nhẹ, không lag)
+  - tính stars (dựa accuracy & score)
+  - lưu CollectionEntity + update ProgressEntity bestScore/stars
+  - unlock level kế tiếp
+  - show màn kết quả + nút Next (quay về map hoặc auto open next)
+
+C) NotebookActivity
+- RecyclerView grid list CollectionEntity.
+- Tap item:
+  - TextToSpeech đọc vocab (VN/EN tuỳ string)
+  - replay melody snippet (ExoPlayer nếu có file, fallback ToneEngine 1–2s)
+  - UI “pop-up feel”: có SceneView nhỏ hoặc animation scale + shadow.
+
+D) ConcertBossActivity (ADVANCED)
+- CameraX front preview hiển thị trong khung sao overlay.
+- Mic RMS detection realtime (AudioRecord):
+  - RMS vượt threshold -> giảm HP boss theo delta (dễ thắng).
+- Boss visual:
+  - SceneView node translate/scale hoặc fallback View translation.
+- Recording:
+  - MediaProjection screen capture + MediaMuxer xuất mp4.
+  - Thu mic audio.
+  - Nếu internal audio capture khả dụng (Android 10+): dùng; nếu không: fallback mic-only.
+  - Lưu file vào MediaStore Movies/MagicMelody hoặc app external.
+- Permission flow:
+  - giải thích thân thiện cho trẻ/PH: camera/mic/record.
+
+========================================================
+8) CORE MODULES (BẮT BUỘC TỒN TẠI)
+========================================================
+core/audio/
+- SoundEngine.java (wrap SoundPool + fallback ToneEngine)
+- ToneEngine.java (AudioTrack sine wave, playNote(noteIndex, durationMs))
+- Metronome.java (optional tick fallback)
+
+core/game/
+- GameLoop.java (tick, start/stop)
+- RhythmEngine.java (parse chart, spawn notes, judge hits)
+- Note.java, NotePool.java, JudgeResult.java
+
+core/video/
+- ScreenRecorderService.java (ForegroundService MediaProjection)
+- RecorderController.java (start/stop, file output)
+- (fallback paths implemented)
+
+========================================================
+9) UI CUSTOM VIEWS (BẮT BUỘC)
+========================================================
+ui/components (hoặc trong ui/*/components)
+- BouncyPianoKeyView.java (SpringAnimation press/release)
+- PianoKeyBarView.java (tập hợp 7 keys, callback onKeyPressed(lane))
+- RhythmTrackView.java (Canvas draw notes, lanes, hit line)
+- CameraOverlayView.java (khung sao overlay)
+
+========================================================
+10) UX WRITING (TRẺ EM / TIẾNG VIỆT)
+========================================================
+Thêm strings tối thiểu:
+- “Xin chào Vệ Thần Nhí!...”
+- “Cố lên! Cây cối đang mọc lá rồi!”
+- “Hát to lên nào! LA LA LA!”
+- Sai: “Oops! Thử lại nha!”
+
+========================================================
+11) DEPENDENCIES (GRADLE GROOVY) — PHẢI ĐÚNG & BUILD ĐƯỢC
+========================================================
+- Room runtime + compiler (annotationProcessor)
+- Gson
+- Media3 ExoPlayer
+- Lottie
+- DynamicAnimation
+- CameraX core/camera2/lifecycle/view
+- SceneView
+- Material + ConstraintLayout + RecyclerView
+
+Bật:
+- viewBinding true
+- compileOptions JavaVersion 17 (hoặc 11 nếu cần, nhưng phải nhất quán)
+
+========================================================
+12) OUTPUT FORMAT (QUAN TRỌNG NHẤT)
+========================================================
+Bạn phải output theo thứ tự:
+1) settings.gradle, root build.gradle, app/build.gradle (Groovy)
+2) AndroidManifest.xml
+3) res/values/strings.xml + colors/themes tối thiểu
+4) Layout XML cho 4 màn hình + item map + item notebook
+5) TẤT CẢ Java source files theo module (ui → core → data → utils)
+6) assets JSON sample (ít nhất 3 lessons) + chart mẫu đủ chơi
+7) Hướng dẫn chạy: cách mở Android Studio, sync gradle, chạy emulator, test flow
+
+Mỗi file output phải theo format:
+// FILE: <đường dẫn>
+<full content>
+
+Nếu quá dài:
+- Dừng đúng file, ghi: “GÕ CONTINUE để tiếp tục phần còn lại”
+- Khi tôi nói CONTINUE, bạn tiếp tục ngay từ file kế tiếp, không lặp.
+
+========================================================
+13) BẮT ĐẦU NGAY
+========================================================
+BẮT ĐẦU output ngay với:
+- Gradle files + Manifest + strings/themes cơ bản để app launch được.
+Sau đó tiếp tục lần lượt các file còn lại cho đến khi hoàn chỉnh.
+GO.

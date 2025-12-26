@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_magic_melody">
+
+    <!-- Decorative musical notes (floating) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:text="🎵"
+        android:textSize="24sp"
+        android:alpha="0.4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="200dp"
+        android:text="🎶"
+        android:textSize="28sp"
+        android:alpha="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:text="✨"
+        android:textSize="20sp"
+        android:alpha="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="450dp"
+        android:text="🎵"
+        android:textSize="22sp"
+        android:alpha="0.4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="100dp"
+        android:text="🌟"
+        android:textSize="26sp"
+        android:alpha="0.3" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar with gradient overlay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:paddingTop="24dp"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+                
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_magic_button"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:contentDescription="Back" />
+            </FrameLayout>
+
+            <!-- Welcome Text -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/txtWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xin chào Vệ Thần Nhí!"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#80000000"
+                    android:shadowRadius="4"
+                    android:shadowDx="1"
+                    android:shadowDy="1" />
+            </LinearLayout>
+
+            <!-- Star Counter Badge -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_star_badge"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- Notebook Button -->
+            <ImageButton
+                android:id="@+id/btnNotebook"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_magic_button"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Notebook" />
+
+            <!-- Concert Boss Button -->
+            <ImageButton
+                android:id="@+id/btnConcert"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_music_note_button"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Concert Boss" />
+
+        </LinearLayout>
+
+        <!-- Title Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎹 Vương Quốc Âm Thanh 🎹"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFD700"
+                android:shadowColor="#80FF6B9D"
+                android:shadowRadius="8"
+                android:shadowDx="0"
+                android:shadowDy="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn màn chơi để bắt đầu phiêu lưu!"
+                android:textSize="13sp"
+                android:textColor="#B0FFFFFF"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Level RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLevels"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_level_node" />
+
+    </LinearLayout>
+
+    <!-- Settings Button (floating top-right) -->
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_magic_button"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:scaleType="centerInside"
+        android:padding="8dp"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:contentDescription="Settings" />
+
+    <!-- Loading Progress -->
+    <FrameLayout
+        android:id="@+id/loadingProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+            
+            <ProgressBar
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:indeterminateTint="#FFD700" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang tải..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

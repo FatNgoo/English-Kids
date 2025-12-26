@@ -1,6 +1,50 @@
 <resources>
     <string name="app_name">4Kids</string>
     
+    <!-- Magic Melody -->
+    <string name="magicmelody_title">Magic Melody</string>
+    <string name="magicmelody_welcome">Xin chào, Nhà thám hiểm!</string>
+    <string name="magicmelody_welcome_guardian">Xin chào Vệ Thần Nhí!</string>
+    <string name="magicmelody_world_map">Bản đồ Vương quốc Âm thanh</string>
+    <string name="magicmelody_notebook">Sổ tay Ma thuật</string>
+    <string name="magicmelody_collection_count">Bộ sưu tập: %d từ vựng</string>
+    <string name="magicmelody_perfect">PERFECT!</string>
+    <string name="magicmelody_good">GOOD!</string>
+    <string name="magicmelody_miss">MISS!</string>
+    <string name="magicmelody_combo">%d Combo!</string>
+    <string name="magicmelody_score">Điểm: %d</string>
+    <string name="magicmelody_completed">🎉 Hoàn thành!</string>
+    <string name="magicmelody_failed">💔 Thất bại!</string>
+    <string name="magicmelody_retry">Thử lại</string>
+    <string name="magicmelody_continue">Tiếp tục</string>
+    <string name="magicmelody_exit">Thoát</string>
+    <string name="magicmelody_pause">Tạm dừng</string>
+    <string name="magicmelody_resume">Tiếp tục</string>
+    <string name="magicmelody_locked">Hoàn thành các màn trước để mở khóa!</string>
+    <string name="magicmelody_boss_battle">🎤 Concert Boss Battle</string>
+    <string name="magicmelody_shout">Hét lớn để tấn công!</string>
+    <string name="magicmelody_victory">🎉 Chiến thắng!</string>
+    <string name="magicmelody_defeat">💔 Thất bại!</string>
+    <string name="magicmelody_start_battle">Bắt đầu chiến đấu!</string>
+    <string name="magicmelody_recording">Đang ghi...</string>
+    <string name="magicmelody_empty_collection">Chưa có từ vựng nào!\nHãy chơi các màn để thu thập 🎵</string>
+    <string name="magicmelody_filter_all">Tất cả</string>
+    <string name="magicmelody_filter_nature">🌿 Thiên nhiên</string>
+    <string name="magicmelody_filter_fantasy">✨ Huyền bí</string>
+    <string name="magicmelody_filter_scifi">🚀 Sci-Fi</string>
+    
+    <!-- Magic Melody UX Feedback -->
+    <string name="magicmelody_encourage_trees">Cố lên! Cây cối đang mọc lá rồi!</string>
+    <string name="magicmelody_encourage_progress">Tuyệt vời! Vương quốc đang hồi sinh!</string>
+    <string name="magicmelody_encourage_almost">Sắp hoàn thành rồi! Cố thêm chút nữa!</string>
+    <string name="magicmelody_sing_loud">Hát to lên nào! LA LA LA!</string>
+    <string name="magicmelody_oops">Oops! Thử lại nha!</string>
+    <string name="magicmelody_great_job">Giỏi lắm!</string>
+    <string name="magicmelody_amazing">Tuyệt vời!</string>
+    <string name="magicmelody_keep_going">Tiếp tục nào!</string>
+    <string name="magicmelody_you_can_do_it">Bạn làm được mà!</string>
+    <string name="magicmelody_bloom_complete">🌸 Vương quốc nở rộ! 🌸</string>
+    
     <!-- Color Alchemy Lab -->
     <string name="alchemy_title">Color Alchemy Lab</string>
     <string name="alchemy_hint_drag">Drag a color tube to the beaker!</string>

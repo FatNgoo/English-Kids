@@ -124,6 +124,49 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.English.Fullscreen">
         </activity>
+        
+        <!-- ==================== MAGIC MELODY GAME ==================== -->
+        
+        <!-- Magic Melody - Adventure World Map -->
+        <activity
+            android:name=".magicmelody.ui.adventure.AdventureActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Gameplay Activity -->
+        <activity
+            android:name=".magicmelody.ui.gameplay.GameplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Notebook Collection -->
+        <activity
+            android:name=".magicmelody.ui.notebook.NotebookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Concert Boss Battle -->
+        <activity
+            android:name=".magicmelody.ui.concert.ConcertBossActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Screen Recorder Service -->
+        <service
+            android:name=".magicmelody.core.video.ScreenRecorderService"
+            android:foregroundServiceType="mediaProjection"
+            android:exported="false">
+        </service>
     </application>
 
 </manifest>

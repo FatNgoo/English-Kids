@@ -96,7 +96,7 @@ public class MascotSelectActivity extends AppCompatActivity {
             selectedCard.setCardElevation(4f);
             selectedCard.setScaleX(1f);
             selectedCard.setScaleY(1f);
-            View checkmark = selectedCard.findViewById(R.id.checkmark);
+            View checkmark = getCheckmarkForCard(selectedCard);
             if (checkmark != null) checkmark.setVisibility(View.GONE);
         }
 
@@ -112,7 +112,7 @@ public class MascotSelectActivity extends AppCompatActivity {
             .setInterpolator(new OvershootInterpolator())
             .start();
 
-        View checkmark = card.findViewById(R.id.checkmark);
+        View checkmark = getCheckmarkForCard(card);
         if (checkmark != null) {
             checkmark.setVisibility(View.VISIBLE);
             checkmark.setAlpha(0f);
@@ -122,6 +122,15 @@ public class MascotSelectActivity extends AppCompatActivity {
         // Enable start button
         findViewById(R.id.btn_start).setEnabled(true);
         findViewById(R.id.btn_start).setAlpha(1f);
+    }
+    
+    private View getCheckmarkForCard(CardView card) {
+        int cardId = card.getId();
+        if (cardId == R.id.card_mascot_1) return findViewById(R.id.checkmark_1);
+        if (cardId == R.id.card_mascot_2) return findViewById(R.id.checkmark_2);
+        if (cardId == R.id.card_mascot_3) return findViewById(R.id.checkmark_3);
+        if (cardId == R.id.card_mascot_4) return findViewById(R.id.checkmark_4);
+        return null;
     }
 
     private void setupStartButton() {
