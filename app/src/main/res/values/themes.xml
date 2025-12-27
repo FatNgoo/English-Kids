@@ -9,11 +9,16 @@
         <item name="android:navigationBarColor">@color/deep_blue_dark</item>
     </style>
 
-    <style name="Theme.English" parent="Base.Theme.English" />
+    <style name="Theme.English" parent="Base.Theme.English">
+        <!-- Add solid background to prevent black screen -->
+        <item name="android:windowBackground">@color/deep_blue</item>
+    </style>
     
     <!-- Splash Screen Theme -->
     <style name="Theme.English.Splash" parent="Theme.English">
         <item name="android:windowBackground">@drawable/bg_splash</item>
+        <!-- Disable window content transitions for faster loading -->
+        <item name="android:windowDisablePreview">true</item>
     </style>
     
     <!-- Fullscreen Theme for Games -->
@@ -39,5 +44,14 @@
         <item name="android:textStyle">bold</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Settings Dialog Theme -->
+    <style name="SettingsDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
     </style>
 </resources>
