@@ -1,6 +1,7 @@
 package com.edu.english;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -13,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.edu.english.magicmelody.ui.splash.MagicMelodySplashActivity;
 
 public class GamesActivity extends AppCompatActivity {
 
@@ -43,6 +46,7 @@ public class GamesActivity extends AppCompatActivity {
         LinearLayout cardMasterChef = findViewById(R.id.card_master_chef);
         LinearLayout cardDetective = findViewById(R.id.card_detective);
         LinearLayout cardPetHospital = findViewById(R.id.card_pet_hospital);
+        LinearLayout cardMagicMelody = findViewById(R.id.card_magic_melody);
 
         View.OnClickListener gameClickListener = v -> {
             // Scale animation on click
@@ -52,18 +56,32 @@ public class GamesActivity extends AppCompatActivity {
             int id = v.getId();
             if (id == R.id.card_master_chef) {
                 gameName = "Master Chef";
+                Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
             } else if (id == R.id.card_detective) {
                 gameName = "Detective";
+                Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
             } else if (id == R.id.card_pet_hospital) {
                 gameName = "Pet Hospital";
+                Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
+            } else if (id == R.id.card_magic_melody) {
+                // Launch Magic Melody Game!
+                launchMagicMelody();
+                return;
             }
-            
-            Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
         };
 
         cardMasterChef.setOnClickListener(gameClickListener);
         cardDetective.setOnClickListener(gameClickListener);
         cardPetHospital.setOnClickListener(gameClickListener);
+        if (cardMagicMelody != null) {
+            cardMagicMelody.setOnClickListener(gameClickListener);
+        }
+    }
+    
+    private void launchMagicMelody() {
+        Intent intent = new Intent(this, MagicMelodySplashActivity.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     private void animateCardPress(View view) {
@@ -89,7 +107,8 @@ public class GamesActivity extends AppCompatActivity {
         int[] cardIds = {
             R.id.card_master_chef, 
             R.id.card_detective, 
-            R.id.card_pet_hospital
+            R.id.card_pet_hospital,
+            R.id.card_magic_melody
         };
 
         for (int i = 0; i < cardIds.length; i++) {

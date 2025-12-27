@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    🎵 Magic Melody Splash Screen Layout
+    
+    Purpose: Entry screen for Magic Melody game
+    - Displays game logo with bounce animation
+    - Shows title and subtitle
+    - Loading indicator during asset preparation
+    
+    Design: Fantasy/magical theme with gradient background
+-->
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_magic_melody_splash"
+    tools:context=".magicmelody.ui.splash.MagicMelodySplashActivity">
+
+    <!-- Decorative Stars (Top) -->
+    <ImageView
+        android:id="@+id/stars_top"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_stars_decoration"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
+
+    <!-- Main Logo -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_magic_melody_logo"
+        android:contentDescription="Magic Melody Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <!-- Game Title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Magic Melody"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:shadowColor="#4B0082"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        app:layout_constraintTop_toBottomOf="@id/logo_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="The Legend of Sound Kingdom ✨"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:alpha="0.9"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Loading Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Loading Progress -->
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white" />
+
+        <!-- Loading Text -->
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Loading magical melodies... 🎵"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+    <!-- Decorative Musical Notes (floating) -->
+    <ImageView
+        android:id="@+id/note_decoration_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_music_note"
+        android:alpha="0.4"
+        android:rotation="15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/note_decoration_2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_music_note"
+        android:alpha="0.3"
+        android:rotation="-20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/note_decoration_3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_music_note"
+        android:alpha="0.35"
+        android:rotation="25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

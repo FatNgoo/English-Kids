@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌊 Ocean World Icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- Waves -->
+    <path
+        android:pathData="M4,32 Q12,24 20,32 Q28,40 36,32 Q44,24 52,32 Q60,40 64,32 L64,56 L4,56 Z"
+        android:fillColor="#3B82F6"/>
+    
+    <path
+        android:pathData="M4,40 Q12,32 20,40 Q28,48 36,40 Q44,32 52,40 Q60,48 64,40 L64,56 L4,56 Z"
+        android:fillColor="#2563EB"/>
+    
+    <!-- Fish -->
+    <path
+        android:pathData="M40,20 C45,18 50,20 50,24 C50,28 45,30 40,28 L35,32 L35,24 L40,20 Z"
+        android:fillColor="#F59E0B"/>
+    
+    <!-- Sun -->
+    <path
+        android:pathData="M16,16 A6,6 0 1,1 16,28 A6,6 0 1,1 16,16"
+        android:fillColor="#FCD34D"/>
+</vector>

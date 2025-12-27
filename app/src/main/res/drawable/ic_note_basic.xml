@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🎵 Note basic icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Note head -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M20,36c-3.3,0 -6,-2.7 -6,-6s2.7,-6 6,-6 6,2.7 6,6 -2.7,6 -6,6z"/>
+    
+    <!-- Note stem -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M24,30V12h4v18z"/>
+    
+    <!-- Note flag -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M28,12c4,2 6,6 6,10h-4c0,-3 -1,-5 -2,-6V12z"/>
+    
+</vector>

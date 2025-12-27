@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🦋 Forest Butterfly -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="40dp"
+    android:viewportWidth="50"
+    android:viewportHeight="40">
+    
+    <!-- Left wing top -->
+    <path
+        android:fillColor="#FF6B9D"
+        android:pathData="M25,20 Q10,5 8,15 Q5,25 25,20 Z" />
+    
+    <!-- Left wing bottom -->
+    <path
+        android:fillColor="#FF8FB1"
+        android:pathData="M25,20 Q10,35 8,28 Q5,20 25,20 Z" />
+    
+    <!-- Right wing top -->
+    <path
+        android:fillColor="#FF6B9D"
+        android:pathData="M25,20 Q40,5 42,15 Q45,25 25,20 Z" />
+    
+    <!-- Right wing bottom -->
+    <path
+        android:fillColor="#FF8FB1"
+        android:pathData="M25,20 Q40,35 42,28 Q45,20 25,20 Z" />
+    
+    <!-- Wing patterns -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,15 m-3,0 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,15 m-3,0 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0" />
+    
+    <!-- Body -->
+    <path
+        android:fillColor="#4A4A4A"
+        android:pathData="M24,8 L26,8 L26,32 L24,32 Z" />
+    
+    <!-- Antennae -->
+    <path
+        android:strokeColor="#4A4A4A"
+        android:strokeWidth="1"
+        android:pathData="M25,8 Q20,2 18,4" />
+    <path
+        android:strokeColor="#4A4A4A"
+        android:strokeWidth="1"
+        android:pathData="M25,8 Q30,2 32,4" />
+        
+</vector>

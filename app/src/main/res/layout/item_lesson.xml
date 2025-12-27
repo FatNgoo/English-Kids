@@ -7,31 +7,111 @@
     app:cardCornerRadius="16dp"
     app:cardElevation="4dp">
 
-    <LinearLayout
-        android:id="@+id/lesson_container"
+    <FrameLayout
+        android:id="@+id/cardContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:background="@drawable/bg_lesson_available">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:id="@+id/lesson_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/lesson_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_text_label"
-            android:fontFamily="sans-serif-black"
-            android:text="Lesson"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="6dp" />
+            <!-- Difficulty Indicator -->
+            <View
+                android:id="@+id/difficultyIndicator"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="#4CAF50" />
 
-    </LinearLayout>
+            <!-- Lesson Number -->
+            <TextView
+                android:id="@+id/lessonNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <!-- Lesson Title -->
+            <TextView
+                android:id="@+id/lessonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_label"
+                android:fontFamily="sans-serif-medium"
+                android:text="Lesson"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="4dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Star Rating Row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:contentDescription="Star 1" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:contentDescription="Star 2" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:contentDescription="Star 3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Lock Icon Overlay -->
+        <ImageView
+            android:id="@+id/lockIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_lock_lock"
+            android:visibility="gone"
+            android:contentDescription="Locked" />
+
+        <!-- Check Icon (Completed) -->
+        <ImageView
+            android:id="@+id/checkIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/checkbox_on_background"
+            android:visibility="gone"
+            android:contentDescription="Completed" />
+
+    </FrameLayout>
 
 </androidx.cardview.widget.CardView>

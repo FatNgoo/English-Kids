@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ⭐ Ocean Starfish -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="45dp"
+    android:height="45dp"
+    android:viewportWidth="45"
+    android:viewportHeight="45">
+    <path
+        android:fillColor="#FF8C00"
+        android:pathData="M22.5,2 L27,16 L42,16 L30,25 L35,40 L22.5,30 L10,40 L15,25 L3,16 L18,16 Z" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M22.5,8 L25,17 L35,17 L27,23 L30,33 L22.5,26 L15,33 L18,23 L10,17 L20,17 Z" />
+</vector>

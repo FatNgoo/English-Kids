@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌈 Sky Rainbow -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="45dp"
+    android:viewportWidth="80"
+    android:viewportHeight="45">
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M5,45 Q5,10 40,10 Q75,10 75,45 L70,45 Q70,15 40,15 Q10,15 10,45 Z" />
+    <path
+        android:fillColor="#FF7F00"
+        android:pathData="M10,45 Q10,18 40,18 Q70,18 70,45 L65,45 Q65,22 40,22 Q15,22 15,45 Z" />
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M15,45 Q15,24 40,24 Q65,24 65,45 L60,45 Q60,28 40,28 Q20,28 20,45 Z" />
+    <path
+        android:fillColor="#00FF00"
+        android:pathData="M20,45 Q20,30 40,30 Q60,30 60,45 L55,45 Q55,34 40,34 Q25,34 25,45 Z" />
+    <path
+        android:fillColor="#0000FF"
+        android:pathData="M25,45 Q25,36 40,36 Q55,36 55,45 L50,45 Q50,40 40,40 Q30,40 30,45 Z" />
+    <path
+        android:fillColor="#8B00FF"
+        android:pathData="M30,45 Q30,42 40,42 Q50,42 50,45 L45,45 Q45,45 40,45 Q35,45 35,45 Z" />
+</vector>

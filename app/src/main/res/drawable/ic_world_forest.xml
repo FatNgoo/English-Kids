@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌲 Forest World Icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- Tree -->
+    <path
+        android:pathData="M32,8 L48,32 L40,32 L52,48 L42,48 L42,56 L22,56 L22,48 L12,48 L24,32 L16,32 Z"
+        android:fillColor="#22C55E"/>
+    
+    <!-- Trunk -->
+    <path
+        android:pathData="M28,48 L36,48 L36,56 L28,56 Z"
+        android:fillColor="#8B4513"/>
+    
+    <!-- Small trees -->
+    <path
+        android:pathData="M12,40 L18,48 L6,48 Z"
+        android:fillColor="#16A34A"/>
+    
+    <path
+        android:pathData="M52,40 L58,48 L46,48 Z"
+        android:fillColor="#16A34A"/>
+</vector>

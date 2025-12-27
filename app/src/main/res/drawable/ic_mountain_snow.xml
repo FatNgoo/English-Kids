@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ❄️ Mountain Snow -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,5 L27,20 L25,22 L23,20 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,45 L27,30 L25,28 L23,30 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M5,25 L20,23 L22,25 L20,27 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,25 L30,23 L28,25 L30,27 Z" />
+    <path
+        android:fillColor="#E8F4FF"
+        android:pathData="M10,10 L18,18 L16,20 L8,12 Z" />
+    <path
+        android:fillColor="#E8F4FF"
+        android:pathData="M40,10 L32,18 L34,20 L42,12 Z" />
+    <path
+        android:fillColor="#E8F4FF"
+        android:pathData="M10,40 L18,32 L20,34 L12,42 Z" />
+    <path
+        android:fillColor="#E8F4FF"
+        android:pathData="M40,40 L32,32 L30,34 L38,42 Z" />
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ☁️ Sky Scene Background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#000033"
+                android:centerColor="#191970"
+                android:endColor="#87CEEB"
+                android:angle="90" />
+        </shape>
+    </item>
+</layer-list>

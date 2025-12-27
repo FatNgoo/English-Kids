@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🪸 Ocean Coral -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="45dp"
+    android:viewportWidth="50"
+    android:viewportHeight="45">
+    <path
+        android:fillColor="#FF6347"
+        android:pathData="M10,45 L12,30 Q8,20 15,15 Q12,10 18,8 Q15,5 20,5" />
+    <path
+        android:fillColor="#FF6347"
+        android:pathData="M10,45 L15,32 Q20,25 18,18 Q22,15 20,10" />
+    <path
+        android:fillColor="#FF4500"
+        android:pathData="M25,45 L25,28 Q30,22 28,15 Q32,12 30,8" />
+    <path
+        android:fillColor="#FF4500"
+        android:pathData="M25,45 L28,30 Q25,20 30,15 Q28,10 32,5" />
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M40,45 L38,32 Q42,25 38,18 Q42,12 40,8" />
+</vector>

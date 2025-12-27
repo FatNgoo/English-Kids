@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Magic Melody Lessons Configuration",
+  "description": "Schema for lesson configurations in Magic Melody game",
+  "type": "object",
+  "properties": {
+    "lessons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Lesson"
+      }
+    }
+  },
+  "definitions": {
+    "Lesson": {
+      "type": "object",
+      "required": ["lessonId", "ageGroup", "worldId", "level", "notes", "bpm"],
+      "properties": {
+        "lessonId": {
+          "type": "string",
+          "description": "Unique identifier for the lesson"
+        },
+        "ageGroup": {
+          "type": "string",
+          "enum": ["5-6", "7-8", "9-10"],
+          "description": "Target age group"
+        },
+        "worldId": {
+          "type": "string",
+          "enum": ["forest", "ocean", "mountain", "desert", "sky"],
+          "description": "World where this lesson takes place"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Level number within the world"
+        },
+        "title": {
+          "type": "string",
+          "description": "Display title for the lesson"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of what the lesson teaches"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["do", "re", "mi", "fa", "sol", "la", "si"]
+          },
+          "description": "Musical notes used in this lesson"
+        },
+        "words": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "English words to learn in this lesson"
+        },
+        "bpm": {
+          "type": "integer",
+          "minimum": 60,
+          "maximum": 180,
+          "description": "Beats per minute for the rhythm"
+        },
+        "difficulty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Difficulty rating (1=easiest, 5=hardest)"
+        },
+        "noteSequence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NoteEvent"
+          },
+          "description": "Sequence of notes to play"
+        },
+        "starsRequired": {
+          "type": "integer",
+          "description": "Stars required to unlock this level"
+        },
+        "isBossLevel": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is a boss battle level"
+        }
+      }
+    },
+    "NoteEvent": {
+      "type": "object",
+      "required": ["note", "time", "lane"],
+      "properties": {
+        "note": {
+          "type": "string",
+          "enum": ["do", "re", "mi", "fa", "sol", "la", "si"]
+        },
+        "time": {
+          "type": "number",
+          "description": "Time in seconds when note should appear"
+        },
+        "lane": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "description": "Which lane (0-3) the note appears in"
+        },
+        "duration": {
+          "type": "number",
+          "default": 0.5,
+          "description": "Duration of the note in seconds"
+        },
+        "word": {
+          "type": "string",
+          "description": "English word associated with this note"
+        }
+      }
+    }
+  }
+}

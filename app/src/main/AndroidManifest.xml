@@ -18,6 +18,7 @@
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
     <application
+        android:name=".magicmelody.MagicMelodyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -124,6 +125,50 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.English.Fullscreen">
         </activity>
+        
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- 🎵 MAGIC MELODY GAME ACTIVITIES                             -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        
+        <!-- Magic Melody - Splash Screen -->
+        <activity
+            android:name=".magicmelody.ui.splash.MagicMelodySplashActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - World Map -->
+        <activity
+            android:name=".magicmelody.ui.worldmap.WorldMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Magic Melody - Rhythm Gameplay -->
+        <activity
+            android:name=".magicmelody.ui.gameplay.RhythmGameplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Magic Notebook -->
+        <activity
+            android:name=".magicmelody.ui.notebook.MagicNotebookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Magic Melody - Main Game Activity -->
+        <activity
+            android:name=".magicmelody.ui.GameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        
     </application>
 
 </manifest>

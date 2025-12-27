@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🪁 Sky Kite -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="55dp"
+    android:viewportWidth="40"
+    android:viewportHeight="55">
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M20,5 L35,20 L20,35 L5,20 Z" />
+    <path
+        android:fillColor="#4ECDC4"
+        android:pathData="M20,5 L20,35 L5,20 Z" />
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="1"
+        android:pathData="M5,20 L35,20" />
+    <path
+        android:strokeColor="#333333"
+        android:strokeWidth="1"
+        android:pathData="M20,5 L20,35" />
+    <path
+        android:strokeColor="#8B4513"
+        android:strokeWidth="1.5"
+        android:pathData="M20,35 Q25,42 22,48 Q18,52 20,55" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M22,42 L26,44 L22,46 Z" />
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M18,48 L22,50 L18,52 Z" />
+</vector>

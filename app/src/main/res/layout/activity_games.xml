@@ -169,6 +169,53 @@
 
             </LinearLayout>
 
+            <!-- 🎵 Magic Melody Card - NEW GAME -->
+            <LinearLayout
+                android:id="@+id/card_magic_melody"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_magic_melody_card"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_music_note"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_text_label"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Magic Melody"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="🎶 The Legend of Sound Kingdom"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:alpha="0.9" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <!-- Fun Fact Section -->
