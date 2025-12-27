@@ -124,6 +124,27 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.English.Fullscreen">
         </activity>
+        
+        <!-- Numbers Select Activity -->
+        <activity
+            android:name=".numbers.NumbersSelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Number Learn Activity -->
+        <activity
+            android:name=".numbers.NumberLearnActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Math Activity -->
+        <activity
+            android:name=".numbers.MathActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
