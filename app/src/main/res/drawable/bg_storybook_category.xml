@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1A237E"
+                android:centerColor="#283593"
+                android:endColor="#3949AB"
+                android:angle="135"/>
+        </shape>
+    </item>
+    
+    <!-- Decorative bubbles/stars pattern -->
+    <item android:gravity="top|start" android:top="100dp" android:left="30dp">
+        <shape android:shape="oval">
+            <solid android:color="#15FFFFFF"/>
+            <size android:width="60dp" android:height="60dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|end" android:top="150dp" android:right="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#10FFFFFF"/>
+            <size android:width="80dp" android:height="80dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|start" android:bottom="200dp" android:left="50dp">
+        <shape android:shape="oval">
+            <solid android:color="#12FFFFFF"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|end" android:bottom="100dp" android:right="60dp">
+        <shape android:shape="oval">
+            <solid android:color="#08FFFFFF"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+</layer-list>

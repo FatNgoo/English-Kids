@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Story reader frame for See the World - clouds and globe -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sky gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#BBDEFB"
+                android:centerColor="#E3F2FD"
+                android:endColor="#E1F5FE"
+                android:angle="270"/>
+        </shape>
+    </item>
+    
+    <!-- Clouds -->
+    <item android:gravity="top|start" android:top="30dp" android:left="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#60FFFFFF"/>
+            <size android:width="80dp" android:height="30dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|end" android:top="60dp" android:right="30dp">
+        <shape android:shape="oval">
+            <solid android:color="#50FFFFFF"/>
+            <size android:width="100dp" android:height="40dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|start" android:top="100dp" android:left="100dp">
+        <shape android:shape="oval">
+            <solid android:color="#40FFFFFF"/>
+            <size android:width="60dp" android:height="25dp"/>
+        </shape>
+    </item>
+    
+    <!-- Globe hint at corner -->
+    <item android:gravity="bottom|end" android:bottom="-60dp" android:right="-60dp">
+        <shape android:shape="oval">
+            <solid android:color="#2090CAF9"/>
+            <size android:width="150dp" android:height="150dp"/>
+        </shape>
+    </item>
+</layer-list>

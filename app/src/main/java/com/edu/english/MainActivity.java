@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
 import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
 import com.edu.english.numbers.NumbersLessonActivity;
+import com.edu.english.storybook.MagicStorybookCategoryActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
         games.add(new GameItem("Master Chef", 0xFFE91E63, "master_chef"));
         games.add(new GameItem("Detective", 0xFF9C27B0, "detective"));
         games.add(new GameItem("Magic Melody", 0xFF00BCD4, "magic_melody"));
+        // Magic Storybook - right after Magic Melody
+        games.add(new GameItem("Magic Storybook", 0xFF7C4DFF, "magic_storybook", "AI stories for kids"));
         
         // Create adapter with click listener
         gamesAdapter = new GamesAdapter(games, game -> {
@@ -139,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
         if (game.getGameType().equals("word_race")) {
             Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
             startActivity(wordRaceIntent);
+        } else if (game.getGameType().equals("magic_storybook")) {
+            Intent storybookIntent = new Intent(MainActivity.this, MagicStorybookCategoryActivity.class);
+            startActivity(storybookIntent);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else {
             String message = "Let's play " + game.getTitle() + "! 🎮";
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
