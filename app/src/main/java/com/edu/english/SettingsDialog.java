@@ -9,6 +9,7 @@ import android.provider.Settings;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.Gravity;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -61,13 +62,16 @@ public class SettingsDialog extends Dialog {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_settings);
 
-        // Make dialog background transparent
+        // Make dialog background transparent and center it on screen
         if (getWindow() != null) {
-            getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-            getWindow().setLayout(
-                    WindowManager.LayoutParams.MATCH_PARENT,
-                    WindowManager.LayoutParams.WRAP_CONTENT
-            );
+            Window window = getWindow();
+            window.setBackgroundDrawableResource(android.R.color.transparent);
+            // Let the dialog width follow the layout (xml 320dp) and center it
+            window.setLayout(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
+            WindowManager.LayoutParams params = window.getAttributes();
+            params.gravity = Gravity.CENTER;
+            params.dimAmount = 0.6f;
+            window.setAttributes(params);
         }
 
         initViews();

@@ -138,7 +138,7 @@
                 android:id="@+id/games_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="950dp"
+                android:minHeight="1000dp"
                 android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
