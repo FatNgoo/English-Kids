@@ -228,55 +228,77 @@ public class RhythmGameplayActivity extends AppCompatActivity implements RhythmG
     // 🧩 Initialize Puzzle Grid based on current world
     private void initWorldScene() {
         if (puzzleGrid == null) return;
-        puzzleGrid.removeAllViews();
-        puzzlePieces.clear();
-        awakenedWords.clear();
-        puzzleWords.clear();
         
-        // Get 8 unique words for current world
-        puzzleWords = getWorldPuzzleWords();
-        
-        // Create 8 puzzle pieces in 3x3 grid (center piece with world icon)
-        float density = getResources().getDisplayMetrics().density;
-        int pieceSize = (int) (90 * density);
-        int margin = (int) (4 * density);
-        
-        int wordIndex = 0;
-        for (int row = 0; row < 3; row++) {
-            for (int col = 0; col < 3; col++) {
-                if (row == 1 && col == 1) {
-                    // Center piece - World icon
-                    FrameLayout centerPiece = createPuzzlePiece("", getWorldIconDrawable(), pieceSize, true);
-                    GridLayout.LayoutParams params = new GridLayout.LayoutParams();
-                    params.width = pieceSize;
-                    params.height = pieceSize;
-                    params.setMargins(margin, margin, margin, margin);
-                    params.rowSpec = GridLayout.spec(row, 1f);
-                    params.columnSpec = GridLayout.spec(col, 1f);
-                    centerPiece.setLayoutParams(params);
-                    puzzleGrid.addView(centerPiece);
-                } else {
-                    if (wordIndex < puzzleWords.size()) {
-                        String word = puzzleWords.get(wordIndex);
-                        int iconRes = getWordIconDrawable(word);
-                        FrameLayout piece = createPuzzlePiece(word, iconRes, pieceSize, false);
-                        
+        // Post để đảm bảo puzzleGrid đã có kích thước
+        puzzleGrid.post(() -> {
+            puzzleGrid.removeAllViews();
+            puzzlePieces.clear();
+            awakenedWords.clear();
+            puzzleWords.clear();
+            
+            // Get 8 unique words for current world
+            puzzleWords = getWorldPuzzleWords();
+            
+            // Tính toán kích thước piece dựa trên kích thước thực của grid
+            int gridWidth = puzzleGrid.getWidth();
+            int gridHeight = puzzleGrid.getHeight();
+            
+            float density = getResources().getDisplayMetrics().density;
+            int margin = (int) (5 * density);
+            int padding = (int) (16 * density); // padding của grid
+            
+            // Tính available space
+            int availableWidth = gridWidth - padding;
+            int availableHeight = gridHeight - padding;
+            int availableSize = Math.min(availableWidth, availableHeight);
+            
+            // Chia cho 3 (3x3 grid) và trừ margins
+            int totalMargin = margin * 6; // 6 margins giữa các pieces
+            int pieceSize = (availableSize - totalMargin) / 3;
+            
+            // Đảm bảo piece size không quá nhỏ và không quá lớn
+            int minSize = (int) (60 * density);
+            int maxSize = (int) (120 * density);
+            pieceSize = Math.max(minSize, Math.min(maxSize, pieceSize));
+            
+            // Create 8 puzzle pieces in 3x3 grid (center piece with world icon)
+            int wordIndex = 0;
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    if (row == 1 && col == 1) {
+                        // Center piece - World icon
+                        FrameLayout centerPiece = createPuzzlePiece("", getWorldIconDrawable(), pieceSize, true);
                         GridLayout.LayoutParams params = new GridLayout.LayoutParams();
                         params.width = pieceSize;
                         params.height = pieceSize;
                         params.setMargins(margin, margin, margin, margin);
                         params.rowSpec = GridLayout.spec(row, 1f);
                         params.columnSpec = GridLayout.spec(col, 1f);
-                        piece.setLayoutParams(params);
-                        
-                        puzzleGrid.addView(piece);
-                        puzzlePieces.put(word, piece);
-                        wordIndex++;
+                        centerPiece.setLayoutParams(params);
+                        puzzleGrid.addView(centerPiece);
+                    } else {
+                        if (wordIndex < puzzleWords.size()) {
+                            String word = puzzleWords.get(wordIndex);
+                            int iconRes = getWordIconDrawable(word);
+                            FrameLayout piece = createPuzzlePiece(word, iconRes, pieceSize, false);
+                            
+                            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
+                            params.width = pieceSize;
+                            params.height = pieceSize;
+                            params.setMargins(margin, margin, margin, margin);
+                            params.rowSpec = GridLayout.spec(row, 1f);
+                            params.columnSpec = GridLayout.spec(col, 1f);
+                            piece.setLayoutParams(params);
+                            
+                            puzzleGrid.addView(piece);
+                            puzzlePieces.put(word, piece);
+                            wordIndex++;
+                        }
                     }
                 }
             }
-        }
-        updatePuzzleProgress();
+            updatePuzzleProgress();
+        });
     }
     
     private FrameLayout createPuzzlePiece(String word, int iconRes, int size, boolean isCenter) {
@@ -287,7 +309,7 @@ public class RhythmGameplayActivity extends AppCompatActivity implements RhythmG
         ImageView icon = new ImageView(this);
         icon.setImageResource(iconRes);
         icon.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        int padding = (int) (12 * getResources().getDisplayMetrics().density);
+        int padding = (int) (16 * getResources().getDisplayMetrics().density);
         icon.setPadding(padding, padding, padding, padding);
         
         if (!isCenter) {
@@ -308,10 +330,11 @@ public class RhythmGameplayActivity extends AppCompatActivity implements RhythmG
             TextView label = new TextView(this);
             label.setText(word);
             label.setTextColor(android.graphics.Color.WHITE);
-            label.setTextSize(10);
+            label.setTextSize(11);
             label.setGravity(android.view.Gravity.CENTER);
-            label.setAlpha(0.5f);
-            label.setBackgroundColor(android.graphics.Color.argb(100, 0, 0, 0));
+            label.setAlpha(0.6f);
+            label.setBackgroundColor(android.graphics.Color.argb(120, 0, 0, 0));
+            label.setPadding(4, 2, 4, 2);
             
             FrameLayout.LayoutParams labelParams = new FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT,

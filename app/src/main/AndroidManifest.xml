@@ -160,6 +160,13 @@
             android:screenOrientation="portrait">
         </activity>
         
+        <!-- Magic Melody - Word Puzzle Mini Game -->
+        <activity
+            android:name=".magicmelody.ui.notebook.WordPuzzleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
         <!-- Magic Melody - Main Game Activity -->
         <activity
             android:name=".magicmelody.ui.GameActivity"

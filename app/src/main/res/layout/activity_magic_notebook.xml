@@ -46,12 +46,27 @@
     </LinearLayout>
 
     <!-- Notebook Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pictures_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_puzzle_picture" />
+
+    <!-- Empty State -->
     <LinearLayout
+        android:id="@+id/empty_state"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:gravity="center"
         android:padding="24dp"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/top_bar"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -75,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Complete levels to collect more notes!"
+            android:text="Complete levels to collect more pictures!"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:alpha="0.7" />
