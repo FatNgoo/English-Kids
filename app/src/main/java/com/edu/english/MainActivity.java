@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         games.add(new GameItem("Master Chef", 0xFFE91E63, "master_chef"));
         games.add(new GameItem("Magic Melody", 0xFF00BCD4, "magic_melody"));
         // Magic Storybook - right after Magic Melody
-        games.add(new GameItem("Magic Storybook", 0xFF7C4DFF, "magic_storybook", "AI stories for kids"));
+        games.add(new GameItem("Magic Storybook", 0xFF7C4DFF, "magic_storybook"));
         
         // Create adapter with click listener
         gamesAdapter = new GamesAdapter(games, game -> {

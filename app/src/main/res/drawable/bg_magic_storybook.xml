@@ -1,93 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Base gradient background -->
+    <!-- Base image background (magic_storybook.png) - fill to match other cards -->
     <item>
-        <shape android:shape="rectangle">
-            <gradient
-                android:startColor="#7C4DFF"
-                android:centerColor="#651FFF"
-                android:endColor="#536DFE"
-                android:angle="135"/>
-            <corners android:radius="16dp"/>
-        </shape>
+        <bitmap android:src="@drawable/magic_storybook" android:gravity="fill" android:antialias="true" />
     </item>
     
-    <!-- Decorative sparkle pattern -->
-    <item android:gravity="top|end" android:top="16dp" android:right="24dp">
-        <shape android:shape="oval">
-            <solid android:color="#50FFFFFF"/>
-            <size android:width="32dp" android:height="32dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="top|end" android:top="56dp" android:right="72dp">
-        <shape android:shape="oval">
-            <solid android:color="#35FFFFFF"/>
-            <size android:width="20dp" android:height="20dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="top|start" android:top="24dp" android:left="32dp">
-        <shape android:shape="oval">
-            <solid android:color="#30FFFFFF"/>
-            <size android:width="16dp" android:height="16dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="bottom|start" android:bottom="80dp" android:left="24dp">
-        <shape android:shape="oval">
-            <solid android:color="#25FFFFFF"/>
-            <size android:width="24dp" android:height="24dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="bottom|end" android:bottom="60dp" android:right="40dp">
-        <shape android:shape="oval">
-            <solid android:color="#20FFFFFF"/>
-            <size android:width="18dp" android:height="18dp"/>
-        </shape>
-    </item>
-    
-    <!-- Open book illustration in center -->
-    <item android:gravity="center" android:bottom="40dp">
-        <layer-list>
-            <!-- Book base -->
-            <item>
-                <shape android:shape="rectangle">
-                    <solid android:color="#30FFFFFF"/>
-                    <corners android:radius="8dp"/>
-                    <size android:width="100dp" android:height="72dp"/>
-                </shape>
-            </item>
-            <!-- Book spine line -->
-            <item android:gravity="center">
-                <shape android:shape="rectangle">
-                    <solid android:color="#40FFFFFF"/>
-                    <size android:width="4dp" android:height="60dp"/>
-                </shape>
-            </item>
-        </layer-list>
-    </item>
-    
-    <!-- Magical stars around book -->
-    <item android:gravity="center" android:top="20dp" android:left="30dp">
-        <shape android:shape="oval">
-            <solid android:color="#60FFEB3B"/>
-            <size android:width="12dp" android:height="12dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="center" android:top="30dp" android:right="25dp">
-        <shape android:shape="oval">
-            <solid android:color="#60FF4081"/>
-            <size android:width="10dp" android:height="10dp"/>
-        </shape>
-    </item>
-    
-    <item android:gravity="center" android:bottom="85dp" android:right="50dp">
-        <shape android:shape="oval">
-            <solid android:color="#6000E5FF"/>
-            <size android:width="8dp" android:height="8dp"/>
-        </shape>
-    </item>
+    <!-- Decorative overlays removed per request -->
 </layer-list>
