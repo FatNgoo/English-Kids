@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌿 Forest Grass -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="35dp"
+    android:viewportWidth="60"
+    android:viewportHeight="35">
+    
+    <!-- Grass blades -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M5,35 L8,5 L11,35 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M12,35 L16,8 L20,35 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M18,35 L23,3 L28,35 Z" />
+    <path
+        android:fillColor="#2E8B2E"
+        android:pathData="M26,35 L30,6 L34,35 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M32,35 L37,4 L42,35 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M40,35 L44,8 L48,35 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M46,35 L50,6 L54,35 Z" />
+        
+</vector>

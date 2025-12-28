@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌲 Forest Tree -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="100dp"
+    android:viewportWidth="80"
+    android:viewportHeight="100">
+    
+    <!-- Trunk -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M35,60 L45,60 L45,95 L35,95 Z" />
+    
+    <!-- Tree foliage (triangle layers) -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M40,5 L65,40 L15,40 Z" />
+    <path
+        android:fillColor="#2E8B2E"
+        android:pathData="M40,20 L70,55 L10,55 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M40,35 L72,65 L8,65 Z" />
+        
+</vector>

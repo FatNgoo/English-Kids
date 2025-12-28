@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🏛️ Desert Pyramid -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="55dp"
+    android:viewportWidth="70"
+    android:viewportHeight="55">
+    <path
+        android:fillColor="#DAA520"
+        android:pathData="M35,5 L68,52 L2,52 Z" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M35,5 L35,52 L2,52 Z" />
+    <path
+        android:fillColor="#B8860B"
+        android:pathData="M35,5 L35,52 L68,52 Z" />
+    <path
+        android:fillColor="#8B7355"
+        android:pathData="M30,35 L40,35 L40,52 L30,52 Z" />
+</vector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🪼 Ocean Jellyfish -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="55dp"
+    android:viewportWidth="40"
+    android:viewportHeight="55">
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M20,5 Q35,5 35,18 Q35,25 20,25 Q5,25 5,18 Q5,5 20,5 Z" />
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M15,10 Q20,8 25,10 Q22,15 18,15 Q15,13 15,10 Z" />
+    <path
+        android:strokeColor="#FF69B4"
+        android:strokeWidth="2"
+        android:pathData="M10,25 Q8,35 12,45 Q10,50 8,55" />
+    <path
+        android:strokeColor="#FF69B4"
+        android:strokeWidth="2"
+        android:pathData="M20,25 Q22,38 18,50" />
+    <path
+        android:strokeColor="#FF69B4"
+        android:strokeWidth="2"
+        android:pathData="M30,25 Q32,35 28,45 Q30,50 32,55" />
+</vector>

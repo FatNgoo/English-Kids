@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ⛰️ Mountain World Icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- Big Mountain -->
+    <path
+        android:pathData="M32,8 L56,56 L8,56 Z"
+        android:fillColor="#6B7280"/>
+    
+    <!-- Snow Cap -->
+    <path
+        android:pathData="M32,8 L40,24 L24,24 Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Small Mountain -->
+    <path
+        android:pathData="M48,28 L64,56 L32,56 Z"
+        android:fillColor="#9CA3AF"/>
+    
+    <!-- Cloud -->
+    <path
+        android:pathData="M12,20 A6,6 0 0,1 24,20 A8,8 0 0,1 20,32 L12,32 A6,6 0 0,1 12,20"
+        android:fillColor="#FFFFFF"/>
+</vector>

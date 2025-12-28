@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🐋 Ocean Whale -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="50dp"
+    android:viewportWidth="80"
+    android:viewportHeight="50">
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M15,25 Q30,10 60,20 Q75,25 70,30 Q60,40 30,38 Q10,35 15,25 Z" />
+    <path
+        android:fillColor="#6495ED"
+        android:pathData="M20,22 Q35,15 55,22 Q50,28 25,28 Q18,26 20,22 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M60,22 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0" />
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M10,20 L5,10 L8,18 L2,15 L10,20 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M45,5 Q48,2 50,8 L48,10 Q46,6 45,5 Z" />
+</vector>

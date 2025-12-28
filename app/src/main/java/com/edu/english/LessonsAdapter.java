@@ -52,7 +52,7 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.LessonVi
         public LessonViewHolder(@NonNull View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.lesson_container);
-            titleText = itemView.findViewById(R.id.lesson_title);
+            titleText = itemView.findViewById(R.id.lessonTitle);
         }
 
         public void bind(LessonItem lesson) {

@@ -1,0 +1,240 @@
+{
+  "themes": [
+    {
+      "themeId": "forest",
+      "name": "Forest Kingdom",
+      "displayName": "🌲 Forest Kingdom",
+      "description": "A magical forest filled with singing birds and dancing trees",
+      "bgMusic": "forest_theme.mp3",
+      "ambientSound": "forest_ambient.mp3",
+      "colorPalette": {
+        "primary": "#22C55E",
+        "secondary": "#16A34A",
+        "accent": "#86EFAC",
+        "background": "#14532D",
+        "grayState": "#374151"
+      },
+      "characters": [
+        {
+          "id": "owl",
+          "name": "Professor Owl",
+          "role": "guide",
+          "modelFile": "owl.glb",
+          "greetings": [
+            "Hoo hoo! Welcome to the Forest!",
+            "Let's make some music together!",
+            "You're doing great, little one!"
+          ]
+        },
+        {
+          "id": "bunny",
+          "name": "Melody Bunny",
+          "role": "companion",
+          "modelFile": "bunny.glb",
+          "greetings": [
+            "Hop hop! Ready to play?",
+            "I love this song!",
+            "You hit all the notes!"
+          ]
+        }
+      ],
+      "boss": {
+        "id": "forest_guardian",
+        "name": "Grumpy Tree",
+        "health": 100,
+        "weakness": ["do", "mi", "sol"],
+        "modelFile": "grumpy_tree.glb",
+        "dialogue": {
+          "intro": "Who dares disturb my slumber? Show me your musical power!",
+          "damage": "Ouch! That note tickles!",
+          "defeat": "Your music... it's beautiful. You've awakened my heart!"
+        }
+      },
+      "evolutionStages": {
+        "stage0": {
+          "description": "Gray and silent forest",
+          "saturation": 0.0,
+          "particleEffect": "none"
+        },
+        "stage1": {
+          "description": "Slight colors appearing",
+          "saturation": 0.3,
+          "particleEffect": "sparkle_low"
+        },
+        "stage2": {
+          "description": "Half-colored, birds singing",
+          "saturation": 0.6,
+          "particleEffect": "sparkle_medium"
+        },
+        "stage3": {
+          "description": "Full bloom! Magical forest alive",
+          "saturation": 1.0,
+          "particleEffect": "bloom_full"
+        }
+      }
+    },
+    {
+      "themeId": "ocean",
+      "name": "Ocean Kingdom",
+      "displayName": "🌊 Ocean Kingdom",
+      "description": "An underwater paradise with coral reefs and friendly sea creatures",
+      "bgMusic": "ocean_theme.mp3",
+      "ambientSound": "ocean_ambient.mp3",
+      "colorPalette": {
+        "primary": "#3B82F6",
+        "secondary": "#2563EB",
+        "accent": "#93C5FD",
+        "background": "#1E3A8A",
+        "grayState": "#4B5563"
+      },
+      "characters": [
+        {
+          "id": "dolphin",
+          "name": "Splash the Dolphin",
+          "role": "guide",
+          "modelFile": "dolphin.glb",
+          "greetings": [
+            "Splash splash! Welcome to the Ocean!",
+            "Let's ride the musical waves!",
+            "You're a natural, little one!"
+          ]
+        },
+        {
+          "id": "starfish",
+          "name": "Twinkle Star",
+          "role": "companion",
+          "modelFile": "starfish.glb",
+          "greetings": [
+            "Shine bright with your notes!",
+            "That was beautiful!",
+            "Keep going, superstar!"
+          ]
+        }
+      ],
+      "boss": {
+        "id": "ocean_guardian",
+        "name": "Giant Octopus",
+        "health": 150,
+        "weakness": ["sol", "la", "si"],
+        "modelFile": "octopus.glb",
+        "dialogue": {
+          "intro": "I am the keeper of the deep! Can your music reach my heart?",
+          "damage": "That note vibrated through all my tentacles!",
+          "defeat": "Such harmony! You've brought music to the depths!"
+        }
+      },
+      "evolutionStages": {
+        "stage0": {
+          "description": "Dark, colorless ocean",
+          "saturation": 0.0,
+          "particleEffect": "none"
+        },
+        "stage1": {
+          "description": "Faint colors in coral",
+          "saturation": 0.3,
+          "particleEffect": "bubble_low"
+        },
+        "stage2": {
+          "description": "Half the reef is colorful",
+          "saturation": 0.6,
+          "particleEffect": "bubble_medium"
+        },
+        "stage3": {
+          "description": "Vibrant underwater paradise",
+          "saturation": 1.0,
+          "particleEffect": "rainbow_coral"
+        }
+      }
+    },
+    {
+      "themeId": "mountain",
+      "name": "Mountain Kingdom",
+      "displayName": "⛰️ Mountain Kingdom",
+      "description": "Majestic peaks where echoes carry melodies across valleys",
+      "bgMusic": "mountain_theme.mp3",
+      "ambientSound": "mountain_ambient.mp3",
+      "colorPalette": {
+        "primary": "#6B7280",
+        "secondary": "#4B5563",
+        "accent": "#E5E7EB",
+        "background": "#1F2937",
+        "grayState": "#374151"
+      },
+      "characters": [
+        {
+          "id": "eagle",
+          "name": "Echo Eagle",
+          "role": "guide",
+          "modelFile": "eagle.glb"
+        }
+      ],
+      "boss": {
+        "id": "mountain_guardian",
+        "name": "Stone Giant",
+        "health": 200,
+        "weakness": ["do", "fa"],
+        "modelFile": "stone_giant.glb"
+      }
+    },
+    {
+      "themeId": "desert",
+      "name": "Desert Kingdom",
+      "displayName": "🏜️ Desert Kingdom",
+      "description": "Golden sands where ancient melodies hide in the wind",
+      "bgMusic": "desert_theme.mp3",
+      "ambientSound": "desert_ambient.mp3",
+      "colorPalette": {
+        "primary": "#F59E0B",
+        "secondary": "#D97706",
+        "accent": "#FCD34D",
+        "background": "#78350F",
+        "grayState": "#57534E"
+      },
+      "characters": [
+        {
+          "id": "camel",
+          "name": "Sandy the Camel",
+          "role": "guide",
+          "modelFile": "camel.glb"
+        }
+      ],
+      "boss": {
+        "id": "desert_guardian",
+        "name": "Sphinx",
+        "health": 250,
+        "weakness": ["re", "sol", "la"],
+        "modelFile": "sphinx.glb"
+      }
+    },
+    {
+      "themeId": "sky",
+      "name": "Sky Kingdom",
+      "displayName": "☁️ Sky Kingdom",
+      "description": "Floating islands in the clouds where dreams become songs",
+      "bgMusic": "sky_theme.mp3",
+      "ambientSound": "sky_ambient.mp3",
+      "colorPalette": {
+        "primary": "#87CEEB",
+        "secondary": "#38BDF8",
+        "accent": "#FFFFFF",
+        "background": "#0EA5E9",
+        "grayState": "#94A3B8"
+      },
+      "characters": [
+        {
+          "id": "phoenix",
+          "name": "Harmony Phoenix",
+          "role": "guide",
+          "modelFile": "phoenix.glb"
+        }
+      ],
+      "boss": {
+        "id": "sky_guardian",
+        "name": "Thunder Dragon",
+        "health": 300,
+        "weakness": ["do", "mi", "sol", "si"],
+        "modelFile": "dragon.glb"
+      }
+    }
+  ]
+}

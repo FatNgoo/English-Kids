@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌍 World card colorful background (evolution 2) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <gradient
+        android:startColor="#2D6A4F"
+        android:centerColor="#40916C"
+        android:endColor="#74C69D"
+        android:angle="135"/>
+    
+    <corners android:radius="16dp"/>
+    
+    <stroke
+        android:width="2dp"
+        android:color="#95D5B2"/>
+    
+</shape>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌍 Item World Layout - World card in world map -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="220dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@android:color/transparent">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <!-- Selection glow background -->
+        <View
+            android:id="@+id/selectionGlow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card_glow"
+            android:visibility="gone"/>
+        
+        <!-- Main card container -->
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card_glow">
+            
+            <!-- World icon container -->
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp">
+                
+                <!-- World icon -->
+                <ImageView
+                    android:id="@+id/worldIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    tools:src="@drawable/ic_world_default"
+                    android:contentDescription="@string/world_icon"/>
+                
+                <!-- Lock overlay -->
+                <ImageView
+                    android:id="@+id/lockIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_lock"
+                    android:visibility="gone"
+                    android:contentDescription="@string/locked"/>
+            </FrameLayout>
+            
+            <!-- World name -->
+            <TextView
+                android:id="@+id/worldName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Magical Forest"/>
+            
+            <!-- World description -->
+            <TextView
+                android:id="@+id/worldDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="11sp"
+                android:textColor="#AAFFFFFF"
+                android:gravity="center"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="Nature sounds &amp; melodies"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            
+            <!-- Evolution stars row -->
+            <LinearLayout
+                android:id="@+id/evolutionStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_star"
+                    android:alpha="0.3"
+                    android:contentDescription="@string/star"/>
+                
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_star"
+                    android:alpha="0.3"
+                    android:contentDescription="@string/star"/>
+                
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_star"
+                    android:alpha="0.3"
+                    android:contentDescription="@string/star"/>
+            </LinearLayout>
+            
+            <!-- Progress bar -->
+            <ProgressBar
+                android:id="@+id/evolutionProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="8dp"
+                android:max="10"
+                android:progress="3"
+                android:progressDrawable="@drawable/progress_bar_world"/>
+            
+            <!-- Progress text -->
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="10sp"
+                android:textColor="#88FFFFFF"
+                tools:text="3/10 lessons"/>
+                
+        </LinearLayout>
+        
+    </FrameLayout>
+    
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,127 @@
+{
+  "lessons": [
+    {
+      "lessonId": "forest_001",
+      "ageGroup": "5-6",
+      "worldId": "forest",
+      "level": 1,
+      "title": "First Melody",
+      "description": "Learn your first musical notes: Do, Re, Mi",
+      "notes": ["do", "re", "mi"],
+      "words": ["apple", "bear", "cat"],
+      "bpm": 80,
+      "difficulty": 1,
+      "starsRequired": 0,
+      "isBossLevel": false,
+      "noteSequence": [
+        {"note": "do", "time": 1.0, "lane": 0, "duration": 0.5, "word": "apple"},
+        {"note": "re", "time": 2.0, "lane": 1, "duration": 0.5, "word": "bear"},
+        {"note": "mi", "time": 3.0, "lane": 2, "duration": 0.5, "word": "cat"},
+        {"note": "do", "time": 4.0, "lane": 0, "duration": 0.5, "word": "apple"},
+        {"note": "re", "time": 5.0, "lane": 1, "duration": 0.5, "word": "bear"},
+        {"note": "mi", "time": 6.0, "lane": 2, "duration": 0.5, "word": "cat"},
+        {"note": "do", "time": 7.0, "lane": 0, "duration": 0.5},
+        {"note": "mi", "time": 7.5, "lane": 2, "duration": 0.5},
+        {"note": "re", "time": 8.0, "lane": 1, "duration": 0.5}
+      ]
+    },
+    {
+      "lessonId": "forest_002",
+      "ageGroup": "5-6",
+      "worldId": "forest",
+      "level": 2,
+      "title": "Growing Notes",
+      "description": "Practice Do, Re, Mi with more rhythm",
+      "notes": ["do", "re", "mi"],
+      "words": ["dog", "elephant", "fish"],
+      "bpm": 85,
+      "difficulty": 1,
+      "starsRequired": 2,
+      "isBossLevel": false,
+      "noteSequence": [
+        {"note": "do", "time": 1.0, "lane": 0, "duration": 0.5, "word": "dog"},
+        {"note": "do", "time": 1.5, "lane": 0, "duration": 0.5},
+        {"note": "re", "time": 2.0, "lane": 1, "duration": 0.5, "word": "elephant"},
+        {"note": "re", "time": 2.5, "lane": 1, "duration": 0.5},
+        {"note": "mi", "time": 3.0, "lane": 2, "duration": 0.5, "word": "fish"},
+        {"note": "mi", "time": 3.5, "lane": 2, "duration": 0.5},
+        {"note": "do", "time": 4.0, "lane": 0, "duration": 0.5},
+        {"note": "re", "time": 4.5, "lane": 1, "duration": 0.5},
+        {"note": "mi", "time": 5.0, "lane": 2, "duration": 0.5},
+        {"note": "mi", "time": 5.5, "lane": 2, "duration": 0.5},
+        {"note": "re", "time": 6.0, "lane": 1, "duration": 0.5},
+        {"note": "do", "time": 6.5, "lane": 0, "duration": 0.5}
+      ]
+    },
+    {
+      "lessonId": "forest_003",
+      "ageGroup": "5-6",
+      "worldId": "forest",
+      "level": 3,
+      "title": "New Friend: Fa",
+      "description": "Meet a new note: Fa!",
+      "notes": ["do", "re", "mi", "fa"],
+      "words": ["garden", "house", "ice"],
+      "bpm": 85,
+      "difficulty": 2,
+      "starsRequired": 4,
+      "isBossLevel": false,
+      "noteSequence": [
+        {"note": "do", "time": 1.0, "lane": 0, "duration": 0.5, "word": "garden"},
+        {"note": "re", "time": 2.0, "lane": 1, "duration": 0.5, "word": "house"},
+        {"note": "mi", "time": 3.0, "lane": 2, "duration": 0.5, "word": "ice"},
+        {"note": "fa", "time": 4.0, "lane": 3, "duration": 0.5},
+        {"note": "fa", "time": 5.0, "lane": 3, "duration": 0.5},
+        {"note": "mi", "time": 6.0, "lane": 2, "duration": 0.5},
+        {"note": "re", "time": 7.0, "lane": 1, "duration": 0.5},
+        {"note": "do", "time": 8.0, "lane": 0, "duration": 0.5}
+      ]
+    },
+    {
+      "lessonId": "forest_010",
+      "ageGroup": "5-6",
+      "worldId": "forest",
+      "level": 10,
+      "title": "Forest Guardian",
+      "description": "Face the Forest Boss with your musical power!",
+      "notes": ["do", "re", "mi", "fa"],
+      "words": [],
+      "bpm": 100,
+      "difficulty": 3,
+      "starsRequired": 20,
+      "isBossLevel": true,
+      "noteSequence": [
+        {"note": "do", "time": 1.0, "lane": 0, "duration": 0.5},
+        {"note": "mi", "time": 1.5, "lane": 2, "duration": 0.5},
+        {"note": "re", "time": 2.0, "lane": 1, "duration": 0.5},
+        {"note": "fa", "time": 2.5, "lane": 3, "duration": 0.5},
+        {"note": "do", "time": 3.0, "lane": 0, "duration": 0.5},
+        {"note": "fa", "time": 3.5, "lane": 3, "duration": 0.5},
+        {"note": "mi", "time": 4.0, "lane": 2, "duration": 0.5},
+        {"note": "re", "time": 4.5, "lane": 1, "duration": 0.5}
+      ]
+    },
+    {
+      "lessonId": "ocean_001",
+      "ageGroup": "5-6",
+      "worldId": "ocean",
+      "level": 1,
+      "title": "Ocean Waves",
+      "description": "Start your ocean adventure with Sol",
+      "notes": ["do", "re", "mi", "fa", "sol"],
+      "words": ["jellyfish", "kite", "lemon"],
+      "bpm": 90,
+      "difficulty": 2,
+      "starsRequired": 25,
+      "isBossLevel": false,
+      "noteSequence": [
+        {"note": "sol", "time": 1.0, "lane": 0, "duration": 0.5, "word": "jellyfish"},
+        {"note": "mi", "time": 2.0, "lane": 1, "duration": 0.5, "word": "kite"},
+        {"note": "do", "time": 3.0, "lane": 2, "duration": 0.5, "word": "lemon"},
+        {"note": "sol", "time": 4.0, "lane": 0, "duration": 0.5},
+        {"note": "fa", "time": 5.0, "lane": 3, "duration": 0.5},
+        {"note": "re", "time": 6.0, "lane": 1, "duration": 0.5}
+      ]
+    }
+  ]
+}

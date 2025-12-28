@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🏝️ Desert Oasis -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="50dp"
+    android:viewportWidth="60"
+    android:viewportHeight="50">
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M10,35 Q30,28 50,35 Q55,40 50,45 Q30,50 10,45 Q5,40 10,35 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M15,36 Q30,32 45,36 Q48,40 45,43 Q30,46 15,43 Q12,40 15,36 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M30,30 L32,30 L32,40 L30,40 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M31,10 Q38,15 35,25 L31,22 Q28,15 31,10 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M31,12 Q24,18 27,28 L31,24 Q34,18 31,12 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M31,15 Q20,20 25,30 L31,26 Q40,20 31,15 Z" />
+</vector>

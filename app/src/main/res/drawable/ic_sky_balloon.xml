@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🎈 Sky Balloon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="55dp"
+    android:viewportWidth="40"
+    android:viewportHeight="55">
+    <path
+        android:fillColor="#FF4444"
+        android:pathData="M20,5 Q35,5 35,22 Q35,35 20,38 Q5,35 5,22 Q5,5 20,5 Z" />
+    <path
+        android:fillColor="#FF6666"
+        android:pathData="M12,10 Q18,8 18,15 Q15,18 12,15 Q10,12 12,10 Z" />
+    <path
+        android:fillColor="#CC3333"
+        android:pathData="M18,35 L22,35 L21,40 L19,40 Z" />
+    <path
+        android:strokeColor="#8B4513"
+        android:strokeWidth="1.5"
+        android:pathData="M20,40 L20,52" />
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M15,50 L25,50 L25,55 L15,55 Z" />
+</vector>

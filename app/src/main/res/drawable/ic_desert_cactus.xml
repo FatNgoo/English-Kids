@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌵 Desert Cactus -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="60dp"
+    android:viewportWidth="40"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M17,15 L23,15 L23,58 L17,58 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M17,30 L10,30 L10,20 Q10,15 15,15 L17,15 L17,25 Z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M23,35 L30,35 L30,25 Q30,20 25,20 L23,20 L23,30 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M18,18 L22,18 L22,55 L18,55 Z" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M20,8 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0" />
+</vector>
