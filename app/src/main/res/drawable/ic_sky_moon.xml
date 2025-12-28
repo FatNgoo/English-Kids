@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌙 Sky Moon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+    <path
+        android:fillColor="#F5F5DC"
+        android:pathData="M25,5 Q45,5 45,25 Q45,45 25,45 Q5,45 5,25 Q5,5 25,5 Z" />
+    <path
+        android:fillColor="#E8E8D0"
+        android:pathData="M15,15 m-4,0 a4,3 0 1,1 8,0 a4,3 0 1,1 -8,0" />
+    <path
+        android:fillColor="#E8E8D0"
+        android:pathData="M30,22 m-5,0 a5,4 0 1,1 10,0 a5,4 0 1,1 -10,0" />
+    <path
+        android:fillColor="#E8E8D0"
+        android:pathData="M20,32 m-3,0 a3,2 0 1,1 6,0 a3,2 0 1,1 -6,0" />
+    <path
+        android:fillColor="#FFFACD"
+        android:pathData="M25,5 Q35,5 40,15 Q30,12 25,5 Z" />
+</vector>

@@ -33,6 +33,19 @@
             android:paddingHorizontal="12dp"
             android:paddingVertical="6dp" />
 
+        <TextView
+            android:id="@+id/game_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_text_label"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:visibility="gone" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

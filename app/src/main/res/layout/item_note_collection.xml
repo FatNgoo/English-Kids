@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🎵 Item Note Collection Layout - Note card in Magic Notebook -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/transparent">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <!-- Legendary glow background -->
+        <View
+            android:id="@+id/legendaryGlow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_legendary_glow"
+            android:visibility="gone"/>
+        
+        <!-- Main card container -->
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card_glow">
+            
+            <!-- Type indicator strip -->
+            <View
+                android:id="@+id/noteTypeIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="#4CAF50"/>
+            
+            <!-- Note icon -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                
+                <ImageView
+                    android:id="@+id/noteIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    tools:src="@drawable/ic_music_note"
+                    android:contentDescription="@string/note_icon"/>
+                
+                <!-- Mastery indicator badge -->
+                <ImageView
+                    android:id="@+id/masteryIndicator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/ic_mastery_badge"
+                    android:visibility="gone"
+                    android:contentDescription="@string/mastered"/>
+            </FrameLayout>
+            
+            <!-- Note name -->
+            <TextView
+                android:id="@+id/noteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Do (C)"/>
+            
+            <!-- Word associated -->
+            <TextView
+                android:id="@+id/noteWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:textColor="#AAFFFFFF"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Apple"/>
+            
+            <!-- Play count -->
+            <TextView
+                android:id="@+id/playCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:textColor="#88FFFFFF"
+                tools:text="♪ 25"/>
+            
+            <!-- Action buttons row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                
+                <!-- Play button -->
+                <ImageButton
+                    android:id="@+id/playButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:src="@drawable/ic_play"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/play"/>
+                
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="1dp"/>
+                
+                <!-- Favorite button -->
+                <ImageButton
+                    android:id="@+id/favoriteButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:src="@drawable/ic_heart_outline"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/favorite"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+    
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base image background (magic_storybook.png) - fill to match other cards -->
+    <item>
+        <bitmap android:src="@drawable/magic_storybook" android:gravity="fill" android:antialias="true" />
+    </item>
+    
+    <!-- Decorative overlays removed per request -->
+</layer-list>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌍 World icon placeholder -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    
+    <!-- Globe base -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M48,8C26.9,8 10,24.9 10,46s16.9,38 38,38 38,-16.9 38,-38S69.1,8 48,8z"/>
+    
+    <!-- Land masses -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M30,25c5,-3 15,-2 20,3s8,12 5,20c-2,5 -10,8 -18,5s-12,-10 -10,-18C28,30 25,28 30,25z"/>
+    
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M55,45c4,-2 12,-1 16,4s5,12 2,18c-2,4 -8,6 -14,3s-8,-10 -6,-16C54,50 51,47 55,45z"/>
+    
+    <!-- Sparkle effects -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,20l2,5 5,2 -5,2 -2,5 -2,-5 -5,-2 5,-2z"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,55l1.5,3.5 3.5,1.5 -3.5,1.5 -1.5,3.5 -1.5,-3.5 -3.5,-1.5 3.5,-1.5z"/>
+    
+    <!-- Musical notes -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M75,25c0,-3 -2,-5 -5,-5s-5,2 -5,5c0,2 1,4 3,5v10h4v-10C74,29 75,27 75,25z"/>
+    
+</vector>

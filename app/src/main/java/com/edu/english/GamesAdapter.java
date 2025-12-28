@@ -49,15 +49,27 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GameViewHold
     class GameViewHolder extends RecyclerView.ViewHolder {
         private LinearLayout container;
         private TextView titleText;
+        private TextView subtitleText;
 
         public GameViewHolder(@NonNull View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.game_container);
             titleText = itemView.findViewById(R.id.game_title);
+            subtitleText = itemView.findViewById(R.id.game_subtitle);
         }
 
         public void bind(GameItem game) {
             titleText.setText(game.getTitle());
+            
+            // Handle subtitle
+            if (subtitleText != null) {
+                if (game.hasSubtitle()) {
+                    subtitleText.setText(game.getSubtitle());
+                    subtitleText.setVisibility(View.VISIBLE);
+                } else {
+                    subtitleText.setVisibility(View.GONE);
+                }
+            }
             
             // Use background images for each game
             switch (game.getTitle()) {
@@ -67,11 +79,11 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GameViewHold
                 case "Master Chef":
                     container.setBackgroundResource(R.drawable.bg_masterchef);
                     break;
-                case "Detective":
-                    container.setBackgroundResource(R.drawable.bg_detective);
-                    break;
                 case "Magic Melody":
                     container.setBackgroundResource(R.drawable.bg_magicmelody);
+                    break;
+                case "Magic Storybook":
+                    container.setBackgroundResource(R.drawable.bg_magic_storybook);
                     break;
                 default:
                     container.setBackgroundColor(game.getBackgroundColor());
@@ -107,3 +119,4 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GameViewHold
         }
     }
 }
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌊 Ocean Scene Background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#001830"
+                android:centerColor="#003366"
+                android:endColor="#006699"
+                android:angle="90" />
+        </shape>
+    </item>
+    <item android:top="550dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#004466" />
+        </shape>
+    </item>
+</layer-list>

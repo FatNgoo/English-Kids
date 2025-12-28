@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌲 Forest Scene Background - Withered state -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Sky gradient - grey/withered -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#3D4A5C"
+                android:centerColor="#4A5668"
+                android:endColor="#2D3A4C"
+                android:angle="90" />
+        </shape>
+    </item>
+    
+    <!-- Ground -->
+    <item android:top="600dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#2A3040" />
+        </shape>
+    </item>
+    
+</layer-list>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Story reader frame for Fairy Tales - stars and castle silhouette -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base magical gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E1BEE7"
+                android:centerColor="#F3E5F5"
+                android:endColor="#EDE7F6"
+                android:angle="270"/>
+        </shape>
+    </item>
+    
+    <!-- Stars decoration -->
+    <item android:gravity="top|start" android:top="20dp" android:left="30dp">
+        <shape android:shape="oval">
+            <solid android:color="#40CE93D8"/>
+            <size android:width="12dp" android:height="12dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|end" android:top="40dp" android:right="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#50BA68C8"/>
+            <size android:width="16dp" android:height="16dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|start" android:top="80dp" android:left="60dp">
+        <shape android:shape="oval">
+            <solid android:color="#30CE93D8"/>
+            <size android:width="8dp" android:height="8dp"/>
+        </shape>
+    </item>
+    
+    <!-- Castle silhouette hint at bottom -->
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#00CE93D8"
+                android:endColor="#30CE93D8"
+                android:angle="270"/>
+            <size android:height="100dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🧩 Puzzle Piece Dark/Inactive State -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item android:bottom="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#20000000" />
+        </shape>
+    </item>
+    <!-- Border (grey) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <stroke android:width="2dp" android:color="#555555" />
+            <solid android:color="#30000000" />
+        </shape>
+    </item>
+</layer-list>

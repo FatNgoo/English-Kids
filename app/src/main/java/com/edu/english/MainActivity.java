@@ -20,14 +20,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
 import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
+import com.edu.english.coloralchemy.ColorsActivity;
+import com.edu.english.magicmelody.ui.splash.MagicMelodySplashActivity;
+import com.edu.english.numbers.NumbersLessonActivity;
+import com.edu.english.storybook.MagicStorybookCategoryActivity;
+import com.edu.english.shapes.ShapesActivity;
 import com.edu.english.numbers.NumbersSelectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.edu.english.shapes.ShapesActivity;
-
-import com.edu.english.coloralchemy.ColorsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -145,8 +146,9 @@ public class MainActivity extends AppCompatActivity {
         List<GameItem> games = new ArrayList<>();
         games.add(new GameItem("Word Race", 0xFF6C63FF, "word_race"));
         games.add(new GameItem("Master Chef", 0xFFE91E63, "master_chef"));
-        games.add(new GameItem("Detective", 0xFF9C27B0, "detective"));
         games.add(new GameItem("Magic Melody", 0xFF00BCD4, "magic_melody"));
+        // Magic Storybook - right after Magic Melody
+        games.add(new GameItem("Magic Storybook", 0xFF7C4DFF, "magic_storybook"));
         
         // Create adapter with click listener
         gamesAdapter = new GamesAdapter(games, game -> {
@@ -186,6 +188,14 @@ public class MainActivity extends AppCompatActivity {
         if (game.getGameType().equals("word_race")) {
             Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
             startActivity(wordRaceIntent);
+        } else if (game.getGameType().equals("magic_storybook")) {
+            Intent storybookIntent = new Intent(MainActivity.this, MagicStorybookCategoryActivity.class);
+            startActivity(storybookIntent);
+        } else if (game.getGameType().equals("magic_melody")) {
+            // Launch Magic Melody Game!
+            Intent magicMelodyIntent = new Intent(MainActivity.this, MagicMelodySplashActivity.class);
+            startActivity(magicMelodyIntent);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else {
             String message = "Let's play " + game.getTitle() + "! 🎮";
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();

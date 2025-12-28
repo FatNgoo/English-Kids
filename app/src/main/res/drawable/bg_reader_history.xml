@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Story reader frame for History - parchment paper with seal -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Parchment base -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFF8E1"
+                android:centerColor="#FFECB3"
+                android:endColor="#FFE082"
+                android:angle="270"/>
+        </shape>
+    </item>
+    
+    <!-- Aged paper texture effect -->
+    <item android:left="16dp" android:right="16dp" android:top="16dp" android:bottom="16dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#08000000"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    
+    <!-- Edge darkening - left -->
+    <item android:width="20dp" android:gravity="start">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#20000000"
+                android:endColor="#00000000"
+                android:angle="0"/>
+        </shape>
+    </item>
+    
+    <!-- Edge darkening - right -->
+    <item android:width="20dp" android:gravity="end">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#00000000"
+                android:endColor="#20000000"
+                android:angle="0"/>
+        </shape>
+    </item>
+    
+    <!-- Seal decoration hint -->
+    <item android:gravity="bottom|end" android:bottom="20dp" android:right="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#30D84315"/>
+            <stroke android:width="3dp" android:color="#40D84315"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌿 Ocean Seaweed -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="60dp"
+    android:viewportWidth="35"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M8,60 Q5,45 10,35 Q5,25 12,15 Q8,8 15,5" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M15,60 Q18,48 13,38 Q18,28 15,18 Q18,10 15,5" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M25,60 Q28,50 22,40 Q28,30 25,20 Q28,12 25,8" />
+</vector>

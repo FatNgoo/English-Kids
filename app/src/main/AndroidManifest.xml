@@ -18,12 +18,13 @@
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
     <application
+        android:name=".magicmelody.MagicMelodyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_app"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_app"
         android:supportsRtl="true"
         android:theme="@style/Theme.English">
         
@@ -124,10 +125,68 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.English.Fullscreen">
         </activity>
+
+        <!-- Magic Storybook - Category Selection -->
+        <activity
+            android:name=".storybook.MagicStorybookCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Magic Storybook">
+        </activity>
+
+        <!-- Magic Storybook - Story Reader -->
+        <activity
+            android:name=".storybook.StoryReaderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Story Reader">
+        </activity>
+
+        <!-- Magic Storybook - Story Library -->
+        <activity
+            android:name=".storybook.StoryLibraryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="My Library">
+        </activity>
+        
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- 🎵 MAGIC MELODY GAME ACTIVITIES                             -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        
+        <!-- Magic Melody - Splash Screen -->
+        <activity
+            android:name=".magicmelody.ui.splash.MagicMelodySplashActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - World Map -->
+        <activity
+            android:name=".magicmelody.ui.worldmap.WorldMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
         
         <!-- Numbers Select Activity -->
         <activity
             android:name=".numbers.NumbersSelectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Magic Melody - Rhythm Gameplay -->
+        <activity
+            android:name=".magicmelody.ui.gameplay.RhythmGameplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen">
+        </activity>
+        
+        <!-- Magic Melody - Magic Notebook -->
+        <activity
+            android:name=".magicmelody.ui.notebook.MagicNotebookActivity"
             android:exported="false"
             android:screenOrientation="portrait">
         </activity>
@@ -137,6 +196,22 @@
             android:name=".numbers.NumberLearnActivity"
             android:exported="false"
             android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Magic Melody - Word Puzzle Mini Game -->
+        <activity
+            android:name=".magicmelody.ui.notebook.WordPuzzleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- Magic Melody - Main Game Activity -->
+        <activity
+            android:name=".magicmelody.ui.GameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.English.Fullscreen"
+            android:configChanges="orientation|screenSize">
         </activity>
         
         <!-- Math Activity -->

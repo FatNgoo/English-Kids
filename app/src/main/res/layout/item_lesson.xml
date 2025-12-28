@@ -7,31 +7,59 @@
     app:cardCornerRadius="16dp"
     app:cardElevation="4dp">
 
-    <LinearLayout
-        android:id="@+id/lesson_container"
+    <FrameLayout
+        android:id="@+id/cardContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:background="@drawable/bg_lesson_available">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:id="@+id/lesson_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
 
-        <TextView
-            android:id="@+id/lesson_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_text_label"
-            android:fontFamily="sans-serif-black"
-            android:text="Lesson"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="6dp" />
+            <!-- Lesson Title aligned to bottom like item_game -->
+            <TextView
+                android:id="@+id/lessonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_label"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:text="Lesson"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center" />
 
-    </LinearLayout>
+        </LinearLayout>
+
+        <!-- Lock Icon Overlay -->
+        <ImageView
+            android:id="@+id/lockIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_lock_lock"
+            android:visibility="gone"
+            android:contentDescription="Locked" />
+
+        <!-- Check Icon (Completed) -->
+        <ImageView
+            android:id="@+id/checkIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/checkbox_on_background"
+            android:visibility="gone"
+            android:contentDescription="Completed" />
+
+    </FrameLayout>
 
 </androidx.cardview.widget.CardView>

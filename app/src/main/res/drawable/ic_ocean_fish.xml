@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🐟 Ocean Fish -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="35dp"
+    android:viewportWidth="50"
+    android:viewportHeight="35">
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M35,17 Q45,10 45,17 Q45,24 35,17 Z" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M10,17 Q25,5 40,17 Q25,29 10,17 Z" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M15,17 Q20,12 25,17 Q20,22 15,17 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,14 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M20,8 L25,12 L22,8 Z" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M20,26 L25,22 L22,26 Z" />
+</vector>
