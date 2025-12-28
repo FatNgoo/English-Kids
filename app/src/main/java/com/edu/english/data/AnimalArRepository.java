@@ -38,69 +38,69 @@ public class AnimalArRepository {
         // NOTE: Sound resource IDs are set to 0 (no sound) as placeholders.
         // After adding MP3 files to res/raw/, update these to R.raw.cat, etc.
         
-        // (1) Cat
+        // (1) Cat - using new image an_cat.png
         animals.add(new AnimalArItem(
             "cat",
             "Cat",
             "Mèo",
             "models/cat.glb",
             0, // TODO: Change to R.raw.cat after adding cat.mp3
-            R.drawable.animal_cat,
+            R.drawable.an_cat,
             0.4f
         ));
         
-        // (2) Dog
+        // (2) Dog - using new image an_dog.png
         animals.add(new AnimalArItem(
             "dog",
             "Dog",
             "Chó",
             "models/dog.glb",
             0, // TODO: Change to R.raw.dog after adding dog.mp3
-            R.drawable.animal_dog,
+            R.drawable.an_dog,
             0.4f
         ));
         
-        // (3) Cow
+        // (3) Cow - using new image an_cow.png
         animals.add(new AnimalArItem(
             "cow",
             "Cow",
             "Bò",
             "models/cow.glb",
             0, // TODO: Change to R.raw.cow after adding cow.mp3
-            R.drawable.animal_cow,
+            R.drawable.an_cow,
             0.5f
         ));
         
-        // (4) Lion
+        // (4) Lion - using new image an_lion.png
         animals.add(new AnimalArItem(
             "lion",
             "Lion",
             "Sư tử",
             "models/lion.glb",
             0, // TODO: Change to R.raw.lion after adding lion.mp3
-            R.drawable.animal_lion,
+            R.drawable.an_lion,
             0.45f
         ));
         
-        // (5) Monkey
+        // (5) Monkey - using new image an_monkey.png
         animals.add(new AnimalArItem(
             "monkey",
             "Monkey",
             "Khỉ",
             "models/monkey.glb",
             0, // TODO: Change to R.raw.monkey after adding monkey.mp3
-            R.drawable.animal_monkey,
+            R.drawable.an_monkey,
             0.35f
         ));
         
-        // (6) Elephant
+        // (6) Elephant - using new image an_elephant.png
         animals.add(new AnimalArItem(
             "elephant",
             "Elephant",
             "Voi",
             "models/elephant.glb",
             0, // TODO: Change to R.raw.elephant after adding elephant.mp3
-            R.drawable.animal_elephant,
+            R.drawable.an_elephant,
             0.5f
         ));
     }

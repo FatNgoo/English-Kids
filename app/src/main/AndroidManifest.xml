@@ -141,6 +141,9 @@
         <!-- Magic Melody - World Map -->
         <activity
             android:name=".magicmelody.ui.worldmap.WorldMapActivity"
+        <!-- Numbers Select Activity -->
+        <activity
+            android:name=".numbers.NumbersSelectActivity"
             android:exported="false"
             android:screenOrientation="portrait">
         </activity>
@@ -156,6 +159,9 @@
         <!-- Magic Melody - Magic Notebook -->
         <activity
             android:name=".magicmelody.ui.notebook.MagicNotebookActivity"
+        <!-- Number Learn Activity -->
+        <activity
+            android:name=".numbers.NumberLearnActivity"
             android:exported="false"
             android:screenOrientation="portrait">
         </activity>
@@ -176,6 +182,12 @@
             android:configChanges="orientation|screenSize">
         </activity>
         
+        <!-- Math Activity -->
+        <activity
+            android:name=".numbers.MathActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

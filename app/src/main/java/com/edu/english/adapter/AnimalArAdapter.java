@@ -54,14 +54,12 @@ public class AnimalArAdapter extends RecyclerView.Adapter<AnimalArAdapter.Animal
         
         private ImageView imgAnimal;
         private TextView txtNameEn;
-        private TextView txtNameVi;
         private View cardContainer;
         
         AnimalViewHolder(@NonNull View itemView) {
             super(itemView);
             imgAnimal = itemView.findViewById(R.id.img_animal);
             txtNameEn = itemView.findViewById(R.id.txt_name_en);
-            txtNameVi = itemView.findViewById(R.id.txt_name_vi);
             cardContainer = itemView.findViewById(R.id.card_container);
         }
         
@@ -69,9 +67,8 @@ public class AnimalArAdapter extends RecyclerView.Adapter<AnimalArAdapter.Animal
             // Set image
             imgAnimal.setImageResource(animal.getThumbResId());
             
-            // Set names
+            // Set name
             txtNameEn.setText(animal.getNameEn());
-            txtNameVi.setText(animal.getNameVi());
             
             // Click listener with animation
             cardContainer.setOnClickListener(v -> {

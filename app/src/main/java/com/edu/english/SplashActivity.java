@@ -20,11 +20,19 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DURATION = 3000; // 3 seconds
+    private static final int SPLASH_DURATION = 2000; // Reduced to 2 seconds for faster transition
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Pre-load MainActivity class to speed up transition
+        try {
+            Class.forName(MainActivity.class.getName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
