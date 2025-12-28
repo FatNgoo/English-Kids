@@ -148,6 +148,7 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:label="My Library">
+        </activity>
         
         <!-- ═══════════════════════════════════════════════════════════ -->
         <!-- 🎵 MAGIC MELODY GAME ACTIVITIES                             -->
@@ -164,6 +165,10 @@
         <!-- Magic Melody - World Map -->
         <activity
             android:name=".magicmelody.ui.worldmap.WorldMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
         <!-- Numbers Select Activity -->
         <activity
             android:name=".numbers.NumbersSelectActivity"
@@ -182,6 +187,10 @@
         <!-- Magic Melody - Magic Notebook -->
         <activity
             android:name=".magicmelody.ui.notebook.MagicNotebookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        
         <!-- Number Learn Activity -->
         <activity
             android:name=".numbers.NumberLearnActivity"

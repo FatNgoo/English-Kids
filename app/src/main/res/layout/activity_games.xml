@@ -121,29 +121,7 @@
 
             </LinearLayout>
 
-            <!-- Detective Card -->
-            <LinearLayout
-                android:id="@+id/card_detective"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/dectective"
-                android:gravity="bottom"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:clickable="true"
-                android:focusable="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_text_label"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Detective"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
+            <!-- Detective card removed -->
 
             <!-- Pet Hospital Card -->
             <LinearLayout

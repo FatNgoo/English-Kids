@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
         List<GameItem> games = new ArrayList<>();
         games.add(new GameItem("Word Race", 0xFF6C63FF, "word_race"));
         games.add(new GameItem("Master Chef", 0xFFE91E63, "master_chef"));
-        games.add(new GameItem("Detective", 0xFF9C27B0, "detective"));
         games.add(new GameItem("Magic Melody", 0xFF00BCD4, "magic_melody"));
         // Magic Storybook - right after Magic Melody
         games.add(new GameItem("Magic Storybook", 0xFF7C4DFF, "magic_storybook", "AI stories for kids"));

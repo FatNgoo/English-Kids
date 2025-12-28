@@ -44,7 +44,6 @@ public class GamesActivity extends AppCompatActivity {
 
     private void setupGameCardClickListeners() {
         LinearLayout cardMasterChef = findViewById(R.id.card_master_chef);
-        LinearLayout cardDetective = findViewById(R.id.card_detective);
         LinearLayout cardPetHospital = findViewById(R.id.card_pet_hospital);
         LinearLayout cardMagicMelody = findViewById(R.id.card_magic_melody);
 
@@ -57,9 +56,6 @@ public class GamesActivity extends AppCompatActivity {
             if (id == R.id.card_master_chef) {
                 gameName = "Master Chef";
                 Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
-            } else if (id == R.id.card_detective) {
-                gameName = "Detective";
-                Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
             } else if (id == R.id.card_pet_hospital) {
                 gameName = "Pet Hospital";
                 Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
@@ -71,7 +67,6 @@ public class GamesActivity extends AppCompatActivity {
         };
 
         cardMasterChef.setOnClickListener(gameClickListener);
-        cardDetective.setOnClickListener(gameClickListener);
         cardPetHospital.setOnClickListener(gameClickListener);
         if (cardMagicMelody != null) {
             cardMagicMelody.setOnClickListener(gameClickListener);
@@ -105,8 +100,7 @@ public class GamesActivity extends AppCompatActivity {
 
     private void animateCards() {
         int[] cardIds = {
-            R.id.card_master_chef, 
-            R.id.card_detective, 
+            R.id.card_master_chef,
             R.id.card_pet_hospital,
             R.id.card_magic_melody
         };

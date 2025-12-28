@@ -79,9 +79,6 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GameViewHold
                 case "Master Chef":
                     container.setBackgroundResource(R.drawable.bg_masterchef);
                     break;
-                case "Detective":
-                    container.setBackgroundResource(R.drawable.bg_detective);
-                    break;
                 case "Magic Melody":
                     container.setBackgroundResource(R.drawable.bg_magicmelody);
                     break;

@@ -99,33 +99,22 @@ public class LessonAdapter extends ListAdapter<WorldMapViewModel.LessonDisplayIt
     static class LessonViewHolder extends RecyclerView.ViewHolder {
         
         private final View cardContainer;
-        private final TextView lessonNumber;
         private final TextView lessonTitle;
         private final ImageView lockIcon;
         private final ImageView checkIcon;
-        private final View star1, star2, star3;
-        private final View difficultyIndicator;
+        
         
         public LessonViewHolder(@NonNull View itemView) {
             super(itemView);
             
             cardContainer = itemView.findViewById(R.id.cardContainer);
-            lessonNumber = itemView.findViewById(R.id.lessonNumber);
             lessonTitle = itemView.findViewById(R.id.lessonTitle);
             lockIcon = itemView.findViewById(R.id.lockIcon);
             checkIcon = itemView.findViewById(R.id.checkIcon);
-            star1 = itemView.findViewById(R.id.star1);
-            star2 = itemView.findViewById(R.id.star2);
-            star3 = itemView.findViewById(R.id.star3);
-            difficultyIndicator = itemView.findViewById(R.id.difficultyIndicator);
+            
         }
         
         public void bind(WorldMapViewModel.LessonDisplayItem lesson) {
-            // Set lesson number
-            if (lessonNumber != null) {
-                lessonNumber.setText(String.valueOf(lesson.getLessonNumber()));
-            }
-            
             // Set lesson title
             if (lessonTitle != null) {
                 lessonTitle.setText(lesson.getTitle());
@@ -157,51 +146,9 @@ public class LessonAdapter extends ListAdapter<WorldMapViewModel.LessonDisplayIt
                 }
             }
             
-            // Set stars
-            int stars = lesson.getStars();
-            setStarState(star1, stars >= 1);
-            setStarState(star2, stars >= 2);
-            setStarState(star3, stars >= 3);
-            
-            // Set difficulty indicator color
-            if (difficultyIndicator != null) {
-                setDifficultyColor(difficultyIndicator, lesson.getDifficulty());
-            }
+            // (stars and difficulty indicator removed from layout)
         }
         
-        private void setStarState(View star, boolean filled) {
-            if (star == null) return;
-            
-            star.setAlpha(filled ? 1f : 0.3f);
-            star.setScaleX(filled ? 1f : 0.8f);
-            star.setScaleY(filled ? 1f : 0.8f);
-        }
-        
-        private void setDifficultyColor(View indicator, int difficulty) {
-            int color;
-            
-            switch (difficulty) {
-                case 1:
-                    color = 0xFF4CAF50; // Green - Easy
-                    break;
-                case 2:
-                    color = 0xFFFFEB3B; // Yellow - Medium
-                    break;
-                case 3:
-                    color = 0xFFFF9800; // Orange - Hard
-                    break;
-                case 4:
-                    color = 0xFFFF5722; // Red-Orange - Very Hard
-                    break;
-                case 5:
-                    color = 0xFFE91E63; // Pink - Expert
-                    break;
-                default:
-                    color = 0xFF9E9E9E; // Gray
-            }
-            
-            indicator.setBackgroundColor(color);
-        }
         
         public void playClickAnimation() {
             AnimatorSet bounceSet = new AnimatorSet();

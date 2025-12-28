@@ -59,21 +59,29 @@
                     android:contentDescription="@string/locked"/>
             </FrameLayout>
             
-            <!-- World name -->
+            <!-- (World name/description relocated below to sit nearer the bottom) -->
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- World name (moved down, bolded) -->
             <TextView
                 android:id="@+id/worldName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="6dp"
                 android:textSize="16sp"
+                android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
                 android:gravity="center"
                 android:maxLines="1"
                 android:ellipsize="end"
                 tools:text="Magical Forest"/>
-            
-            <!-- World description -->
+
+            <!-- World description (moved down) -->
             <TextView
                 android:id="@+id/worldDescription"
                 android:layout_width="wrap_content"
@@ -85,11 +93,6 @@
                 android:maxLines="2"
                 android:ellipsize="end"
                 tools:text="Nature sounds &amp; melodies"/>
-            
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
             
             <!-- Evolution stars row -->
             <LinearLayout

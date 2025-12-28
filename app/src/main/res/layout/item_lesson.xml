@@ -17,77 +17,25 @@
             android:id="@+id/lesson_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:gravity="bottom|center_horizontal"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="12dp">
 
-            <!-- Difficulty Indicator -->
-            <View
-                android:id="@+id/difficultyIndicator"
-                android:layout_width="40dp"
-                android:layout_height="4dp"
-                android:background="#4CAF50" />
-
-            <!-- Lesson Number -->
-            <TextView
-                android:id="@+id/lessonNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="sans-serif-black"
-                android:text="1"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <!-- Lesson Title -->
+            <!-- Lesson Title aligned to bottom like item_game -->
             <TextView
                 android:id="@+id/lessonTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_text_label"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
                 android:text="Lesson"
                 android:textColor="@color/white"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:paddingHorizontal="12dp"
-                android:paddingVertical="4dp"
-                android:layout_marginTop="4dp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <!-- Star Rating Row -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/star1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@android:drawable/btn_star_big_on"
-                    android:contentDescription="Star 1" />
-
-                <ImageView
-                    android:id="@+id/star2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginHorizontal="4dp"
-                    android:src="@android:drawable/btn_star_big_on"
-                    android:contentDescription="Star 2" />
-
-                <ImageView
-                    android:id="@+id/star3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@android:drawable/btn_star_big_on"
-                    android:contentDescription="Star 3" />
-
-            </LinearLayout>
+                android:paddingVertical="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center" />
 
         </LinearLayout>
 

@@ -1,0 +1,660 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "4a3520e389fa4a574f4b80e39d3e7dc1",
+    "entities": [
+      {
+        "tableName": "user_profiles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`user_id` TEXT NOT NULL, `display_name` TEXT, `avatar_id` TEXT, `age_group` TEXT, `preferred_theme` TEXT, `total_stars` INTEGER NOT NULL, `current_world` TEXT, `current_level` INTEGER NOT NULL, `highest_combo` INTEGER NOT NULL, `total_notes_hit` INTEGER NOT NULL, `perfect_count` INTEGER NOT NULL, `collected_notes_count` INTEGER NOT NULL, `bosses_defeated` INTEGER NOT NULL, `worlds_completed` INTEGER NOT NULL, `experience_points` INTEGER NOT NULL, `streak_days` INTEGER NOT NULL, `sound_enabled` INTEGER NOT NULL, `music_enabled` INTEGER NOT NULL, `voice_guide_enabled` INTEGER NOT NULL, `created_at` INTEGER NOT NULL, `last_played_at` INTEGER NOT NULL, `total_play_time_minutes` INTEGER NOT NULL, PRIMARY KEY(`user_id`))",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayName",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "avatarId",
+            "columnName": "avatar_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ageGroup",
+            "columnName": "age_group",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "preferredTheme",
+            "columnName": "preferred_theme",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "totalStars",
+            "columnName": "total_stars",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentWorld",
+            "columnName": "current_world",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentLevel",
+            "columnName": "current_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highestCombo",
+            "columnName": "highest_combo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalNotesHit",
+            "columnName": "total_notes_hit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perfectCount",
+            "columnName": "perfect_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectedNotesCount",
+            "columnName": "collected_notes_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bossesDefeated",
+            "columnName": "bosses_defeated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "worldsCompleted",
+            "columnName": "worlds_completed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "experiencePoints",
+            "columnName": "experience_points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "streakDays",
+            "columnName": "streak_days",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "soundEnabled",
+            "columnName": "sound_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "musicEnabled",
+            "columnName": "music_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "voiceGuideEnabled",
+            "columnName": "voice_guide_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastPlayedAt",
+            "columnName": "last_played_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalPlayTimeMinutes",
+            "columnName": "total_play_time_minutes",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "user_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "lesson_progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`lesson_id` TEXT NOT NULL, `user_id` TEXT, `world_id` TEXT, `level_number` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL, `is_unlocked` INTEGER NOT NULL, `stars_earned` INTEGER NOT NULL, `best_score` INTEGER NOT NULL, `best_combo` INTEGER NOT NULL, `perfect_hits` INTEGER NOT NULL, `good_hits` INTEGER NOT NULL, `ok_hits` INTEGER NOT NULL, `miss_count` INTEGER NOT NULL, `times_played` INTEGER NOT NULL, `total_score_all_attempts` INTEGER NOT NULL, `first_completed_at` INTEGER NOT NULL, `last_played_at` INTEGER NOT NULL, PRIMARY KEY(`lesson_id`))",
+        "fields": [
+          {
+            "fieldPath": "lessonId",
+            "columnName": "lesson_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "worldId",
+            "columnName": "world_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "levelNumber",
+            "columnName": "level_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCompleted",
+            "columnName": "is_completed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isUnlocked",
+            "columnName": "is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "starsEarned",
+            "columnName": "stars_earned",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestScore",
+            "columnName": "best_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestCombo",
+            "columnName": "best_combo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perfectHits",
+            "columnName": "perfect_hits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "goodHits",
+            "columnName": "good_hits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "okHits",
+            "columnName": "ok_hits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "missCount",
+            "columnName": "miss_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timesPlayed",
+            "columnName": "times_played",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalScoreAllAttempts",
+            "columnName": "total_score_all_attempts",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstCompletedAt",
+            "columnName": "first_completed_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastPlayedAt",
+            "columnName": "last_played_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "lesson_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "world_progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`world_id` TEXT NOT NULL, `user_id` TEXT, `world_name` TEXT, `world_order` INTEGER NOT NULL, `is_unlocked` INTEGER NOT NULL, `stars_to_unlock` INTEGER NOT NULL, `unlocked_at` INTEGER NOT NULL, `levels_completed` INTEGER NOT NULL, `total_levels` INTEGER NOT NULL, `stars_earned` INTEGER NOT NULL, `max_possible_stars` INTEGER NOT NULL, `evolution_stage` INTEGER NOT NULL, `saturation_level` REAL NOT NULL, `boss_unlocked` INTEGER NOT NULL, `boss_defeated` INTEGER NOT NULL, `boss_defeated_at` INTEGER NOT NULL, `boss_best_score` INTEGER NOT NULL, PRIMARY KEY(`world_id`))",
+        "fields": [
+          {
+            "fieldPath": "worldId",
+            "columnName": "world_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "worldName",
+            "columnName": "world_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "worldOrder",
+            "columnName": "world_order",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isUnlocked",
+            "columnName": "is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "starsToUnlock",
+            "columnName": "stars_to_unlock",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unlockedAt",
+            "columnName": "unlocked_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "levelsCompleted",
+            "columnName": "levels_completed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalLevels",
+            "columnName": "total_levels",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "starsEarned",
+            "columnName": "stars_earned",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxPossibleStars",
+            "columnName": "max_possible_stars",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "evolutionStage",
+            "columnName": "evolution_stage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saturationLevel",
+            "columnName": "saturation_level",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bossUnlocked",
+            "columnName": "boss_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bossDefeated",
+            "columnName": "boss_defeated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bossDefeatedAt",
+            "columnName": "boss_defeated_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bossBestScore",
+            "columnName": "boss_best_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "world_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "collected_notes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `user_id` TEXT, `note_id` TEXT, `note_name` TEXT, `word` TEXT, `world_id` TEXT, `lesson_id` TEXT, `note_type` TEXT, `audio_file` TEXT, `character_id` TEXT, `times_played` INTEGER NOT NULL, `times_collected` INTEGER NOT NULL, `perfect_hits` INTEGER NOT NULL, `mastery_level` INTEGER NOT NULL, `collected_at` INTEGER NOT NULL, `first_collected_at` INTEGER NOT NULL, `last_collected_at` INTEGER NOT NULL, `last_played_at` INTEGER NOT NULL, `is_favorite` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noteId",
+            "columnName": "note_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noteName",
+            "columnName": "note_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "word",
+            "columnName": "word",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "worldId",
+            "columnName": "world_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lessonId",
+            "columnName": "lesson_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noteType",
+            "columnName": "note_type",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "audioFile",
+            "columnName": "audio_file",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "timesPlayed",
+            "columnName": "times_played",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timesCollected",
+            "columnName": "times_collected",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perfectHits",
+            "columnName": "perfect_hits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "masteryLevel",
+            "columnName": "mastery_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectedAt",
+            "columnName": "collected_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstCollectedAt",
+            "columnName": "first_collected_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastCollectedAt",
+            "columnName": "last_collected_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastPlayedAt",
+            "columnName": "last_played_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFavorite",
+            "columnName": "is_favorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "boss_progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`boss_id` TEXT NOT NULL, `user_id` TEXT, `world_id` TEXT, `boss_name` TEXT, `is_unlocked` INTEGER NOT NULL, `is_defeated` INTEGER NOT NULL, `times_attempted` INTEGER NOT NULL, `times_defeated` INTEGER NOT NULL, `first_defeated_at` INTEGER NOT NULL, `last_attempted_at` INTEGER NOT NULL, `best_score` INTEGER NOT NULL, `fastest_defeat_seconds` INTEGER NOT NULL, `best_combo` INTEGER NOT NULL, `highest_damage_dealt` INTEGER NOT NULL, `perfect_victory` INTEGER NOT NULL, `ar_battles_count` INTEGER NOT NULL, `voice_attacks_used` INTEGER NOT NULL, `video_recorded` INTEGER NOT NULL, `last_video_path` TEXT, `reward_claimed` INTEGER NOT NULL, `legendary_note_earned` INTEGER NOT NULL, PRIMARY KEY(`boss_id`))",
+        "fields": [
+          {
+            "fieldPath": "bossId",
+            "columnName": "boss_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "worldId",
+            "columnName": "world_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bossName",
+            "columnName": "boss_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isUnlocked",
+            "columnName": "is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDefeated",
+            "columnName": "is_defeated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timesAttempted",
+            "columnName": "times_attempted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timesDefeated",
+            "columnName": "times_defeated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstDefeatedAt",
+            "columnName": "first_defeated_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastAttemptedAt",
+            "columnName": "last_attempted_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestScore",
+            "columnName": "best_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fastestDefeatSeconds",
+            "columnName": "fastest_defeat_seconds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestCombo",
+            "columnName": "best_combo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highestDamageDealt",
+            "columnName": "highest_damage_dealt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "perfectVictory",
+            "columnName": "perfect_victory",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "arBattlesCount",
+            "columnName": "ar_battles_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "voiceAttacksUsed",
+            "columnName": "voice_attacks_used",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "videoRecorded",
+            "columnName": "video_recorded",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastVideoPath",
+            "columnName": "last_video_path",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rewardClaimed",
+            "columnName": "reward_claimed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "legendaryNoteEarned",
+            "columnName": "legendary_note_earned",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "boss_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4a3520e389fa4a574f4b80e39d3e7dc1')"
+    ]
+  }
+}
