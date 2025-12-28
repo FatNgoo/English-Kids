@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🦎 Desert Lizard -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="30dp"
+    android:viewportWidth="50"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M15,15 Q25,10 35,15 Q38,18 35,22 Q25,25 15,20 Q10,18 15,15 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M35,17 Q42,15 48,18 Q42,20 35,18 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M45,17 m-1,0 a1,1 0 1,1 2,0 a1,1 0 1,1 -2,0" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M12,15 Q5,10 2,15" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M18,20 L15,28 L18,25 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M25,22 L23,30 L26,26 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M30,21 L32,28 L29,25 Z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M22,13 L20,5 L23,10 Z" />
+</vector>

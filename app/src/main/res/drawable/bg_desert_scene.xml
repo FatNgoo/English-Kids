@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🏜️ Desert Scene Background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#87CEEB"
+                android:centerColor="#FFE4B5"
+                android:endColor="#F4A460"
+                android:angle="90" />
+        </shape>
+    </item>
+    <item android:top="400dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DEB887" />
+        </shape>
+    </item>
+</layer-list>

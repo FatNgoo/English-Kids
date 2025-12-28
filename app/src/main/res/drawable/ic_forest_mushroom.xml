@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🍄 Forest Mushroom -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="45dp"
+    android:viewportWidth="40"
+    android:viewportHeight="45">
+    
+    <!-- Stem -->
+    <path
+        android:fillColor="#F5DEB3"
+        android:pathData="M15,25 L25,25 L27,43 L13,43 Z" />
+    
+    <!-- Cap -->
+    <path
+        android:fillColor="#FF4444"
+        android:pathData="M20,5 Q35,5 35,18 Q35,28 20,28 Q5,28 5,18 Q5,5 20,5 Z" />
+    
+    <!-- Spots on cap -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,12 m-3,0 a3,2 0 1,1 6,0 a3,2 0 1,1 -6,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,8 m-2.5,0 a2.5,2 0 1,1 5,0 a2.5,2 0 1,1 -5,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,12 m-3,0 a3,2 0 1,1 6,0 a3,2 0 1,1 -6,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,20 m-2,0 a2,1.5 0 1,1 4,0 a2,1.5 0 1,1 -4,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,18 m-2,0 a2,1.5 0 1,1 4,0 a2,1.5 0 1,1 -4,0" />
+        
+</vector>

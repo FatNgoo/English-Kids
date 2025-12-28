@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🐚 Ocean Shell -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="35dp"
+    android:viewportWidth="40"
+    android:viewportHeight="35">
+    <path
+        android:fillColor="#DEB887"
+        android:pathData="M20,5 Q35,8 38,20 Q35,32 20,35 Q5,32 2,20 Q5,8 20,5 Z" />
+    <path
+        android:fillColor="#D2B48C"
+        android:pathData="M20,8 Q30,10 32,20 Q30,28 20,30 Q10,28 8,20 Q10,10 20,8 Z" />
+    <path
+        android:strokeColor="#C4A46B"
+        android:strokeWidth="1.5"
+        android:pathData="M20,5 L20,35" />
+    <path
+        android:strokeColor="#C4A46B"
+        android:strokeWidth="1"
+        android:pathData="M10,8 Q20,20 10,32" />
+    <path
+        android:strokeColor="#C4A46B"
+        android:strokeWidth="1"
+        android:pathData="M30,8 Q20,20 30,32" />
+</vector>

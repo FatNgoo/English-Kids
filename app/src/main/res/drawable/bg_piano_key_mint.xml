@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item android:bottom="0dp" android:left="2dp" android:right="2dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#6BC4B5" />
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp" 
+                android:bottomLeftRadius="16dp" android:bottomRightRadius="16dp" />
+        </shape>
+    </item>
+    <!-- Main key surface -->
+    <item android:bottom="4dp" android:left="0dp" android:right="0dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#95E1D3"
+                android:endColor="#B5F5E8" />
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp"
+                android:bottomLeftRadius="16dp" android:bottomRightRadius="16dp" />
+            <stroke android:width="2dp" android:color="#7DD1C3" />
+        </shape>
+    </item>
+    <!-- Highlight on top -->
+    <item android:bottom="60dp" android:left="8dp" android:right="8dp" android:top="8dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#00FFFFFF"
+                android:endColor="#44FFFFFF" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</layer-list>

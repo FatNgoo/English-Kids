@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 💧 Mountain River -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="30dp"
+    android:viewportWidth="80"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M0,15 Q20,5 40,15 Q60,25 80,15 L80,25 Q60,35 40,25 Q20,15 0,25 Z" />
+    <path
+        android:fillColor="#6495ED"
+        android:pathData="M5,18 Q15,12 25,18 Q35,22 45,18" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M50,16 Q60,10 70,16" />
+</vector>

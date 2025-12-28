@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🏔️ Mountain Peak -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="60dp"
+    android:viewportWidth="70"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#708090"
+        android:pathData="M35,5 L65,58 L5,58 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,5 L45,20 L35,18 L25,20 Z" />
+    <path
+        android:fillColor="#778899"
+        android:pathData="M35,5 L50,35 L35,30 L20,35 Z" />
+</vector>

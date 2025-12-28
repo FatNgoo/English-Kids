@@ -20,15 +20,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.edu.english.alphabet_adventure.screens.MascotSelectActivity;
 import com.edu.english.alphabet_pop_lab.AlphabetPopLabActivity;
+import com.edu.english.coloralchemy.ColorsActivity;
+import com.edu.english.magicmelody.ui.splash.MagicMelodySplashActivity;
 import com.edu.english.numbers.NumbersLessonActivity;
 import com.edu.english.storybook.MagicStorybookCategoryActivity;
+import com.edu.english.shapes.ShapesActivity;
+import com.edu.english.numbers.NumbersSelectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.edu.english.shapes.ShapesActivity;
-
-import com.edu.english.coloralchemy.ColorsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        
+        // Make window visible immediately to prevent black screen
+        getWindow().setBackgroundDrawableResource(R.color.deep_blue);
         
         // Initialize DrawerLayout
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -61,9 +64,52 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Setup Settings button
+        setupSettingsButton();
+
         // Setup RecyclerViews
         setupLessonsRecyclerView();
         setupGamesRecyclerView();
+    }
+
+    private void setupSettingsButton() {
+        LinearLayout btnSettings = findViewById(R.id.btn_settings);
+        if (btnSettings != null) {
+            btnSettings.setOnClickListener(v -> {
+                // Close drawer first
+                if (drawerLayout != null) {
+                    drawerLayout.closeDrawers();
+                }
+                
+                // Show settings dialog
+                SettingsDialog settingsDialog = new SettingsDialog(this);
+                settingsDialog.setOnSettingsChangedListener(new SettingsDialog.OnSettingsChangedListener() {
+                    @Override
+                    public void onSoundToggled(boolean enabled) {
+                        // Handle sound toggle
+                    }
+
+                    @Override
+                    public void onMusicToggled(boolean enabled) {
+                        // Handle music toggle
+                    }
+
+                    @Override
+                    public void onVolumeChanged(int volume) {
+                        // Handle volume change
+                    }
+
+                    @Override
+                    public void onBrightnessChanged(int brightness) {
+                        // Apply brightness to activity window
+                        android.view.WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
+                        layoutParams.screenBrightness = brightness / 100f;
+                        getWindow().setAttributes(layoutParams);
+                    }
+                });
+                settingsDialog.show();
+            });
+        }
     }
 
     private void setupLessonsRecyclerView() {
@@ -120,7 +166,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(alphabetIntent);
                 break;
             case "numbers":
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersLessonActivity.class);
+                // Navigate to Numbers Selection screen with 3 options
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersSelectActivity.class);
                 startActivity(numbersIntent);
                 break;
             case "colors":
@@ -145,6 +192,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (game.getGameType().equals("magic_storybook")) {
             Intent storybookIntent = new Intent(MainActivity.this, MagicStorybookCategoryActivity.class);
             startActivity(storybookIntent);
+        } else if (game.getGameType().equals("magic_melody")) {
+            // Launch Magic Melody Game!
+            Intent magicMelodyIntent = new Intent(MainActivity.this, MagicMelodySplashActivity.class);
+            startActivity(magicMelodyIntent);
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else {
             String message = "Let's play " + game.getTitle() + "! 🎮";

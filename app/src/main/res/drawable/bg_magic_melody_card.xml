@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🎵 Magic Melody Game Card Background -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#6B48FF"
+                android:centerColor="#8B5CF6"
+                android:endColor="#EC4899" />
+        </shape>
+    </item>
+    
+    <!-- Overlay pattern effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:type="radial"
+                android:gradientRadius="200dp"
+                android:centerX="0.8"
+                android:centerY="0.2"
+                android:startColor="#30FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+    
+</layer-list>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🚀 Sky Rocket -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="60dp"
+    android:viewportWidth="35"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#C0C0C0"
+        android:pathData="M17.5,5 Q25,10 25,25 L25,45 L10,45 L10,25 Q10,10 17.5,5 Z" />
+    <path
+        android:fillColor="#FF4444"
+        android:pathData="M17.5,2 Q22,5 22,12 Q17.5,15 13,12 Q13,5 17.5,2 Z" />
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M15,20 L20,20 L20,28 L15,28 Z" />
+    <path
+        android:fillColor="#FF4444"
+        android:pathData="M8,40 L10,45 L10,55 L5,50 Z" />
+    <path
+        android:fillColor="#FF4444"
+        android:pathData="M27,40 L25,45 L25,55 L30,50 Z" />
+    <path
+        android:fillColor="#FF6600"
+        android:pathData="M13,45 L17.5,58 L22,45 Z" />
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M15,45 L17.5,55 L20,45 Z" />
+</vector>

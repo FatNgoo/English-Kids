@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ☁️ Sky World Icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- Sky gradient background circle -->
+    <path
+        android:pathData="M32,4 A28,28 0 1,1 32,60 A28,28 0 1,1 32,4"
+        android:fillColor="#87CEEB"/>
+    
+    <!-- Cloud 1 -->
+    <path
+        android:pathData="M16,28 A8,8 0 0,1 32,28 A10,10 0 0,1 26,44 L14,44 A8,8 0 0,1 16,28"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Cloud 2 -->
+    <path
+        android:pathData="M36,20 A6,6 0 0,1 48,20 A8,8 0 0,1 44,32 L34,32 A6,6 0 0,1 36,20"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Rainbow arc -->
+    <path
+        android:pathData="M8,48 Q32,20 56,48"
+        android:strokeColor="#EF4444"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"/>
+    
+    <path
+        android:pathData="M10,51 Q32,25 54,51"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"/>
+    
+    <path
+        android:pathData="M12,54 Q32,30 52,54"
+        android:strokeColor="#22C55E"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"/>
+</vector>
