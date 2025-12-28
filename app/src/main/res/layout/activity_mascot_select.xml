@@ -107,7 +107,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/checkmark"
+                        android:id="@+id/checkmark_1"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginTop="8dp"
@@ -156,7 +156,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/checkmark"
+                        android:id="@+id/checkmark_2"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginTop="8dp"
@@ -212,7 +212,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/checkmark"
+                        android:id="@+id/checkmark_3"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginTop="8dp"
@@ -261,7 +261,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/checkmark"
+                        android:id="@+id/checkmark_4"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginTop="8dp"

@@ -63,6 +63,7 @@ public class MascotSelectActivity extends AppCompatActivity {
         int[] cardIds = {R.id.card_mascot_1, R.id.card_mascot_2, R.id.card_mascot_3, R.id.card_mascot_4};
         int[] emojiIds = {R.id.emoji_mascot_1, R.id.emoji_mascot_2, R.id.emoji_mascot_3, R.id.emoji_mascot_4};
         int[] nameIds = {R.id.name_mascot_1, R.id.name_mascot_2, R.id.name_mascot_3, R.id.name_mascot_4};
+        int[] checkmarkIds = {R.id.checkmark_1, R.id.checkmark_2, R.id.checkmark_3, R.id.checkmark_4};
 
         // Pre-select saved mascot
         int savedMascotId = preferences.getSelectedMascot();
@@ -72,36 +73,40 @@ public class MascotSelectActivity extends AppCompatActivity {
             CardView card = findViewById(cardIds[i]);
             TextView emojiView = findViewById(emojiIds[i]);
             TextView nameView = findViewById(nameIds[i]);
+            View checkmark = findViewById(checkmarkIds[i]);
 
             emojiView.setText(mascot.getEmoji());
             nameView.setText(mascot.getName());
 
             final int mascotId = mascot.getId();
+            final View finalCheckmark = checkmark;
             
             // Pre-select if it's the saved mascot
             if (mascotId == savedMascotId) {
-                selectCard(card, mascotId);
+                selectCard(card, finalCheckmark, mascotId);
             }
 
             card.setOnClickListener(v -> {
                 animateCardPress(card);
-                selectCard(card, mascotId);
+                selectCard(card, finalCheckmark, mascotId);
             });
         }
     }
 
-    private void selectCard(CardView card, int mascotId) {
+    private View selectedCheckmark = null;
+
+    private void selectCard(CardView card, View checkmark, int mascotId) {
         // Deselect previous
         if (selectedCard != null) {
             selectedCard.setCardElevation(4f);
             selectedCard.setScaleX(1f);
             selectedCard.setScaleY(1f);
-            View checkmark = selectedCard.findViewById(R.id.checkmark);
-            if (checkmark != null) checkmark.setVisibility(View.GONE);
+            if (selectedCheckmark != null) selectedCheckmark.setVisibility(View.GONE);
         }
 
         // Select new
         selectedCard = card;
+        selectedCheckmark = checkmark;
         selectedMascotId = mascotId;
         
         card.setCardElevation(16f);
@@ -112,7 +117,6 @@ public class MascotSelectActivity extends AppCompatActivity {
             .setInterpolator(new OvershootInterpolator())
             .start();
 
-        View checkmark = card.findViewById(R.id.checkmark);
         if (checkmark != null) {
             checkmark.setVisibility(View.VISIBLE);
             checkmark.setAlpha(0f);

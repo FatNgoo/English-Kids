@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Story reader frame for Novel category - bookshelf with warm light -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base warm background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFF8E1"
+                android:endColor="#FFECB3"
+                android:angle="270"/>
+        </shape>
+    </item>
+    
+    <!-- Left bookshelf edge -->
+    <item android:width="24dp" android:gravity="start">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8D6E63"
+                android:endColor="#6D4C41"
+                android:angle="0"/>
+        </shape>
+    </item>
+    
+    <!-- Right bookshelf edge -->
+    <item android:width="24dp" android:gravity="end">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#6D4C41"
+                android:endColor="#8D6E63"
+                android:angle="180"/>
+        </shape>
+    </item>
+    
+    <!-- Warm light glow top -->
+    <item android:gravity="top" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#40FFD54F"
+                android:endColor="#00FFD54F"
+                android:angle="270"/>
+            <size android:height="80dp"/>
+        </shape>
+    </item>
+</layer-list>

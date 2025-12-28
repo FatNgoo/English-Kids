@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#3B82F6"
+                android:endColor="#2563EB"
+                android:angle="135"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    
+    <!-- Clouds decoration -->
+    <item android:gravity="top|start" android:top="12dp" android:left="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#30FFFFFF"/>
+            <size android:width="40dp" android:height="20dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|end" android:top="20dp" android:right="30dp">
+        <shape android:shape="oval">
+            <solid android:color="#25FFFFFF"/>
+            <size android:width="50dp" android:height="24dp"/>
+        </shape>
+    </item>
+    
+    <!-- Globe hint at bottom -->
+    <item android:gravity="bottom|center" android:bottom="-30dp">
+        <shape android:shape="oval">
+            <solid android:color="#20FFFFFF"/>
+            <size android:width="100dp" android:height="100dp"/>
+        </shape>
+    </item>
+</layer-list>

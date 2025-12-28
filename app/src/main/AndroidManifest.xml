@@ -125,6 +125,29 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.English.Fullscreen">
         </activity>
+
+        <!-- Magic Storybook - Category Selection -->
+        <activity
+            android:name=".storybook.MagicStorybookCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Magic Storybook">
+        </activity>
+
+        <!-- Magic Storybook - Story Reader -->
+        <activity
+            android:name=".storybook.StoryReaderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="Story Reader">
+        </activity>
+
+        <!-- Magic Storybook - Story Library -->
+        <activity
+            android:name=".storybook.StoryLibraryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="My Library">
         
         <!-- ═══════════════════════════════════════════════════════════ -->
         <!-- 🎵 MAGIC MELODY GAME ACTIVITIES                             -->
