@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Cake base -->
+    <path android:pathData="M20,50 L20,90 L100,90 L100,50 Q100,45 60,45 Q20,45 20,50 Z" android:fillColor="#FFCCBC"/>
+    <!-- Frosting layer -->
+    <path android:pathData="M20,50 Q20,45 60,45 Q100,45 100,50 Q100,60 60,60 Q20,60 20,50 Z" android:fillColor="#F8BBD9"/>
+    <!-- Frosting drip -->
+    <path android:pathData="M30,50 Q28,65 30,55 M50,50 Q48,70 50,55 M70,50 Q68,68 70,55 M90,50 Q88,62 90,55" android:strokeColor="#F8BBD9" android:strokeWidth="6"/>
+    <!-- Candles -->
+    <path android:pathData="M45,30 L45,45 M60,25 L60,45 M75,30 L75,45" android:strokeColor="#FF7043" android:strokeWidth="4"/>
+    <!-- Flames -->
+    <path android:pathData="M45,22 Q43,26 45,30 Q47,26 45,22" android:fillColor="#FFEB3B"/>
+    <path android:pathData="M60,17 Q58,21 60,25 Q62,21 60,17" android:fillColor="#FFEB3B"/>
+    <path android:pathData="M75,22 Q73,26 75,30 Q77,26 75,22" android:fillColor="#FFEB3B"/>
+    <!-- Cherry on top -->
+    <path android:pathData="M56,38 A6,6 0 1,0 68,38 A6,6 0 1,0 56,38" android:fillColor="#E53935"/>
+</vector>

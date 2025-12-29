@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+    
+    <!-- Menu Board Background -->
+    <path
+        android:pathData="M10,5 L190,5 Q195,5 195,10 L195,90 Q195,95 190,95 L10,95 Q5,95 5,90 L5,10 Q5,5 10,5 Z"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Board inner dark -->
+    <path
+        android:pathData="M15,10 L185,10 Q188,10 188,13 L188,87 Q188,90 185,90 L15,90 Q12,90 12,87 L12,13 Q12,10 15,10 Z"
+        android:fillColor="#3E2723"/>
+    
+    <!-- Title bar -->
+    <path
+        android:pathData="M20,15 L180,15 L180,35 L20,35 Z"
+        android:fillColor="#FF8F00"/>
+    
+    <!-- Menu text line 1 -->
+    <path
+        android:pathData="M25,45 L100,45 L100,52 L25,52 Z"
+        android:fillColor="#FFECB3"/>
+    
+    <!-- Menu text line 2 -->
+    <path
+        android:pathData="M25,58 L90,58 L90,65 L25,65 Z"
+        android:fillColor="#FFECB3"/>
+    
+    <!-- Menu text line 3 -->
+    <path
+        android:pathData="M25,71 L110,71 L110,78 L25,78 Z"
+        android:fillColor="#FFECB3"/>
+    
+    <!-- Star decoration 1 -->
+    <path
+        android:pathData="M150,50 L153,56 L160,57 L155,62 L156,69 L150,65 L144,69 L145,62 L140,57 L147,56 Z"
+        android:fillColor="#FFD700"/>
+    
+    <!-- Star decoration 2 -->
+    <path
+        android:pathData="M170,40 L172,44 L177,45 L174,48 L175,53 L170,50 L165,53 L166,48 L163,45 L168,44 Z"
+        android:fillColor="#FFD700"/>
+    
+    <!-- Hanging rope left -->
+    <path
+        android:pathData="M40,0 L40,5 L42,5 L42,0"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Hanging rope right -->
+    <path
+        android:pathData="M158,0 L158,5 L160,5 L160,0"
+        android:fillColor="#8D6E63"/>
+</vector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spaghetti pasta icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Pasta strands -->
+    <path
+        android:pathData="M12,8 L12,40"
+        android:strokeWidth="3"
+        android:strokeColor="#FFE082"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M18,8 L18,40"
+        android:strokeWidth="3"
+        android:strokeColor="#FFCA28"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M24,8 L24,40"
+        android:strokeWidth="3"
+        android:strokeColor="#FFE082"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M30,8 L30,40"
+        android:strokeWidth="3"
+        android:strokeColor="#FFCA28"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M36,8 L36,40"
+        android:strokeWidth="3"
+        android:strokeColor="#FFE082"
+        android:strokeLineCap="round"/>
+    
+    <!-- Ribbon tie -->
+    <path
+        android:pathData="M8,20 L40,20"
+        android:strokeWidth="4"
+        android:strokeColor="#FF5722"/>
+</vector>

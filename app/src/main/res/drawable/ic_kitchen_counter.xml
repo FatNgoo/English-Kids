@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="80dp"
+    android:viewportWidth="200"
+    android:viewportHeight="80">
+    
+    <!-- Counter Top Surface -->
+    <path
+        android:pathData="M0,0 L200,0 L200,15 L0,15 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Counter Top Edge -->
+    <path
+        android:pathData="M0,12 L200,12 L200,18 L0,18 Z"
+        android:fillColor="#CFD8DC"/>
+    
+    <!-- Cabinet Front -->
+    <path
+        android:pathData="M0,15 L200,15 L200,80 L0,80 Z"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Cabinet Door Left -->
+    <path
+        android:pathData="M5,20 L95,20 L95,75 L5,75 Z"
+        android:fillColor="#A1887F"/>
+    <path
+        android:pathData="M85,45 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Cabinet Door Right -->
+    <path
+        android:pathData="M105,20 L195,20 L195,75 L105,75 Z"
+        android:fillColor="#A1887F"/>
+    <path
+        android:pathData="M115,45 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Cabinet Door Frames -->
+    <path
+        android:pathData="M10,25 L90,25 L90,70 L10,70 Z"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M110,25 L190,25 L190,70 L110,70 Z"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+</vector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Bottom bread -->
+    <path android:pathData="M15,70 Q15,85 60,85 Q105,85 105,70 L105,60 L15,60 Z" android:fillColor="#FFCC80"/>
+    <!-- Lettuce -->
+    <path android:pathData="M15,58 Q30,65 45,55 Q60,65 75,55 Q90,65 105,58" android:strokeColor="#66BB6A" android:strokeWidth="5"/>
+    <!-- Tomato -->
+    <path android:pathData="M18,52 L102,52 L102,58 L18,58 Z" android:fillColor="#EF5350"/>
+    <!-- Cheese -->
+    <path android:pathData="M18,46 L102,46 L102,52 L18,52 Z" android:fillColor="#FFEE58"/>
+    <!-- Ham -->
+    <path android:pathData="M20,38 Q60,50 100,38 L100,46 L20,46 Z" android:fillColor="#F48FB1"/>
+    <!-- Top bread -->
+    <path android:pathData="M15,38 Q15,20 60,20 Q105,20 105,38 L105,42 L15,42 Z" android:fillColor="#FFCC80"/>
+</vector>

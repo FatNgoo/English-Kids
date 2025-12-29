@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="35dp"
+    android:viewportWidth="40"
+    android:viewportHeight="35">
+    
+    <!-- Toaster body - Silver/white -->
+    <path
+        android:pathData="M3,10 L37,10 L37,33 L3,33 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Top surface -->
+    <path
+        android:pathData="M3,8 L37,8 L37,12 L3,12 Z"
+        android:fillColor="#CFD8DC"/>
+    
+    <!-- Bread slots -->
+    <path
+        android:pathData="M8,8 L16,8 L16,12 L8,12 Z"
+        android:fillColor="#455A64"/>
+    <path
+        android:pathData="M24,8 L32,8 L32,12 L24,12 Z"
+        android:fillColor="#455A64"/>
+    
+    <!-- Front panel -->
+    <path
+        android:pathData="M5,14 L35,14 L35,31 L5,31 Z"
+        android:fillColor="#B0BEC5"/>
+    
+    <!-- Control lever -->
+    <path
+        android:pathData="M33,18 L36,18 L36,26 L33,26 Z"
+        android:fillColor="#78909C"/>
+    
+    <!-- Heat indicator -->
+    <path
+        android:pathData="M8,22 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#FF5722"/>
+    
+    <!-- Dial -->
+    <path
+        android:pathData="M15,22 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#607D8B"/>
+    
+    <!-- Feet -->
+    <path
+        android:pathData="M8,33 L12,33 L12,35 L8,35 Z"
+        android:fillColor="#455A64"/>
+    <path
+        android:pathData="M28,33 L32,33 L32,35 L28,35 Z"
+        android:fillColor="#455A64"/>
+</vector>

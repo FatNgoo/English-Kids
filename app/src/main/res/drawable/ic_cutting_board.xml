@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="60dp"
+    android:viewportWidth="80"
+    android:viewportHeight="60">
+    
+    <!-- Board Shadow -->
+    <path
+        android:pathData="M8,12 L78,12 L78,55 L8,55 Z"
+        android:fillColor="#5D4037"
+        android:fillAlpha="0.3"/>
+    
+    <!-- Cutting Board Main -->
+    <path
+        android:pathData="M5,8 L75,8 L75,52 L5,52 Z"
+        android:fillColor="#A1887F"/>
+    
+    <!-- Wood Grain Lines -->
+    <path
+        android:pathData="M10,8 L10,52"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M25,8 L25,52"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M40,8 L40,52"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M55,8 L55,52"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M70,8 L70,52"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1"/>
+    
+    <!-- Board Edge (lighter) -->
+    <path
+        android:pathData="M5,8 L75,8 L75,12 L5,12 Z"
+        android:fillColor="#BCAAA4"/>
+    
+    <!-- Handle Hole -->
+    <path
+        android:pathData="M40,6 m-6,0 a6,3 0 1,0 12,0 a6,3 0 1,0 -12,0"
+        android:fillColor="#6D4C41"/>
+</vector>

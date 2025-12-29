@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    
+    <!-- Heart magnet - Pink -->
+    <path
+        android:pathData="M15,25 Q5,15 10,8 Q13,5 15,10 Q17,5 20,8 Q25,15 15,25 Z"
+        android:fillColor="#E91E63"/>
+    
+    <!-- Highlight -->
+    <path
+        android:pathData="M11,10 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#F48FB1"
+        android:fillAlpha="0.6"/>
+</vector>

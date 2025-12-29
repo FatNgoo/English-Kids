@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ==================== KITCHEN BACKGROUND ==================== -->
+    
+    <!-- Yellow Tile Wall (Top 60%) -->
+    <View
+        android:id="@+id/wall_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_kitchen_wall_tiles"/>
+
+    <!-- Purple Counter Top (Bottom 45%) -->
+    <View
+        android:id="@+id/counter_background"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_counter_purple"/>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ==================== TOP: Order Ticket Bar ==================== -->
+        <LinearLayout
+            android:id="@+id/order_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:paddingTop="8dp"
+            android:gravity="center_vertical"
+            android:background="#88FFD54F">
+
+            <!-- Customer Avatar -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/iv_customer"
+                    android:layout_width="45dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/ic_customer_girl"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|end"
+                    android:background="@drawable/bg_button_circle_orange"
+                    android:gravity="center"
+                    android:text="!"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="11sp"/>
+            </FrameLayout>
+
+            <!-- Order Ticket Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_order_ticket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#FFFDE7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_order_ticket"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_step_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step 1 / 10"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:textColor="#FF6F00"/>
+
+                            <ProgressBar
+                                android:id="@+id/progress_steps"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="45dp"
+                                android:layout_height="4dp"
+                                android:layout_marginStart="6dp"
+                                android:max="100"
+                                android:progress="10"
+                                android:progressDrawable="@drawable/bg_progress_orange"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_instruction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tap to start cooking!"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="#5D4037"
+                            android:maxLines="2"/>
+
+                        <TextView
+                            android:id="@+id/tv_instruction_vn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Chạm để bắt đầu nấu!)"
+                            android:textSize="9sp"
+                            android:textColor="#8D6E63"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/btn_speaker"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_speaker"
+                        android:padding="7dp"
+                        android:background="@drawable/bg_button_circle_orange"
+                        android:contentDescription="Hear instruction"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- ==================== KITCHEN SCENE ==================== -->
+        <FrameLayout
+            android:id="@+id/kitchen_main_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- ===== WALL DECORATIONS (Top Area) ===== -->
+                
+                <!-- Refrigerator with Magnets (Far Left) -->
+                <FrameLayout
+                    android:id="@+id/fridge_container"
+                    android:layout_width="58dp"
+                    android:layout_height="115dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:id="@+id/iv_refrigerator"
+                        android:layout_width="55dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_refrigerator"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Decorative Heart Magnet -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_heart_magnet"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Decorative Star Magnet -->
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_star_magnet"
+                        android:scaleType="fitCenter"/>
+                </FrameLayout>
+
+                <!-- Microwave (on wall, left side) -->
+                <ImageView
+                    android:id="@+id/iv_microwave"
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@id/fridge_container"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ic_microwave_red"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Hanging Utensils (Center-Left Wall) -->
+                <ImageView
+                    android:id="@+id/iv_hanging_utensils"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@id/iv_microwave"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_hanging_utensils"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Kitchen Shelf with Books (Right Wall) -->
+                <ImageView
+                    android:id="@+id/iv_shelf"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_kitchen_shelf"
+                    android:scaleType="fitCenter"/>
+
+                <!-- ===== COUNTER TOP APPLIANCES ===== -->
+                
+                <!-- Mixer (on counter, left-center) -->
+                <ImageView
+                    android:id="@+id/iv_mixer"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/iv_microwave"
+                    android:layout_toEndOf="@id/fridge_container"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_mixer_blue"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Toaster (on counter, center) -->
+                <ImageView
+                    android:id="@+id/iv_toaster"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/iv_hanging_utensils"
+                    android:layout_toEndOf="@id/iv_mixer"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_toaster"
+                    android:scaleType="fitCenter"/>
+
+                <!-- ===== MAIN COOKING AREA (Bottom) ===== -->
+                
+                <!-- Purple Counter Surface Indicator -->
+                <View
+                    android:id="@+id/counter_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="150dp"
+                    android:background="#7986CB"
+                    android:alpha="0.3"/>
+
+                <!-- Recipe Book (Left on Counter) -->
+                <ImageView
+                    android:id="@+id/iv_recipe_book"
+                    android:layout_width="65dp"
+                    android:layout_height="85dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="70dp"
+                    android:src="@drawable/ic_recipe_book"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Milk Carton (next to recipe book) -->
+                <ImageView
+                    android:id="@+id/iv_milk"
+                    android:layout_width="35dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/iv_recipe_book"
+                    android:layout_alignBottom="@id/iv_recipe_book"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_milk_carton"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Vegetables Area (Tomato + Onion) -->
+                <LinearLayout
+                    android:id="@+id/vegetables_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_milk"
+                    android:layout_alignBottom="@id/iv_recipe_book"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_tomato"
+                        android:layout_width="38dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_tomato_3d"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageView
+                        android:id="@+id/iv_onion"
+                        android:layout_width="35dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="-5dp"
+                        android:src="@drawable/ic_onion_3d"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+
+                <!-- ===== STOVE + COOKING AREA (Right Side) ===== -->
+                <FrameLayout
+                    android:id="@+id/stove_area"
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="40dp">
+
+                    <!-- Gas Stove -->
+                    <ImageView
+                        android:id="@+id/iv_stove"
+                        android:layout_width="130dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/ic_gas_stove"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Blue Flames -->
+                    <ImageView
+                        android:id="@+id/iv_fire"
+                        android:layout_width="55dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:src="@drawable/ic_blue_flames"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Frying Pan with Food -->
+                    <ImageView
+                        android:id="@+id/iv_cooking_vessel"
+                        android:layout_width="95dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/ic_cooking_pan_food"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Steam Effect -->
+                    <ImageView
+                        android:id="@+id/iv_steam"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:layout_marginTop="-10dp"
+                        android:src="@drawable/ic_steam"
+                        android:scaleType="fitCenter"
+                        android:alpha="0.7"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <!-- ===== DROP ZONE (Center - Interactive) ===== -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/drop_zone"
+                    android:layout_width="115dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#E8F5E9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:id="@+id/iv_drop_zone_icon"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_cooking_pan_food"
+                            android:scaleType="fitCenter"/>
+
+                        <TextView
+                            android:id="@+id/tv_zone_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tap to Cook"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#2E7D32"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Success Animation -->
+                <TextView
+                    android:id="@+id/tv_success_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="✓"
+                    android:textSize="55sp"
+                    android:textColor="#4CAF50"
+                    android:visibility="gone"/>
+
+                <!-- Cooking Animation Overlay -->
+                <ImageView
+                    android:id="@+id/iv_cooking_animation"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <!-- ===== CUTTING BOARD AREA (Hidden by default) ===== -->
+                <FrameLayout
+                    android:id="@+id/cutting_board_area"
+                    android:layout_width="85dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@id/vegetables_area"
+                    android:layout_toEndOf="@id/vegetables_area"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_cutting_board"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_cutting_board"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageView
+                        android:id="@+id/iv_knife"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginEnd="-3dp"
+                        android:src="@drawable/ic_kitchen_knife"
+                        android:scaleType="fitCenter"
+                        android:rotation="-25"/>
+                </FrameLayout>
+
+                <!-- Serving Plate (Hidden by default) -->
+                <ImageView
+                    android:id="@+id/iv_serving_plate"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@id/stove_area"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="-10dp"
+                    android:src="@drawable/ic_serving_plate"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <!-- Wooden Spoon -->
+                <ImageView
+                    android:id="@+id/iv_spoon"
+                    android:layout_width="28dp"
+                    android:layout_height="38dp"
+                    android:layout_toStartOf="@id/stove_area"
+                    android:layout_alignBottom="@id/stove_area"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/ic_wooden_spoon"
+                    android:scaleType="fitCenter"
+                    android:rotation="20"/>
+
+                <!-- Chef (Left Bottom Corner) -->
+                <FrameLayout
+                    android:id="@+id/chef_container"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-10dp">
+
+                    <TextView
+                        android:id="@+id/tv_chef_speech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_marginEnd="-8dp"
+                        android:background="@drawable/bg_speech_bubble"
+                        android:padding="5dp"
+                        android:text="👨‍🍳"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/iv_chef"
+                        android:layout_width="85dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/ic_chef_cute"
+                        android:scaleType="fitCenter"/>
+                </FrameLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!-- ==================== BOTTOM: Ingredient Tray ==================== -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFF8E1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_ingredient_tray"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧺 "
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingredients"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#8D6E63"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/ingredient_palette"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ingredient_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingVertical="4dp">
+
+                        <!-- Ingredients will be added dynamically -->
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- ==================== TIMER OVERLAY ==================== -->
+    <FrameLayout
+        android:id="@+id/timer_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@drawable/bg_card_world_colorful">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰ Cooking..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6F00"/>
+
+            <ProgressBar
+                android:id="@+id/progress_timer"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bg_progress_orange"/>
+
+            <TextView
+                android:id="@+id/tv_timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="0:00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#5D4037"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- ==================== COMPLETION OVERLAY ==================== -->
+    <FrameLayout
+        android:id="@+id/completion_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+            android:background="@drawable/bg_card_world_colorful">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Dish Complete!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Delicious Pasta"
+                android:textSize="16sp"
+                android:textColor="#5D4037"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tap to continue"
+                android:textSize="14sp"
+                android:textColor="#888888"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

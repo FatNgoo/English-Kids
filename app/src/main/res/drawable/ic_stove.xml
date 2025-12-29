@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="100dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+    
+    <!-- Stove Base -->
+    <path
+        android:pathData="M10,30 L110,30 L110,95 L10,95 Z"
+        android:fillColor="#424242"/>
+    
+    <!-- Stove Top Surface -->
+    <path
+        android:pathData="M10,30 L110,30 L105,20 L15,20 Z"
+        android:fillColor="#616161"/>
+    
+    <!-- Left Burner Ring -->
+    <path
+        android:pathData="M35,25 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0"
+        android:fillColor="#212121"/>
+    <path
+        android:pathData="M35,25 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0"
+        android:fillColor="#424242"/>
+    <path
+        android:pathData="M35,25 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"
+        android:fillColor="#212121"/>
+    
+    <!-- Right Burner Ring -->
+    <path
+        android:pathData="M85,25 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0"
+        android:fillColor="#212121"/>
+    <path
+        android:pathData="M85,25 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0"
+        android:fillColor="#424242"/>
+    <path
+        android:pathData="M85,25 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"
+        android:fillColor="#212121"/>
+    
+    <!-- Oven Door -->
+    <path
+        android:pathData="M20,45 L100,45 L100,85 L20,85 Z"
+        android:fillColor="#37474F"/>
+    
+    <!-- Oven Window -->
+    <path
+        android:pathData="M30,50 L90,50 L90,75 L30,75 Z"
+        android:fillColor="#263238"/>
+    <path
+        android:pathData="M35,55 L85,55 L85,70 L35,70 Z"
+        android:fillColor="#FF8A65"
+        android:fillAlpha="0.3"/>
+    
+    <!-- Oven Handle -->
+    <path
+        android:pathData="M40,82 L80,82"
+        android:strokeColor="#9E9E9E"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+    
+    <!-- Control Knobs -->
+    <path
+        android:pathData="M25,38 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#BDBDBD"/>
+    <path
+        android:pathData="M45,38 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#BDBDBD"/>
+    <path
+        android:pathData="M75,38 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#BDBDBD"/>
+    <path
+        android:pathData="M95,38 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#BDBDBD"/>
+</vector>

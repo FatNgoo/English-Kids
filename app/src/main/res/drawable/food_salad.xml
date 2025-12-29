@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Bowl -->
+    <path
+        android:pathData="M15,50 Q15,95 60,95 Q105,95 105,50 Q105,40 60,40 Q15,40 15,50 Z"
+        android:fillColor="#ECEFF1"/>
+    <!-- Salad base (lettuce) -->
+    <path
+        android:pathData="M25,55 Q40,70 60,50 Q80,70 95,55 Q95,75 60,80 Q25,75 25,55 Z"
+        android:fillColor="#8BC34A"/>
+    <!-- Tomato slices -->
+    <path android:pathData="M35,55 A8,8 0 1,0 51,55 A8,8 0 1,0 35,55" android:fillColor="#EF5350"/>
+    <path android:pathData="M65,60 A7,7 0 1,0 79,60 A7,7 0 1,0 65,60" android:fillColor="#EF5350"/>
+    <!-- Cucumber -->
+    <path android:pathData="M45,68 A6,6 0 1,0 57,68 A6,6 0 1,0 45,68" android:fillColor="#81C784"/>
+    <!-- Cheese cubes -->
+    <path android:pathData="M70,50 L78,50 L78,58 L70,58 Z" android:fillColor="#FFEE58"/>
+    <path android:pathData="M50,45 L56,45 L56,51 L50,51 Z" android:fillColor="#FFEE58"/>
+</vector>

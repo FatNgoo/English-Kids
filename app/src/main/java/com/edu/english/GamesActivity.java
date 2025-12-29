@@ -54,8 +54,9 @@ public class GamesActivity extends AppCompatActivity {
             String gameName = "";
             int id = v.getId();
             if (id == R.id.card_master_chef) {
-                gameName = "Master Chef";
-                Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
+                // Launch Master Chef Game!
+                launchMasterChef();
+                return;
             } else if (id == R.id.card_pet_hospital) {
                 gameName = "Pet Hospital";
                 Toast.makeText(this, "Let's play " + gameName + "! 🎮", Toast.LENGTH_SHORT).show();
@@ -71,6 +72,12 @@ public class GamesActivity extends AppCompatActivity {
         if (cardMagicMelody != null) {
             cardMagicMelody.setOnClickListener(gameClickListener);
         }
+    }
+    
+    private void launchMasterChef() {
+        Intent intent = new Intent(this, com.edu.english.masterchef.ui.map.MasterChefMapActivity.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
     
     private void launchMagicMelody() {

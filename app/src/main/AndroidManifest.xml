@@ -56,6 +56,27 @@
             android:exported="false">
         </activity>
         
+        <!-- Master Chef Map Activity -->
+        <activity
+            android:name=".masterchef.ui.map.MasterChefMapActivity"
+            android:exported="false"
+            android:theme="@style/Theme.English">
+        </activity>
+        
+        <!-- Master Chef Game Activity -->
+        <activity
+            android:name=".masterchef.ui.game.MasterChefGameActivity"
+            android:exported="false"
+            android:theme="@style/Theme.English">
+        </activity>
+        
+        <!-- Master Chef Cookbook Activity -->
+        <activity
+            android:name=".masterchef.ui.cookbook.CookbookActivity"
+            android:exported="false"
+            android:theme="@style/Theme.English">
+        </activity>
+        
         <!-- Colors Main Activity -->
         <activity
             android:name=".coloralchemy.ColorsActivity"

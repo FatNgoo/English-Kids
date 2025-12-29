@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Cone -->
+    <path android:pathData="M35,55 L60,105 L85,55 Z" android:fillColor="#FFCC80"/>
+    <!-- Cone pattern -->
+    <path android:pathData="M40,60 L55,95 M50,55 L60,90 M60,55 L65,90 M70,55 L75,85 M80,60 L70,95" android:strokeColor="#FFB74D" android:strokeWidth="2"/>
+    <!-- Ice cream scoop 1 (bottom) -->
+    <path android:pathData="M30,55 A30,25 0 1,0 90,55 A30,25 0 1,0 30,55" android:fillColor="#F8BBD9"/>
+    <!-- Ice cream scoop 2 (top) -->
+    <path android:pathData="M35,35 A25,22 0 1,0 85,35 A25,22 0 1,0 35,35" android:fillColor="#81D4FA"/>
+    <!-- Cherry -->
+    <path android:pathData="M55,15 A8,8 0 1,0 71,15 A8,8 0 1,0 55,15" android:fillColor="#E53935"/>
+    <!-- Cherry stem -->
+    <path android:pathData="M63,8 Q65,5 70,3" android:strokeColor="#4CAF50" android:strokeWidth="2"/>
+    <!-- Sprinkles -->
+    <path android:pathData="M45,30 L48,32 M55,25 L58,27 M70,28 L73,30 M75,40 L78,42 M40,45 L43,47" android:strokeColor="#FFEB3B" android:strokeWidth="2"/>
+</vector>

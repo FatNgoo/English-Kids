@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tomato icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Tomato body -->
+    <path
+        android:pathData="M24,12 C34,12 42,20 42,30 C42,40 34,46 24,46 C14,46 6,40 6,30 C6,20 14,12 24,12 Z"
+        android:fillColor="#E53935"/>
+    
+    <!-- Highlight -->
+    <path
+        android:pathData="M18,18 Q22,16 26,18"
+        android:strokeWidth="3"
+        android:strokeColor="#EF5350"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Stem -->
+    <path
+        android:pathData="M24,12 L24,6"
+        android:strokeWidth="3"
+        android:strokeColor="#4CAF50"
+        android:strokeLineCap="round"/>
+    
+    <!-- Leaves -->
+    <path
+        android:pathData="M20,8 Q24,4 28,8"
+        android:strokeWidth="2"
+        android:strokeColor="#4CAF50"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+</vector>

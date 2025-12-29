@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="40dp"
+    android:viewportWidth="60"
+    android:viewportHeight="40">
+    
+    <!-- Blue gas flames -->
+    <!-- Center flame -->
+    <path
+        android:pathData="M30,40 Q25,25 28,15 Q30,20 30,10 Q30,20 32,15 Q35,25 30,40 Z"
+        android:fillColor="#2196F3"/>
+    <path
+        android:pathData="M30,38 Q27,28 29,20 Q30,24 30,16 Q30,24 31,20 Q33,28 30,38 Z"
+        android:fillColor="#64B5F6"/>
+    <path
+        android:pathData="M30,35 Q28,28 29,23 Q30,26 30,20 Q30,26 31,23 Q32,28 30,35 Z"
+        android:fillColor="#BBDEFB"/>
+    
+    <!-- Left flame -->
+    <path
+        android:pathData="M18,40 Q14,30 16,22 Q18,26 18,18 Q18,26 20,22 Q24,30 18,40 Z"
+        android:fillColor="#2196F3"/>
+    <path
+        android:pathData="M18,38 Q15,31 17,25 Q18,28 18,22 Q18,28 19,25 Q21,31 18,38 Z"
+        android:fillColor="#64B5F6"/>
+    
+    <!-- Right flame -->
+    <path
+        android:pathData="M42,40 Q38,30 40,22 Q42,26 42,18 Q42,26 44,22 Q48,30 42,40 Z"
+        android:fillColor="#2196F3"/>
+    <path
+        android:pathData="M42,38 Q39,31 41,25 Q42,28 42,22 Q42,28 43,25 Q45,31 42,38 Z"
+        android:fillColor="#64B5F6"/>
+    
+    <!-- Small side flames -->
+    <path
+        android:pathData="M8,40 Q6,34 7,28 Q8,31 9,28 Q12,34 8,40 Z"
+        android:fillColor="#2196F3"
+        android:fillAlpha="0.8"/>
+    <path
+        android:pathData="M52,40 Q50,34 51,28 Q52,31 53,28 Q56,34 52,40 Z"
+        android:fillColor="#2196F3"
+        android:fillAlpha="0.8"/>
+</vector>

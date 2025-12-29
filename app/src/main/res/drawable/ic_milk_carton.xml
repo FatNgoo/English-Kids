@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="50dp"
+    android:viewportWidth="35"
+    android:viewportHeight="50">
+    
+    <!-- Milk carton -->
+    
+    <!-- Main body -->
+    <path
+        android:pathData="M5,15 L30,15 L30,48 L5,48 Z"
+        android:fillColor="#E3F2FD"/>
+    
+    <!-- Top fold -->
+    <path
+        android:pathData="M5,15 L17,5 L30,15 Z"
+        android:fillColor="#BBDEFB"/>
+    
+    <!-- Top peak -->
+    <path
+        android:pathData="M12,10 L17,5 L22,10 Z"
+        android:fillColor="#90CAF9"/>
+    
+    <!-- Side shadow -->
+    <path
+        android:pathData="M25,15 L30,15 L30,48 L25,48 Z"
+        android:fillColor="#BBDEFB"/>
+    
+    <!-- Label -->
+    <path
+        android:pathData="M8,22 L27,22 L27,42 L8,42 Z"
+        android:fillColor="#2196F3"/>
+    
+    <!-- Milk text/cow icon placeholder -->
+    <path
+        android:pathData="M17,30 m-6,0 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- "MILK" indication -->
+    <path
+        android:pathData="M10,38 L25,38"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"/>
+</vector>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Cash Register Body -->
+    <path
+        android:pathData="M15,40 L85,40 L85,90 L15,90 Z"
+        android:fillColor="#455A64"/>
+    
+    <!-- Register top slant -->
+    <path
+        android:pathData="M15,40 L85,40 L80,25 L20,25 Z"
+        android:fillColor="#546E7A"/>
+    
+    <!-- Screen -->
+    <path
+        android:pathData="M25,28 L75,28 L75,38 L25,38 Z"
+        android:fillColor="#81D4FA"/>
+    
+    <!-- Screen numbers -->
+    <path
+        android:pathData="M30,31 L70,31 L70,35 L30,35 Z"
+        android:fillColor="#29B6F6"/>
+    
+    <!-- Keypad area -->
+    <path
+        android:pathData="M25,45 L55,45 L55,75 L25,75 Z"
+        android:fillColor="#37474F"/>
+    
+    <!-- Keys row 1 -->
+    <path
+        android:pathData="M28,48 L35,48 L35,53 L28,53 Z M38,48 L45,48 L45,53 L38,53 Z M48,48 L52,48 L52,53 L48,53 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Keys row 2 -->
+    <path
+        android:pathData="M28,56 L35,56 L35,61 L28,61 Z M38,56 L45,56 L45,61 L38,61 Z M48,56 L52,56 L52,61 L48,61 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Keys row 3 -->
+    <path
+        android:pathData="M28,64 L35,64 L35,69 L28,69 Z M38,64 L45,64 L45,69 L38,69 Z M48,64 L52,64 L52,69 L48,69 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Cash drawer -->
+    <path
+        android:pathData="M20,80 L80,80 L80,88 L20,88 Z"
+        android:fillColor="#37474F"/>
+    
+    <!-- Drawer handle -->
+    <path
+        android:pathData="M40,82 L60,82 L60,86 L40,86 Z"
+        android:fillColor="#78909C"/>
+    
+    <!-- Receipt paper -->
+    <path
+        android:pathData="M60,45 L78,45 L78,70 L60,70 Z"
+        android:fillColor="#FAFAFA"/>
+    
+    <!-- Receipt lines -->
+    <path
+        android:pathData="M63,50 L75,50 M63,55 L73,55 M63,60 L74,60"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1"/>
+</vector>
