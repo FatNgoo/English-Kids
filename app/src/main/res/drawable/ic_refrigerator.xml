@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="100dp"
+    android:viewportWidth="50"
+    android:viewportHeight="100">
+    
+    <!-- Refrigerator body - Light gray/white -->
+    <path
+        android:pathData="M2,5 L48,5 L48,98 L2,98 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Top door (freezer) -->
+    <path
+        android:pathData="M4,7 L46,7 L46,35 L4,35 Z"
+        android:fillColor="#CFD8DC"/>
+    
+    <!-- Bottom door (fridge) -->
+    <path
+        android:pathData="M4,37 L46,37 L46,96 L4,96 Z"
+        android:fillColor="#B0BEC5"/>
+    
+    <!-- Door line -->
+    <path
+        android:pathData="M4,36 L46,36"
+        android:strokeColor="#90A4AE"
+        android:strokeWidth="1"/>
+    
+    <!-- Top handle -->
+    <path
+        android:pathData="M40,18 L43,18 L43,28 L40,28 Z"
+        android:fillColor="#78909C"/>
+    
+    <!-- Bottom handle -->
+    <path
+        android:pathData="M40,45 L43,45 L43,60 L40,60 Z"
+        android:fillColor="#78909C"/>
+    
+    <!-- Ice dispenser -->
+    <path
+        android:pathData="M10,12 L25,12 L25,22 L10,22 Z"
+        android:fillColor="#607D8B"/>
+    <path
+        android:pathData="M12,14 L23,14 L23,20 L12,20 Z"
+        android:fillColor="#455A64"/>
+    
+    <!-- Decorative magnets -->
+    <path
+        android:pathData="M12,45 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#E91E63"/>
+    <path
+        android:pathData="M25,50 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#FF9800"/>
+    <path
+        android:pathData="M15,60 m-3,0 a3,2 0 1,0 6,0 a3,2 0 1,0 -6,0"
+        android:fillColor="#4CAF50"/>
+</vector>

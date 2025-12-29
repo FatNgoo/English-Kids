@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Ingredient Icon -->
+    <ImageView
+        android:id="@+id/ingredient_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_placeholder"
+        android:contentDescription="Ingredient icon" />
+
+    <!-- Ingredient Name -->
+    <TextView
+        android:id="@+id/ingredient_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:text="Tomato"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <!-- Speaker Icon -->
+    <ImageView
+        android:id="@+id/speaker_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_speaker"
+        android:visibility="gone"
+        android:contentDescription="Speaking"
+        app:tint="@color/primary" />
+
+</LinearLayout>

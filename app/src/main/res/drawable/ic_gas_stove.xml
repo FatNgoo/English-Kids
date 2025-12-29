@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="120"
+    android:viewportHeight="80">
+    
+    <!-- Stove top base -->
+    <path
+        android:pathData="M0,10 L120,10 L120,80 L0,80 Z"
+        android:fillColor="#37474F"/>
+    
+    <!-- Stove surface -->
+    <path
+        android:pathData="M5,10 L115,10 L115,75 L5,75 Z"
+        android:fillColor="#263238"/>
+    
+    <!-- Left burner grate -->
+    <path
+        android:pathData="M15,25 L55,25 L55,55 L15,55 Z"
+        android:fillColor="#455A64"/>
+    <path
+        android:pathData="M20,30 L50,30 M20,35 L50,35 M20,40 L50,40 M20,45 L50,45 M20,50 L50,50"
+        android:strokeColor="#37474F"
+        android:strokeWidth="2"/>
+    
+    <!-- Right burner grate -->
+    <path
+        android:pathData="M65,25 L105,25 L105,55 L65,55 Z"
+        android:fillColor="#455A64"/>
+    <path
+        android:pathData="M70,30 L100,30 M70,35 L100,35 M70,40 L100,40 M70,45 L100,45 M70,50 L100,50"
+        android:strokeColor="#37474F"
+        android:strokeWidth="2"/>
+    
+    <!-- Control panel -->
+    <path
+        android:pathData="M5,60 L115,60 L115,75 L5,75 Z"
+        android:fillColor="#546E7A"/>
+    
+    <!-- Control knobs -->
+    <path
+        android:pathData="M25,67 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#78909C"/>
+    <path
+        android:pathData="M50,67 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#78909C"/>
+    <path
+        android:pathData="M75,67 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#78909C"/>
+    <path
+        android:pathData="M100,67 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#78909C"/>
+</vector>

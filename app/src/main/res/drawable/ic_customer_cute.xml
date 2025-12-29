@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="100dp"
+    android:viewportWidth="80"
+    android:viewportHeight="100">
+    
+    <!-- Hair -->
+    <path
+        android:pathData="M40,25 m-22,0 a22,20 0 1,0 44,0 a22,20 0 1,0 -44,0"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Face -->
+    <path
+        android:pathData="M40,35 m-18,0 a18,20 0 1,0 36,0 a18,20 0 1,0 -36,0"
+        android:fillColor="#FFCC80"/>
+    
+    <!-- Eyes -->
+    <path
+        android:pathData="M32,32 m-4,0 a4,5 0 1,0 8,0 a4,5 0 1,0 -8,0"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M48,32 m-4,0 a4,5 0 1,0 8,0 a4,5 0 1,0 -8,0"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Pupils (looking expectantly) -->
+    <path
+        android:pathData="M33,33 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#4E342E"/>
+    <path
+        android:pathData="M49,33 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#4E342E"/>
+    
+    <!-- Eyebrows (raised, waiting) -->
+    <path
+        android:pathData="M27,26 Q32,23 37,26"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M43,26 Q48,23 53,26"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Rosy Cheeks -->
+    <path
+        android:pathData="M25,42 m-4,0 a4,2 0 1,0 8,0 a4,2 0 1,0 -8,0"
+        android:fillColor="#FFAB91"
+        android:fillAlpha="0.5"/>
+    <path
+        android:pathData="M55,42 m-4,0 a4,2 0 1,0 8,0 a4,2 0 1,0 -8,0"
+        android:fillColor="#FFAB91"
+        android:fillAlpha="0.5"/>
+    
+    <!-- Smile -->
+    <path
+        android:pathData="M33,46 Q40,52 47,46"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+    
+    <!-- Body (T-shirt) -->
+    <path
+        android:pathData="M20,58 L60,58 L65,100 L15,100 Z"
+        android:fillColor="#42A5F5"/>
+    
+    <!-- T-shirt Collar -->
+    <path
+        android:pathData="M32,58 Q40,65 48,58"
+        android:strokeColor="#1E88E5"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Arms -->
+    <path
+        android:pathData="M15,62 L5,78 L10,82 L20,66 Z"
+        android:fillColor="#42A5F5"/>
+    <path
+        android:pathData="M65,62 L75,78 L70,82 L60,66 Z"
+        android:fillColor="#42A5F5"/>
+    
+    <!-- Hands -->
+    <path
+        android:pathData="M7,80 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFCC80"/>
+    <path
+        android:pathData="M73,80 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFCC80"/>
+    
+    <!-- Speech Bubble with Order -->
+    <path
+        android:pathData="M60,10 L75,10 L75,25 L65,25 L62,30 L62,25 L60,25 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="1"/>
+    
+    <!-- Food icon in speech bubble -->
+    <path
+        android:pathData="M67,17 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#FF7043"/>
+</vector>

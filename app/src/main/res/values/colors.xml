@@ -62,4 +62,15 @@
     <color name="text_secondary">#AAAAAA</color>
     <color name="text_primary">#FFFFFF</color>
     <color name="accent_gold">#FFD700</color>
+    
+    <!-- Master Chef Colors -->
+    <color name="sky_blue">#87CEEB</color>
+    <color name="yellow_gold">#FFD700</color>
+    <color name="yellow_light">#FFF9C4</color>
+    <color name="blue_light">#BBDEFB</color>
+    <color name="gray">#757575</color>
+    <color name="primary_bg">#1A237E</color>
+    <color name="primary_dark">#0D1259</color>
+    <color name="primary">#3949AB</color>
+    <color name="star_gold">#FFD700</color>
 </resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+    
+    <!-- Hair -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M80,15 C110,15 130,35 130,55 C130,65 125,75 115,80 L115,50 L45,50 L45,80 C35,75 30,65 30,55 C30,35 50,15 80,15 Z"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFCC80"
+        android:pathData="M80,50 C105,50 120,70 120,95 C120,120 105,135 80,135 C55,135 40,120 40,95 C40,70 55,50 80,50 Z"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M62,90 C62,85 67,85 67,90 C67,95 62,95 62,90 Z"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M93,90 C93,85 98,85 98,90 C98,95 93,95 93,90 Z"/>
+    
+    <!-- Eye Sparkles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,88 A2,2 0 1,1 64,86 A2,2 0 1,1 64,88 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M95,88 A2,2 0 1,1 95,86 A2,2 0 1,1 95,88 Z"/>
+    
+    <!-- Rosy Cheeks -->
+    <path
+        android:fillColor="#FFAB91"
+        android:pathData="M50,105 A8,8 0 1,1 50,121 A8,8 0 1,1 50,105 Z"/>
+    <path
+        android:fillColor="#FFAB91"
+        android:pathData="M102,105 A8,8 0 1,1 102,121 A8,8 0 1,1 102,105 Z"/>
+    
+    <!-- Happy Smile -->
+    <path
+        android:strokeColor="#FF6B35"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M65,115 Q80,130 95,115"/>
+    
+    <!-- T-Shirt -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M50,135 L110,135 L120,160 L40,160 Z"/>
+    
+    <!-- Collar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,135 L80,145 L90,135 Z"/>
+</vector>

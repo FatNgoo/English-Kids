@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background base - warm restaurant color -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFE0B2"
+                android:centerColor="#FFCC80"
+                android:endColor="#FFB74D"/>
+        </shape>
+    </item>
+    
+    <!-- Floor area at bottom -->
+    <item android:top="600dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#8D6E63"/>
+        </shape>
+    </item>
+    
+    <!-- Table line decoration -->
+    <item android:top="500dp" android:bottom="100dp" android:left="50dp" android:right="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#A1887F"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

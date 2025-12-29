@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="40dp"
+    android:viewportWidth="50"
+    android:viewportHeight="40">
+    
+    <!-- Microwave body - Red like reference -->
+    <path
+        android:pathData="M2,5 L48,5 L48,38 L2,38 Z"
+        android:fillColor="#C62828"/>
+    
+    <!-- Inner frame -->
+    <path
+        android:pathData="M4,7 L46,7 L46,36 L4,36 Z"
+        android:fillColor="#B71C1C"/>
+    
+    <!-- Window/door -->
+    <path
+        android:pathData="M6,9 L32,9 L32,34 L6,34 Z"
+        android:fillColor="#37474F"/>
+    
+    <!-- Window glass -->
+    <path
+        android:pathData="M8,11 L30,11 L30,32 L8,32 Z"
+        android:fillColor="#263238"/>
+    
+    <!-- Window reflection -->
+    <path
+        android:pathData="M10,13 L15,13 L15,20 L10,20 Z"
+        android:fillColor="#455A64"
+        android:fillAlpha="0.4"/>
+    
+    <!-- Control panel -->
+    <path
+        android:pathData="M34,9 L44,9 L44,34 L34,34 Z"
+        android:fillColor="#424242"/>
+    
+    <!-- Display -->
+    <path
+        android:pathData="M36,12 L42,12 L42,18 L36,18 Z"
+        android:fillColor="#4CAF50"/>
+    
+    <!-- Buttons -->
+    <path
+        android:pathData="M39,22 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#757575"/>
+    <path
+        android:pathData="M39,28 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#757575"/>
+    
+    <!-- Handle -->
+    <path
+        android:pathData="M32,16 L33,16 L33,28 L32,28 Z"
+        android:fillColor="#9E9E9E"/>
+    
+    <!-- Food inside hint -->
+    <path
+        android:pathData="M19,22 m-6,0 a6,4 0 1,0 12,0 a6,4 0 1,0 -12,0"
+        android:fillColor="#FFCC80"
+        android:fillAlpha="0.5"/>
+</vector>

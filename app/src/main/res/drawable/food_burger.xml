@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Bottom bun -->
+    <path
+        android:pathData="M20,75 Q20,90 60,90 Q100,90 100,75 L100,70 Q100,65 60,65 Q20,65 20,70 Z"
+        android:fillColor="#FFAB40"/>
+    
+    <!-- Lettuce -->
+    <path
+        android:pathData="M18,65 Q30,70 40,62 Q50,70 60,62 Q70,70 80,62 Q90,70 102,65"
+        android:strokeColor="#66BB6A"
+        android:strokeWidth="6"
+        android:fillColor="#00000000"/>
+    
+    <!-- Tomato -->
+    <path
+        android:pathData="M22,58 L98,58 L98,65 L22,65 Z"
+        android:fillColor="#EF5350"/>
+    
+    <!-- Cheese -->
+    <path
+        android:pathData="M20,52 Q30,60 45,52 Q60,60 75,52 Q90,60 100,52 L100,58 L20,58 Z"
+        android:fillColor="#FFEE58"/>
+    
+    <!-- Patty -->
+    <path
+        android:pathData="M25,45 Q25,55 60,55 Q95,55 95,45 Q95,38 60,38 Q25,38 25,45 Z"
+        android:fillColor="#6D4C41"/>
+    
+    <!-- Top bun -->
+    <path
+        android:pathData="M20,40 Q20,15 60,15 Q100,15 100,40 Q100,45 60,45 Q20,45 20,40 Z"
+        android:fillColor="#FFAB40"/>
+    
+    <!-- Sesame seeds -->
+    <path
+        android:pathData="M40,25 A2,3 0 1,0 44,25 A2,3 0 1,0 40,25"
+        android:fillColor="#FFF8E1"/>
+    <path
+        android:pathData="M55,20 A2,3 0 1,0 59,20 A2,3 0 1,0 55,20"
+        android:fillColor="#FFF8E1"/>
+    <path
+        android:pathData="M70,22 A2,3 0 1,0 74,22 A2,3 0 1,0 70,22"
+        android:fillColor="#FFF8E1"/>
+    <path
+        android:pathData="M80,28 A2,3 0 1,0 84,28 A2,3 0 1,0 80,28"
+        android:fillColor="#FFF8E1"/>
+</vector>

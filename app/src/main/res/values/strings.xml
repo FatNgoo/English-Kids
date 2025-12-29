@@ -79,4 +79,10 @@
     <string name="settings">Settings</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    
+    <!-- Master Chef -->
+    <string name="cookbook">Cookbook</string>
+    <string name="replay">Replay</string>
+    <string name="continue_text">Continue</string>
+    <string name="back_text">Back</string>
 </resources>

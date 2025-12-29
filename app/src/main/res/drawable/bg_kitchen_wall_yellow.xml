@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Yellow tile wall background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFD54F"
+                android:endColor="#FFCA28"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

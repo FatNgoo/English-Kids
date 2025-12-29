@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Cookie -->
+    <path android:pathData="M20,60 A40,40 0 1,0 100,60 A40,40 0 1,0 20,60" android:fillColor="#D4A574"/>
+    <!-- Chocolate chips -->
+    <path android:pathData="M40,45 A6,6 0 1,0 52,45 A6,6 0 1,0 40,45" android:fillColor="#5D4037"/>
+    <path android:pathData="M65,40 A5,5 0 1,0 75,40 A5,5 0 1,0 65,40" android:fillColor="#5D4037"/>
+    <path android:pathData="M55,60 A7,7 0 1,0 69,60 A7,7 0 1,0 55,60" android:fillColor="#5D4037"/>
+    <path android:pathData="M35,65 A5,5 0 1,0 45,65 A5,5 0 1,0 35,65" android:fillColor="#5D4037"/>
+    <path android:pathData="M70,70 A6,6 0 1,0 82,70 A6,6 0 1,0 70,70" android:fillColor="#5D4037"/>
+    <path android:pathData="M48,78 A5,5 0 1,0 58,78 A5,5 0 1,0 48,78" android:fillColor="#5D4037"/>
+</vector>

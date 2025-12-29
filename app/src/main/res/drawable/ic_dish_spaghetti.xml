@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spaghetti Bolognese icon for Level 1 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Plate -->
+    <path
+        android:pathData="M60,30 A35,20 0 1,1 60,90 A35,20 0 1,1 60,30"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Plate rim -->
+    <path
+        android:pathData="M60,25 A38,22 0 1,1 60,95 A38,22 0 1,1 60,25"
+        android:fillColor="@android:color/transparent"
+        android:strokeWidth="3"
+        android:strokeColor="#B0BEC5"/>
+    
+    <!-- Spaghetti noodles -->
+    <path
+        android:pathData="M35,55 Q50,45 65,55 Q80,65 95,55"
+        android:strokeWidth="3"
+        android:strokeColor="#FFE082"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M30,60 Q45,50 60,60 Q75,70 90,60"
+        android:strokeWidth="3"
+        android:strokeColor="#FFD54F"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M32,65 Q47,55 62,65 Q77,75 92,65"
+        android:strokeWidth="3"
+        android:strokeColor="#FFE082"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M35,70 Q50,60 65,70 Q80,80 90,70"
+        android:strokeWidth="3"
+        android:strokeColor="#FFCA28"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Meat sauce on top -->
+    <path
+        android:pathData="M45,52 A20,12 0 1,1 75,52 A20,12 0 1,1 45,52"
+        android:fillColor="#D84315"/>
+    
+    <!-- Tomato chunks (using path for circles) -->
+    <path
+        android:pathData="M52,48 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#F44336"/>
+    <path
+        android:pathData="M65,50 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#EF5350"/>
+    <path
+        android:pathData="M58,55 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0"
+        android:fillColor="#E53935"/>
+    
+    <!-- Parsley garnish -->
+    <path
+        android:pathData="M70,45 L73,42 L76,45 L73,43 Z"
+        android:fillColor="#4CAF50"/>
+    <path
+        android:pathData="M48,46 L51,43 L54,46 L51,44 Z"
+        android:fillColor="#66BB6A"/>
+    
+    <!-- Steam -->
+    <path
+        android:pathData="M55,25 Q53,20 55,15"
+        android:strokeWidth="2"
+        android:strokeColor="#90A4AE"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M65,22 Q63,17 65,12"
+        android:strokeWidth="2"
+        android:strokeColor="#90A4AE"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+</vector>

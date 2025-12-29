@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+    
+    <!-- Kitchen Knife -->
+    
+    <!-- Blade -->
+    <path
+        android:pathData="M10,25 L40,10 L45,15 L15,35 Z"
+        android:fillColor="#B0BEC5"/>
+    
+    <!-- Blade shine -->
+    <path
+        android:pathData="M12,26 L38,12 L40,14 L14,30 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Blade edge -->
+    <path
+        android:pathData="M10,25 L40,10"
+        android:strokeColor="#78909C"
+        android:strokeWidth="1"/>
+    
+    <!-- Handle -->
+    <path
+        android:pathData="M15,35 L25,45 L30,42 L20,32 Z"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Handle detail -->
+    <path
+        android:pathData="M17,36 L26,44"
+        android:strokeColor="#4E342E"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M19,34 L28,42"
+        android:strokeColor="#4E342E"
+        android:strokeWidth="1"/>
+    
+    <!-- Rivets -->
+    <path
+        android:pathData="M18,38 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"
+        android:fillColor="#9E9E9E"/>
+    <path
+        android:pathData="M22,41 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"
+        android:fillColor="#9E9E9E"/>
+</vector>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Yellow tile pattern for kitchen wall -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base yellow color -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFD54F"
+                android:centerColor="#FFCA28"
+                android:endColor="#FFC107"
+                android:angle="270"/>
+        </shape>
+    </item>
+    
+    <!-- Horizontal tile lines -->
+    <item android:top="40dp">
+        <shape android:shape="rectangle">
+            <size android:height="1dp"/>
+            <solid android:color="#E6B800"/>
+        </shape>
+    </item>
+    <item android:top="80dp">
+        <shape android:shape="rectangle">
+            <size android:height="1dp"/>
+            <solid android:color="#E6B800"/>
+        </shape>
+    </item>
+    <item android:top="120dp">
+        <shape android:shape="rectangle">
+            <size android:height="1dp"/>
+            <solid android:color="#E6B800"/>
+        </shape>
+    </item>
+</layer-list>

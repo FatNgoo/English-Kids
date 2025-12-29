@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0">
+
+    <!-- Kitchen Background -->
+    <View
+        android:id="@+id/iv_kitchen_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_kitchen_scene"/>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar - Chef Instruction with Speech Bubble -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <!-- Chef Avatar -->
+                <ImageView
+                    android:id="@+id/iv_chef"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_chef_character"
+                    android:scaleType="fitCenter"/>
+
+                <!-- Instruction Content -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <!-- Step Counter -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_step_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Step 1 / 18"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#FF6B35"/>
+
+                        <ProgressBar
+                            android:id="@+id/progress_steps"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="8dp"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/bg_progress_orange"/>
+                    </LinearLayout>
+
+                    <!-- Instruction Text with Keyword Highlighting -->
+                    <TextView
+                        android:id="@+id/tv_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drag the tomato to the cutting board"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:layout_marginTop="4dp"/>
+
+                    <!-- Vietnamese Translation -->
+                    <TextView
+                        android:id="@+id/tv_instruction_vn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(Kéo cà chua vào thớt)"
+                        android:textSize="12sp"
+                        android:textColor="#757575"/>
+                </LinearLayout>
+
+                <!-- Speaker Button -->
+                <ImageView
+                    android:id="@+id/btn_speaker"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_speaker"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_button_circle_orange"
+                    android:contentDescription="Hear instruction"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Cooking Area - Main Interaction Zone -->
+        <FrameLayout
+            android:id="@+id/cooking_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp">
+
+            <!-- Kitchen Counter Background -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_kitchen_counter"/>
+
+            <!-- Main Drop Zone -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/drop_zone"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#E3F2FD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_zone_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍳"
+                        android:textSize="48sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_zone_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop Here"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#1565C0"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Success Checkmark Overlay -->
+            <TextView
+                android:id="@+id/tv_success_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="✓"
+                android:textSize="80sp"
+                android:textColor="#4CAF50"
+                android:visibility="gone"/>
+
+            <!-- Cooking Animation Placeholder -->
+            <ImageView
+                android:id="@+id/iv_cooking_animation"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Bottom Ingredient Palette -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🧺 Ingredients (Long press &amp; drag)"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Scrollable Ingredient Items -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ingredient_palette"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <!-- Draggable items added dynamically -->
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Timer Overlay for cooking steps -->
+    <FrameLayout
+        android:id="@+id/timer_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#80000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="16dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/tv_timer_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏰"
+                    android:textSize="48sp"/>
+
+                <TextView
+                    android:id="@+id/tv_timer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooking..."
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF6B35"
+                    android:layout_marginTop="16dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_timer"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="16dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progress_orange"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!-- Completion Celebration -->
+    <FrameLayout
+        android:id="@+id/completion_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#E0FFFFFF">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/tv_complete_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉"
+                android:textSize="72sp"/>
+
+            <TextView
+                android:id="@+id/tv_complete_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dish Complete!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spaghetti Bolognese"
+                android:textSize="20sp"
+                android:textColor="#FF6B35"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
