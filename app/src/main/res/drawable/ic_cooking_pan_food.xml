@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="50dp"
+    android:viewportWidth="90"
+    android:viewportHeight="50">
+    
+    <!-- Pan body - red/orange color like reference -->
+    <path
+        android:pathData="M10,25 L80,25 L75,45 L15,45 Z"
+        android:fillColor="#E64A19"/>
+    
+    <!-- Pan inner surface -->
+    <path
+        android:pathData="M15,25 L75,25 L72,42 L18,42 Z"
+        android:fillColor="#BF360C"/>
+    
+    <!-- Pan rim -->
+    <path
+        android:pathData="M10,22 L80,22 L80,28 L10,28 Z"
+        android:fillColor="#D84315"/>
+    
+    <!-- Pan handle -->
+    <path
+        android:pathData="M75,30 L90,28 L90,35 L75,37 Z"
+        android:fillColor="#5D4037"/>
+    <path
+        android:pathData="M82,27 L88,26 L88,32 L82,33 Z"
+        android:fillColor="#4E342E"/>
+    
+    <!-- Food in pan (golden/yellow pieces) -->
+    <path
+        android:pathData="M25,32 m-6,0 a6,4 0 1,0 12,0 a6,4 0 1,0 -12,0"
+        android:fillColor="#FFB74D"/>
+    <path
+        android:pathData="M40,33 m-7,0 a7,4 0 1,0 14,0 a7,4 0 1,0 -14,0"
+        android:fillColor="#FFA726"/>
+    <path
+        android:pathData="M55,32 m-6,0 a6,4 0 1,0 12,0 a6,4 0 1,0 -12,0"
+        android:fillColor="#FFB74D"/>
+    <path
+        android:pathData="M32,36 m-5,0 a5,3 0 1,0 10,0 a5,3 0 1,0 -10,0"
+        android:fillColor="#FF9800"/>
+    <path
+        android:pathData="M48,36 m-5,0 a5,3 0 1,0 10,0 a5,3 0 1,0 -10,0"
+        android:fillColor="#FFA726"/>
+</vector>

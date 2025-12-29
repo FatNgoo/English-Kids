@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Food placeholder icon - Plate with utensils -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Plate circle -->
+    <path
+        android:pathData="M60,20 A40,40 0 1,1 60,100 A40,40 0 1,1 60,20"
+        android:fillColor="#FFCC80"
+        android:strokeWidth="4"
+        android:strokeColor="#FF9800"/>
+    
+    <!-- Inner plate circle -->
+    <path
+        android:pathData="M60,35 A25,25 0 1,1 60,85 A25,25 0 1,1 60,35"
+        android:fillColor="#FFF8E1"
+        android:strokeWidth="2"
+        android:strokeColor="#FFE0B2"/>
+    
+    <!-- Fork left -->
+    <path
+        android:pathData="M25,30 L25,75 M22,30 L22,45 M25,30 L25,45 M28,30 L28,45"
+        android:strokeWidth="3"
+        android:strokeColor="#78909C"
+        android:strokeLineCap="round"/>
+    
+    <!-- Knife right -->
+    <path
+        android:pathData="M95,30 L95,75"
+        android:strokeWidth="4"
+        android:strokeColor="#78909C"
+        android:strokeLineCap="round"/>
+    
+    <!-- Steam/aroma lines -->
+    <path
+        android:pathData="M50,15 Q48,10 50,5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFB74D"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M60,12 Q58,7 60,2"
+        android:strokeWidth="2"
+        android:strokeColor="#FFB74D"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M70,15 Q68,10 70,5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFB74D"
+        android:strokeLineCap="round"/>
+    
+</vector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Plate -->
+    <path android:pathData="M10,85 Q10,100 60,100 Q110,100 110,85 Q110,75 60,75 Q10,75 10,85 Z" android:fillColor="#ECEFF1"/>
+    <!-- Pancake stack - bottom -->
+    <path android:pathData="M25,75 Q25,85 60,85 Q95,85 95,75 Q95,68 60,68 Q25,68 25,75 Z" android:fillColor="#FFCC80"/>
+    <!-- Pancake 2 -->
+    <path android:pathData="M28,68 Q28,75 60,75 Q92,75 92,68 Q92,62 60,62 Q28,62 28,68 Z" android:fillColor="#FFB74D"/>
+    <!-- Pancake 3 - top -->
+    <path android:pathData="M30,62 Q30,68 60,68 Q90,68 90,62 Q90,56 60,56 Q30,56 30,62 Z" android:fillColor="#FFCC80"/>
+    <!-- Butter -->
+    <path android:pathData="M52,50 L68,50 L68,58 L52,58 Z" android:fillColor="#FFEE58"/>
+    <!-- Syrup -->
+    <path android:pathData="M60,45 Q50,55 40,70 M60,45 Q70,55 80,70" android:strokeColor="#8D6E63" android:strokeWidth="4"/>
+    <!-- Blueberries -->
+    <path android:pathData="M35,78 A4,4 0 1,0 43,78 A4,4 0 1,0 35,78" android:fillColor="#5C6BC0"/>
+    <path android:pathData="M75,80 A4,4 0 1,0 83,80 A4,4 0 1,0 75,80" android:fillColor="#5C6BC0"/>
+</vector>

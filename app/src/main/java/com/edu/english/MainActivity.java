@@ -188,6 +188,11 @@ public class MainActivity extends AppCompatActivity {
         if (game.getGameType().equals("word_race")) {
             Intent wordRaceIntent = new Intent(MainActivity.this, MascotSelectActivity.class);
             startActivity(wordRaceIntent);
+        } else if (game.getGameType().equals("master_chef")) {
+            // Launch Master Chef Game!
+            Intent masterChefIntent = new Intent(MainActivity.this, com.edu.english.masterchef.ui.map.MasterChefMapActivity.class);
+            startActivity(masterChefIntent);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else if (game.getGameType().equals("magic_storybook")) {
             Intent storybookIntent = new Intent(MainActivity.this, MagicStorybookCategoryActivity.class);
             startActivity(storybookIntent);

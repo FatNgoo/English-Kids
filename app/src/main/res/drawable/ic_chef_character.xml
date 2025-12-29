@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+    
+    <!-- Chef Hat -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,10 C110,10 125,25 125,45 L125,55 L55,55 L55,45 C55,25 70,10 90,10 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,50 L130,50 L130,70 L50,70 Z"/>
+    
+    <!-- Face -->
+    <path
+        android:fillColor="#FFD3B4"
+        android:pathData="M90,70 C115,70 130,90 130,115 C130,140 115,155 90,155 C65,155 50,140 50,115 C50,90 65,70 90,70 Z"/>
+    
+    <!-- Eyes -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M72,105 C72,100 77,100 77,105 C77,110 72,110 72,105 Z"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M103,105 C103,100 108,100 108,105 C108,110 103,110 103,105 Z"/>
+    
+    <!-- Smile -->
+    <path
+        android:strokeColor="#FF6B35"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M75,130 Q90,145 105,130"/>
+    
+    <!-- Chef Outfit -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,155 L120,155 L130,180 L50,180 Z"/>
+    
+    <!-- Buttons -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M90,162 A3,3 0 1,1 90,168 A3,3 0 1,1 90,162 Z"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M90,172 A3,3 0 1,1 90,178 A3,3 0 1,1 90,172 Z"/>
+</vector>

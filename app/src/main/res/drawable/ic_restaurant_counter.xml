@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="60dp"
+    android:viewportWidth="180"
+    android:viewportHeight="60">
+    
+    <!-- Counter top surface - wood grain -->
+    <path
+        android:pathData="M0,0 L180,0 L180,15 L0,15 Z"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Counter top highlight -->
+    <path
+        android:pathData="M0,0 L180,0 L180,5 L0,5 Z"
+        android:fillColor="#A1887F"/>
+    
+    <!-- Counter front panel -->
+    <path
+        android:pathData="M0,15 L180,15 L180,60 L0,60 Z"
+        android:fillColor="#6D4C41"/>
+    
+    <!-- Decorative panel lines -->
+    <path
+        android:pathData="M20,20 L20,55 M60,20 L60,55 M100,20 L100,55 M140,20 L140,55"
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"/>
+    
+    <!-- Panel insets -->
+    <path
+        android:pathData="M5,22 L55,22 L55,53 L5,53 Z"
+        android:fillColor="#5D4037"/>
+    <path
+        android:pathData="M65,22 L95,22 L95,53 L65,53 Z"
+        android:fillColor="#5D4037"/>
+    <path
+        android:pathData="M105,22 L135,22 L135,53 L105,53 Z"
+        android:fillColor="#5D4037"/>
+    <path
+        android:pathData="M145,22 L175,22 L175,53 L145,53 Z"
+        android:fillColor="#5D4037"/>
+</vector>

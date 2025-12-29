@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="45dp"
+    android:height="50dp"
+    android:viewportWidth="45"
+    android:viewportHeight="50">
+    
+    <!-- Mixer body - Blue/cyan like reference -->
+    <path
+        android:pathData="M10,20 L35,20 L35,45 L10,45 Z"
+        android:fillColor="#0288D1"/>
+    
+    <!-- Mixer head/top -->
+    <path
+        android:pathData="M8,10 L37,10 L35,20 L10,20 Z"
+        android:fillColor="#03A9F4"/>
+    
+    <!-- Top curve -->
+    <path
+        android:pathData="M12,5 L33,5 L37,10 L8,10 Z"
+        android:fillColor="#29B6F6"/>
+    
+    <!-- Mixer arm attachment -->
+    <path
+        android:pathData="M18,20 L27,20 L27,25 L18,25 Z"
+        android:fillColor="#0277BD"/>
+    
+    <!-- Mixing bowl -->
+    <path
+        android:pathData="M5,35 L15,25 L30,25 L40,35 L40,48 L5,48 Z"
+        android:fillColor="#E0E0E0"/>
+    
+    <!-- Bowl inner -->
+    <path
+        android:pathData="M10,36 L35,36 L35,46 L10,46 Z"
+        android:fillColor="#BDBDBD"/>
+    
+    <!-- Mixer beaters -->
+    <path
+        android:pathData="M20,25 L20,35"
+        android:strokeColor="#757575"
+        android:strokeWidth="2"/>
+    <path
+        android:pathData="M25,25 L25,35"
+        android:strokeColor="#757575"
+        android:strokeWidth="2"/>
+    
+    <!-- Control dial -->
+    <path
+        android:pathData="M30,15 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#01579B"/>
+    
+    <!-- Speed indicator -->
+    <path
+        android:pathData="M15,15 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#FF5722"/>
+</vector>

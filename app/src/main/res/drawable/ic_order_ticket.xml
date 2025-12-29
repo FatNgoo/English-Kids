@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="100dp"
+    android:viewportWidth="80"
+    android:viewportHeight="100">
+    
+    <!-- Order Ticket Paper -->
+    <path
+        android:pathData="M10,5 L70,5 L70,95 L10,95 Z"
+        android:fillColor="#FFFDE7"/>
+    
+    <!-- Ticket torn edge top -->
+    <path
+        android:pathData="M10,5 L15,8 L20,5 L25,8 L30,5 L35,8 L40,5 L45,8 L50,5 L55,8 L60,5 L65,8 L70,5"
+        android:strokeColor="#FFF9C4"
+        android:strokeWidth="2"/>
+    
+    <!-- Red header stripe -->
+    <path
+        android:pathData="M10,10 L70,10 L70,25 L10,25 Z"
+        android:fillColor="#EF5350"/>
+    
+    <!-- ORDER text area -->
+    <path
+        android:pathData="M20,14 L60,14 L60,21 L20,21 Z"
+        android:fillColor="#FFCDD2"/>
+    
+    <!-- Content lines -->
+    <path
+        android:pathData="M15,35 L55,35"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M15,45 L60,45"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M15,55 L50,55"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M15,65 L58,65"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    
+    <!-- Checkbox -->
+    <path
+        android:pathData="M60,33 L67,33 L67,40 L60,40 Z"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Checkmark -->
+    <path
+        android:pathData="M61,36 L64,39 L68,32"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"/>
+    
+    <!-- Pin hole -->
+    <path
+        android:pathData="M40,5 A3,3 0 1,1 40,11 A3,3 0 1,1 40,5"
+        android:fillColor="#E0E0E0"/>
+</vector>

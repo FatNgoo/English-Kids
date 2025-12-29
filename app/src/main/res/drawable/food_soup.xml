@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Bowl -->
+    <path android:pathData="M15,45 Q15,95 60,95 Q105,95 105,45 Q105,35 60,35 Q15,35 15,45 Z" android:fillColor="#8D6E63"/>
+    <!-- Soup -->
+    <path android:pathData="M22,48 Q22,85 60,85 Q98,85 98,48 Q98,42 60,42 Q22,42 22,48 Z" android:fillColor="#FF7043"/>
+    <!-- Vegetables -->
+    <path android:pathData="M35,55 A5,5 0 1,0 45,55 A5,5 0 1,0 35,55" android:fillColor="#66BB6A"/>
+    <path android:pathData="M55,60 A6,6 0 1,0 67,60 A6,6 0 1,0 55,60" android:fillColor="#FFEE58"/>
+    <path android:pathData="M75,55 A5,5 0 1,0 85,55 A5,5 0 1,0 75,55" android:fillColor="#EF5350"/>
+    <!-- Steam -->
+    <path android:pathData="M45,30 Q43,22 45,15 M60,28 Q58,18 60,10 M75,30 Q73,22 75,15" android:strokeColor="#BDBDBD" android:strokeWidth="3"/>
+</vector>

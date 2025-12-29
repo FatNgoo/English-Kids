@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Garlic icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Garlic bulb -->
+    <path
+        android:pathData="M24,16 C32,16 38,24 38,34 C38,42 32,46 24,46 C16,46 10,42 10,34 C10,24 16,16 24,16 Z"
+        android:fillColor="#FFF8E1"/>
+    
+    <!-- Clove divisions -->
+    <path
+        android:pathData="M20,22 L20,40"
+        android:strokeWidth="1"
+        android:strokeColor="#FFECB3"/>
+    <path
+        android:pathData="M28,22 L28,40"
+        android:strokeWidth="1"
+        android:strokeColor="#FFECB3"/>
+    <path
+        android:pathData="M24,18 L24,42"
+        android:strokeWidth="1"
+        android:strokeColor="#FFECB3"/>
+    
+    <!-- Stem -->
+    <path
+        android:pathData="M24,16 L24,6 Q20,4 24,2 Q28,4 24,6"
+        android:strokeWidth="2"
+        android:strokeColor="#8D6E63"
+        android:fillColor="@android:color/transparent"/>
+</vector>

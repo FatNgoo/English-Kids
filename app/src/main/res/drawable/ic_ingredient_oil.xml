@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Olive oil bottle icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Bottle body -->
+    <path
+        android:pathData="M16,18 L16,42 C16,44 18,46 24,46 C30,46 32,44 32,42 L32,18 Z"
+        android:fillColor="#FFF59D"/>
+    
+    <!-- Oil inside -->
+    <path
+        android:pathData="M18,24 L18,40 C18,42 20,44 24,44 C28,44 30,42 30,40 L30,24 Z"
+        android:fillColor="#FFD54F"/>
+    
+    <!-- Bottle neck -->
+    <path
+        android:pathData="M20,18 L20,10 L28,10 L28,18 Z"
+        android:fillColor="#FFF59D"/>
+    
+    <!-- Cap -->
+    <path
+        android:pathData="M18,10 L30,10 L30,6 L18,6 Z"
+        android:fillColor="#8BC34A"/>
+    
+    <!-- Label -->
+    <path
+        android:pathData="M18,28 L30,28 L30,36 L18,36 Z"
+        android:fillColor="#FFFDE7"/>
+    
+    <!-- Olive on label -->
+    <path
+        android:pathData="M24,32 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#689F38"/>
+</vector>

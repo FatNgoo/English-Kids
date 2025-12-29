@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="100dp"
+    android:viewportWidth="80"
+    android:viewportHeight="100">
+    
+    <!-- Customer - Happy girl waiting for food -->
+    
+    <!-- Hair (Ponytails) -->
+    <path
+        android:pathData="M20,22 m-10,0 a10,15 0 1,0 20,0 a10,15 0 1,0 -20,0"
+        android:fillColor="#5D4037"/>
+    <path
+        android:pathData="M60,22 m-10,0 a10,15 0 1,0 20,0 a10,15 0 1,0 -20,0"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Main Hair -->
+    <path
+        android:pathData="M40,25 m-22,0 a22,18 0 1,0 44,0 a22,18 0 1,0 -44,0"
+        android:fillColor="#5D4037"/>
+    
+    <!-- Hair Bows -->
+    <path
+        android:pathData="M18,15 L20,20 L15,17 L18,15 L21,17 L18,20 L18,15 Z"
+        android:fillColor="#E91E63"/>
+    <path
+        android:pathData="M62,15 L64,20 L59,17 L62,15 L65,17 L62,20 L62,15 Z"
+        android:fillColor="#E91E63"/>
+    
+    <!-- Face -->
+    <path
+        android:pathData="M40,38 m-20,0 a20,22 0 1,0 40,0 a20,22 0 1,0 -40,0"
+        android:fillColor="#FFCC80"/>
+    
+    <!-- Eyes (sparkling, excited) -->
+    <path
+        android:pathData="M32,35 m-5,0 a5,6 0 1,0 10,0 a5,6 0 1,0 -10,0"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M48,35 m-5,0 a5,6 0 1,0 10,0 a5,6 0 1,0 -10,0"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Pupils (looking at food) -->
+    <path
+        android:pathData="M33,36 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#4E342E"/>
+    <path
+        android:pathData="M49,36 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#4E342E"/>
+    
+    <!-- Eye Sparkles -->
+    <path
+        android:pathData="M31,33 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="M47,33 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Rosy Cheeks -->
+    <path
+        android:pathData="M24,45 m-5,0 a5,3 0 1,0 10,0 a5,3 0 1,0 -10,0"
+        android:fillColor="#FFAB91"
+        android:fillAlpha="0.6"/>
+    <path
+        android:pathData="M56,45 m-5,0 a5,3 0 1,0 10,0 a5,3 0 1,0 -10,0"
+        android:fillColor="#FFAB91"
+        android:fillAlpha="0.6"/>
+    
+    <!-- Excited Open Mouth -->
+    <path
+        android:pathData="M40,50 m-8,0 a8,6 0 1,0 16,0 a8,6 0 1,0 -16,0"
+        android:fillColor="#FF8A65"/>
+    <path
+        android:pathData="M40,48 m-6,0 a6,3 0 1,0 12,0 a6,3 0 1,0 -12,0"
+        android:fillColor="#FFCCBC"/>
+    
+    <!-- Body (Dress) -->
+    <path
+        android:pathData="M20,62 L60,62 L65,100 L15,100 Z"
+        android:fillColor="#E91E63"/>
+    
+    <!-- Dress Pattern (dots) -->
+    <path
+        android:pathData="M30,75 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#F48FB1"/>
+    <path
+        android:pathData="M50,75 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#F48FB1"/>
+    <path
+        android:pathData="M40,85 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+        android:fillColor="#F48FB1"/>
+    
+    <!-- Collar -->
+    <path
+        android:pathData="M32,62 Q40,70 48,62"
+        android:strokeColor="#AD1457"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Arms -->
+    <path
+        android:pathData="M15,66 L5,80 L10,84 L20,70 Z"
+        android:fillColor="#E91E63"/>
+    <path
+        android:pathData="M65,66 L75,80 L70,84 L60,70 Z"
+        android:fillColor="#E91E63"/>
+    
+    <!-- Hands (waving) -->
+    <path
+        android:pathData="M7,82 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFCC80"/>
+    <path
+        android:pathData="M73,82 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFCC80"/>
+</vector>

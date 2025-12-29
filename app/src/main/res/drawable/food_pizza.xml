@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Pizza base -->
+    <path
+        android:pathData="M60,15 L100,95 L20,95 Z"
+        android:fillColor="#FFCC80"/>
+    
+    <!-- Crust -->
+    <path
+        android:pathData="M20,95 Q60,105 100,95"
+        android:strokeColor="#D4A574"
+        android:strokeWidth="8"
+        android:fillColor="#00000000"/>
+    
+    <!-- Sauce -->
+    <path
+        android:pathData="M60,25 L92,88 L28,88 Z"
+        android:fillColor="#E53935"/>
+    
+    <!-- Cheese -->
+    <path
+        android:pathData="M60,30 L88,82 L32,82 Z"
+        android:fillColor="#FFEE58"/>
+    
+    <!-- Pepperoni -->
+    <path
+        android:pathData="M50,50 A8,8 0 1,0 66,50 A8,8 0 1,0 50,50"
+        android:fillColor="#C62828"/>
+    <path
+        android:pathData="M35,70 A7,7 0 1,0 49,70 A7,7 0 1,0 35,70"
+        android:fillColor="#C62828"/>
+    <path
+        android:pathData="M65,72 A7,7 0 1,0 79,72 A7,7 0 1,0 65,72"
+        android:fillColor="#C62828"/>
+    <path
+        android:pathData="M55,62 A6,6 0 1,0 67,62 A6,6 0 1,0 55,62"
+        android:fillColor="#C62828"/>
+</vector>

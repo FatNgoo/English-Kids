@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Plate -->
+    <path
+        android:pathData="M10,70 Q10,95 60,95 Q110,95 110,70 Q110,55 60,55 Q10,55 10,70 Z"
+        android:fillColor="#ECEFF1"/>
+    
+    <!-- Plate inner -->
+    <path
+        android:pathData="M20,70 Q20,88 60,88 Q100,88 100,70 Q100,60 60,60 Q20,60 20,70 Z"
+        android:fillColor="#FAFAFA"/>
+    
+    <!-- Spaghetti Base -->
+    <path
+        android:pathData="M25,68 Q25,80 60,82 Q95,80 95,68 Q95,55 60,55 Q25,55 25,68 Z"
+        android:fillColor="#FFECB3"/>
+    
+    <!-- Spaghetti Strands -->
+    <path
+        android:pathData="M30,65 Q40,58 50,65 Q60,72 70,65 Q80,58 90,65"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M32,70 Q42,63 52,70 Q62,77 72,70 Q82,63 88,70"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M35,75 Q45,68 55,75 Q65,82 75,75 Q85,68 92,75"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Bolognese Sauce (Top) -->
+    <path
+        android:pathData="M40,50 Q45,40 60,42 Q75,40 80,50 Q85,60 60,65 Q35,60 40,50 Z"
+        android:fillColor="#D84315"/>
+    
+    <!-- Sauce Highlights -->
+    <path
+        android:pathData="M45,48 Q50,43 58,45 Q65,43 70,48"
+        android:strokeColor="#E65100"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"/>
+    
+    <!-- Meat chunks -->
+    <path
+        android:pathData="M48,52 A4,4 0 1,0 56,52 A4,4 0 1,0 48,52"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M58,48 A3,3 0 1,0 64,48 A3,3 0 1,0 58,48"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M65,55 A4,4 0 1,0 73,55 A4,4 0 1,0 65,55"
+        android:fillColor="#8D6E63"/>
+    <path
+        android:pathData="M52,58 A3,3 0 1,0 58,58 A3,3 0 1,0 52,58"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Parsley garnish -->
+    <path
+        android:pathData="M55,42 L58,35 L61,42 M57,38 L54,34 M59,38 L62,34"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"/>
+    
+    <!-- Parmesan cheese on top -->
+    <path
+        android:pathData="M50,45 L52,44 M62,46 L64,45 M70,50 L72,49 M45,55 L47,54"
+        android:strokeColor="#FFF9C4"
+        android:strokeWidth="1.5"/>
+    
+    <!-- Steam -->
+    <path
+        android:pathData="M50,30 Q48,25 50,20 M60,28 Q58,22 60,16 M70,30 Q68,25 70,20"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+</vector>

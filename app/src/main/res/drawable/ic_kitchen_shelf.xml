@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="50dp"
+    android:viewportWidth="80"
+    android:viewportHeight="50">
+    
+    <!-- Shelf board -->
+    <path
+        android:pathData="M0,48 L80,48 L80,50 L0,50 Z"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Shelf bracket left -->
+    <path
+        android:pathData="M5,50 L5,45 L10,50 Z"
+        android:fillColor="#6D4C41"/>
+    
+    <!-- Shelf bracket right -->
+    <path
+        android:pathData="M75,50 L75,45 L70,50 Z"
+        android:fillColor="#6D4C41"/>
+    
+    <!-- Book 1 - Red -->
+    <path
+        android:pathData="M8,20 L16,20 L16,48 L8,48 Z"
+        android:fillColor="#E91E63"/>
+    <path
+        android:pathData="M9,22 L15,22 L15,46 L9,46 Z"
+        android:fillColor="#F48FB1"/>
+    
+    <!-- Book 2 - Green -->
+    <path
+        android:pathData="M17,25 L24,25 L24,48 L17,48 Z"
+        android:fillColor="#4CAF50"/>
+    <path
+        android:pathData="M18,27 L23,27 L23,46 L18,46 Z"
+        android:fillColor="#A5D6A7"/>
+    
+    <!-- Book 3 - Blue -->
+    <path
+        android:pathData="M25,22 L31,22 L31,48 L25,48 Z"
+        android:fillColor="#2196F3"/>
+    <path
+        android:pathData="M26,24 L30,24 L30,46 L26,46 Z"
+        android:fillColor="#90CAF9"/>
+    
+    <!-- Small plant pot -->
+    <path
+        android:pathData="M45,38 L55,38 L53,48 L47,48 Z"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Plant leaves -->
+    <path
+        android:pathData="M50,38 Q45,30 48,22 Q50,28 50,38 Z"
+        android:fillColor="#4CAF50"/>
+    <path
+        android:pathData="M50,38 Q55,30 52,22 Q50,28 50,38 Z"
+        android:fillColor="#66BB6A"/>
+    <path
+        android:pathData="M50,38 Q52,28 55,20 Q53,28 50,38 Z"
+        android:fillColor="#43A047"/>
+    
+    <!-- Decorative jar -->
+    <path
+        android:pathData="M65,32 L75,32 L73,48 L67,48 Z"
+        android:fillColor="#FFCC80"/>
+    <path
+        android:pathData="M64,30 L76,30 L76,34 L64,34 Z"
+        android:fillColor="#FFE0B2"/>
+    <path
+        android:pathData="M66,28 L74,28 L74,30 L66,30 Z"
+        android:fillColor="#8D6E63"/>
+</vector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ground beef / meat icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Meat patty / ground beef -->
+    <path
+        android:pathData="M8,18 C8,14 16,10 24,10 C32,10 40,14 40,18 L40,34 C40,38 32,42 24,42 C16,42 8,38 8,34 Z"
+        android:fillColor="#8D6E63"/>
+    
+    <!-- Top surface -->
+    <path
+        android:pathData="M8,18 C8,22 16,26 24,26 C32,26 40,22 40,18 C40,14 32,10 24,10 C16,10 8,14 8,18 Z"
+        android:fillColor="#A1887F"/>
+    
+    <!-- Texture lines -->
+    <path
+        android:pathData="M14,16 Q18,20 22,16"
+        android:strokeWidth="1.5"
+        android:strokeColor="#795548"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M26,18 Q30,22 34,18"
+        android:strokeWidth="1.5"
+        android:strokeColor="#795548"
+        android:fillColor="@android:color/transparent"/>
+</vector>

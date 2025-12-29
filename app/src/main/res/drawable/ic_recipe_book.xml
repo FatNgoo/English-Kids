@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="80dp"
+    android:viewportWidth="60"
+    android:viewportHeight="80">
+    
+    <!-- Recipe book - open pages -->
+    
+    <!-- Left page -->
+    <path
+        android:pathData="M5,15 L30,10 L30,75 L5,78 Z"
+        android:fillColor="#FFF8E1"/>
+    
+    <!-- Right page -->
+    <path
+        android:pathData="M30,10 L55,15 L55,78 L30,75 Z"
+        android:fillColor="#FFFDE7"/>
+    
+    <!-- Book spine shadow -->
+    <path
+        android:pathData="M28,10 L32,10 L32,75 L28,75 Z"
+        android:fillColor="#FFE082"/>
+    
+    <!-- Left page content - recipe illustration -->
+    <path
+        android:pathData="M10,25 L25,25 L25,40 L10,40 Z"
+        android:fillColor="#FFCC80"/>
+    <path
+        android:pathData="M17,30 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FF7043"/>
+    
+    <!-- Left page text lines -->
+    <path
+        android:pathData="M10,48 L25,48"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M10,54 L22,54"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M10,60 L25,60"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M10,66 L20,66"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    
+    <!-- Right page content - recipe illustration -->
+    <path
+        android:pathData="M35,25 L50,25 L50,40 L35,40 Z"
+        android:fillColor="#FFCC80"/>
+    <path
+        android:pathData="M42,32 m-6,0 a6,4 0 1,0 12,0 a6,4 0 1,0 -12,0"
+        android:fillColor="#FFA726"/>
+    
+    <!-- Right page text lines -->
+    <path
+        android:pathData="M35,48 L50,48"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M35,54 L48,54"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M35,60 L50,60"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    <path
+        android:pathData="M35,66 L45,66"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"/>
+    
+    <!-- Book cover edges -->
+    <path
+        android:pathData="M3,12 L5,15 L5,78 L3,80 L3,12 Z"
+        android:fillColor="#F57C00"/>
+    <path
+        android:pathData="M55,15 L57,12 L57,80 L55,78 L55,15 Z"
+        android:fillColor="#F57C00"/>
+</vector>

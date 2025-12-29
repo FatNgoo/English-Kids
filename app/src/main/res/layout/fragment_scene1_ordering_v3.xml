@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ==================== BACKGROUND ==================== -->
+    
+    <!-- Restaurant Wall - Warm cream -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF8E1"/>
+
+    <!-- Floor -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"
+        android:background="#D7CCC8"/>
+
+    <!-- Counter Surface -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="180dp"
+        android:background="#8D6E63"/>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ==================== TOP BAR ==================== -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="8dp">
+
+            <!-- Skip Button -->
+            <TextView
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="SKIP ⏭️"
+                android:textSize="12sp"
+                android:textColor="#9E9E9E"
+                android:padding="8dp"/>
+        </FrameLayout>
+
+        <!-- ==================== WELCOME BANNER ==================== -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="🍽️ Welcome to Master Chef Restaurant! 🍽️"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ==================== RESTAURANT SCENE ==================== -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp">
+
+            <!-- Wall Decorations Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="8dp">
+
+                <!-- Menu Board -->
+                <ImageView
+                    android:id="@+id/iv_menu_board"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_menu_board"
+                    android:scaleType="fitCenter"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <!-- Service Bell -->
+                <ImageView
+                    android:id="@+id/iv_service_bell"
+                    android:layout_width="45dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_service_bell"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+
+            <!-- Food Preview Card - Center -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_menu"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="75dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_food_preview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_dish_spaghetti"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_food_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Spaghetti Bolognese"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF6B35"
+                        android:gravity="center"
+                        android:maxLines="2"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Characters Row - Bottom of scene area -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:paddingHorizontal="12dp">
+
+                <!-- Chef Side -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- Chef Character -->
+                    <ImageView
+                        android:id="@+id/iv_chef"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_chef_cute"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Chef Label -->
+                    <TextView
+                        android:id="@+id/tv_chef_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_button_circle"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        android:text="👨‍🍳 Chef"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Decorations between characters -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp">
+
+                    <!-- Cash Register -->
+                    <ImageView
+                        android:id="@+id/iv_cash_register"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_cash_register"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Order Ticket -->
+                    <ImageView
+                        android:id="@+id/iv_order_ticket"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_order_ticket"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+
+                <!-- Customer Side -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- Customer Character -->
+                    <ImageView
+                        android:id="@+id/iv_customer"
+                        android:layout_width="85dp"
+                        android:layout_height="95dp"
+                        android:src="@drawable/ic_kid_character"
+                        android:scaleType="fitCenter"/>
+
+                    <!-- Customer Label -->
+                    <TextView
+                        android:id="@+id/tv_customer_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="You"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/sky_blue"
+                        android:background="@drawable/bg_button_circle"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- ==================== DIALOG PANEL ==================== -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Speaker Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_speaker_avatar"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_chef_avatar"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_speaker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="🧑‍🍳 Chef says:"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF6B35"/>
+
+                    <!-- Speaker Button -->
+                    <ImageView
+                        android:id="@+id/btn_speaker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_speaker"
+                        android:padding="9dp"
+                        android:background="@drawable/bg_button_circle_orange"
+                        android:contentDescription="Replay audio"/>
+                </LinearLayout>
+
+                <!-- Dialog Text -->
+                <TextView
+                    android:id="@+id/tv_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to our restaurant! What would you like to order today?"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <!-- Vietnamese Translation -->
+                <TextView
+                    android:id="@+id/tv_translation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Chào mừng đến nhà hàng! Hôm nay bạn muốn gọi món gì?)"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Continue Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Continue ▶"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    app:cornerRadius="25dp"
+                    app:backgroundTint="#4CAF50"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Hidden bubbles for compatibility -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bubble_chef"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_chef_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bubble_customer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_customer_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

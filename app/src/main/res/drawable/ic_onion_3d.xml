@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="40dp"
+    android:viewportWidth="35"
+    android:viewportHeight="40">
+    
+    <!-- Onion body -->
+    <path
+        android:pathData="M17,22 m-14,0 a14,16 0 1,0 28,0 a14,16 0 1,0 -28,0"
+        android:fillColor="#FFCC80"/>
+    
+    <!-- Onion layers/lines -->
+    <path
+        android:pathData="M10,15 Q17,10 24,15"
+        android:strokeColor="#FFB74D"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M8,20 Q17,14 26,20"
+        android:strokeColor="#FFB74D"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M6,26 Q17,18 28,26"
+        android:strokeColor="#FFB74D"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"/>
+    
+    <!-- Onion highlight -->
+    <path
+        android:pathData="M10,18 m-3,0 a3,4 0 1,0 6,0 a3,4 0 1,0 -6,0"
+        android:fillColor="#FFE0B2"
+        android:fillAlpha="0.5"/>
+    
+    <!-- Root bottom -->
+    <path
+        android:pathData="M15,38 L17,40 L19,38"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"/>
+    
+    <!-- Top sprout -->
+    <path
+        android:pathData="M15,6 L17,2 L19,6"
+        android:strokeColor="#7CB342"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+</vector>

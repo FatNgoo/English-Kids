@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="40dp"
+    android:viewportWidth="50"
+    android:viewportHeight="40">
+    
+    <!-- Steam clouds -->
+    <path
+        android:pathData="M10,30 m-6,0 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0"
+        android:fillColor="#B0BEC5"
+        android:fillAlpha="0.5"/>
+    
+    <path
+        android:pathData="M18,22 m-7,0 a7,6 0 1,0 14,0 a7,6 0 1,0 -14,0"
+        android:fillColor="#CFD8DC"
+        android:fillAlpha="0.6"/>
+    
+    <path
+        android:pathData="M28,28 m-6,0 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0"
+        android:fillColor="#B0BEC5"
+        android:fillAlpha="0.5"/>
+    
+    <path
+        android:pathData="M25,14 m-8,0 a8,7 0 1,0 16,0 a8,7 0 1,0 -16,0"
+        android:fillColor="#ECEFF1"
+        android:fillAlpha="0.7"/>
+    
+    <path
+        android:pathData="M38,24 m-5,0 a5,4 0 1,0 10,0 a5,4 0 1,0 -10,0"
+        android:fillColor="#CFD8DC"
+        android:fillAlpha="0.4"/>
+    
+    <path
+        android:pathData="M32,8 m-6,0 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0"
+        android:fillColor="#ECEFF1"
+        android:fillAlpha="0.5"/>
+    
+    <path
+        android:pathData="M18,6 m-5,0 a5,4 0 1,0 10,0 a5,4 0 1,0 -10,0"
+        android:fillColor="#ECEFF1"
+        android:fillAlpha="0.4"/>
+</vector>

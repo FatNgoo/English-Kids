@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft cream/beige kitchen wall - much easier on the eyes -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base soft cream color -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFF8E7"
+                android:centerColor="#FFF3E0"
+                android:endColor="#FFE8CC"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

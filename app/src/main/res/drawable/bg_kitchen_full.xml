@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Full Kitchen Background with warm cooking atmosphere -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#BBDEFB"
+                android:centerColor="#FFF8E1"
+                android:endColor="#BCAAA4"
+                android:centerY="0.4"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

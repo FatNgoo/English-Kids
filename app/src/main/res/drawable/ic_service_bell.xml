@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="80dp"
+    android:viewportWidth="60"
+    android:viewportHeight="80">
+    
+    <!-- Bell body -->
+    <path
+        android:pathData="M10,50 Q10,25 30,20 Q50,25 50,50 L50,55 L10,55 Z"
+        android:fillColor="#FFD700"/>
+    
+    <!-- Bell highlight -->
+    <path
+        android:pathData="M15,45 Q15,28 30,24 Q35,26 35,35"
+        android:strokeColor="#FFEB3B"
+        android:strokeWidth="3"/>
+    
+    <!-- Bell rim -->
+    <path
+        android:pathData="M5,55 L55,55 L55,62 Q55,65 52,65 L8,65 Q5,65 5,62 Z"
+        android:fillColor="#FFC107"/>
+    
+    <!-- Bell top -->
+    <path
+        android:pathData="M25,15 L35,15 L35,22 L25,22 Z"
+        android:fillColor="#FFA000"/>
+    
+    <!-- Top dome -->
+    <path
+        android:pathData="M27,10 Q30,5 33,10 L33,15 L27,15 Z"
+        android:fillColor="#FFD700"/>
+    
+    <!-- Clapper -->
+    <path
+        android:pathData="M30,58 A5,5 0 1,0 30,68 A5,5 0 1,0 30,58"
+        android:fillColor="#E65100"/>
+    
+    <!-- Action lines -->
+    <path
+        android:pathData="M0,35 L5,38 M55,38 L60,35 M0,45 L4,45 M56,45 L60,45"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"/>
+</vector>

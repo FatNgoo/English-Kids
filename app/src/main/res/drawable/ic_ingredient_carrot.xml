@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Carrot icon -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Carrot body -->
+    <path
+        android:pathData="M14,16 L24,46 L34,16 Q24,12 14,16 Z"
+        android:fillColor="#FF9800"/>
+    
+    <!-- Carrot stripes -->
+    <path
+        android:pathData="M18,20 L22,36"
+        android:strokeWidth="1"
+        android:strokeColor="#F57C00"/>
+    <path
+        android:pathData="M30,20 L26,36"
+        android:strokeWidth="1"
+        android:strokeColor="#F57C00"/>
+    
+    <!-- Leaves -->
+    <path
+        android:pathData="M18,14 Q20,4 24,14"
+        android:strokeWidth="3"
+        android:strokeColor="#4CAF50"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+    <path
+        android:pathData="M24,14 Q26,6 30,14"
+        android:strokeWidth="3"
+        android:strokeColor="#66BB6A"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+</vector>
